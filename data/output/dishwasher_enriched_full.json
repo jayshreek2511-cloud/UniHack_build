@@ -1,0 +1,1891 @@
+[
+  {
+    "identity": {
+      "row_index": 0,
+      "mfg_part_num": "SHPM65Z55N",
+      "part_desc": "SHPM65Z55N Bosch 500 Series 24 Inch Built-In Dishwasher 44 dBA 120V 12A Stainless Steel",
+      "brand_e1": "Bosch",
+      "brand_unilog": "Bosch",
+      "brand_dib": "Bosch",
+      "part_manuf": "Appliance Dealers Cooperative (APPDE)",
+      "placeholder_flags": {
+        "brand_e1": false,
+        "brand_unilog": false,
+        "brand_dib": false,
+        "part_manuf": false,
+        "_distributor_name": "Appliance Dealers Cooperative",
+        "_distributor_code": "APPDE",
+        "_distributor_cluster": "Appliance Dealers Cooperative"
+      },
+      "coarse_category": "Appliances > Large Appliances > Dishwashers",
+      "is_dishwasher": true
+    },
+    "extraction": {
+      "row_index": 0,
+      "mfg_part_num": "SHPM65Z55N",
+      "part_desc": "SHPM65Z55N Bosch 500 Series 24 Inch Built-In Dishwasher 44 dBA 120V 12A Stainless Steel",
+      "real_manufacturer": "BSH Home Appliances",
+      "real_brand": "Bosch",
+      "attributes": {
+        "Series": {
+          "label": "Series",
+          "value": "500 Series",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Model": {
+          "label": "Model",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Number of Wash Cycles": {
+          "label": "Number of Wash Cycles",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Voltage Rating": {
+          "label": "Voltage Rating",
+          "value": "120",
+          "uom": "V",
+          "confidence_source": "inferred"
+        },
+        "Amperage Rating": {
+          "label": "Amperage Rating",
+          "value": "12",
+          "uom": "A",
+          "confidence_source": "inferred"
+        },
+        "Mounting Type": {
+          "label": "Mounting Type",
+          "value": "Built-in",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Plug Type": {
+          "label": "Plug Type",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Size": {
+          "label": "Size",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Depth With Door Open": {
+          "label": "Depth With Door Open",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Minimum Height": {
+          "label": "Minimum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Maximum Height": {
+          "label": "Maximum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Sound Level": {
+          "label": "Sound Level",
+          "value": "44",
+          "uom": "dBA",
+          "confidence_source": "source-verified"
+        },
+        "Material": {
+          "label": "Material",
+          "value": "Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Color": {
+          "label": "Color",
+          "value": "Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Additional Information": {
+          "label": "Additional Information",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        }
+      }
+    },
+    "manufacturer_info": {
+      "mfg_part_num": "SHPM65Z55N",
+      "real_manufacturer": "BSH Home Appliances",
+      "real_brand": "Bosch",
+      "mfr_url": null,
+      "ref_urls": [],
+      "verification_status": "not-found",
+      "needs_manual_review": true,
+      "http_status_code": 404,
+      "attribute_conflicts": []
+    },
+    "descriptions": {
+      "mfg_part_num": "SHPM65Z55N",
+      "invoice_desc": "DISHWASHER BLTLN SST SST 120V 12A 44DBA",
+      "mobile_desc": "Bosch, Dishwasher, 500 Series, SHPM65Z55N, Built-in Mounting",
+      "short_desc": "Bosch\u00ae 500 Series SHPM65Z55N Dishwasher, Built-in Mounting, Stainless Steel",
+      "long_desc1": "Bosch\u00ae Dishwasher, 500 Series, 120 V, 12 A, Built-in Mounting, 44 dBA Sound Level, Stainless Steel, Stainless Steel",
+      "retail_desc": "500 Series Dishwasher, Built-in Mounting, Stainless Steel, Stainless Steel",
+      "consistency_passed": true,
+      "consistency_errors": []
+    },
+    "confidence_score": {
+      "mfg_part_num": "SHPM65Z55N",
+      "overall_score": 0.8,
+      "field_scores": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": true,
+          "value": null
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "BSH Home Appliances"
+        },
+        "Series": {
+          "field_name": "Series",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "500 Series"
+        },
+        "Model": {
+          "field_name": "Model",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "120"
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "12"
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "Built-in"
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "44"
+        },
+        "Material": {
+          "field_name": "Material",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "Stainless Steel"
+        },
+        "Color": {
+          "field_name": "Color",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "Stainless Steel"
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        }
+      },
+      "critical_missing_count": 1,
+      "critical_missing_fields": [
+        "Manufacturer URL"
+      ]
+    },
+    "provenance": {
+      "mfg_part_num": "SHPM65Z55N",
+      "field_provenance": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "value": "BSH Home Appliances",
+          "source_type": "Part_Manuf parsing",
+          "source_url": null
+        },
+        "Series": {
+          "field_name": "Series",
+          "value": "500 Series",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Model": {
+          "field_name": "Model",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "value": "120",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "value": "12",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "value": "Built-in",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "value": "44",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Material": {
+          "field_name": "Material",
+          "value": "Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Color": {
+          "field_name": "Color",
+          "value": "Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        }
+      }
+    }
+  },
+  {
+    "identity": {
+      "row_index": 1,
+      "mfg_part_num": "DW80R9950US",
+      "part_desc": "DW80R9950US Samsung Linear Wash 24 in Top Control Built In Dishwasher 39 dBA 120V 15A Stainless Steel",
+      "brand_e1": "Samsung",
+      "brand_unilog": "Samsung",
+      "brand_dib": "Samsung",
+      "part_manuf": "Jam Industrial Supply LLC (JAMIN)",
+      "placeholder_flags": {
+        "brand_e1": false,
+        "brand_unilog": false,
+        "brand_dib": false,
+        "part_manuf": false,
+        "_distributor_name": "Jam Industrial Supply LLC",
+        "_distributor_code": "JAMIN",
+        "_distributor_cluster": "Jam Industrial Supply LLC"
+      },
+      "coarse_category": "Appliances > Large Appliances > Dishwashers",
+      "is_dishwasher": true
+    },
+    "extraction": {
+      "row_index": 1,
+      "mfg_part_num": "DW80R9950US",
+      "part_desc": "DW80R9950US Samsung Linear Wash 24 in Top Control Built In Dishwasher 39 dBA 120V 15A Stainless Steel",
+      "real_manufacturer": "Samsung Electronics",
+      "real_brand": "Samsung",
+      "attributes": {
+        "Series": {
+          "label": "Series",
+          "value": "Linear Wash",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Model": {
+          "label": "Model",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Number of Wash Cycles": {
+          "label": "Number of Wash Cycles",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Voltage Rating": {
+          "label": "Voltage Rating",
+          "value": "120",
+          "uom": "V",
+          "confidence_source": "inferred"
+        },
+        "Amperage Rating": {
+          "label": "Amperage Rating",
+          "value": "15",
+          "uom": "A",
+          "confidence_source": "inferred"
+        },
+        "Mounting Type": {
+          "label": "Mounting Type",
+          "value": "Built-in",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Plug Type": {
+          "label": "Plug Type",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Size": {
+          "label": "Size",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Depth With Door Open": {
+          "label": "Depth With Door Open",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Minimum Height": {
+          "label": "Minimum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Maximum Height": {
+          "label": "Maximum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Sound Level": {
+          "label": "Sound Level",
+          "value": "39",
+          "uom": "dBA",
+          "confidence_source": "source-verified"
+        },
+        "Material": {
+          "label": "Material",
+          "value": "Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Color": {
+          "label": "Color",
+          "value": "Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Additional Information": {
+          "label": "Additional Information",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        }
+      }
+    },
+    "manufacturer_info": {
+      "mfg_part_num": "DW80R9950US",
+      "real_manufacturer": "Samsung Electronics",
+      "real_brand": "Samsung",
+      "mfr_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US",
+      "ref_urls": [],
+      "verification_status": "source-verified",
+      "needs_manual_review": false,
+      "http_status_code": 200,
+      "attribute_conflicts": []
+    },
+    "descriptions": {
+      "mfg_part_num": "DW80R9950US",
+      "invoice_desc": "DISHWASHER BLTLN SST SST 120V 15A 39DBA",
+      "mobile_desc": "Samsung, Dishwasher, Linear Wash, DW80R9950US, Built-in Mounting",
+      "short_desc": "Samsung\u00ae Linear Wash DW80R9950US Dishwasher, Built-in Mounting, Stainless Steel",
+      "long_desc1": "Samsung\u00ae Dishwasher, Linear Wash, 120 V, 15 A, Built-in Mounting, 39 dBA Sound Level, Stainless Steel, Stainless Steel",
+      "retail_desc": "Linear Wash Dishwasher, Built-in Mounting, Stainless Steel, Stainless Steel",
+      "consistency_passed": true,
+      "consistency_errors": []
+    },
+    "confidence_score": {
+      "mfg_part_num": "DW80R9950US",
+      "overall_score": 0.925,
+      "field_scores": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "Samsung Electronics"
+        },
+        "Series": {
+          "field_name": "Series",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "Linear Wash"
+        },
+        "Model": {
+          "field_name": "Model",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "120"
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "15"
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "Built-in"
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "39"
+        },
+        "Material": {
+          "field_name": "Material",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "Stainless Steel"
+        },
+        "Color": {
+          "field_name": "Color",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "Stainless Steel"
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        }
+      },
+      "critical_missing_count": 0,
+      "critical_missing_fields": []
+    },
+    "provenance": {
+      "mfg_part_num": "DW80R9950US",
+      "field_provenance": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "value": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US",
+          "source_type": "Manufacturer web retrieval",
+          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "value": "Samsung Electronics",
+          "source_type": "Part_Manuf parsing",
+          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+        },
+        "Series": {
+          "field_name": "Series",
+          "value": "Linear Wash",
+          "source_type": "LLM inference",
+          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+        },
+        "Model": {
+          "field_name": "Model",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "value": "120",
+          "source_type": "LLM inference",
+          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "value": "15",
+          "source_type": "LLM inference",
+          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "value": "Built-in",
+          "source_type": "LLM inference",
+          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "value": "39",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Material": {
+          "field_name": "Material",
+          "value": "Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Color": {
+          "field_name": "Color",
+          "value": "Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        }
+      }
+    }
+  },
+  {
+    "identity": {
+      "row_index": 2,
+      "mfg_part_num": "GDT695SSJSS",
+      "part_desc": "GDT695SSJSS GE 24 Inch Built In Dishwasher 48 dBA 120V 15A Stainless Steel",
+      "brand_e1": "GE Appliances",
+      "brand_unilog": "GE Appliances",
+      "brand_dib": "GE",
+      "part_manuf": "Fastenal Company",
+      "placeholder_flags": {
+        "brand_e1": false,
+        "brand_unilog": false,
+        "brand_dib": false,
+        "part_manuf": false,
+        "_distributor_name": "Fastenal Company",
+        "_distributor_code": null,
+        "_distributor_cluster": "Fastenal Company"
+      },
+      "coarse_category": "Appliances > Large Appliances > Dishwashers",
+      "is_dishwasher": true
+    },
+    "extraction": {
+      "row_index": 2,
+      "mfg_part_num": "GDT695SSJSS",
+      "part_desc": "GDT695SSJSS GE 24 Inch Built In Dishwasher 48 dBA 120V 15A Stainless Steel",
+      "real_manufacturer": "GE Appliances",
+      "real_brand": "GE Appliances",
+      "attributes": {
+        "Series": {
+          "label": "Series",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Model": {
+          "label": "Model",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Number of Wash Cycles": {
+          "label": "Number of Wash Cycles",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Voltage Rating": {
+          "label": "Voltage Rating",
+          "value": "120",
+          "uom": "V",
+          "confidence_source": "inferred"
+        },
+        "Amperage Rating": {
+          "label": "Amperage Rating",
+          "value": "15",
+          "uom": "A",
+          "confidence_source": "inferred"
+        },
+        "Mounting Type": {
+          "label": "Mounting Type",
+          "value": "Built-in",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Plug Type": {
+          "label": "Plug Type",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Size": {
+          "label": "Size",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Depth With Door Open": {
+          "label": "Depth With Door Open",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Minimum Height": {
+          "label": "Minimum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Maximum Height": {
+          "label": "Maximum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Sound Level": {
+          "label": "Sound Level",
+          "value": "48",
+          "uom": "dBA",
+          "confidence_source": "source-verified"
+        },
+        "Material": {
+          "label": "Material",
+          "value": "Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Color": {
+          "label": "Color",
+          "value": "Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Additional Information": {
+          "label": "Additional Information",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        }
+      }
+    },
+    "manufacturer_info": {
+      "mfg_part_num": "GDT695SSJSS",
+      "real_manufacturer": "GE Appliances",
+      "real_brand": "GE Appliances",
+      "mfr_url": null,
+      "ref_urls": [],
+      "verification_status": "not-found",
+      "needs_manual_review": true,
+      "http_status_code": 403,
+      "attribute_conflicts": []
+    },
+    "descriptions": {
+      "mfg_part_num": "GDT695SSJSS",
+      "invoice_desc": "DISHWASHER BLTLN SST SST 120V 15A 48DBA",
+      "mobile_desc": "GE Appliances, Dishwasher, Dishwasher, GDT695SSJSS, Built-in Mounting",
+      "short_desc": "GE Appliances\u00ae GDT695SSJSS Dishwasher, Built-in Mounting, Stainless Steel",
+      "long_desc1": "GE Appliances\u00ae Dishwasher, 120 V, 15 A, Built-in Mounting, 48 dBA Sound Level, Stainless Steel, Stainless Steel",
+      "retail_desc": "Dishwasher, Built-in Mounting, Stainless Steel, Stainless Steel",
+      "consistency_passed": true,
+      "consistency_errors": []
+    },
+    "confidence_score": {
+      "mfg_part_num": "GDT695SSJSS",
+      "overall_score": 0.694,
+      "field_scores": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": true,
+          "value": null
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "GE Appliances"
+        },
+        "Series": {
+          "field_name": "Series",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": true,
+          "value": null
+        },
+        "Model": {
+          "field_name": "Model",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "120"
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "15"
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "Built-in"
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "48"
+        },
+        "Material": {
+          "field_name": "Material",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "Stainless Steel"
+        },
+        "Color": {
+          "field_name": "Color",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "Stainless Steel"
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        }
+      },
+      "critical_missing_count": 2,
+      "critical_missing_fields": [
+        "Manufacturer URL",
+        "Series"
+      ]
+    },
+    "provenance": {
+      "mfg_part_num": "GDT695SSJSS",
+      "field_provenance": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "value": "GE Appliances",
+          "source_type": "Part_Manuf parsing",
+          "source_url": null
+        },
+        "Series": {
+          "field_name": "Series",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Model": {
+          "field_name": "Model",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "value": "120",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "value": "15",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "value": "Built-in",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "value": "48",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Material": {
+          "field_name": "Material",
+          "value": "Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Color": {
+          "field_name": "Color",
+          "value": "Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        }
+      }
+    }
+  },
+  {
+    "identity": {
+      "row_index": 3,
+      "mfg_part_num": "G7316SCU",
+      "part_desc": "G7316SCU Miele 24 Inch Built In Dishwasher AutoDos 42 dBA 120V 15A Clean Touch Steel",
+      "brand_e1": "Miele",
+      "brand_unilog": "Miele",
+      "brand_dib": "Miele",
+      "part_manuf": "Grainger Industrial Supply",
+      "placeholder_flags": {
+        "brand_e1": false,
+        "brand_unilog": false,
+        "brand_dib": false,
+        "part_manuf": false,
+        "_distributor_name": "Grainger Industrial Supply",
+        "_distributor_code": null,
+        "_distributor_cluster": "Grainger Industrial Supply"
+      },
+      "coarse_category": "Appliances > Large Appliances > Dishwashers",
+      "is_dishwasher": true
+    },
+    "extraction": {
+      "row_index": 3,
+      "mfg_part_num": "G7316SCU",
+      "part_desc": "G7316SCU Miele 24 Inch Built In Dishwasher AutoDos 42 dBA 120V 15A Clean Touch Steel",
+      "real_manufacturer": "Miele Inc.",
+      "real_brand": "Miele",
+      "attributes": {
+        "Series": {
+          "label": "Series",
+          "value": "Autodos",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Model": {
+          "label": "Model",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Number of Wash Cycles": {
+          "label": "Number of Wash Cycles",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Voltage Rating": {
+          "label": "Voltage Rating",
+          "value": "120",
+          "uom": "V",
+          "confidence_source": "inferred"
+        },
+        "Amperage Rating": {
+          "label": "Amperage Rating",
+          "value": "15",
+          "uom": "A",
+          "confidence_source": "inferred"
+        },
+        "Mounting Type": {
+          "label": "Mounting Type",
+          "value": "Built-in",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Plug Type": {
+          "label": "Plug Type",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Size": {
+          "label": "Size",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Depth With Door Open": {
+          "label": "Depth With Door Open",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Minimum Height": {
+          "label": "Minimum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Maximum Height": {
+          "label": "Maximum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Sound Level": {
+          "label": "Sound Level",
+          "value": "42",
+          "uom": "dBA",
+          "confidence_source": "source-verified"
+        },
+        "Material": {
+          "label": "Material",
+          "value": "Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Color": {
+          "label": "Color",
+          "value": "Clean Touch Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Additional Information": {
+          "label": "Additional Information",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        }
+      }
+    },
+    "manufacturer_info": {
+      "mfg_part_num": "G7316SCU",
+      "real_manufacturer": "Miele Inc.",
+      "real_brand": "Miele",
+      "mfr_url": null,
+      "ref_urls": [],
+      "verification_status": "not-found",
+      "needs_manual_review": true,
+      "http_status_code": 403,
+      "attribute_conflicts": []
+    },
+    "descriptions": {
+      "mfg_part_num": "G7316SCU",
+      "invoice_desc": "DISHWASHER BLTLN SST 120V 15A 42DBA",
+      "mobile_desc": "Miele, Dishwasher, Autodos, G7316SCU, Built-in Mounting",
+      "short_desc": "Miele\u00ae Autodos G7316SCU Dishwasher, Built-in Mounting, Stainless Steel, Clean Touch Steel",
+      "long_desc1": "Miele\u00ae Dishwasher, Autodos, 120 V, 15 A, Built-in Mounting, 42 dBA Sound Level, Stainless Steel, Clean Touch Steel",
+      "retail_desc": "Autodos Dishwasher, Built-in Mounting, Stainless Steel, Clean Touch Steel",
+      "consistency_passed": true,
+      "consistency_errors": []
+    },
+    "confidence_score": {
+      "mfg_part_num": "G7316SCU",
+      "overall_score": 0.8,
+      "field_scores": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": true,
+          "value": null
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "Miele Inc."
+        },
+        "Series": {
+          "field_name": "Series",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "Autodos"
+        },
+        "Model": {
+          "field_name": "Model",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "120"
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "15"
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "Built-in"
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "42"
+        },
+        "Material": {
+          "field_name": "Material",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "Stainless Steel"
+        },
+        "Color": {
+          "field_name": "Color",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "Clean Touch Steel"
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        }
+      },
+      "critical_missing_count": 1,
+      "critical_missing_fields": [
+        "Manufacturer URL"
+      ]
+    },
+    "provenance": {
+      "mfg_part_num": "G7316SCU",
+      "field_provenance": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "value": "Miele Inc.",
+          "source_type": "Part_Manuf parsing",
+          "source_url": null
+        },
+        "Series": {
+          "field_name": "Series",
+          "value": "Autodos",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Model": {
+          "field_name": "Model",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "value": "120",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "value": "15",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "value": "Built-in",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "value": "42",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Material": {
+          "field_name": "Material",
+          "value": "Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Color": {
+          "field_name": "Color",
+          "value": "Clean Touch Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        }
+      }
+    }
+  },
+  {
+    "identity": {
+      "row_index": 4,
+      "mfg_part_num": "LDFN4542D",
+      "part_desc": "LDFN4542D LG Front Control Dishwasher QuadWash 50 dBA 120V 15A Black Stainless Steel",
+      "brand_e1": "LG",
+      "brand_unilog": "LG",
+      "brand_dib": "LG",
+      "part_manuf": "MSC Industrial Supply",
+      "placeholder_flags": {
+        "brand_e1": false,
+        "brand_unilog": false,
+        "brand_dib": false,
+        "part_manuf": false,
+        "_distributor_name": "MSC Industrial Supply",
+        "_distributor_code": null,
+        "_distributor_cluster": "Jam Industrial Supply LLC"
+      },
+      "coarse_category": "Appliances > Large Appliances > Dishwashers",
+      "is_dishwasher": true
+    },
+    "extraction": {
+      "row_index": 4,
+      "mfg_part_num": "LDFN4542D",
+      "part_desc": "LDFN4542D LG Front Control Dishwasher QuadWash 50 dBA 120V 15A Black Stainless Steel",
+      "real_manufacturer": "LG Electronics",
+      "real_brand": "LG",
+      "attributes": {
+        "Series": {
+          "label": "Series",
+          "value": "Quadwash",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Model": {
+          "label": "Model",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Number of Wash Cycles": {
+          "label": "Number of Wash Cycles",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Voltage Rating": {
+          "label": "Voltage Rating",
+          "value": "120",
+          "uom": "V",
+          "confidence_source": "inferred"
+        },
+        "Amperage Rating": {
+          "label": "Amperage Rating",
+          "value": "15",
+          "uom": "A",
+          "confidence_source": "inferred"
+        },
+        "Mounting Type": {
+          "label": "Mounting Type",
+          "value": "Built-in",
+          "uom": null,
+          "confidence_source": "inferred"
+        },
+        "Plug Type": {
+          "label": "Plug Type",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Size": {
+          "label": "Size",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Depth With Door Open": {
+          "label": "Depth With Door Open",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Minimum Height": {
+          "label": "Minimum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Maximum Height": {
+          "label": "Maximum Height",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        },
+        "Sound Level": {
+          "label": "Sound Level",
+          "value": "50",
+          "uom": "dBA",
+          "confidence_source": "source-verified"
+        },
+        "Material": {
+          "label": "Material",
+          "value": "Black Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Color": {
+          "label": "Color",
+          "value": "Black Stainless Steel",
+          "uom": null,
+          "confidence_source": "source-verified"
+        },
+        "Additional Information": {
+          "label": "Additional Information",
+          "value": null,
+          "uom": null,
+          "confidence_source": "not-found"
+        }
+      }
+    },
+    "manufacturer_info": {
+      "mfg_part_num": "LDFN4542D",
+      "real_manufacturer": "LG Electronics",
+      "real_brand": "LG",
+      "mfr_url": null,
+      "ref_urls": [],
+      "verification_status": "not-found",
+      "needs_manual_review": true,
+      "http_status_code": 403,
+      "attribute_conflicts": []
+    },
+    "descriptions": {
+      "mfg_part_num": "LDFN4542D",
+      "invoice_desc": "DISHWASHER BLTLN SST SST 120V 15A 50DBA",
+      "mobile_desc": "LG, Dishwasher, Quadwash, LDFN4542D, Built-in Mounting",
+      "short_desc": "LG\u00ae Quadwash LDFN4542D Dishwasher, Built-in Mounting, Black Stainless Steel",
+      "long_desc1": "LG\u00ae Dishwasher, Quadwash, 120 V, 15 A, Built-in Mounting, 50 dBA Sound Level, Black Stainless Steel, Black Stainless Steel",
+      "retail_desc": "Quadwash Dishwasher, Built-in Mounting, Black Stainless Steel, Black Stainless Steel",
+      "consistency_passed": true,
+      "consistency_errors": []
+    },
+    "confidence_score": {
+      "mfg_part_num": "LDFN4542D",
+      "overall_score": 0.8,
+      "field_scores": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": true,
+          "value": null
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "LG Electronics"
+        },
+        "Series": {
+          "field_name": "Series",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "Quadwash"
+        },
+        "Model": {
+          "field_name": "Model",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "120"
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "15"
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "confidence_type": "inferred",
+          "score": 0.85,
+          "is_critical": true,
+          "value": "Built-in"
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "50"
+        },
+        "Material": {
+          "field_name": "Material",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": true,
+          "value": "Black Stainless Steel"
+        },
+        "Color": {
+          "field_name": "Color",
+          "confidence_type": "source-verified",
+          "score": 1.0,
+          "is_critical": false,
+          "value": "Black Stainless Steel"
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "confidence_type": "not-found",
+          "score": 0.0,
+          "is_critical": false,
+          "value": null
+        }
+      },
+      "critical_missing_count": 1,
+      "critical_missing_fields": [
+        "Manufacturer URL"
+      ]
+    },
+    "provenance": {
+      "mfg_part_num": "LDFN4542D",
+      "field_provenance": {
+        "Manufacturer URL": {
+          "field_name": "Manufacturer URL",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Manufacturer Name": {
+          "field_name": "Manufacturer Name",
+          "value": "LG Electronics",
+          "source_type": "Part_Manuf parsing",
+          "source_url": null
+        },
+        "Series": {
+          "field_name": "Series",
+          "value": "Quadwash",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Model": {
+          "field_name": "Model",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Number of Wash Cycles": {
+          "field_name": "Number of Wash Cycles",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Voltage Rating": {
+          "field_name": "Voltage Rating",
+          "value": "120",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Amperage Rating": {
+          "field_name": "Amperage Rating",
+          "value": "15",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Mounting Type": {
+          "field_name": "Mounting Type",
+          "value": "Built-in",
+          "source_type": "LLM inference",
+          "source_url": null
+        },
+        "Plug Type": {
+          "field_name": "Plug Type",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Size": {
+          "field_name": "Size",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Depth With Door Open": {
+          "field_name": "Depth With Door Open",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Minimum Height": {
+          "field_name": "Minimum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Maximum Height": {
+          "field_name": "Maximum Height",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        },
+        "Sound Level": {
+          "field_name": "Sound Level",
+          "value": "50",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Material": {
+          "field_name": "Material",
+          "value": "Black Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Color": {
+          "field_name": "Color",
+          "value": "Black Stainless Steel",
+          "source_type": "Part_Desc text",
+          "source_url": null
+        },
+        "Additional Information": {
+          "field_name": "Additional Information",
+          "value": null,
+          "source_type": "Not found",
+          "source_url": null
+        }
+      }
+    }
+  }
+]

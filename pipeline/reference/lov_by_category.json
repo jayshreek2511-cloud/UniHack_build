@@ -1,0 +1,36 @@
+{
+  "Appliances > Large Appliances > Dishwashers": {
+    "Series": [
+      "500 Series",
+      "Autodos",
+      "Linear Wash",
+      "Quadwash"
+    ],
+    "Voltage Rating": [
+      "120"
+    ],
+    "Amperage Rating": [
+      "12",
+      "15"
+    ],
+    "Mounting Type": [
+      "Built-in"
+    ],
+    "Sound Level": [
+      "39",
+      "42",
+      "44",
+      "48",
+      "50"
+    ],
+    "Material": [
+      "Black Stainless Steel",
+      "Stainless Steel"
+    ],
+    "Color": [
+      "Black Stainless Steel",
+      "Clean Touch Steel",
+      "Stainless Steel"
+    ]
+  }
+}

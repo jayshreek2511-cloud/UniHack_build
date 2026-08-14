@@ -1,0 +1,40 @@
+{
+  "units": {
+    "in": {
+      "canonical": "in",
+      "display": "in",
+      "category": "Length / Dimension",
+      "synonyms": ["in.", "inch", "inches", "\""]
+    },
+    "V": {
+      "canonical": "V",
+      "display": "V",
+      "category": "Electrical Potential",
+      "synonyms": ["v", "volt", "volts", "v.a.c.", "vac"]
+    },
+    "A": {
+      "canonical": "A",
+      "display": "A",
+      "category": "Electric Current",
+      "synonyms": ["a", "amp", "amps", "amperes"]
+    },
+    "dBA": {
+      "canonical": "dBA",
+      "display": "dBA",
+      "category": "Sound Level",
+      "synonyms": ["dba", "db(a)", "decibels"]
+    },
+    "kW-hr": {
+      "canonical": "kW-hr",
+      "display": "kW-hr",
+      "category": "Energy Consumption",
+      "synonyms": ["kwh", "kw-hr", "kwhr", "kwh/yr", "kw-hr annual energy"]
+    },
+    "hr": {
+      "canonical": "hr",
+      "display": "hr",
+      "category": "Time Duration",
+      "synonyms": ["hrs", "hour", "hours", "h"]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+row_index,mfg_part_num,part_desc,brand_e1,brand_unilog,brand_dib,part_manuf,placeholder_flags,coarse_category,is_dishwasher
+60,KDFM404KPS,KDFM404KPS Dishwasher SS,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+61,PDSH4816AF,PDSH4816AF Dishwasher SS - Display Only,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+62,PDT715SYVFS,PDT715SYVFS Ge Dishwasher SS,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+63,LDPH5554D,LDPH5554D LG Dishwasher BSS,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+64,WDTS7024RZ,WDTS7024RZ Dishwasher SS - Display Only,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+65,PDD415PYYFS,PDD415PYYFS GE Dishwasher SS,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+66,KDTS424SBE,KDTS424SBE Kitchen Aid Dishwasher Bk,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+67,KDTS324SPS,KDTS324SPS Kitchen Aid Dishwasher SS,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+68,KDPS624SJP,KDPS624SJP Dishwasher Juniper - Display Only,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True
+69,KDTS624SBE,KDTS624SBE Dishwasher BO Display Only,,,,Appliance Dealers Cooperative (APPDE),"{'brand_e1': True, 'brand_unilog': True, 'brand_dib': True, 'part_manuf': False}",Appliances > Large Appliances > Dishwashers,True

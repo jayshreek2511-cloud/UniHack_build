@@ -1,0 +1,5 @@
+Mfg_Part_Num,Row_Index,Overall_Score,Status,Flagged_Fields,Flag_Reasons,MFR_URL,Consistency_Passed
+SHPM65Z55N,0,0.800,needs_review,Manufacturer URL,Unverified Manufacturer URL (HTTP status: 404); Missing critical fields: Manufacturer URL,None,True
+GDT695SSJSS,2,0.694,needs_review,Manufacturer URL; Series,"Overall confidence score (0.69) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL, Series",None,True
+G7316SCU,3,0.800,needs_review,Manufacturer URL,Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True
+LDFN4542D,4,0.800,needs_review,Manufacturer URL,Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True

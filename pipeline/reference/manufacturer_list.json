@@ -1,0 +1,50 @@
+{
+  "_NOTE": "This file lists DISTRIBUTORS/RESELLERS parsed from Part_Manuf. These are NOT the actual product manufacturers. Real manufacturer and brand are derived from product descriptions in Stage 04.",
+  "clusters": {
+    "Appliance Dealers Cooperative": {
+      "variants": [
+        "Appliance Dealers Cooperative"
+      ],
+      "codes": [
+        "APPDE"
+      ]
+    },
+    "Carlon Industries": {
+      "variants": [
+        "Carlon Industries"
+      ],
+      "codes": []
+    },
+    "Fastenal Company": {
+      "variants": [
+        "Fastenal Company"
+      ],
+      "codes": []
+    },
+    "Grainger Industrial Supply": {
+      "variants": [
+        "Grainger Industrial Supply"
+      ],
+      "codes": []
+    },
+    "Jam Industrial Supply LLC": {
+      "variants": [
+        "Jam Industrial Supply LLC",
+        "MSC Industrial Supply"
+      ],
+      "codes": [
+        "JAMIN"
+      ]
+    },
+    "Schneider Electric": {
+      "variants": [
+        "Schneider Electric"
+      ],
+      "codes": []
+    }
+  },
+  "code_lookup": {
+    "APPDE": "Appliance Dealers Cooperative",
+    "JAMIN": "Jam Industrial Supply LLC"
+  }
+}
