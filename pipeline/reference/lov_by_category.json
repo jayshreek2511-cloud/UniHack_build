@@ -1,17 +1,26 @@
 {
   "Appliances > Large Appliances > Dishwashers": {
-    "Series": [
-      "500 Series",
-      "QuadWash Series"
-    ],
     "Voltage Rating": [
       "120"
     ],
     "Amperage Rating": [
+      "12",
       "15"
     ],
     "Mounting Type": [
       "Built-in"
+    ],
+    "Sound Level": [
+      "39",
+      "40",
+      "42",
+      "44",
+      "45",
+      "46",
+      "47",
+      "51",
+      "54",
+      "55"
     ],
     "Material": [
       "Black Stainless Steel",
@@ -20,6 +29,14 @@
     "Color": [
       "Black Stainless Steel",
       "Stainless Steel"
+    ],
+    "Series": [
+      "300 Series",
+      "Eco Series",
+      "PrintShield Series",
+      "Professional Series",
+      "Profile Series",
+      "Quadwash"
     ]
   }
 }

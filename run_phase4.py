@@ -115,9 +115,10 @@ def main():
     print("PHASE 4 REVIEW QUEUE & CONFIDENCE METRICS")
     print("=" * 95)
 
-    print(f"Total Dishwasher Records Processed: {batch_result.total_processed}")
-    print(f"Marked COMPLETE (Pass Threshold)  : {batch_result.complete_count} / {batch_result.total_processed} ({(batch_result.complete_count/batch_result.total_processed)*100:.1f}%)")
-    print(f"Routed to HUMAN REVIEW QUEUE      : {batch_result.review_count} / {batch_result.total_processed} ({(batch_result.review_count/batch_result.total_processed)*100:.1f}%)")
+    comp_pct = (batch_result.complete_count / batch_result.total_processed * 100) if batch_result.total_processed > 0 else 0.0
+    rev_pct = (batch_result.review_count / batch_result.total_processed * 100) if batch_result.total_processed > 0 else 0.0
+    print(f"Marked COMPLETE (Pass Threshold)  : {batch_result.complete_count} / {batch_result.total_processed} ({comp_pct:.1f}%)")
+    print(f"Routed to HUMAN REVIEW QUEUE      : {batch_result.review_count} / {batch_result.total_processed} ({rev_pct:.1f}%)")
 
     print("\n" + "-" * 95)
     print("COMPLETE RECORDS (PASS ALL CRITERIA & THRESHOLDS)")

@@ -74,9 +74,15 @@ def build_record_provenance(
         if attr.confidence_source == "source-verified":
             source_type = "Part_Desc text"
             url = None
-        elif attr.confidence_source == "inferred":
+        elif attr.confidence_source == "llm-inferred":
             source_type = "LLM inference"
             url = mfr_url
+        elif attr.confidence_source == "rule-based":
+            source_type = "Rule-based pattern logic"
+            url = None
+        elif attr.confidence_source == "inferred":
+            source_type = "Rule-based pattern logic"
+            url = None
         else:
             source_type = "Not found"
             url = None

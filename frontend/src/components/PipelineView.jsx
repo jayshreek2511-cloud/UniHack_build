@@ -135,7 +135,7 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
         <div className="card border-l-4 border-l-emerald-500">
           <span className="text-xs font-semibold text-slate-400 uppercase">Passed & Complete</span>
           <div className="text-3xl font-bold text-emerald-400 mt-1">{stats.complete_count} / {stats.dishwasher_classified}</div>
-          <span className="text-xs text-emerald-400 mt-1 block">{((stats.complete_count / stats.dishwasher_classified) * 100).toFixed(0)}% Pass Threshold</span>
+          <span className="text-xs text-emerald-400 mt-1 block">{(stats.dishwasher_classified > 0 ? ((stats.complete_count / stats.dishwasher_classified) * 100).toFixed(0) : 0)}% Pass Threshold</span>
         </div>
 
         <div className="card border-l-4 border-l-rose-500">

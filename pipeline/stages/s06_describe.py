@@ -94,14 +94,12 @@ def generate_descriptions(
         invoice_desc = invoice_desc[:40].strip()
 
     # 2. MOBILE_DESC (60-80 chars)
-    # Pattern A: "{MANUFACTURER_NAME} {BRAND_NAME}, Dishwasher, {Series}, {Mfg_Part_Num}"
-    # Pattern B: "{BRAND_NAME}, Dishwasher, {Series}, {Mfg_Part_Num}, {Mounting Type} Mounting"
+    series_part = f", {series}" if series else ""
+    mount_part = f", {mounting} Mounting" if mounting else ""
     if mfr_name and "Rheem" in mfr_name:
-        mobile_desc = f"{mfr_name} {brand_name}, Dishwasher, {series or 'Dishwasher'}, {part_num}"
-    elif mounting:
-        mobile_desc = f"{brand_name}, Dishwasher, {series or 'Dishwasher'}, {part_num}, {mounting} Mounting"
+        mobile_desc = f"{mfr_name} {brand_name}, Dishwasher{series_part}, {part_num}{mount_part}"
     else:
-        mobile_desc = f"{brand_name}, Dishwasher, {series or 'Dishwasher'}, {part_num}"
+        mobile_desc = f"{brand_name}, Dishwasher{series_part}, {part_num}{mount_part}"
 
     # 3. SHORT_DESC
     # Formula: "{BRAND} {Series} {Mfg_Part_Num} Dishwasher, {Mounting} Mounting, {Material}"

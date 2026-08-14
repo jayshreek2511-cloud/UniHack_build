@@ -25,7 +25,7 @@ BRAND_CORP_MAP = [
     (r"\bMAYTAG\b", "Maytag", "Whirlpool Corporation"),
     (r"\bJENNAIR\b|\bJENN-AIR\b", "JennAir", "Whirlpool Corporation"),
     (r"\bAMANA\b", "Amana", "Whirlpool Corporation"),
-    (r"\bFISHER\s*&\s*PAYKEL\b", "Fisher & Paykel", "Fisher & Paykel Appliances"),
+    (r"\bFISHER\s*(?:&|AND)?\s*PAYKEL\b|\bDD24\b|\bDISHDRAWER\b", "Fisher & Paykel", "Fisher & Paykel Appliances"),
     (r"\bTHERMADOR\b", "Thermador", "BSH Home Appliances"),
     (r"\bGAGGENAU\b", "Gaggenau", "BSH Home Appliances"),
     (r"\bVIKING\b", "Viking", "Middleby Corporation"),

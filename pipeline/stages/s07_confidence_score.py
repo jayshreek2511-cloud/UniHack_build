@@ -20,6 +20,8 @@ logger = logging.getLogger(__name__)
 # Weight mapping by confidence tag
 CONFIDENCE_WEIGHTS = {
     "source-verified": 1.0,
+    "llm-inferred": 0.85,
+    "rule-based": 0.85,
     "inferred": 0.85,
     "not-found": 0.0,
 }

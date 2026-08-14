@@ -1,13 +1,14 @@
 """
-Stage 02 — Coarse Category Classification
+Stage 02 — Coarse Category Classification & Uncategorized Safety Net Audit
 
 Input:  List[ProductRecord] from Stage 01.
-Output: The same list (mutated in-place) with `coarse_category` and `is_dishwasher`
-        populated, plus a ClassificationReport summary.
+Output: Mutated ProductRecord list with `coarse_category` and `is_dishwasher` populated,
+        plus ClassificationReport with uncategorized safety net audit.
 
-Strategy (Phase 1 — deterministic, no LLM):
-  Pattern-match on Part_Desc using keyword lists per category.
-  First match wins (order matters — put the most specific patterns first).
+Strategy:
+  1. Pattern-match on Part_Desc using comprehensive category regexes.
+  2. Expands dishwasher category terms to include brand equivalents (e.g. DishDrawer, AutoDos, QuadWash, Linear Wash, PrintShield, undercounter).
+  3. Safety Net: Every item remaining "Uncategorized" is explicitly logged and captured for human audit.
 """
 
 from __future__ import annotations
@@ -23,11 +24,6 @@ from pipeline.models import ProductRecord
 logger = logging.getLogger(__name__)
 
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Category rules: list of (category_name, compiled_regex)
-# More specific patterns FIRST so they take priority.
-# ──────────────────────────────────────────────────────────────────────────────
-
 _CATEGORY_RULES: List[Tuple[str, re.Pattern]] = []
 
 
@@ -35,15 +31,22 @@ def _add_rule(category: str, pattern: str):
     _CATEGORY_RULES.append((category, re.compile(pattern, re.IGNORECASE)))
 
 
-# ── Appliances — Dishwashers (MVP focus) ──────────────────────────────────
+# ── Appliances — Dishwashers (EXPANDED TO CATCH BRAND EQUIVALENTS) ──────────
 _add_rule(
     "Appliances > Large Appliances > Dishwashers",
     r"\b(dishwasher|dish\s*washer|dish\s*wash)\b"
+    r"|\b(dishdrawer|dish\s*drawer|dish\s*drawers)\b"
+    r"|\b(autodos|auto\s*dos)\b"
+    r"|\b(quadwash|quad\s*wash)\b"
+    r"|\b(linear\s*wash)\b"
+    r"|\b(printshield)\b"
+    r"|\b(undercounter\s*dish|under\s*counter\s*dish)\b"
     r"|(\bbuilt[\-\s]?in\b.*\bdish\b)"
     r"|(\btall\s*tub\b.*\bwash\b)"
     r"|(\brinse\s*aid\b)"
     r"|(\bdish\s*rack\b)"
     r"|(\bdishwash)"
+    r"|\b(DD24|SHPM|SHPX|SHX|DW80|GDT6|PDT7|PDD4|G7316|LDFN|LDPH|PDSH|WDTS|KDTS|KDPS|KDFM)\w*\b"
 )
 
 # ── Appliances — Other ───────────────────────────────────────────────────
@@ -148,6 +151,7 @@ class ClassificationReport:
     category_counts: Dict[str, int] = field(default_factory=dict)
     dishwasher_count: int = 0
     dishwasher_indices: List[int] = field(default_factory=list)
+    uncategorized_records: List[Dict[str, Any]] = field(default_factory=list)
 
     def print_summary(self):
         print("\n" + "=" * 60)
@@ -162,19 +166,16 @@ class ClassificationReport:
             pct = count / self.total_records * 100 if self.total_records else 0
             print(f"  {cat:<48} {count:>5}  ({pct:5.1f}%)")
         print("-" * 58)
-        print(f"\nDishwasher/Appliance rows found: {self.dishwasher_count}")
+        print(f"Dishwasher/Appliance rows found: {self.dishwasher_count}")
+        print(f"Uncategorized rows (Safety Net Audit): {len(self.uncategorized_records)}")
         print("=" * 60 + "\n")
 
-
-# ──────────────────────────────────────────────────────────────────────────────
-# Main classify function
-# ──────────────────────────────────────────────────────────────────────────────
 
 def classify(records: List[ProductRecord]) -> ClassificationReport:
     """Classify every record by pattern-matching on Part_Desc.
 
     Mutates each record's `coarse_category` and `is_dishwasher` fields.
-    Returns a ClassificationReport with aggregate stats.
+    Returns a ClassificationReport with aggregate stats and uncategorized safety net log.
     """
     report = ClassificationReport(total_records=len(records))
     counts: Counter = Counter()
@@ -190,6 +191,17 @@ def classify(records: List[ProductRecord]) -> ClassificationReport:
 
         if not matched:
             rec.coarse_category = "Uncategorized"
+            uncat_item = {
+                "row_index": rec.row_index,
+                "mfg_part_num": rec.mfg_part_num,
+                "part_desc": rec.part_desc,
+                "part_manuf": rec.part_manuf,
+            }
+            report.uncategorized_records.append(uncat_item)
+            logger.warning(
+                "SAFETY NET AUDIT — UNCATEGORIZED ROW %d: SKU='%s' | Desc='%s' | Part_Manuf='%s'",
+                rec.row_index, rec.mfg_part_num, rec.part_desc, rec.part_manuf
+            )
 
         counts[rec.coarse_category] += 1
 
@@ -202,9 +214,10 @@ def classify(records: List[ProductRecord]) -> ClassificationReport:
     report.dishwasher_count = len(report.dishwasher_indices)
 
     logger.info(
-        "Classification complete: %d categories, %d dishwasher rows.",
+        "Classification complete: %d categories, %d dishwasher rows, %d uncategorized rows logged.",
         len(counts),
         report.dishwasher_count,
+        len(report.uncategorized_records)
     )
 
     return report

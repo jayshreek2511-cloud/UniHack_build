@@ -9,6 +9,12 @@
         "APPDE"
       ]
     },
+    "Fastenal Company": {
+      "variants": [
+        "Fastenal Company"
+      ],
+      "codes": []
+    },
     "Freud Inc": {
       "variants": [
         "Freud Inc"
@@ -17,9 +23,16 @@
         "2435"
       ]
     },
+    "Grainger Industrial Supply": {
+      "variants": [
+        "Grainger Industrial Supply"
+      ],
+      "codes": []
+    },
     "Jam Industrial Supply LLC": {
       "variants": [
-        "Jam Industrial Supply LLC"
+        "Jam Industrial Supply LLC",
+        "MSC Industrial Supply"
       ],
       "codes": [
         "JAMIN"

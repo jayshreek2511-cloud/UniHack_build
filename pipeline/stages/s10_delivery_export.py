@@ -138,11 +138,11 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
         if uom is not None and uom_col in row:
             row[uom_col] = uom
 
-    # Media & Documentation
-    brand_prefix = real_brand.split()[0].replace("®", "")
-    row["Product Image"] = f"{brand_prefix}_{sku}.jpg"
-    row["Specification Sheet"] = f"{brand_prefix}_{sku}_Specification_Sheet.pdf"
-    row["Actual Image (Yes/No)"] = "Yes"
+    # Media & Documentation — STRICT: Only populate if real verified asset exists
+    # Do NOT generate constructed placeholder strings (e.g. Brand_SKU.jpg) when no real file exists
+    row["Product Image"] = None
+    row["Specification Sheet"] = None
+    row["Actual Image (Yes/No)"] = "No"
 
     return row
 
@@ -170,7 +170,7 @@ def export_delivery_pipeline(
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # Export CSV
-    df_out.to_csv(output_csv_path, index=False)
+    df_out.to_csv(output_csv_path, index=False, encoding="utf-8-sig")
     logger.info("Exported delivery format CSV: %s (%d rows, %d cols)", output_csv_path, len(df_out), len(df_out.columns))
 
     # Export XLSX
