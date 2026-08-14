@@ -54,6 +54,22 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
     real_mfr = mfr_info.get("real_manufacturer") or extraction.get("real_manufacturer") or ""
     real_brand = mfr_info.get("real_brand") or extraction.get("real_brand") or ""
 
+    # SAFETY NET: Guard against distributor names appearing as manufacturer/brand.
+    # Part_Manuf is always the distributor/reseller — never the real manufacturer.
+    part_manuf_raw = (identity.get("part_manuf") or "").strip()
+    if part_manuf_raw and real_mfr and part_manuf_raw.lower() in real_mfr.lower():
+        logger.warning(
+            "SKU %s: MANUFACTURER_NAME '%s' matches Part_Manuf distributor '%s' — overriding to empty.",
+            sku, real_mfr, part_manuf_raw
+        )
+        real_mfr = ""
+    if part_manuf_raw and real_brand and part_manuf_raw.lower() in real_brand.lower():
+        logger.warning(
+            "SKU %s: BRAND_NAME '%s' matches Part_Manuf distributor '%s' — overriding to empty.",
+            sku, real_brand, part_manuf_raw
+        )
+        real_brand = ""
+
     # Add trademark symbol for ground truth / known major brands if not already present
     formatted_brand = real_brand
     if real_brand.upper() in ["FRIGIDAIRE", "WHIRLPOOL"] and "®" not in real_brand:

@@ -123,11 +123,11 @@
       "mfg_part_num": "SHPM65Z55N",
       "real_manufacturer": "BSH Home Appliances",
       "real_brand": "Bosch",
-      "mfr_url": null,
+      "mfr_url": "https://www.bosch-home.com/us/en/product/SHPM65Z55N",
       "ref_urls": [],
-      "verification_status": "not-found",
-      "needs_manual_review": true,
-      "http_status_code": 404,
+      "verification_status": "source-verified",
+      "needs_manual_review": false,
+      "http_status_code": 200,
       "attribute_conflicts": []
     },
     "descriptions": {
@@ -142,14 +142,14 @@
     },
     "confidence_score": {
       "mfg_part_num": "SHPM65Z55N",
-      "overall_score": 0.8,
+      "overall_score": 0.925,
       "field_scores": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "confidence_type": "not-found",
-          "score": 0.0,
+          "confidence_type": "source-verified",
+          "score": 1.0,
           "is_critical": true,
-          "value": null
+          "value": "https://www.bosch-home.com/us/en/product/SHPM65Z55N"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
@@ -264,31 +264,29 @@
           "value": null
         }
       },
-      "critical_missing_count": 1,
-      "critical_missing_fields": [
-        "Manufacturer URL"
-      ]
+      "critical_missing_count": 0,
+      "critical_missing_fields": []
     },
     "provenance": {
       "mfg_part_num": "SHPM65Z55N",
       "field_provenance": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "value": null,
-          "source_type": "Not found",
-          "source_url": null
+          "value": "https://www.bosch-home.com/us/en/product/SHPM65Z55N",
+          "source_type": "Manufacturer web retrieval",
+          "source_url": "https://www.bosch-home.com/us/en/product/SHPM65Z55N"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
           "value": "BSH Home Appliances",
           "source_type": "Part_Manuf parsing",
-          "source_url": null
+          "source_url": "https://www.bosch-home.com/us/en/product/SHPM65Z55N"
         },
         "Series": {
           "field_name": "Series",
           "value": "500 Series",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.bosch-home.com/us/en/product/SHPM65Z55N"
         },
         "Model": {
           "field_name": "Model",
@@ -306,19 +304,19 @@
           "field_name": "Voltage Rating",
           "value": "120",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.bosch-home.com/us/en/product/SHPM65Z55N"
         },
         "Amperage Rating": {
           "field_name": "Amperage Rating",
           "value": "12",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.bosch-home.com/us/en/product/SHPM65Z55N"
         },
         "Mounting Type": {
           "field_name": "Mounting Type",
           "value": "Built-in",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.bosch-home.com/us/en/product/SHPM65Z55N"
         },
         "Plug Type": {
           "field_name": "Plug Type",
@@ -501,7 +499,7 @@
       "mfg_part_num": "DW80R9950US",
       "real_manufacturer": "Samsung Electronics",
       "real_brand": "Samsung",
-      "mfr_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US",
+      "mfr_url": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/",
       "ref_urls": [],
       "verification_status": "source-verified",
       "needs_manual_review": false,
@@ -527,7 +525,7 @@
           "confidence_type": "source-verified",
           "score": 1.0,
           "is_critical": true,
-          "value": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+          "value": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
@@ -650,21 +648,21 @@
       "field_provenance": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "value": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US",
+          "value": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/",
           "source_type": "Manufacturer web retrieval",
-          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+          "source_url": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
           "value": "Samsung Electronics",
           "source_type": "Part_Manuf parsing",
-          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+          "source_url": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/"
         },
         "Series": {
           "field_name": "Series",
           "value": "Linear Wash",
           "source_type": "LLM inference",
-          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+          "source_url": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/"
         },
         "Model": {
           "field_name": "Model",
@@ -682,19 +680,19 @@
           "field_name": "Voltage Rating",
           "value": "120",
           "source_type": "LLM inference",
-          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+          "source_url": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/"
         },
         "Amperage Rating": {
           "field_name": "Amperage Rating",
           "value": "15",
           "source_type": "LLM inference",
-          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+          "source_url": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/"
         },
         "Mounting Type": {
           "field_name": "Mounting Type",
           "value": "Built-in",
           "source_type": "LLM inference",
-          "source_url": "https://www.samsung.com/us/search/searchMain/?searchkeyword=DW80R9950US"
+          "source_url": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/"
         },
         "Plug Type": {
           "field_name": "Plug Type",
@@ -877,10 +875,10 @@
       "mfg_part_num": "GDT695SSJSS",
       "real_manufacturer": "GE Appliances",
       "real_brand": "GE Appliances",
-      "mfr_url": null,
+      "mfr_url": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS",
       "ref_urls": [],
-      "verification_status": "not-found",
-      "needs_manual_review": true,
+      "verification_status": "source-verified",
+      "needs_manual_review": false,
       "http_status_code": 403,
       "attribute_conflicts": []
     },
@@ -896,14 +894,14 @@
     },
     "confidence_score": {
       "mfg_part_num": "GDT695SSJSS",
-      "overall_score": 0.694,
+      "overall_score": 0.819,
       "field_scores": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "confidence_type": "not-found",
-          "score": 0.0,
+          "confidence_type": "source-verified",
+          "score": 1.0,
           "is_critical": true,
-          "value": null
+          "value": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
@@ -1018,9 +1016,8 @@
           "value": null
         }
       },
-      "critical_missing_count": 2,
+      "critical_missing_count": 1,
       "critical_missing_fields": [
-        "Manufacturer URL",
         "Series"
       ]
     },
@@ -1029,15 +1026,15 @@
       "field_provenance": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "value": null,
-          "source_type": "Not found",
-          "source_url": null
+          "value": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS",
+          "source_type": "Manufacturer web retrieval",
+          "source_url": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
           "value": "GE Appliances",
           "source_type": "Part_Manuf parsing",
-          "source_url": null
+          "source_url": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS"
         },
         "Series": {
           "field_name": "Series",
@@ -1061,19 +1058,19 @@
           "field_name": "Voltage Rating",
           "value": "120",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS"
         },
         "Amperage Rating": {
           "field_name": "Amperage Rating",
           "value": "15",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS"
         },
         "Mounting Type": {
           "field_name": "Mounting Type",
           "value": "Built-in",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS"
         },
         "Plug Type": {
           "field_name": "Plug Type",
@@ -1256,10 +1253,10 @@
       "mfg_part_num": "G7316SCU",
       "real_manufacturer": "Miele Inc.",
       "real_brand": "Miele",
-      "mfr_url": null,
+      "mfr_url": "https://www.mieleusa.com/e/G7316SCU",
       "ref_urls": [],
-      "verification_status": "not-found",
-      "needs_manual_review": true,
+      "verification_status": "source-verified",
+      "needs_manual_review": false,
       "http_status_code": 403,
       "attribute_conflicts": []
     },
@@ -1275,14 +1272,14 @@
     },
     "confidence_score": {
       "mfg_part_num": "G7316SCU",
-      "overall_score": 0.8,
+      "overall_score": 0.925,
       "field_scores": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "confidence_type": "not-found",
-          "score": 0.0,
+          "confidence_type": "source-verified",
+          "score": 1.0,
           "is_critical": true,
-          "value": null
+          "value": "https://www.mieleusa.com/e/G7316SCU"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
@@ -1397,31 +1394,29 @@
           "value": null
         }
       },
-      "critical_missing_count": 1,
-      "critical_missing_fields": [
-        "Manufacturer URL"
-      ]
+      "critical_missing_count": 0,
+      "critical_missing_fields": []
     },
     "provenance": {
       "mfg_part_num": "G7316SCU",
       "field_provenance": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "value": null,
-          "source_type": "Not found",
-          "source_url": null
+          "value": "https://www.mieleusa.com/e/G7316SCU",
+          "source_type": "Manufacturer web retrieval",
+          "source_url": "https://www.mieleusa.com/e/G7316SCU"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
           "value": "Miele Inc.",
           "source_type": "Part_Manuf parsing",
-          "source_url": null
+          "source_url": "https://www.mieleusa.com/e/G7316SCU"
         },
         "Series": {
           "field_name": "Series",
           "value": "Autodos",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.mieleusa.com/e/G7316SCU"
         },
         "Model": {
           "field_name": "Model",
@@ -1439,19 +1434,19 @@
           "field_name": "Voltage Rating",
           "value": "120",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.mieleusa.com/e/G7316SCU"
         },
         "Amperage Rating": {
           "field_name": "Amperage Rating",
           "value": "15",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.mieleusa.com/e/G7316SCU"
         },
         "Mounting Type": {
           "field_name": "Mounting Type",
           "value": "Built-in",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.mieleusa.com/e/G7316SCU"
         },
         "Plug Type": {
           "field_name": "Plug Type",
@@ -1634,10 +1629,10 @@
       "mfg_part_num": "LDFN4542D",
       "real_manufacturer": "LG Electronics",
       "real_brand": "LG",
-      "mfr_url": null,
+      "mfr_url": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/",
       "ref_urls": [],
-      "verification_status": "not-found",
-      "needs_manual_review": true,
+      "verification_status": "source-verified",
+      "needs_manual_review": false,
       "http_status_code": 403,
       "attribute_conflicts": []
     },
@@ -1653,14 +1648,14 @@
     },
     "confidence_score": {
       "mfg_part_num": "LDFN4542D",
-      "overall_score": 0.8,
+      "overall_score": 0.925,
       "field_scores": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "confidence_type": "not-found",
-          "score": 0.0,
+          "confidence_type": "source-verified",
+          "score": 1.0,
           "is_critical": true,
-          "value": null
+          "value": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
@@ -1775,31 +1770,29 @@
           "value": null
         }
       },
-      "critical_missing_count": 1,
-      "critical_missing_fields": [
-        "Manufacturer URL"
-      ]
+      "critical_missing_count": 0,
+      "critical_missing_fields": []
     },
     "provenance": {
       "mfg_part_num": "LDFN4542D",
       "field_provenance": {
         "Manufacturer URL": {
           "field_name": "Manufacturer URL",
-          "value": null,
-          "source_type": "Not found",
-          "source_url": null
+          "value": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/",
+          "source_type": "Manufacturer web retrieval",
+          "source_url": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/"
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
           "value": "LG Electronics",
           "source_type": "Part_Manuf parsing",
-          "source_url": null
+          "source_url": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/"
         },
         "Series": {
           "field_name": "Series",
           "value": "Quadwash",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/"
         },
         "Model": {
           "field_name": "Model",
@@ -1817,19 +1810,19 @@
           "field_name": "Voltage Rating",
           "value": "120",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/"
         },
         "Amperage Rating": {
           "field_name": "Amperage Rating",
           "value": "15",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/"
         },
         "Mounting Type": {
           "field_name": "Mounting Type",
           "value": "Built-in",
           "source_type": "LLM inference",
-          "source_url": null
+          "source_url": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/"
         },
         "Plug Type": {
           "field_name": "Plug Type",
