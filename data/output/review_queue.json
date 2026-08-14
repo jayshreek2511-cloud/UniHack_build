@@ -1,66 +1,91 @@
 {
   "summary": {
     "total_processed": 5,
-    "complete_count": 4,
-    "review_count": 1,
+    "complete_count": 0,
+    "review_count": 5,
     "threshold": 0.75
   },
   "review_queue": [
     {
-      "mfg_part_num": "GDT695SSJSS",
-      "row_index": 2,
-      "overall_score": 0.819,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Missing critical fields: Series"
-      ],
-      "flagged_fields": [
-        "Series"
-      ],
-      "mfr_url": "https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS",
-      "consistency_passed": true
-    }
-  ],
-  "complete": [
-    {
       "mfg_part_num": "SHPM65Z55N",
       "row_index": 0,
-      "overall_score": 0.925,
-      "status": "complete",
-      "flag_reasons": [],
-      "flagged_fields": [],
+      "overall_score": 0.8,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Missing critical fields: Sound Level"
+      ],
+      "flagged_fields": [
+        "Sound Level"
+      ],
       "mfr_url": "https://www.bosch-home.com/us/en/product/SHPM65Z55N",
       "consistency_passed": true
     },
     {
       "mfg_part_num": "DW80R9950US",
       "row_index": 1,
-      "overall_score": 0.925,
-      "status": "complete",
-      "flag_reasons": [],
-      "flagged_fields": [],
-      "mfr_url": "https://www.samsung.com/us/home-appliances/dishwashers/all-dishwashers/DW80R9950US/",
+      "overall_score": 0.694,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.69) below threshold (0.75)",
+        "Missing critical fields: Series, Sound Level"
+      ],
+      "flagged_fields": [
+        "Series",
+        "Sound Level"
+      ],
+      "mfr_url": "https://www.samsung.com/us/support/model/DW80R9950US/AA/",
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "GDT695SSJSS",
+      "row_index": 2,
+      "overall_score": 0.569,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.57) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL, Series, Sound Level"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL",
+        "Series",
+        "Sound Level"
+      ],
+      "mfr_url": null,
       "consistency_passed": true
     },
     {
       "mfg_part_num": "G7316SCU",
       "row_index": 3,
-      "overall_score": 0.925,
-      "status": "complete",
-      "flag_reasons": [],
-      "flagged_fields": [],
-      "mfr_url": "https://www.mieleusa.com/e/G7316SCU",
+      "overall_score": 0.569,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.57) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL, Series, Sound Level"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL",
+        "Series",
+        "Sound Level"
+      ],
+      "mfr_url": null,
       "consistency_passed": true
     },
     {
       "mfg_part_num": "LDFN4542D",
       "row_index": 4,
-      "overall_score": 0.925,
-      "status": "complete",
-      "flag_reasons": [],
-      "flagged_fields": [],
-      "mfr_url": "https://www.lg.com/us/dishwashers/lg-ldfn4542d/",
+      "overall_score": 0.8,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Missing critical fields: Sound Level"
+      ],
+      "flagged_fields": [
+        "Sound Level"
+      ],
+      "mfr_url": "https://www.lg.com/us/support/product/lg-LDFN4542D",
       "consistency_passed": true
     }
-  ]
+  ],
+  "complete": []
 }

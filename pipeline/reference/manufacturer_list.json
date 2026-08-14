@@ -9,42 +9,26 @@
         "APPDE"
       ]
     },
-    "Carlon Industries": {
+    "Freud Inc": {
       "variants": [
-        "Carlon Industries"
+        "Freud Inc"
       ],
-      "codes": []
-    },
-    "Fastenal Company": {
-      "variants": [
-        "Fastenal Company"
-      ],
-      "codes": []
-    },
-    "Grainger Industrial Supply": {
-      "variants": [
-        "Grainger Industrial Supply"
-      ],
-      "codes": []
+      "codes": [
+        "2435"
+      ]
     },
     "Jam Industrial Supply LLC": {
       "variants": [
-        "Jam Industrial Supply LLC",
-        "MSC Industrial Supply"
+        "Jam Industrial Supply LLC"
       ],
       "codes": [
         "JAMIN"
       ]
-    },
-    "Schneider Electric": {
-      "variants": [
-        "Schneider Electric"
-      ],
-      "codes": []
     }
   },
   "code_lookup": {
     "APPDE": "Appliance Dealers Cooperative",
+    "2435": "Freud Inc",
     "JAMIN": "Jam Industrial Supply LLC"
   }
 }

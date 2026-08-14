@@ -30,7 +30,14 @@ app = FastAPI(
 # Enable CORS for frontend dev server
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:8000",
+        "http://127.0.0.1:8000",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -214,7 +221,7 @@ import sys
 
 
 @app.post("/api/pipeline/run")
-async def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
+def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
     """Run full end-to-end pipeline (ingest -> classify -> extract -> enrich -> score -> export) and generate delivery export files."""
     try:
         input_file_path = PROJECT_ROOT / "data" / "input" / "Unihack__Sample_Dataset_-_Input__1_.csv"
@@ -223,7 +230,7 @@ async def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
 
         if file is not None:
             upload_path = PROJECT_ROOT / "data" / "input" / "uploaded_input.csv"
-            contents = await file.read()
+            contents = file.file.read()
             with open(upload_path, "wb") as f:
                 f.write(contents)
             input_file_path = upload_path

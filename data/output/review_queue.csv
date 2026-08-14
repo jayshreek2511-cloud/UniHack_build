@@ -1,2 +1,6 @@
 Mfg_Part_Num,Row_Index,Overall_Score,Status,Flagged_Fields,Flag_Reasons,MFR_URL,Consistency_Passed
-GDT695SSJSS,2,0.819,needs_review,Series,Missing critical fields: Series,https://www.geappliances.com/appliance/GE-Dishwasher-GDT695SSJSS,True
+SHPM65Z55N,0,0.800,needs_review,Sound Level,Missing critical fields: Sound Level,https://www.bosch-home.com/us/en/product/SHPM65Z55N,True
+DW80R9950US,1,0.694,needs_review,Series; Sound Level,"Overall confidence score (0.69) below threshold (0.75); Missing critical fields: Series, Sound Level",https://www.samsung.com/us/support/model/DW80R9950US/AA/,True
+GDT695SSJSS,2,0.569,needs_review,Manufacturer URL; Series; Sound Level,"Overall confidence score (0.57) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL, Series, Sound Level",None,True
+G7316SCU,3,0.569,needs_review,Manufacturer URL; Series; Sound Level,"Overall confidence score (0.57) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL, Series, Sound Level",None,True
+LDFN4542D,4,0.800,needs_review,Sound Level,Missing critical fields: Sound Level,https://www.lg.com/us/support/product/lg-LDFN4542D,True
