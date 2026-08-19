@@ -381,7 +381,7 @@
       "status": "needs_review",
       "flag_reasons": [
         "Overall confidence score (0.33) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
       "flagged_fields": [
@@ -509,7 +509,7 @@
       "status": "needs_review",
       "flag_reasons": [
         "Overall confidence score (0.50) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
       "flagged_fields": [
@@ -525,7 +525,7 @@
       "status": "needs_review",
       "flag_reasons": [
         "Overall confidence score (0.50) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
       "flagged_fields": [

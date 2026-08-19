@@ -18,7 +18,7 @@ BRAND_CORP_MAP = [
     (r"\bMONOGRAM\b", "Monogram", "GE Appliances"),
     (r"\bCAFÉ\b|\bCAFE\b", "Café", "GE Appliances"),
     (r"\bMIELE\b|\bG7316\b", "Miele", "Miele Inc."),
-    (r"\bLG\b|\bLG ELECTRONICS\b|\bLDPH\b|\bLDFN\b", "LG", "LG Electronics"),
+    (r"\bLG ELECTRONICS\b|\bLG\b(?=\s+(?:[^\s]+\s+){0,6}(?:DISHWASHER|LAUNDRY|MICROWAVE|REFRIGERATOR|FRIDGE|RANGE|WASHER|DRYER|WINE|FREEZER|OVEN|STOVE|COOKTOP|MONITOR|APPLIANCE|TV|QUADWASH)\b)|\bLDPH\b|\bLDFN\b", "LG", "LG Electronics"),
     (r"\bFRIGIDAIRE\b|\bPDSH\b|\bPDS\b", "FRIGIDAIRE", "Rheem Manufacturing"),
     (r"\bKITCHENAID\b|\bKITCHEN\s+AID\b|\bKDTS\b|\bKDPS\b|\bKDFM\b|\bKDF\b", "KitchenAid", "Whirlpool Corporation"),
     (r"\bWHIRLPOOL\b|\bWDTS\b|\bWDT\b", "Whirlpool", "Whirlpool Corporation"),
@@ -54,7 +54,6 @@ def resolve_brand_and_manufacturer(
         brand_e1 or "",
         brand_unilog or "",
         brand_dib or "",
-        part_num or ""
     ]
     combined_text = " ".join(text_sources).upper()
 

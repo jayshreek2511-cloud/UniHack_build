@@ -2776,29 +2776,29 @@
       "row_index": 23,
       "mfg_part_num": "SF-3001",
       "part_desc": "NITRILE GLOVES PF LG 100CT",
-      "real_manufacturer": "LG Electronics",
-      "real_brand": "LG",
+      "real_manufacturer": null,
+      "real_brand": null,
       "coarse_category": "Uncategorized",
       "classification_method": "rule-based-fallback",
       "attributes": {}
     },
     "manufacturer_info": {
       "mfg_part_num": "SF-3001",
-      "real_manufacturer": "LG Electronics",
-      "real_brand": "LG",
+      "real_manufacturer": "UNRESOLVED \u2014 needs manual review",
+      "real_brand": "UNRESOLVED \u2014 needs manual review",
       "mfr_url": null,
       "ref_urls": [],
       "verification_status": "not-found",
       "needs_manual_review": true,
-      "http_status_code": 403,
+      "http_status_code": null,
       "attribute_conflicts": []
     },
     "descriptions": {
       "mfg_part_num": "SF-3001",
       "invoice_desc": "UNCATEGORIZED SF-3001",
-      "mobile_desc": "LG, Uncategorized, SF-3001",
-      "short_desc": "LG SF-3001 Uncategorized",
-      "long_desc1": "LG Uncategorized, SF-3001",
+      "mobile_desc": "UNRESOLVED \u2014 needs manual review, Uncategorized, SF-3001",
+      "short_desc": "UNRESOLVED \u2014 needs manual review SF-3001 Uncategorized",
+      "long_desc1": "UNRESOLVED \u2014 needs manual review Uncategorized, SF-3001",
       "retail_desc": "Uncategorized",
       "consistency_passed": true,
       "consistency_errors": []
@@ -2819,7 +2819,7 @@
           "confidence_type": "source-verified",
           "score": 1.0,
           "is_critical": false,
-          "value": "LG Electronics"
+          "value": "UNRESOLVED \u2014 needs manual review"
         }
       },
       "critical_missing_count": 1,
@@ -2838,7 +2838,7 @@
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
-          "value": "LG Electronics",
+          "value": "UNRESOLVED \u2014 needs manual review",
           "source_type": "Part_Manuf parsing",
           "source_url": null
         }
@@ -3656,8 +3656,8 @@
       "row_index": 31,
       "mfg_part_num": "LG-7001",
       "part_desc": "40V CORDLESS STRING TRIMMER",
-      "real_manufacturer": "LG Electronics",
-      "real_brand": "LG",
+      "real_manufacturer": null,
+      "real_brand": null,
       "coarse_category": "Power Tools",
       "classification_method": "rule-based-fallback",
       "attributes": {
@@ -3671,21 +3671,21 @@
     },
     "manufacturer_info": {
       "mfg_part_num": "LG-7001",
-      "real_manufacturer": "LG Electronics",
-      "real_brand": "LG",
+      "real_manufacturer": "UNRESOLVED \u2014 needs manual review",
+      "real_brand": "UNRESOLVED \u2014 needs manual review",
       "mfr_url": null,
       "ref_urls": [],
       "verification_status": "not-found",
       "needs_manual_review": true,
-      "http_status_code": 403,
+      "http_status_code": null,
       "attribute_conflicts": []
     },
     "descriptions": {
       "mfg_part_num": "LG-7001",
       "invoice_desc": "POWER TOOLS LG-7001 40 VOLTAGE",
-      "mobile_desc": "LG, Power Tools, LG-7001",
-      "short_desc": "LG LG-7001 Power Tools, 40",
-      "long_desc1": "LG Power Tools, LG-7001, 40",
+      "mobile_desc": "UNRESOLVED \u2014 needs manual review, Power Tools, LG-7001",
+      "short_desc": "UNRESOLVED \u2014 needs manual review LG-7001 Power Tools, 40",
+      "long_desc1": "UNRESOLVED \u2014 needs manual review Power Tools, LG-7001, 40",
       "retail_desc": "Power Tools",
       "consistency_passed": true,
       "consistency_errors": []
@@ -3706,7 +3706,7 @@
           "confidence_type": "source-verified",
           "score": 1.0,
           "is_critical": false,
-          "value": "LG Electronics"
+          "value": "UNRESOLVED \u2014 needs manual review"
         },
         "Voltage": {
           "field_name": "Voltage",
@@ -3732,7 +3732,7 @@
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
-          "value": "LG Electronics",
+          "value": "UNRESOLVED \u2014 needs manual review",
           "source_type": "Part_Manuf parsing",
           "source_url": null
         },
@@ -3771,8 +3771,8 @@
       "row_index": 32,
       "mfg_part_num": "LG-7002",
       "part_desc": "STRING TRIMMER 40 VOLT CORDLESS",
-      "real_manufacturer": "LG Electronics",
-      "real_brand": "LG",
+      "real_manufacturer": null,
+      "real_brand": null,
       "coarse_category": "Power Tools",
       "classification_method": "rule-based-fallback",
       "attributes": {
@@ -3786,21 +3786,21 @@
     },
     "manufacturer_info": {
       "mfg_part_num": "LG-7002",
-      "real_manufacturer": "LG Electronics",
-      "real_brand": "LG",
+      "real_manufacturer": "UNRESOLVED \u2014 needs manual review",
+      "real_brand": "UNRESOLVED \u2014 needs manual review",
       "mfr_url": null,
       "ref_urls": [],
       "verification_status": "not-found",
       "needs_manual_review": true,
-      "http_status_code": 403,
+      "http_status_code": null,
       "attribute_conflicts": []
     },
     "descriptions": {
       "mfg_part_num": "LG-7002",
       "invoice_desc": "POWER TOOLS LG-7002 40 VOLTAGE",
-      "mobile_desc": "LG, Power Tools, LG-7002",
-      "short_desc": "LG LG-7002 Power Tools, 40",
-      "long_desc1": "LG Power Tools, LG-7002, 40",
+      "mobile_desc": "UNRESOLVED \u2014 needs manual review, Power Tools, LG-7002",
+      "short_desc": "UNRESOLVED \u2014 needs manual review LG-7002 Power Tools, 40",
+      "long_desc1": "UNRESOLVED \u2014 needs manual review Power Tools, LG-7002, 40",
       "retail_desc": "Power Tools",
       "consistency_passed": true,
       "consistency_errors": []
@@ -3821,7 +3821,7 @@
           "confidence_type": "source-verified",
           "score": 1.0,
           "is_critical": false,
-          "value": "LG Electronics"
+          "value": "UNRESOLVED \u2014 needs manual review"
         },
         "Voltage": {
           "field_name": "Voltage",
@@ -3847,7 +3847,7 @@
         },
         "Manufacturer Name": {
           "field_name": "Manufacturer Name",
-          "value": "LG Electronics",
+          "value": "UNRESOLVED \u2014 needs manual review",
           "source_type": "Part_Manuf parsing",
           "source_url": null
         },

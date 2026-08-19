@@ -523,8 +523,8 @@
     "row_index": 23,
     "mfg_part_num": "SF-3001",
     "part_desc": "NITRILE GLOVES PF LG 100CT",
-    "real_manufacturer": "LG Electronics",
-    "real_brand": "LG",
+    "real_manufacturer": null,
+    "real_brand": null,
     "coarse_category": "Uncategorized",
     "classification_method": "rule-based-fallback",
     "attributes": {}
@@ -645,8 +645,8 @@
     "row_index": 31,
     "mfg_part_num": "LG-7001",
     "part_desc": "40V CORDLESS STRING TRIMMER",
-    "real_manufacturer": "LG Electronics",
-    "real_brand": "LG",
+    "real_manufacturer": null,
+    "real_brand": null,
     "coarse_category": "Power Tools",
     "classification_method": "rule-based-fallback",
     "attributes": {
@@ -662,8 +662,8 @@
     "row_index": 32,
     "mfg_part_num": "LG-7002",
     "part_desc": "STRING TRIMMER 40 VOLT CORDLESS",
-    "real_manufacturer": "LG Electronics",
-    "real_brand": "LG",
+    "real_manufacturer": null,
+    "real_brand": null,
     "coarse_category": "Power Tools",
     "classification_method": "rule-based-fallback",
     "attributes": {
