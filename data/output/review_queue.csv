@@ -1,16 +1,42 @@
 Mfg_Part_Num,Row_Index,Overall_Score,Status,Flagged_Fields,Flag_Reasons,MFR_URL,Consistency_Passed
-MDB8959SKZ,0,0.694,needs_review,Manufacturer URL; Series,"Overall confidence score (0.69) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL, Series",None,True
-DWHD650WFP,1,0.540,needs_review,Manufacturer URL; Series; Material,"Overall confidence score (0.54) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL, Series, Material",None,True
-BDF450,2,0.694,needs_review,Manufacturer URL; Series,"Overall confidence score (0.69) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL, Series",None,True
-DD24SDFT9N,3,0.694,needs_review,Manufacturer URL; Series,"Overall confidence score (0.69) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL, Series",None,True
-WDT750SAKZ,4,0.653,needs_review,Manufacturer URL; Material,"Overall confidence score (0.65) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL, Material",None,True
-KDTM404KPS,5,0.800,needs_review,Manufacturer URL,Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True
-GDF650SSVSS,6,0.694,needs_review,Manufacturer URL; Series,"Overall confidence score (0.69) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL, Series",None,True
-FFID2426TS,7,0.800,needs_review,Manufacturer URL,Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
-DW80CG5450SR,8,0.819,needs_review,Series,Missing critical fields: Series,https://www.samsung.com/us/support/model/DW80CG5450SR/AA/,True
-LDTS5551D,9,0.800,needs_review,Manufacturer URL,Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True
-SHEM63W55N,10,0.787,needs_review,Material,Missing critical fields: Material,https://www.bosch-home.com/us/en/product/SHEM63W55N,True
-KDPE234GPS,11,0.800,needs_review,Manufacturer URL,Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True
-G7106SCVi,12,0.540,needs_review,Manufacturer URL; Series; Material,"Overall confidence score (0.54) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL, Series, Material",None,True
-WDF520PADM,13,0.653,needs_review,Manufacturer URL; Material,"Overall confidence score (0.65) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL, Material",None,True
-PDT785SBNTS,14,0.800,needs_review,Manufacturer URL,Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True
+AB-3301,0,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+AB-3302,1,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+AB-4401,2,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+AB-4402,3,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+AB-5501,4,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+LB-1101,5,0.714,needs_review,Manufacturer URL,Overall confidence score (0.71) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+LB-1102,6,0.667,needs_review,Manufacturer URL,Overall confidence score (0.67) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+LB-1103,7,0.600,needs_review,Manufacturer URL,Overall confidence score (0.60) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+LB-2201,8,0.714,needs_review,Manufacturer URL,Overall confidence score (0.71) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+LB-2202,9,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+FA-6601,10,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+FA-6602,11,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+FA-7701,12,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+FA-7702,13,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+EL-8801,14,0.600,needs_review,Manufacturer URL,Overall confidence score (0.60) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+EL-8802,15,0.600,needs_review,Manufacturer URL,Overall confidence score (0.60) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+EL-9901,16,0.642,needs_review,Manufacturer URL,Overall confidence score (0.64) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+EL-9902,17,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+EL-9903,18,0.570,needs_review,Manufacturer URL,Overall confidence score (0.57) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+HV-1001,19,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+HV-1002,20,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+SF-2001,21,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+SF-2002,22,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+SF-3001,23,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True
+SF-3002,24,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+PT-4001,25,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+PT-4002,26,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+PT-5001,27,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+PT-5002,28,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+HT-6001,29,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+HT-6002,30,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+LG-7001,31,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True
+LG-7002,32,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: 403); Missing critical fields: Manufacturer URL,None,True
+AU-8001,33,0.500,needs_review,Manufacturer URL,Overall confidence score (0.50) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+AU-8002,34,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+BM-9001,35,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+BM-9002,36,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+JN-1201,37,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+JN-1202,38,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True
+KDFM404KPS,39,0.569,needs_review,Manufacturer URL; Series; Sound Level,"Overall confidence score (0.57) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL, Series, Sound Level",None,True
+UNK-9999,40,0.333,needs_review,Manufacturer URL,Overall confidence score (0.33) below threshold (0.75); Unverified Manufacturer URL (HTTP status: N/A); Missing critical fields: Manufacturer URL,None,True

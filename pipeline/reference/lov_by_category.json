@@ -4,39 +4,4872 @@
       "120"
     ],
     "Amperage Rating": [
-      "12",
       "15"
     ],
     "Mounting Type": [
       "Built-in"
     ],
-    "Sound Level": [
-      "39",
-      "40",
-      "42",
-      "44",
-      "45",
-      "46",
-      "47",
-      "51",
-      "54",
-      "55"
-    ],
     "Material": [
-      "Black Stainless Steel",
       "Stainless Steel"
     ],
     "Color": [
-      "Black Stainless Steel",
+      "Stainless Steel"
+    ]
+  },
+  "Abrasives": {
+    "Grit": [
+      "80"
+    ]
+  },
+  "Uncategorized": {
+    "Grit": [
+      "60"
+    ],
+    "Amperage": [
+      "20"
+    ],
+    "Size": [
+      "16"
+    ],
+    "Voltage": [
+      "12"
+    ]
+  },
+  "Adhesives & Sealants": {
+    "Length": [
+      "13",
+      "16",
+      "50",
+      "60"
+    ],
+    "Size": [
+      "1.5",
+      "2"
+    ]
+  },
+  "Appliances > Large Appliances > Other": {
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Material": [
       "Stainless Steel"
     ],
+    "Length": [
+      "30"
+    ],
+    "Beam Distance": [
+      "30"
+    ]
+  },
+  "Lighting": {
+    "Wattage": [
+      "40",
+      "9"
+    ],
+    "Color Temperature": [
+      "2700",
+      "4000"
+    ],
+    "Quantity": [
+      "4"
+    ],
+    "Base Type": [
+      "A19"
+    ],
+    "Lumens": [
+      "800"
+    ],
+    "Color": [
+      "White"
+    ],
+    "Length": [
+      "4"
+    ],
+    "Beam Distance": [
+      "4"
+    ]
+  },
+  "Electrical": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Wattage": [
+      "2"
+    ],
+    "Voltage": [
+      "125"
+    ],
+    "Amperage": [
+      "15",
+      "20"
+    ],
+    "Color": [
+      "White"
+    ]
+  },
+  "Fasteners": {
+    "Size": [
+      "5"
+    ]
+  },
+  "Power Tools": {
+    "Voltage": [
+      "20",
+      "40"
+    ]
+  },
+  "Safety & PPE": {
+    "Quantity": [
+      "100"
+    ]
+  },
+  "Hand Tools": {
+    "Amperage": [
+      "15"
+    ],
+    "Color": [
+      "Chrome"
+    ]
+  },
+  "Plumbing": {
+    "Color": [
+      "Green"
+    ]
+  },
+  "HVAC": {
+    "Voltage": [
+      "20"
+    ]
+  },
+  "Abrasives > Coated Abrasives > Sanding Belts": {
+    "Size": [
+      "2"
+    ],
+    "Quantity": [
+      "6"
+    ],
+    "Brand": [
+      "Diablo"
+    ],
+    "Width": [
+      "1/2"
+    ],
+    "Length": [
+      "18"
+    ],
+    "Pack Quantity": [
+      "6"
+    ]
+  },
+  "Abrasives > Coated Abrasives > Sanding Discs": {
+    "Brand": [
+      "3M",
+      "HIOLIT"
+    ],
+    "Product Line": [
+      "775L Stikit Film"
+    ],
+    "Grit": [
+      "P120",
+      "P150",
+      "P180",
+      "P220",
+      "P320",
+      "P80"
+    ],
     "Series": [
-      "300 Series",
-      "Eco Series",
-      "PrintShield Series",
-      "Professional Series",
-      "Profile Series",
-      "Quadwash"
+      "Cubitron II"
+    ],
+    "Box Quantity": [
+      "50"
+    ],
+    "Diameter": [
+      "5"
+    ]
+  },
+  "Abrasives > Coated Abrasives > Sandpaper Sheets & Rolls": {
+    "Amperage": [
+      "9"
+    ],
+    "Brand": [
+      "Abranet"
+    ],
+    "Width": [
+      "2.75"
+    ],
+    "Length": [
+      "30"
+    ],
+    "Grit": [
+      "240",
+      "320"
+    ]
+  },
+  "Abrasives > Bonded Abrasives > Cut-Off Wheels": {
+    "Brand": [
+      "Diablo",
+      "Milwaukee"
+    ],
+    "Diameter": [
+      "10",
+      "12",
+      "14",
+      "4",
+      "4-1/2",
+      "5",
+      "6",
+      "6-1/2",
+      "7",
+      "9"
+    ],
+    "Application": [
+      "Masonry",
+      "Metal",
+      "Metal General Purpose"
+    ],
+    "Material": [
+      "Ceramic",
+      "Steel"
+    ],
+    "Product Line": [
+      "Speed Demon",
+      "Steel Demon"
+    ],
+    "Size": [
+      "040",
+      "045",
+      "10",
+      "12",
+      "14",
+      "2",
+      "4",
+      "6",
+      "7",
+      "9"
+    ],
+    "Arbor Size": [
+      "1",
+      "20",
+      "5/8",
+      "5/8-11",
+      "7/8"
+    ],
+    "Thickness": [
+      ".040",
+      ".045",
+      "1/16",
+      "1/8",
+      "3/32",
+      "7/64"
+    ],
+    "Disc Type": [
+      "DKO"
+    ],
+    "Product Type": [
+      "Cut Off Disc",
+      "Cut and Grind Disc"
+    ],
+    "Quantity": [
+      "10"
+    ],
+    "Performance Line": [
+      "Ceramic+",
+      "Perform+",
+      "Performance+"
+    ],
+    "Pack Quantity": [
+      "10"
+    ],
+    "Designation": [
+      "DKO",
+      "Dual"
+    ],
+    "Series": [
+      "Performance+ Dual Metal"
+    ]
+  },
+  "Abrasives > Bonded Abrasives > Grinding Wheels": {
+    "Size": [
+      "2",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Diameter": [
+      "4",
+      "4-1/2",
+      "5",
+      "6",
+      "7"
+    ],
+    "Thickness": [
+      "1/4"
+    ],
+    "Arbor Size": [
+      "5/8",
+      "7/8"
+    ],
+    "Application": [
+      "Masonry",
+      "Metal"
+    ],
+    "Product Type": [
+      "Grinding Wheel"
+    ]
+  },
+  "Abrasives > Coated Abrasives > Sanding Sponges": {
+    "Grit": [
+      "220"
+    ],
+    "Brand": [
+      "Diablo"
+    ],
+    "Edge Type": [
+      "Flat Edge"
+    ],
+    "Product Type": [
+      "Sanding Sponge"
+    ]
+  },
+  "Electrical > Wire & Cable Management > Electrical Tape": {
+    "Length": [
+      "60"
+    ],
+    "Width": [
+      "3/4"
+    ],
+    "Material": [
+      "Vinyl"
+    ],
+    "Product Type": [
+      "Electrical Tape"
+    ]
+  },
+  "Hardware > Tapes & Adhesives > Specialty Tapes": {
+    "Size": [
+      "1.5"
+    ],
+    "Length": [
+      "13"
+    ],
+    "Width": [
+      "1.5"
+    ],
+    "Height": [
+      "1.5"
+    ],
+    "Brand": [
+      "Legacy"
+    ],
+    "Product Type": [
+      "Emseal Tape"
+    ]
+  },
+  "HVAC > Heating > Heater Kits": {
+    "Accessory Type": [
+      "Heater Kit"
+    ]
+  },
+  "Appliances > Laundry > Dryers": {
+    "Color": [
+      "Black",
+      "Diamond Gray",
+      "White"
+    ],
+    "Brand": [
+      "GE",
+      "Speed Queen"
+    ],
+    "Fuel Type": [
+      "Electric",
+      "Gas"
+    ]
+  },
+  "Appliances > Laundry > Laundry Centers": {
+    "Color": [
+      "White"
+    ],
+    "Brand": [
+      "LG"
+    ],
+    "Appliance Type": [
+      "Laundry Center"
+    ],
+    "Condition": [
+      "Display"
+    ]
+  },
+  "Appliances > Laundry > Washers": {
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Brand": [
+      "GE",
+      "Speed Queen"
+    ],
+    "Appliance Type": [
+      "Washer"
+    ],
+    "Condition": [
+      "Display"
+    ]
+  },
+  "Safety > Personal Protection > Kneeling Pads": {
+    "Features": [
+      "Bottle Opener"
+    ]
+  },
+  "Automotive > Tire Maintenance > Tire Inflator Gauges": {
+    "Type": [
+      "Digital"
+    ],
+    "Function": [
+      "Inflator Gauge"
+    ]
+  },
+  "Hardware > Masonry > Mortar": {
+    "Color": [
+      "Charcoal Black",
+      "Dark Chocolate",
+      "Light Buff",
+      "Light Chocolate"
+    ],
+    "Mortar Type": [
+      "Type N"
+    ]
+  },
+  "Outdoor > Decking & Railing > Railing Kits": {
+    "Length": [
+      "10",
+      "6",
+      "8"
+    ],
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Rail Type": [
+      "Select Classic",
+      "Select T-Rail"
+    ],
+    "Orientation": [
+      "Horizontal"
+    ],
+    "Baluster Type": [
+      "Round",
+      "Square",
+      "Square Composite"
+    ],
+    "Brand/Series": [
+      "Finyline"
+    ],
+    "Baluster Material": [
+      "Black Aluminum"
+    ]
+  },
+  "Outdoor > Decking & Railing > Gates": {
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Type": [
+      "Gate"
+    ],
+    "Brand/Series": [
+      "Finyline"
+    ],
+    "Baluster Type": [
+      "Square"
+    ],
+    "Custom": [
+      "Yes"
+    ],
+    "Product Type": [
+      "Gate"
+    ],
+    "Design Series": [
+      "Finyline"
+    ],
+    "Baluster Material": [
+      "Aluminum"
+    ],
+    "Baluster Color": [
+      "Black"
+    ]
+  },
+  "Outdoor > Decking & Railing > Railing Panels": {
+    "Length": [
+      "6",
+      "8"
+    ],
+    "Color": [
+      "Black"
+    ],
+    "Width": [
+      "6",
+      "8"
+    ],
+    "Height": [
+      "36"
+    ],
+    "Material": [
+      "Aluminum"
+    ],
+    "Baluster Shape": [
+      "Square"
+    ],
+    "Orientation": [
+      "Horizontal",
+      "Stairs"
+    ],
+    "Assembly Status": [
+      "Assembled"
+    ],
+    "Series": [
+      "Select"
+    ]
+  },
+  "Outdoor > Decking & Railing > Deck Boards": {
+    "Length": [
+      "16",
+      "20"
+    ],
+    "Nominal Thickness": [
+      "1"
+    ],
+    "Nominal Width": [
+      "6"
+    ],
+    "Color": [
+      "Coastline",
+      "English Walnut",
+      "Mahogany"
+    ],
+    "Edge Type": [
+      "Square Edge"
+    ],
+    "Product Line": [
+      "Vintage"
+    ],
+    "Brand": [
+      "Azek"
+    ],
+    "Material": [
+      "PVC"
+    ]
+  },
+  "Outdoor > Decking & Railing > PVC Decking": {
+    "Length": [
+      "12",
+      "16",
+      "20"
+    ],
+    "Nominal Thickness": [
+      "1"
+    ],
+    "Nominal Width": [
+      "6"
+    ],
+    "Color": [
+      "American Walnut",
+      "Brownstone",
+      "Castle Gate",
+      "Coastline",
+      "English Walnut",
+      "French White Oak",
+      "Mahogany",
+      "Slate Gray",
+      "Weathered Teak"
+    ],
+    "Edge Type": [
+      "Grooved",
+      "Square Edge"
+    ],
+    "Product Line": [
+      "Vintage"
+    ],
+    "Brand": [
+      "Azek"
+    ],
+    "Material": [
+      "PVC"
+    ],
+    "Thickness": [
+      "1"
+    ],
+    "Width": [
+      "6"
+    ],
+    "Edge Profile": [
+      "Grooved",
+      "Square Edge"
+    ],
+    "Collection": [
+      "Harvest",
+      "Landmark",
+      "Vintage"
+    ]
+  },
+  "Outdoor > Decking & Railing > Composite Decking": {
+    "Length": [
+      "12",
+      "16",
+      "20"
+    ],
+    "Nominal Thickness": [
+      "1"
+    ],
+    "Nominal Width": [
+      "6"
+    ],
+    "Color": [
+      "Biscayne",
+      "Carmel",
+      "Island Mist",
+      "Jasper",
+      "Rainier"
+    ],
+    "Edge Type": [
+      "Square Edge"
+    ],
+    "Collection": [
+      "Transcend Lineage"
+    ],
+    "Brand": [
+      "Trex"
+    ],
+    "Material": [
+      "Composite"
+    ],
+    "Dimensions": [
+      "1x6"
+    ],
+    "Edge Profile": [
+      "Grooved"
+    ],
+    "Product Line": [
+      "Transcend Lineage"
+    ]
+  },
+  "Building Materials > Decking > Composite Decking": {
+    "Length": [
+      "12",
+      "16",
+      "20"
+    ],
+    "Dimensions": [
+      "1x6"
+    ],
+    "Color": [
+      "Cinnamon Cove",
+      "Golden Hour",
+      "Hatteras",
+      "Honey Grove",
+      "Jasper",
+      "Malted Barley",
+      "Millstone",
+      "Pebble Beach",
+      "Rainier",
+      "Salt Flat",
+      "Tide Pool",
+      "Whiskey Barrel"
+    ],
+    "Edge Profile": [
+      "Grooved",
+      "Sq Edge",
+      "Square Edge"
+    ],
+    "Brand": [
+      "Trex"
+    ],
+    "Product Line": [
+      "Enhance Basics",
+      "Enhance Naturals",
+      "Select 2.0",
+      "Transcend Lineage"
+    ],
+    "Material Type": [
+      "Composite"
+    ],
+    "Thickness": [
+      "1",
+      "7/8"
+    ],
+    "Width": [
+      "6"
+    ],
+    "Edge Type": [
+      "Grooved",
+      "Square Edge"
+    ],
+    "Material": [
+      "Composite"
+    ]
+  },
+  "Building Materials > Molding & Millwork > PVC Fascia": {
+    "Length": [
+      "12"
+    ],
+    "Thickness": [
+      "1"
+    ],
+    "Width": [
+      "12"
+    ],
+    "Color": [
+      "American Walnut",
+      "Castle Gate",
+      "Coastline",
+      "Mahogany",
+      "Weathered Teak"
+    ],
+    "Product Line": [
+      "Landmark",
+      "Vintage"
+    ],
+    "Brand": [
+      "Azek"
+    ],
+    "Material": [
+      "PVC"
+    ]
+  },
+  "Building Materials > Decking & Railing > Fascia & Trim": {
+    "Length": [
+      "12"
+    ],
+    "Color": [
+      "Biscayne",
+      "Brownstone",
+      "Carmel",
+      "Cinnamon Cove",
+      "French White Oak",
+      "Golden Hour",
+      "Hatteras",
+      "Honey Grove",
+      "Island Mist",
+      "Jasper",
+      "Malted Barley",
+      "Millstone",
+      "Pebble Beach",
+      "Rainier",
+      "Salt Flat",
+      "Slate Gray",
+      "Tide Pool",
+      "Whiskey Barrel"
+    ],
+    "Thickness": [
+      "1"
+    ],
+    "Width": [
+      "12",
+      "8"
+    ],
+    "Product Line": [
+      "Enhance Basics",
+      "Enhance Naturals",
+      "Harvest",
+      "Landmark",
+      "Lineage",
+      "Select 2.0"
+    ],
+    "Brand": [
+      "Azek",
+      "Trex"
+    ],
+    "Material": [
+      "PVC"
+    ],
+    "Dimensions": [
+      "1x12",
+      "1x8"
+    ]
+  },
+  "Building Materials > Decking & Railing > Post Caps & Trim": {
+    "Color": [
+      "Clay",
+      "White"
+    ],
+    "Size": [
+      "4x4",
+      "6x6"
+    ],
+    "Series": [
+      "Elite",
+      "Heritage"
+    ],
+    "Component": [
+      "Flat Post Cap",
+      "Post Trim"
+    ],
+    "Manufacturer": [
+      "RDI"
+    ],
+    "Quantity": [
+      "4"
+    ],
+    "Pieces": [
+      "4pc"
+    ]
+  },
+  "Building Materials > Decking & Railing > Posts": {
+    "Color": [
+      "White"
+    ],
+    "Size": [
+      "4x4"
+    ],
+    "Length": [
+      "39"
+    ],
+    "Type": [
+      "Blank Post"
+    ],
+    "Manufacturer": [
+      "RDI"
+    ]
+  },
+  "Building Materials > Decking & Railing > Post Sleeves": {
+    "Color": [
+      "Black",
+      "Clay",
+      "White"
+    ],
+    "Size": [
+      "4x4",
+      "6x6"
+    ],
+    "Length": [
+      "108",
+      "37",
+      "43"
+    ],
+    "Component": [
+      "Post Sleeve"
+    ],
+    "Manufacturer": [
+      "RDI"
+    ],
+    "Material": [
+      "Aluminum"
+    ],
+    "Series": [
+      "Select Alum Railing"
+    ],
+    "Includes": [
+      "Cap & Skirt"
+    ]
+  },
+  "Building Materials > Decking & Railing > Support Posts": {
+    "Length": [
+      "10"
+    ],
+    "Color": [
+      "Black"
+    ],
+    "Size": [
+      "4",
+      "6x6"
+    ],
+    "Material": [
+      "Aluminum"
+    ],
+    "Series": [
+      "Deco"
+    ],
+    "Component": [
+      "Support Post"
+    ],
+    "Brand": [
+      "Patriot"
+    ],
+    "Post Dimensions": [
+      "4\"x4\""
+    ],
+    "Adjustable Height": [
+      "37\"/43\""
+    ],
+    "Feature": [
+      "Self Leveling"
+    ]
+  },
+  "Building Materials > Decking & Railing > Railing Kits": {
+    "Length": [
+      "6",
+      "8"
+    ],
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Series": [
+      "Select",
+      "Select Classic"
+    ],
+    "Rail Type": [
+      "T-Rail"
+    ],
+    "Application": [
+      "Stair"
+    ],
+    "Kit Type": [
+      "Railing Kit"
+    ],
+    "Baluster Type": [
+      "Square Composite Balusters"
+    ],
+    "Application Type": [
+      "Stair",
+      "Straight"
+    ],
+    "Baluster Shape": [
+      "Round",
+      "Square"
+    ],
+    "Baluster Material": [
+      "Aluminum"
+    ],
+    "Baluster Color": [
+      "Black"
+    ]
+  },
+  "Building Materials > Building Materials > Flashing & Tape": {
+    "Size": [
+      "2"
+    ],
+    "Length": [
+      "50"
+    ],
+    "Width": [
+      "2"
+    ],
+    "Application": [
+      "Deck Joist"
+    ],
+    "Brand": [
+      "Protecto Wrap"
+    ]
+  },
+  "Building Materials > Building Materials > Attic Access Doors": {
+    "Color": [
+      "White"
+    ],
+    "Width": [
+      "24"
+    ],
+    "Length": [
+      "48"
+    ]
+  },
+  "Building Materials > Doors > Patio Doors": {
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Size": [
+      "6068"
+    ],
+    "Handing": [
+      "Left",
+      "Right"
+    ],
+    "Operation Type": [
+      "Gliding"
+    ],
+    "Series": [
+      "4500"
+    ],
+    "Exterior Color": [
+      "Black"
+    ],
+    "Interior Color": [
+      "White"
+    ],
+    "Glass Type": [
+      "LowE Argon"
+    ]
+  },
+  "Building Materials > Windows & Skylights > Skylights": {
+    "Size": [
+      "21"
+    ],
+    "Color": [
+      "Grey/White"
+    ],
+    "Brand": [
+      "Velux"
+    ],
+    "Model": [
+      "FS C01",
+      "FS C04",
+      "FS C06"
+    ],
+    "Operation Type": [
+      "Fixed"
+    ],
+    "Accessory": [
+      "Solar Shade"
+    ],
+    "Rough Opening Width": [
+      "21"
+    ],
+    "Rough Opening Height": [
+      "26-7/8",
+      "37-7/8",
+      "45-7/8"
+    ]
+  },
+  "Building Materials > Windows & Skylights > Basement Windows": {
+    "Color": [
+      "White"
+    ],
+    "Width": [
+      "31.5"
+    ],
+    "Height": [
+      "14.75",
+      "22.75"
+    ],
+    "Series": [
+      "ecoLitePlus"
+    ],
+    "Operation Type": [
+      "Hopper"
+    ],
+    "Included Components": [
+      "Screen"
+    ]
+  },
+  "Building Materials > Windows & Skylights > Slider Windows": {
+    "Wattage": [
+      "2"
+    ],
+    "Color": [
+      "Black"
+    ],
+    "Size": [
+      "3030"
+    ],
+    "Operation Type": [
+      "Slider"
+    ],
+    "Series": [
+      "3900"
+    ],
+    "Exterior Color": [
+      "Black"
+    ],
+    "Interior Color": [
+      "White"
+    ],
+    "Glass Type": [
+      "LowE-2"
+    ],
+    "Included Components": [
+      "Half Screen"
+    ]
+  },
+  "Building Materials > Drywall > Drywall Panels": {
+    "Size": [
+      "54"
+    ],
+    "Thickness": [
+      "1/2",
+      "5/8"
+    ],
+    "Width": [
+      "4",
+      "54"
+    ],
+    "Length": [
+      "10",
+      "9"
+    ],
+    "Brand": [
+      "Easi-Lite"
+    ],
+    "Type": [
+      "Firelite"
+    ]
+  },
+  "Hardware > Door Hardware > Thresholds": {
+    "Model": [
+      "413S"
+    ],
+    "Length": [
+      "36",
+      "72"
+    ],
+    "Material": [
+      "Aluminum"
+    ],
+    "Finish": [
+      "Dark Bronze"
+    ]
+  },
+  "Building Materials > House Wrap & Weather Barrier > Rainscreens": {
+    "Length": [
+      "65"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Brand": [
+      "Zip"
+    ],
+    "Product Type": [
+      "Rainscreen"
+    ]
+  },
+  "Building Materials > Lumber > Dimension Lumber": {
+    "Length": [
+      "12",
+      "16"
+    ],
+    "Nominal Thickness": [
+      "1"
+    ],
+    "Nominal Width": [
+      "12",
+      "8"
+    ],
+    "Wood Species": [
+      "Douglas Fir"
+    ],
+    "Grade": [
+      "STK"
+    ],
+    "Surfacing": [
+      "Smooth 1S2E"
+    ]
+  },
+  "Building Materials > Plywood & Sheathing > OSB Subfloor": {
+    "Color": [
+      "Blue"
+    ],
+    "Thickness": [
+      "3/4"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Length": [
+      "8"
+    ],
+    "Edge Profile": [
+      "T&G"
+    ],
+    "Brand": [
+      "Huber"
+    ],
+    "Product Line": [
+      "Blue Plus"
+    ],
+    "Material": [
+      "OSB"
+    ],
+    "Application": [
+      "Sub Floor"
+    ]
+  },
+  "Building Materials > Roofing > Metal Roofing": {
+    "Length": [
+      "10",
+      "12",
+      "8"
+    ],
+    "Color": [
+      "Black",
+      "Charcoal",
+      "White"
+    ],
+    "Profile": [
+      "Premier Rib XL"
+    ]
+  },
+  "Building Materials > Roofing > Shingles": {
+    "Color": [
+      "Williamsburg Gray"
+    ],
+    "Brand": [
+      "Owens Corning"
+    ],
+    "Product Line": [
+      "Duration TruDef"
+    ],
+    "Packaging": [
+      "Bundle"
+    ]
+  },
+  "Building Materials > Roofing > Ice & Water Shield": {
+    "Length": [
+      "65"
+    ],
+    "Width": [
+      "3"
+    ],
+    "Brand": [
+      "Henry",
+      "Owens Corning"
+    ],
+    "Product Name": [
+      "Eaveguard"
+    ],
+    "Product Type": [
+      "Ice Guard"
+    ],
+    "Product Line": [
+      "WeatherLock Mat"
+    ],
+    "Coverage": [
+      "2"
+    ]
+  },
+  "Building Materials > Siding > Fiber Cement Siding": {
+    "Size": [
+      "4"
+    ],
+    "Length": [
+      "12"
+    ],
+    "Width": [
+      "7-1/4"
+    ],
+    "Brand": [
+      "Hardie"
+    ],
+    "Texture": [
+      "Smooth"
+    ],
+    "Finish": [
+      "Primed"
+    ],
+    "Product Type": [
+      "HardiePlank"
+    ]
+  },
+  "Building Materials > Siding > Fiber Cement Panels": {
+    "Length": [
+      "10"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Brand": [
+      "Hardie"
+    ],
+    "Texture": [
+      "Smooth"
+    ],
+    "Finish": [
+      "Primed"
+    ],
+    "Product Type": [
+      "HardiePanel"
+    ]
+  },
+  "Building Materials > Siding > Lap Siding": {
+    "Size": [
+      "6"
+    ],
+    "Length": [
+      "16"
+    ],
+    "Width": [
+      "6"
+    ],
+    "Brand": [
+      "Smart"
+    ],
+    "Texture": [
+      "Cedar"
+    ],
+    "Product Type": [
+      "Lap Siding"
+    ]
+  },
+  "Building Materials > Siding > Siding Panels": {
+    "Size": [
+      "16"
+    ],
+    "Length": [
+      "10",
+      "16"
+    ],
+    "Thickness": [
+      "3/8"
+    ],
+    "Width": [
+      "16",
+      "4"
+    ],
+    "Brand": [
+      "Smart"
+    ],
+    "Texture": [
+      "Cedar"
+    ],
+    "Edge Type": [
+      "Shiplap",
+      "Square Edge"
+    ],
+    "Groove Type": [
+      "No-Groove"
+    ],
+    "Style": [
+      "B&B"
+    ]
+  },
+  "Building Materials > Siding > Soffit": {
+    "Size": [
+      "12"
+    ],
+    "Length": [
+      "16"
+    ],
+    "Thickness": [
+      "3/8"
+    ],
+    "Width": [
+      "12"
+    ],
+    "Brand": [
+      "Smart"
+    ],
+    "Texture": [
+      "Cedar"
+    ],
+    "Ventilation": [
+      "Vented"
+    ],
+    "Product Type": [
+      "Soffit"
+    ]
+  },
+  "Outdoor > Decking & Railing > Railing Systems": {
+    "Color": [
+      "Black"
+    ],
+    "Material": [
+      "Aluminum"
+    ],
+    "Application": [
+      "ADA Rail",
+      "ADA Wall Mount"
+    ],
+    "Brand": [
+      "Trex"
+    ],
+    "Length": [
+      "8"
+    ]
+  },
+  "Outdoor > Decking & Railing > Railing Accessories": {
+    "Color": [
+      "Black"
+    ],
+    "Material": [
+      "Aluminum"
+    ],
+    "Application": [
+      "ADA Interior End Cap"
+    ],
+    "Brand": [
+      "Trex"
+    ]
+  },
+  "Building Materials > Insulation > Insulated Sheathing": {
+    "Thickness": [
+      "1",
+      "1-1/2",
+      "2"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Length": [
+      "8"
+    ],
+    "Brand": [
+      "Huber"
+    ],
+    "Product Line": [
+      "Zip"
+    ],
+    "R-Value": [
+      "3.6",
+      "6.6",
+      "9.6"
+    ]
+  },
+  "Building Materials > Ceilings > Ceiling Tiles": {
+    "Color": [
+      "Black"
+    ],
+    "Width": [
+      "2"
+    ],
+    "Length": [
+      "2"
+    ],
+    "Texture/Style": [
+      "Fine Fissured"
+    ]
+  },
+  "Automotive > Batteries & Accessories > Batteries": {
+    "Model": [
+      "402R"
+    ],
+    "Voltage": [
+      "12"
+    ],
+    "Capacity": [
+      "12"
+    ],
+    "Battery Group Size": [
+      "8D"
+    ]
+  },
+  "Automotive > Batteries & Accessories > Jump Starters": {
+    "Model": [
+      "SL1672"
+    ],
+    "Product Type": [
+      "Jump Starter & Power Supply"
+    ]
+  },
+  "Tools > Power Tool Accessories > Tool Storage & Mounts": {
+    "Color": [
+      "Yellow"
+    ],
+    "Quantity": [
+      "6"
+    ],
+    "Brand": [
+      "Dewalt"
+    ],
+    "Compatible Tool Battery": [
+      "DW20"
+    ],
+    "Product Type": [
+      "Battery Mounts"
+    ]
+  },
+  "Hardware > Hangers & Brackets > Adjustable Hangers": {
+    "Adjustability": [
+      "16-24"
+    ],
+    "Product Type": [
+      "Adjustable Hanger"
+    ]
+  },
+  "Electrical > Boxes & Covers > Box Covers": {
+    "Box Type": [
+      "Square"
+    ],
+    "Size": [
+      "4",
+      "4x4"
+    ],
+    "Cover Configuration": [
+      "Switch/Outlet"
+    ],
+    "Gang Count": [
+      "1",
+      "2"
+    ],
+    "Cover Type": [
+      "GFI Box Cover"
+    ],
+    "Material": [
+      "PVC"
+    ],
+    "Product Type": [
+      "Box Cover"
+    ],
+    "Device Opening": [
+      "GFCI Duplex"
+    ]
+  },
+  "Electrical > Boxes & Covers > Electrical Boxes": {
+    "Size": [
+      "4"
+    ],
+    "Dimensions": [
+      "4-1/2x4-1/2x2",
+      "4x4x1-1/2",
+      "4x4x2"
+    ],
+    "Shape": [
+      "Octagonal",
+      "Square"
+    ],
+    "Mounting": [
+      "Bracket",
+      "Hanger"
+    ],
+    "Gang Count": [
+      "2"
+    ]
+  },
+  "Electrical > Wiring Devices > Wall Plates": {
+    "Port Count": [
+      "2"
+    ],
+    "Style": [
+      "Decor"
+    ]
+  },
+  "Electrical > Lighting Controls > Dimmers": {
+    "Brand": [
+      "Lutron"
+    ],
+    "Color": [
+      "LA",
+      "White"
+    ]
+  },
+  "Electrical > Lighting Controls > Plug-In Dimmers": {
+    "Color": [
+      "White"
+    ],
+    "Mounting Type": [
+      "Plug-In"
+    ]
+  },
+  "Electrical > Lighting Controls > Timers": {
+    "Voltage": [
+      "125"
+    ],
+    "Environment": [
+      "Indoor",
+      "Outdoor"
+    ],
+    "Programming": [
+      "7Day"
+    ],
+    "Type": [
+      "Digital",
+      "Mechanical"
+    ],
+    "Cycle": [
+      "24hr"
+    ]
+  },
+  "Lighting > Commercial & Industrial Lighting > Strip Lights": {
+    "Length": [
+      "1",
+      "3",
+      "4"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Color Temperature": [
+      "Multi CCT"
+    ],
+    "Fixture Type": [
+      "Strip Light"
+    ]
+  },
+  "Lighting > Wall Lighting > Wall Sconces": {
+    "Brand": [
+      "Kichler"
+    ],
+    "Finish": [
+      "Black",
+      "Black Fluorescent",
+      "Brushed Nickel",
+      "Carriage Bronze",
+      "Chrome"
+    ],
+    "Product Type": [
+      "Wall Light",
+      "Wall Sconce"
+    ],
+    "Lighting Technology": [
+      "LED"
+    ]
+  },
+  "Lighting > Vanity & Bath Lighting > Bath Lights": {
+    "Amperage": [
+      "37418",
+      "37423"
+    ],
+    "Brand": [
+      "Kichler"
+    ],
+    "Product Type": [
+      "Bath Light"
+    ],
+    "Finish": [
+      "Black / Clear"
+    ]
+  },
+  "Lighting > Chandeliers > Chandeliers": {
+    "Brand": [
+      "Kichler"
+    ],
+    "Finish": [
+      "BK",
+      "BKCLR",
+      "Black",
+      "Brushed Nickel",
+      "CPZ",
+      "Distressed Black",
+      "NI",
+      "WH"
+    ],
+    "Product Type": [
+      "Chandelier"
+    ],
+    "Model Number": [
+      "34686A",
+      "34687A",
+      "34688A",
+      "43671BKCLR",
+      "52404BK",
+      "52616BK",
+      "52616NI",
+      "52678BK",
+      "52680CPZ",
+      "52772BK",
+      "82399",
+      "84322WH"
+    ],
+    "Amperage": [
+      "34686",
+      "34687",
+      "34688"
+    ]
+  },
+  "Lighting > Commercial & Industrial Lighting > High Bay Lights": {
+    "Brand": [
+      "Nuvo"
+    ],
+    "Model Number": [
+      "65-771R3"
+    ],
+    "Product Type": [
+      "High Bay Light"
+    ]
+  },
+  "Lighting > Ceiling Lights > Flush Mounts": {
+    "Brand": [
+      "Kichler",
+      "Satco"
+    ],
+    "Model Number": [
+      "42275BK",
+      "42296BK",
+      "42955BK",
+      "62-1850",
+      "62-1852",
+      "62-1875",
+      "62-1876"
+    ],
+    "Finish": [
+      "BK",
+      "BN"
+    ],
+    "Product Type": [
+      "Ceiling Light",
+      "Flush Mount"
+    ],
+    "Size": [
+      "10",
+      "11",
+      "13",
+      "14"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Color": [
+      "Brushed Nickel"
+    ]
+  },
+  "Lighting > Pendants > Pendant Lights": {
+    "Brand": [
+      "Kichler"
+    ],
+    "Fixture Type": [
+      "Pendant Light"
+    ],
+    "Color/Finish": [
+      "AVI",
+      "Black"
+    ]
+  },
+  "Lighting > Security & Flood Lighting > Motion Security Lights": {
+    "Fixture Type": [
+      "Motion Security Light"
+    ],
+    "Size": [
+      "9"
+    ]
+  },
+  "Lighting > Specialty Lighting > Tape Lights": {
+    "Length": [
+      "16"
+    ],
+    "Brand": [
+      "Satco"
+    ],
+    "Fixture Type": [
+      "Tape Light"
+    ]
+  },
+  "Lighting > Commercial & Industrial Lighting > Flat Panels": {
+    "Brand": [
+      "Satco"
+    ],
+    "Fixture Type": [
+      "LED Flat Panel"
+    ],
+    "Size": [
+      "2x4"
+    ]
+  },
+  "Lighting > Residential Lighting > Pendant Lights": {
+    "Brand": [
+      "Kichler"
+    ],
+    "Fixture Type": [
+      "Pendant Light"
+    ],
+    "Color/Finish": [
+      "Black",
+      "Black/Clear",
+      "CPZ"
+    ]
+  },
+  "Lighting > Commercial Lighting > Downlights": {
+    "Color Temperature": [
+      "3000",
+      "5000"
+    ],
+    "Fixture Type": [
+      "Down Light",
+      "Downlight",
+      "Round Down Light"
+    ],
+    "Size": [
+      "10",
+      "12",
+      "4",
+      "6",
+      "8"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Wattage": [
+      "10"
+    ],
+    "Style": [
+      "Retro"
+    ],
+    "Color": [
+      "White"
+    ],
+    "CCT Options": [
+      "5"
+    ],
+    "Series": [
+      "Starfish"
+    ]
+  },
+  "Lighting > Residential Lighting > Ceiling Lights": {
+    "Brand": [
+      "Kichler"
+    ],
+    "Fixture Type": [
+      "Ceiling Light"
+    ],
+    "CCT Options": [
+      "5"
+    ],
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Size": [
+      "15",
+      "19"
+    ]
+  },
+  "Lighting > Commercial Lighting > Ceiling Lights": {
+    "Dimensions": [
+      "24x24"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Fixture Type": [
+      "Ceiling Light"
+    ]
+  },
+  "Lighting > Commercial Lighting > Shop Lights": {
+    "Length": [
+      "4"
+    ],
+    "Color Temperature": [
+      "4000"
+    ],
+    "Brand": [
+      "Feit"
+    ],
+    "Fixture Type": [
+      "Shop Light"
+    ],
+    "Lumens": [
+      "4500"
+    ]
+  },
+  "Lighting > Residential Lighting > Wall Lights": {
+    "Brand": [
+      "Kichler"
+    ],
+    "Fixture Type": [
+      "Wall Light"
+    ],
+    "Color": [
+      "Black/Clear"
+    ]
+  },
+  "Lighting > Residential Lighting > Wall Sconces": {
+    "Brand": [
+      "Kichler"
+    ],
+    "Fixture Type": [
+      "Wall Sconce"
+    ],
+    "Color": [
+      "Nickel"
+    ]
+  },
+  "Lighting > Commercial Lighting > Wrap Lights": {
+    "Length": [
+      "2",
+      "4"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Fixture Type": [
+      "Wrap Light"
+    ]
+  },
+  "Lighting > Light Bulbs > Fluorescent Bulbs": {
+    "Wattage": [
+      "15",
+      "22"
+    ],
+    "Color Temperature": [
+      "2700",
+      "3000"
+    ],
+    "Technology": [
+      "Fluorescent"
+    ],
+    "Length": [
+      "18"
+    ],
+    "Bulb Shape": [
+      "T12",
+      "T9"
+    ],
+    "Size/Diameter": [
+      "8"
+    ]
+  },
+  "Lighting > Light Bulbs > LED Bulbs": {
+    "Wattage": [
+      "100",
+      "12",
+      "120",
+      "150",
+      "32",
+      "40",
+      "45",
+      "50",
+      "60",
+      "65",
+      "75",
+      "8",
+      "90"
+    ],
+    "Color Temperature": [
+      "20",
+      "20000",
+      "20k",
+      "2700",
+      "27K",
+      "27k",
+      "30",
+      "3000",
+      "30K",
+      "50",
+      "5000",
+      "50000",
+      "50K",
+      "50k",
+      "5CCT",
+      "Multi CCT"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Size/Diameter": [
+      "12"
+    ],
+    "Bulb Shape": [
+      "A19",
+      "B11",
+      "BR30",
+      "BR40",
+      "Cand",
+      "F15",
+      "Par30L",
+      "T9"
+    ],
+    "Base Type": [
+      "A19",
+      "A21",
+      "Adj",
+      "Cand",
+      "MR16",
+      "Med",
+      "Medium",
+      "ST19"
+    ],
+    "Shape": [
+      "A19",
+      "A23",
+      "MR16",
+      "R20",
+      "ST19"
+    ],
+    "Style": [
+      "Edison"
+    ],
+    "Feature": [
+      "Motion"
+    ],
+    "Quantity": [
+      "2",
+      "3",
+      "4"
+    ],
+    "Incandescent Equivalence": [
+      "100/150/200",
+      "100/200/300",
+      "150",
+      "40",
+      "45",
+      "50",
+      "60",
+      "60/100/150",
+      "75"
+    ],
+    "Pack Quantity": [
+      "2",
+      "3",
+      "4"
+    ],
+    "Brand": [
+      "Wiz"
+    ],
+    "Finish": [
+      "Clr"
+    ],
+    "Color": [
+      "Ch"
+    ],
+    "Pack Size": [
+      "2",
+      "3",
+      "4"
+    ],
+    "Size": [
+      "A19",
+      "A21",
+      "BR30",
+      "BR40",
+      "PAR16",
+      "PAR30L",
+      "PAR38",
+      "R20",
+      "ST19"
+    ],
+    "Wattage Equivalent": [
+      "100",
+      "40",
+      "60",
+      "65"
+    ],
+    "Bulb Type": [
+      "BR30"
+    ]
+  },
+  "Lighting > Light Bulbs > Halogen Bulbs": {
+    "Wattage": [
+      "20",
+      "300"
+    ],
+    "Technology": [
+      "Halogen"
+    ],
+    "Pin Type": [
+      "Pin"
+    ],
+    "Bulb Shape": [
+      "T3",
+      "T4"
+    ]
+  },
+  "Lighting > Light Bulbs > HID Bulbs": {
+    "Wattage": [
+      "150"
+    ],
+    "Color Temperature": [
+      "2100"
+    ],
+    "Technology": [
+      "Sodium"
+    ],
+    "Base Type": [
+      "Med"
+    ]
+  },
+  "Lighting > Light Bulbs > Incandescent Bulbs": {
+    "Wattage": [
+      "25",
+      "4",
+      "40",
+      "6",
+      "7"
+    ],
+    "Color Temperature": [
+      "2600",
+      "2700"
+    ],
+    "Technology": [
+      "Incandescent"
+    ],
+    "Bulb Shape": [
+      "A15"
+    ],
+    "Base Type": [
+      "Cand",
+      "Med"
+    ],
+    "Quantity": [
+      "2",
+      "4"
+    ],
+    "Pack Quantity": [
+      "2",
+      "4"
+    ]
+  },
+  "Lighting > LED Bulbs > Flood Light Bulbs": {
+    "Wattage": [
+      "125"
+    ],
+    "Color Temperature": [
+      "3000"
+    ],
+    "Wattage Equivalent": [
+      "125"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Base Type": [
+      "Med"
+    ],
+    "Bulb Type": [
+      "Flood"
+    ]
+  },
+  "Lighting > LED Bulbs > Candelabra LED Bulbs": {
+    "Wattage": [
+      "25",
+      "40",
+      "60"
+    ],
+    "Color Temperature": [
+      "2700",
+      "5000"
+    ],
+    "Quantity": [
+      "2",
+      "3"
+    ],
+    "Wattage Equivalent": [
+      "25",
+      "40",
+      "60"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Bulb Shape": [
+      "Cand"
+    ],
+    "Pack Quantity": [
+      "2",
+      "3"
+    ],
+    "Wattage Equivalence": [
+      "40"
+    ],
+    "Base Type": [
+      "Candelabra"
+    ]
+  },
+  "Lighting > LED Bulbs > Standard LED Bulbs": {
+    "Wattage": [
+      "25",
+      "40",
+      "50",
+      "60",
+      "75"
+    ],
+    "Color Temperature": [
+      "2000",
+      "2200",
+      "2700",
+      "3000",
+      "5000",
+      "5500"
+    ],
+    "Quantity": [
+      "2",
+      "3"
+    ],
+    "Wattage Equivalent": [
+      "40",
+      "40/60/100",
+      "60",
+      "75"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Base Type": [
+      "A19",
+      "Adjustable",
+      "Med",
+      "Medium"
+    ],
+    "Pack Quantity": [
+      "2",
+      "3"
+    ],
+    "Wattage Equivalence": [
+      "25",
+      "40",
+      "50",
+      "60"
+    ],
+    "Bulb Shape": [
+      "A19"
+    ]
+  },
+  "Lighting > LED Bulbs > Decorative LED Bulbs": {
+    "Wattage": [
+      "60"
+    ],
+    "Color Temperature": [
+      "5000"
+    ],
+    "Quantity": [
+      "3"
+    ],
+    "Wattage Equivalent": [
+      "60"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Bulb Shape": [
+      "BA11"
+    ],
+    "Pack Quantity": [
+      "3"
+    ]
+  },
+  "Lighting > LED Bulbs > Globe LED Bulbs": {
+    "Wattage": [
+      "40"
+    ],
+    "Color Temperature": [
+      "5000"
+    ],
+    "Quantity": [
+      "2"
+    ],
+    "Base Type": [
+      "Medium"
+    ],
+    "Wattage Equivalence": [
+      "40"
+    ],
+    "Bulb Shape": [
+      "G25"
+    ],
+    "Pack Quantity": [
+      "2"
+    ]
+  },
+  "Lighting > LED Bulbs > Linear & U-Bend LED Bulbs": {
+    "Wattage": [
+      "32"
+    ],
+    "Color Temperature": [
+      "4000"
+    ],
+    "Wattage Equivalence": [
+      "32"
+    ],
+    "Bulb Shape": [
+      "T8 U-Bend"
+    ]
+  },
+  "Lighting > LED Bulbs > Reflector LED Bulbs": {
+    "Wattage": [
+      "250",
+      "75",
+      "90"
+    ],
+    "Color Temperature": [
+      "5000"
+    ],
+    "Wattage Equivalence": [
+      "250",
+      "75"
+    ],
+    "Bulb Shape": [
+      "PAR20",
+      "PAR38"
+    ],
+    "Base Type": [
+      "Medium"
+    ],
+    "Quantity": [
+      "2"
+    ],
+    "Wattage Equivalent": [
+      "90"
+    ],
+    "Pack Quantity": [
+      "2"
+    ]
+  },
+  "Lighting > LED Bulbs > Appliance & Specialty LED Bulbs": {
+    "Wattage": [
+      "25"
+    ],
+    "Color Temperature": [
+      "2000"
+    ],
+    "Wattage Equivalent": [
+      "25"
+    ],
+    "Bulb Shape": [
+      "A15"
+    ],
+    "Base Type": [
+      "Medium"
+    ]
+  },
+  "Lighting > Wall Sconces > Outdoor Wall Sconces": {
+    "Color": [
+      "Black Textured",
+      "White"
+    ],
+    "Motion Sensor": [
+      "Yes"
+    ],
+    "Brand": [
+      "Kichler"
+    ],
+    "Mounting Type": [
+      "Exterior Wall"
+    ]
+  },
+  "Lighting > Post Lights > Outdoor Post Lights": {
+    "Brand": [
+      "Kichler"
+    ],
+    "Color": [
+      "Black"
+    ]
+  },
+  "Lighting > Portable Lighting > Work Lights": {
+    "Brand": [
+      "Dewalt"
+    ],
+    "Power Source": [
+      "Plug-in",
+      "Rechargeable"
+    ],
+    "Brightness": [
+      "6000"
+    ],
+    "Head Type": [
+      "Twin Head"
+    ]
+  },
+  "Lighting > Portable Lighting > Clip Lights": {
+    "Color": [
+      "Black"
+    ],
+    "Light Type": [
+      "Clip Light"
+    ]
+  },
+  "Lighting > Portable Lighting > Flashlights": {
+    "Model": [
+      "Slyde King"
+    ],
+    "Brightness": [
+      "2600"
+    ]
+  },
+  "Lighting > Portable Lighting > Headlamps": {
+    "Brightness": [
+      "800"
+    ],
+    "Style": [
+      "Police"
+    ]
+  },
+  "Electrical > Circuit Breakers & Load Centers > Load Centers": {
+    "Amperage": [
+      "100",
+      "200"
+    ],
+    "Circuits": [
+      "20"
+    ],
+    "Spaces": [
+      "40"
+    ],
+    "Amperage Rating": [
+      "100",
+      "225"
+    ],
+    "Load Center Type": [
+      "HOM"
+    ],
+    "Enclosure Type": [
+      "R"
+    ],
+    "Series": [
+      "QO"
+    ]
+  },
+  "Electrical > Wire & Cable > Service Entrance Cable": {
+    "Material": [
+      "Aluminum"
+    ],
+    "Wire Size": [
+      "4/0"
+    ],
+    "Conductor Material": [
+      "Aluminum"
+    ],
+    "Cable Type": [
+      "Service Entrance"
+    ]
+  },
+  "Electrical > Wire & Cable > Portable Cord": {
+    "Wire Size": [
+      "10",
+      "12",
+      "16"
+    ],
+    "Number of Conductors": [
+      "3",
+      "4"
+    ],
+    "Cable Type": [
+      "SJEWA",
+      "SO"
+    ],
+    "Length": [
+      "250"
+    ]
+  },
+  "Electrical > Wire & Cable > Data & Communication Wire": {
+    "Cable Type": [
+      "CAT5E"
+    ]
+  },
+  "Electrical > Wire & Cable > Building Wire": {
+    "Length": [
+      "500"
+    ],
+    "Wire Size": [
+      "16"
+    ],
+    "Number of Conductors": [
+      "2"
+    ],
+    "Conductor Type": [
+      "Stranded"
+    ],
+    "Cable Type": [
+      "CL3"
+    ]
+  },
+  "Electrical > Wire & Cable > Underground Feeder Wire": {
+    "Material": [
+      "Aluminum"
+    ],
+    "Wire Size": [
+      "2/2/4",
+      "6/6/6"
+    ],
+    "Conductor Material": [
+      "Aluminum"
+    ],
+    "Cable Type": [
+      "UD Triplex"
+    ]
+  },
+  "Electrical > Wiring Devices > Cord Grips": {
+    "Color Temperature": [
+      "50"
+    ],
+    "Trade Size": [
+      "1/2"
+    ],
+    "Product Type": [
+      "Cord Grip Kit"
+    ]
+  },
+  "Electrical > Wiring Devices > Outlets": {
+    "Amperage": [
+      "15"
+    ],
+    "Color": [
+      "Brown",
+      "Light Almond",
+      "White"
+    ],
+    "Amperage Rating": [
+      "15"
+    ],
+    "Device Type": [
+      "Mini Outlet",
+      "Outlet"
+    ],
+    "Color Temperature": [
+      "100"
+    ],
+    "Wattage": [
+      "1500"
+    ]
+  },
+  "Electrical > Wiring Devices > Wall Taps": {
+    "Amperage": [
+      "15"
+    ],
+    "Amperage Rating": [
+      "15"
+    ],
+    "Device Type": [
+      "Wall Tap"
+    ],
+    "Features": [
+      "USB"
+    ]
+  },
+  "Electrical > Wiring Devices > GFCI Outlets": {
+    "Amperage": [
+      "15"
+    ],
+    "Color": [
+      "White"
+    ],
+    "Amperage Rating": [
+      "15"
+    ],
+    "Device Type": [
+      "GFCI Outlet"
+    ]
+  },
+  "Electrical > Wiring Devices > Cord Connectors": {
+    "Voltage": [
+      "125"
+    ],
+    "Amperage": [
+      "15"
+    ],
+    "Amperage Rating": [
+      "15"
+    ],
+    "Voltage Rating": [
+      "125"
+    ],
+    "Device Type": [
+      "Cord Connector"
+    ]
+  },
+  "Electrical > Wiring Devices > USB Outlets": {
+    "Amperage": [
+      "15"
+    ],
+    "Color": [
+      "White"
+    ],
+    "Amperage Rating": [
+      "15"
+    ],
+    "Device Type": [
+      "USB Outlet"
+    ]
+  },
+  "Electrical > Wiring Devices > Specialty Outlets": {
+    "NEMA Configuration": [
+      "6-50R"
+    ],
+    "Device Type": [
+      "Welder Outlet"
+    ]
+  },
+  "Electrical > Boxes & Covers > Wallplate Covers": {
+    "Color": [
+      "White"
+    ],
+    "Gangs": [
+      "1"
+    ]
+  },
+  "Electrical > Wiring Devices > GFCI Plugs": {
+    "Amperage": [
+      "15"
+    ],
+    "Device Type": [
+      "GFCI Plug"
+    ]
+  },
+  "Electrical > Wiring Devices > Switches": {
+    "Color": [
+      "Ivory",
+      "White"
+    ],
+    "Features": [
+      "Pilot Light"
+    ],
+    "Device Type": [
+      "Switch"
+    ],
+    "Amperage": [
+      "15"
+    ],
+    "Switch Type": [
+      "Toggle"
+    ],
+    "Wiring Type": [
+      "3-Way"
+    ]
+  },
+  "Electrical > Boxes & Covers > Wallplates": {
+    "Material": [
+      "Stainless Steel"
+    ],
+    "Gangs": [
+      "1"
+    ],
+    "Configuration": [
+      "Blank"
+    ],
+    "Wattage": [
+      "1300"
+    ],
+    "Color": [
+      "White"
+    ]
+  },
+  "Appliances > Refrigeration > Beverage Centers": {
+    "Material": [
+      "Stainless Steel"
+    ],
+    "Height": [
+      "Tall"
+    ],
+    "Finish": [
+      "Stainless Steel"
+    ],
+    "Appliance Type": [
+      "Beverage Center"
+    ]
+  },
+  "Appliances > Refrigeration > Wine Coolers": {
+    "Color": [
+      "Black"
+    ],
+    "Appliance Type": [
+      "Beverage Center"
+    ]
+  },
+  "Appliances > Small Appliances > Coffee Makers": {
+    "Brand": [
+      "Cafe",
+      "Café"
+    ],
+    "Appliance Type": [
+      "Coffee Maker",
+      "Drip Coffee Maker"
+    ],
+    "Color": [
+      "Matte Black",
+      "Matte White"
+    ]
+  },
+  "Appliances > Small Appliances > Espresso Machines": {
+    "Material": [
+      "Stainless Steel"
+    ],
+    "Brand": [
+      "Cafe",
+      "Café"
+    ],
+    "Appliance Type": [
+      "Auto Espresso Machine",
+      "Espresso Machine"
+    ],
+    "Finish": [
+      "Stainless Steel"
+    ],
+    "Color": [
+      "White"
+    ],
+    "Color/Finish": [
+      "Matte Black",
+      "White"
+    ]
+  },
+  "Appliances > Cooking > Wall Ovens": {
+    "Material": [
+      "Stainless Steel"
+    ],
+    "Brand": [
+      "Beko"
+    ],
+    "Size": [
+      "30"
+    ],
+    "Color/Finish": [
+      "Stainless Steel"
+    ]
+  },
+  "Appliances > Cooking > Microwaves": {
+    "Material": [
+      "Stainless Steel"
+    ],
+    "Brand": [
+      "Café",
+      "GE",
+      "LG"
+    ],
+    "Color/Finish": [
+      "Black",
+      "Stainless Steel"
+    ],
+    "Condition": [
+      "Display",
+      "Display Only"
+    ],
+    "Type": [
+      "Microwave Drawer"
+    ],
+    "Color": [
+      "Black"
+    ],
+    "Installation Type": [
+      "OTR"
+    ],
+    "Finish": [
+      "Stainless Steel"
+    ]
+  },
+  "Appliances > Cooking > Cooktops": {
+    "Color": [
+      "Black"
+    ],
+    "Size": [
+      "30"
+    ],
+    "Brand": [
+      "Café",
+      "GE"
+    ],
+    "Color/Finish": [
+      "Black"
+    ]
+  },
+  "Appliances > Cooking > Ranges": {
+    "Color": [
+      "Black"
+    ],
+    "Brand": [
+      "Café",
+      "Frigidaire",
+      "GE",
+      "LG"
+    ],
+    "Size": [
+      "30",
+      "36"
+    ],
+    "Color/Finish": [
+      "Black",
+      "Black Stainless",
+      "Matte Black",
+      "Stainless Steel"
+    ],
+    "Condition": [
+      "Display",
+      "Display Only"
+    ],
+    "Material": [
+      "Stainless Steel"
+    ],
+    "Fuel Type": [
+      "Electric",
+      "Gas"
+    ]
+  },
+  "Appliances > Cooking > Range Accessories": {
+    "Brand": [
+      "GE"
+    ],
+    "Accessory Type": [
+      "Grill"
+    ]
+  },
+  "Appliances > Small Appliances > Toasters": {
+    "Brand": [
+      "Cafe",
+      "Café"
+    ],
+    "Finish": [
+      "Matte Black",
+      "Matte White",
+      "Stainless Steel"
+    ],
+    "Material": [
+      "Stainless Steel"
+    ]
+  },
+  "Appliances > Small Appliances > Toaster Ovens": {
+    "Material": [
+      "Stainless Steel"
+    ],
+    "Brand": [
+      "Cafe"
+    ],
+    "Appliance Type": [
+      "Toaster Oven"
+    ],
+    "Finish": [
+      "Stainless Steel"
+    ]
+  },
+  "Appliances > Refrigeration > Refrigerators": {
+    "Brand": [
+      "GE"
+    ],
+    "Capacity": [
+      "21"
+    ],
+    "Finish": [
+      "Slate"
+    ],
+    "Condition": [
+      "Display Only"
+    ]
+  },
+  "Appliances > Refrigeration > Freezers": {
+    "Capacity": [
+      "16"
+    ],
+    "Brand": [
+      "GE"
+    ],
+    "Type": [
+      "Chest Freezer"
+    ]
+  },
+  "Appliances > Large Appliances > Refrigerators": {
+    "Material": [
+      "Stainless Steel"
+    ],
+    "Brand": [
+      "Cafe",
+      "Element",
+      "GE",
+      "LG"
+    ],
+    "Finish": [
+      "Slate",
+      "Stainless Steel"
+    ],
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Condition": [
+      "Display",
+      "Display Only"
+    ],
+    "Width": [
+      "36"
+    ],
+    "Wattage": [
+      "2100"
+    ],
+    "Capacity": [
+      "18"
+    ]
+  },
+  "Appliances > Large Appliances > Freezers": {
+    "Brand": [
+      "Element"
+    ],
+    "Capacity": [
+      "17",
+      "21"
+    ],
+    "Type": [
+      "Upright Freezer"
+    ],
+    "Orientation": [
+      "Upright"
+    ]
+  },
+  "Tools > Power Tools > Drills": {
+    "Application": [
+      "Hole Drilling"
+    ]
+  },
+  "Fasteners > Nails > Collated Nails": {
+    "Diameter": [
+      "0.131"
+    ],
+    "Length": [
+      "3"
+    ],
+    "Package Quantity": [
+      "500"
+    ],
+    "Brand": [
+      "Senco"
+    ]
+  },
+  "Fasteners > Nails > Finish Nails": {
+    "Thickness": [
+      "15"
+    ],
+    "Length": [
+      "2-1/2"
+    ],
+    "Gauge": [
+      "15"
+    ],
+    "Package Quantity": [
+      "4000"
+    ],
+    "Fastener Type": [
+      "Finish Nail"
+    ]
+  },
+  "Fasteners > Staples > Pneumatic Staples": {
+    "Size": [
+      "2",
+      "4"
+    ],
+    "Crown Width": [
+      "1/2",
+      "2/4"
+    ],
+    "Length": [
+      "1 1/8",
+      "3/8"
+    ],
+    "Brand": [
+      "Prebena"
+    ],
+    "Fastener Type": [
+      "Staple"
+    ]
+  },
+  "Appliances > Comfort > Fans": {
+    "Color": [
+      "White"
+    ],
+    "Blade Span": [
+      "44"
+    ],
+    "Brand": [
+      "Gilmour"
+    ]
+  },
+  "Lighting > Ceiling Fans > Standard Ceiling Fans": {
+    "Blade Span": [
+      "44",
+      "52"
+    ],
+    "Finish": [
+      "BZ",
+      "MB",
+      "PB",
+      "WH"
+    ],
+    "Model/Series": [
+      "Anisten",
+      "Cassius",
+      "Jetty",
+      "Sent",
+      "Xidane"
+    ],
+    "Brand": [
+      "Hunter"
+    ],
+    "Color": [
+      "White"
+    ]
+  },
+  "Tools > Cordless Tools > Vacuums": {
+    "Voltage": [
+      "18"
+    ],
+    "Brand": [
+      "Makita"
+    ],
+    "Tool Type": [
+      "Cordless Vacuum"
+    ],
+    "Battery Status": [
+      "Bare Tool"
+    ]
+  },
+  "Hardware > Security > Alert Systems": {
+    "Sensor Type": [
+      "Motion"
+    ],
+    "Application": [
+      "Driveway Alert"
+    ]
+  },
+  "Hardware > Gates > Gate Latches": {
+    "Color": [
+      "Black"
+    ],
+    "Application": [
+      "Gate"
+    ],
+    "Latch Type": [
+      "Gravity Latch"
+    ],
+    "Brand": [
+      "RDI"
+    ]
+  },
+  "Janitorial > Hydration > Water Bottles": {
+    "Size": [
+      "24",
+      "36"
+    ],
+    "Capacity": [
+      "24",
+      "36"
+    ],
+    "Insulation": [
+      "Insulated"
+    ],
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Product Type": [
+      "Water Bottle"
+    ]
+  },
+  "Tools > Power Tools > Grease Guns": {
+    "Voltage": [
+      "20"
+    ],
+    "Brand": [
+      "Dewalt"
+    ],
+    "Speed Settings": [
+      "2-Speed"
+    ],
+    "Kit": [
+      "Yes"
+    ]
+  },
+  "Tools > Tool Storage > Tool Chests": {
+    "Brand": [
+      "Dewalt"
+    ],
+    "Width": [
+      "41"
+    ],
+    "Type": [
+      "Bottom Chest"
+    ]
+  },
+  "Hardware > Building Materials > Post Wraps": {
+    "Size": [
+      "4",
+      "6"
+    ],
+    "Color": [
+      "Black",
+      "White"
+    ],
+    "Width": [
+      "4",
+      "6"
+    ],
+    "Depth": [
+      "4"
+    ],
+    "Length": [
+      "10",
+      "120",
+      "8.5"
+    ],
+    "Brand": [
+      "DSI"
+    ],
+    "Shape": [
+      "Square"
+    ],
+    "Material": [
+      "Aluminum"
+    ]
+  },
+  "Hardware > Building Materials > Molding & Trim": {
+    "Color": [
+      "White"
+    ],
+    "Type": [
+      "Inside Corner"
+    ],
+    "Material": [
+      "Vinyl Wrapped"
+    ]
+  },
+  "Tools > Hand Tools > Squares": {
+    "Brand": [
+      "Wal-Board"
+    ],
+    "Model": [
+      "TS-54"
+    ],
+    "Length": [
+      "54"
+    ]
+  },
+  "Tools > Hand Tools > Markers & Pencils": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Type": [
+      "Mechanical Pencil Replacement Lead",
+      "Mechanical Pencil Replacement Lead-Color",
+      "Mechanical Pencil w/ Lead Pack"
+    ]
+  },
+  "Safety > Eye Protection > Safety Glasses": {
+    "Color": [
+      "Black"
+    ],
+    "Brand": [
+      "Edge Safety"
+    ],
+    "Model": [
+      "Dawson",
+      "Kabru",
+      "Khor",
+      "Lassen",
+      "Makalu",
+      "Pumori",
+      "Tacana"
+    ],
+    "Frame Color": [
+      "Black"
+    ],
+    "Lens Type": [
+      "Photochromic",
+      "Polarized"
+    ],
+    "Lens Color": [
+      "Red"
+    ]
+  },
+  "Safety > Fire Safety > Fire Extinguishers": {
+    "Capacity/Size": [
+      "6L",
+      "9L"
+    ],
+    "Application": [
+      "Lithium Fire"
+    ]
+  },
+  "Safety > Life Safety > Smoke Detectors": {
+    "Detection Type": [
+      "Smoke & CO"
+    ]
+  },
+  "Safety > PPE > Work Gloves": {
+    "Color": [
+      "Black"
+    ],
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Size": [
+      "L",
+      "M",
+      "S",
+      "XL"
+    ],
+    "Type": [
+      "Heated Work Glove Liners"
+    ]
+  },
+  "Safety > Protective Clothing > Heated Gloves": {
+    "Color": [
+      "Black"
+    ],
+    "Model": [
+      "Aerial Snow",
+      "UTW Pro"
+    ],
+    "Size": [
+      "2X",
+      "2XL",
+      "LG",
+      "MD",
+      "SM",
+      "XL",
+      "XS"
+    ],
+    "Type": [
+      "Heated Glove"
+    ],
+    "Brand": [
+      "Aerial Snow"
+    ],
+    "Heated": [
+      "Yes"
+    ]
+  },
+  "Safety > Hearing Protection > Earmuffs": {
+    "Brand": [
+      "Dewalt"
+    ],
+    "Type": [
+      "AM/FM"
+    ]
+  },
+  "Safety > Protective Clothing > Heated Hoodies": {
+    "Color": [
+      "Black",
+      "Gray"
+    ],
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Platform": [
+      "M12"
+    ],
+    "Gender": [
+      "Womens"
+    ],
+    "Size": [
+      "L",
+      "M",
+      "XL"
+    ],
+    "Kit": [
+      "Yes"
+    ],
+    "Heated": [
+      "Yes"
+    ]
+  },
+  "Tools > Power Tool Accessories > Power Sources": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Application": [
+      "Heated Gear"
+    ]
+  },
+  "Tools > Power Tool Accessories > Battery Chargers": {
+    "Brand": [
+      "Dewalt",
+      "Kreg",
+      "Milwaukee"
+    ],
+    "Type": [
+      "Starter Kit"
+    ],
+    "Voltage": [
+      "12",
+      "20"
+    ],
+    "Amperage": [
+      "4",
+      "401"
+    ],
+    "Battery Voltage": [
+      "12V/20V",
+      "20"
+    ],
+    "Battery Platform": [
+      "M18 and M12"
+    ],
+    "Charger Type": [
+      "Fast Charger",
+      "Rapid Charger"
+    ]
+  },
+  "Tools > Tool Storage > Tool Holsters": {
+    "Size": [
+      "Large"
+    ],
+    "Material": [
+      "Leather"
+    ],
+    "Item Type": [
+      "Phone Holster"
+    ],
+    "Mounting Type": [
+      "Clip-on"
+    ]
+  },
+  "Electrical > Testing Equipment > Voltage Detectors": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Features": [
+      "LED"
+    ],
+    "Range Type": [
+      "Dual Range"
+    ]
+  },
+  "Tools > Measuring & Layout > Calipers": {
+    "Size": [
+      "300",
+      "600"
+    ],
+    "Brand": [
+      "BigCal"
+    ]
+  },
+  "Tools > Measuring & Layout > Laser Levels": {
+    "Color": [
+      "Green"
+    ],
+    "Brand": [
+      "Dewalt"
+    ],
+    "Type": [
+      "3 Spot",
+      "Cross Line Laser"
+    ],
+    "Laser Color": [
+      "Green"
+    ],
+    "Laser Type": [
+      "3 Line",
+      "Cross Line",
+      "Cross Line - Plumb Spots",
+      "Cross Line 5 Spot",
+      "Line Laser"
+    ],
+    "Self-Leveling": [
+      "Yes"
+    ],
+    "Length": [
+      "30"
+    ],
+    "Beam Distance": [
+      "30"
+    ],
+    "Range": [
+      "30"
+    ],
+    "Voltage": [
+      "20"
+    ],
+    "Power Source": [
+      "Bare Tool"
+    ]
+  },
+  "Tools > Measuring & Layout > String & Masonry Lines": {
+    "Length": [
+      "1000",
+      "250",
+      "270",
+      "500"
+    ],
+    "Color": [
+      "Black/Yellow",
+      "Green",
+      "Orange",
+      "Pink",
+      "Yellow"
+    ],
+    "Line Type": [
+      "Mason Line",
+      "Mason Line Twist"
+    ],
+    "Type": [
+      "Replacement"
+    ]
+  },
+  "Tools > Measuring & Layout > Squares": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Square Type": [
+      "Rafter Square"
+    ],
+    "Size": [
+      "12",
+      "300"
+    ],
+    "System of Measurement": [
+      "Metric"
+    ]
+  },
+  "Tools > Power Tool Accessories > Countersinks": {
+    "Brand": [
+      "Amana"
+    ],
+    "Tool Type": [
+      "Countersink/Stop"
+    ],
+    "Drill Size": [
+      "1/8"
+    ]
+  },
+  "Tools > Power Tool Accessories > Plug Cutters": {
+    "Brand": [
+      "Fisch"
+    ],
+    "Tool Type": [
+      "Plug Cutter"
+    ],
+    "Size": [
+      "3/8"
+    ]
+  },
+  "Tools > Power Tool Accessories > Router Bits": {
+    "Brand": [
+      "Whiteside"
+    ],
+    "Tool Type": [
+      "Router Bit"
+    ],
+    "Amperage": [
+      "3000"
+    ]
+  },
+  "Tools > Power Tools > Sanders": {
+    "Brand": [
+      "Festool",
+      "Kreg",
+      "Milwaukee",
+      "Mirka"
+    ],
+    "Model": [
+      "Deos663XCV"
+    ],
+    "Pad Size": [
+      "3",
+      "5"
+    ],
+    "Sander Type": [
+      "ETSC 2 125 I-Plus",
+      "ETSC 2 150 I-Plus",
+      "Orbit Sander",
+      "Orbital",
+      "Oscillating Edge - Belt and Spindle Sander",
+      "Random Orbit Sander"
+    ],
+    "Battery Platform": [
+      "M12",
+      "M18"
+    ],
+    "Power Source": [
+      "Bare Tool",
+      "Cordless"
+    ],
+    "Voltage": [
+      "20"
+    ],
+    "Amperage": [
+      "500"
+    ],
+    "Series": [
+      "Ionic"
+    ]
+  },
+  "Tools > Power Tool Accessories > Screw Gun Attachments": {
+    "Brand": [
+      "Dewalt"
+    ],
+    "Accessory Type": [
+      "Collated Screw Gun Attachment"
+    ]
+  },
+  "Tools > Hand Tools > Files": {
+    "File Type": [
+      "Mill"
+    ],
+    "Cut Type": [
+      "Bastard"
+    ],
+    "Length": [
+      "10"
+    ]
+  },
+  "Tools > Power Tool Accessories > Saw Blades": {
+    "Diameter": [
+      "10 1/2"
+    ]
+  },
+  "Tools > Hand Tools > Hex Keys": {
+    "Type": [
+      "Hex Plus"
+    ],
+    "Color": [
+      "Multicolor"
+    ]
+  },
+  "Tools > Hand Tools > Knives": {
+    "Tool Type": [
+      "Folding Knife"
+    ],
+    "Brand": [
+      "Dewalt"
+    ]
+  },
+  "Tools > Hand Tools > Bit Holders": {
+    "Color": [
+      "Black",
+      "Red"
+    ],
+    "Brand": [
+      "Vessel"
+    ],
+    "Type": [
+      "Carrying Bit Holder"
+    ]
+  },
+  "Tools > Hand Tools > Snips": {
+    "Color": [
+      "Green",
+      "Red"
+    ],
+    "Brand": [
+      "AVM"
+    ],
+    "Type": [
+      "Mini Snip"
+    ]
+  },
+  "Tools > Tool Accessories > Socket Adapters": {
+    "Drive Size": [
+      "1/2",
+      "1/4",
+      "3/8"
+    ],
+    "Connection Size": [
+      "1/4"
+    ],
+    "Drive Type": [
+      "Square"
+    ],
+    "Connection Type": [
+      "Hex"
+    ]
+  },
+  "Tools > Tool Accessories > Socket Extensions & Adapters": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Drive Size": [
+      "3/8"
+    ],
+    "Accessory Type": [
+      "Universal Joint"
+    ]
+  },
+  "Tools > Hand Tools > Socket & Ratchet Sets": {
+    "Quantity": [
+      "242",
+      "50",
+      "84"
+    ],
+    "Brand": [
+      "Dewalt",
+      "Milwaukee"
+    ],
+    "Piece Count": [
+      "242",
+      "50",
+      "84"
+    ],
+    "Storage Type": [
+      "4-Drawer Tool Box"
+    ],
+    "Drive Size": [
+      "1/4",
+      "3/8"
+    ],
+    "Set Type": [
+      "Mechanics Set"
+    ],
+    "Tool Type": [
+      "Mechanics Set"
+    ]
+  },
+  "Tools > Hand Tools > Wrench Sets": {
+    "Quantity": [
+      "15",
+      "30"
+    ],
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Product Line": [
+      "Packout"
+    ],
+    "Piece Count": [
+      "15",
+      "30"
+    ],
+    "Measurement System": [
+      "Metric",
+      "Metric & SAE",
+      "SAE"
+    ]
+  },
+  "Lawn & Garden > Outdoor Power Equipment > Pruner Parts": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Application": [
+      "Pole Pruning"
+    ],
+    "Part Type": [
+      "Shears Replacement Blade"
+    ]
+  },
+  "Tools > Hand Tools > Chalk Lines": {
+    "Length": [
+      "100"
+    ],
+    "Beam Distance": [
+      "100"
+    ],
+    "Color": [
+      "Red"
+    ],
+    "Brand": [
+      "Irwin"
+    ],
+    "Line Length": [
+      "100"
+    ],
+    "Kit Type": [
+      "Chalk & Reel Set"
+    ]
+  },
+  "Lawn & Garden > Outdoor Power Equipment > String Trimmers": {
+    "Voltage": [
+      "18"
+    ],
+    "Brand": [
+      "Makita"
+    ],
+    "Cutting Capacity": [
+      "13"
+    ],
+    "Product Type": [
+      "String Trimmer",
+      "String Trimmer Kit",
+      "Trimmer Tool - Only"
+    ]
+  },
+  "Lawn & Garden > Outdoor Power Equipment > Leaf Blowers": {
+    "Brand": [
+      "Dewalt",
+      "Milwaukee"
+    ],
+    "Battery Platform": [
+      "M18"
+    ],
+    "Motor Type": [
+      "Brushless"
+    ],
+    "Product Type": [
+      "Blower (Bare)",
+      "Precision Blower"
+    ],
+    "Voltage": [
+      "20"
+    ],
+    "Product Line": [
+      "XR"
+    ]
+  },
+  "Tools > Jobsite Equipment > Jobsite Speakers": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Battery Platform": [
+      "M12",
+      "M18"
+    ],
+    "Connectivity": [
+      "Bluetooth"
+    ],
+    "Product Type": [
+      "Jobsite Speaker",
+      "Jobsite Speaker w/Packout"
+    ]
+  },
+  "Abrasives > Sanding Sheets > Mesh Sanding Sheets": {
+    "Size": [
+      "4"
+    ],
+    "Amperage": [
+      "9"
+    ],
+    "Brand": [
+      "Abranet"
+    ],
+    "Dimensions": [
+      "4x6x6"
+    ],
+    "Grit": [
+      "120",
+      "180"
+    ]
+  },
+  "Lawn & Garden > Outdoor Power Equipment > Hedge Trimmers": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Battery Platform": [
+      "M18"
+    ],
+    "Blade Length": [
+      "24",
+      "30"
+    ],
+    "Product Type": [
+      "Hedge Trimmer",
+      "Hedge Trimmer Kit"
+    ]
+  },
+  "Tools > Power Tools > Hammer Drills": {
+    "Color Temperature": [
+      "25333"
+    ],
+    "Brand": [
+      "Dewalt"
+    ],
+    "Tool Type": [
+      "Hammer Drill"
+    ],
+    "Voltage": [
+      "20"
+    ],
+    "Power Source": [
+      "Cordless"
+    ],
+    "Chuck Size": [
+      "1/2"
+    ],
+    "Kit Type": [
+      "Bare"
+    ]
+  },
+  "Tools > Power Tools > Drill Drivers": {
+    "Brand": [
+      "Dewalt",
+      "Kreg",
+      "Milwaukee"
+    ],
+    "Tool Type": [
+      "Compact Drill",
+      "Drill",
+      "Drill Driver",
+      "Multi-Head Drill Driver"
+    ],
+    "Voltage": [
+      "12",
+      "20"
+    ],
+    "Motor Type": [
+      "Brushless"
+    ],
+    "Design": [
+      "Compact"
+    ],
+    "Power Source": [
+      "Bare Tool"
+    ],
+    "Amperage": [
+      "050"
+    ],
+    "Series": [
+      "Ionic"
+    ]
+  },
+  "Tools > Power Tools > Impact Drivers": {
+    "Voltage": [
+      "20"
+    ],
+    "Brand": [
+      "Dewalt",
+      "Kreg",
+      "Milwaukee"
+    ],
+    "Tool Type": [
+      "Impact Driver"
+    ],
+    "Series": [
+      "Atomic",
+      "Ionic",
+      "Surge"
+    ],
+    "Drive Size": [
+      "1/2",
+      "1/4"
+    ],
+    "Product Type": [
+      "Hydraulic Driver",
+      "Impact Driver",
+      "Impact Driver Kit",
+      "Kit"
+    ],
+    "Platform": [
+      "M12",
+      "M18"
+    ],
+    "Drive Type": [
+      "Hex"
+    ],
+    "Motor Type": [
+      "Brushless"
+    ],
+    "Design": [
+      "Compact"
+    ],
+    "Amperage": [
+      "025"
+    ]
+  },
+  "Tools > Power Tools > Drill Presses": {
+    "Model": [
+      "Voyager"
+    ],
+    "Tool Type": [
+      "Drill Press"
+    ]
+  },
+  "Tools > Power Tools > Nail Guns": {
+    "Brand": [
+      "Dewalt",
+      "Makita",
+      "Milwaukee",
+      "Paslode"
+    ],
+    "Tool Type": [
+      "Framing Nailer",
+      "Nailer",
+      "Roofing Nailer"
+    ],
+    "Voltage": [
+      "12",
+      "18",
+      "20"
+    ],
+    "Nail Type": [
+      "Angled Finish Nailer",
+      "Brad Nailer",
+      "Coil Roofing",
+      "ST Brad",
+      "Straight Finish Nailer"
+    ],
+    "Kit Type": [
+      "Bare",
+      "Kit"
+    ],
+    "Thickness": [
+      "16",
+      "18"
+    ],
+    "Model": [
+      "CT200S24"
+    ],
+    "Gauge": [
+      "16",
+      "18"
+    ],
+    "Design": [
+      "Compact"
+    ],
+    "Collation Angle": [
+      "30"
+    ],
+    "Fastener Length": [
+      "2",
+      "2-1/2"
+    ],
+    "Color": [
+      "Blue"
+    ],
+    "Platform": [
+      "LXT"
+    ],
+    "Motor Type": [
+      "BL"
+    ],
+    "Capacity": [
+      "30"
+    ]
+  },
+  "Tools > Tool Accessories > Nail Gun Parts": {
+    "Brand": [
+      "Dewalt"
+    ],
+    "Collation Angle": [
+      "30"
+    ],
+    "Part Type": [
+      "Framing Magazine"
+    ]
+  },
+  "Tools > Hand Tools > Screwdrivers": {
+    "Quantity": [
+      "25",
+      "5"
+    ],
+    "Brand": [
+      "Vessel"
+    ],
+    "Tool Type": [
+      "Screwdriver"
+    ],
+    "Bit Count": [
+      "25",
+      "5"
+    ],
+    "Model Series": [
+      "Plus"
+    ]
+  },
+  "Tools > Power Tools > Screwdrivers": {
+    "Voltage": [
+      "18"
+    ],
+    "Brand": [
+      "Makita"
+    ],
+    "Tool Type": [
+      "Screwdriver"
+    ],
+    "Feed Type": [
+      "Autofeed"
+    ]
+  },
+  "Tools > Tool Accessories > Driver Bits": {
+    "Quantity": [
+      "15",
+      "5",
+      "6"
+    ],
+    "Length": [
+      "1",
+      "2",
+      "3-1/2",
+      "3.5",
+      "6"
+    ],
+    "Feature": [
+      "Magnetic"
+    ],
+    "Tool Type": [
+      "Impact Driver"
+    ],
+    "Pack Quantity": [
+      "15",
+      "5",
+      "6"
+    ],
+    "Brand": [
+      "Milwaukee",
+      "Vessel"
+    ],
+    "Type": [
+      "Impact Ball Torsion Bit",
+      "Torsion Bit"
+    ],
+    "Drive Size": [
+      "1",
+      "2"
+    ],
+    "Drive Type": [
+      "Phillips"
+    ],
+    "Application": [
+      "Drywall"
+    ]
+  },
+  "Tools > Power Tool Accessories > Screwdriver Bits": {
+    "Length": [
+      "1",
+      "2",
+      "3-1/2",
+      "3-1/4",
+      "6"
+    ],
+    "Drive Size": [
+      "1",
+      "10",
+      "15",
+      "2",
+      "20",
+      "25",
+      "3",
+      "30",
+      "40"
+    ],
+    "Drive Type": [
+      "Phillips",
+      "Square",
+      "Torx"
+    ],
+    "Drive Style": [
+      "Phillips",
+      "Torx"
+    ],
+    "Product Type": [
+      "Bit",
+      "Drive Bit",
+      "Screw Setter"
+    ],
+    "Application": [
+      "Drywall"
+    ],
+    "Quantity": [
+      "5"
+    ],
+    "Brand": [
+      "Makita"
+    ],
+    "Pack Quantity": [
+      "5"
+    ]
+  },
+  "Tools > Power Tools > Cordless Staplers": {
+    "Thickness": [
+      "18"
+    ],
+    "Voltage": [
+      "18"
+    ],
+    "Brand": [
+      "Makita"
+    ],
+    "Crown Size": [
+      "1/4"
+    ],
+    "Gauge": [
+      "18"
+    ],
+    "Product Type": [
+      "Narrow Crown Stapler"
+    ]
+  },
+  "Tools > Power Tools > Impact Wrenches": {
+    "Brand": [
+      "Dewalt",
+      "Makita",
+      "Milwaukee"
+    ],
+    "Platform": [
+      "M12"
+    ],
+    "Drive Size": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "3/8"
+    ],
+    "Retention Type": [
+      "Friction Ring"
+    ],
+    "Product Type": [
+      "Impact Wrench"
+    ],
+    "Series": [
+      "Stubby"
+    ],
+    "Voltage": [
+      "12",
+      "18",
+      "20"
+    ],
+    "Tool Type": [
+      "Impact Wrench"
+    ],
+    "Power Source": [
+      "Bare"
+    ],
+    "Tool Style": [
+      "Stubby"
+    ],
+    "Anvil Type": [
+      "Pin Detent"
+    ],
+    "Head Type": [
+      "Angle"
+    ]
+  },
+  "Tools > Power Tools > Ratchet Wrenches": {
+    "Voltage": [
+      "12",
+      "20"
+    ],
+    "Brand": [
+      "Dewalt",
+      "Milwaukee"
+    ],
+    "Tool Type": [
+      "Ratchet Wrench"
+    ],
+    "Anvil Type": [
+      "Interchangeable Anvil"
+    ],
+    "Series": [
+      "Fuel"
+    ],
+    "Drive Size": [
+      "1/2",
+      "1/4",
+      "3/8"
+    ],
+    "Power Source": [
+      "Bare"
+    ],
+    "Head Type": [
+      "Open Head"
+    ]
+  },
+  "Tools > Power Tools > Polishers and Sanders": {
+    "Voltage": [
+      "18"
+    ],
+    "Brand": [
+      "Makita"
+    ],
+    "Pad Size": [
+      "2"
+    ],
+    "Tool Type": [
+      "Polisher/Sander"
+    ]
+  },
+  "Tools > Power Tools > Files": {
+    "Size": [
+      "2"
+    ],
+    "Brand": [
+      "Dewalt"
+    ],
+    "Width": [
+      "1/2"
+    ],
+    "Length": [
+      "18"
+    ],
+    "Tool Type": [
+      "Band File"
+    ]
+  },
+  "Tools > Power Tools > Angle Grinders": {
+    "Voltage": [
+      "20",
+      "60"
+    ],
+    "Brand": [
+      "Dewalt"
+    ],
+    "Wheel Diameter": [
+      "4-1/2 to 5",
+      "4.5",
+      "7-9"
+    ],
+    "Tool Type": [
+      "Angle Grinder"
+    ],
+    "Power Source": [
+      "Bare"
+    ]
+  },
+  "Tools > Power Tools > Die Grinders": {
+    "Brand": [
+      "Dewalt",
+      "Milwaukee"
+    ],
+    "Voltage": [
+      "12",
+      "20"
+    ],
+    "Collet Size": [
+      "1/4"
+    ],
+    "Head Type": [
+      "Right Angle"
+    ],
+    "Tool Type": [
+      "Die Grinder"
+    ],
+    "Power Source": [
+      "Bare"
+    ]
+  },
+  "Tools > Power Tools > Planers": {
+    "Voltage": [
+      "120"
+    ],
+    "Brand": [
+      "Mafell"
+    ],
+    "Application": [
+      "Carpentry"
+    ],
+    "Model": [
+      "ZH 320 Ec"
+    ],
+    "Tool Type": [
+      "Planing Machine"
+    ]
+  },
+  "Tools > Power Tools > Routers": {
+    "Voltage": [
+      "20"
+    ],
+    "Brand": [
+      "Dewalt"
+    ],
+    "Base Type": [
+      "Plunge"
+    ],
+    "Tool Type": [
+      "Router"
+    ]
+  },
+  "Abrasives > Sandpaper > Sandpaper Sheets": {
+    "Size": [
+      "3.2"
+    ],
+    "Brand": [
+      "Abranet",
+      "Festool",
+      "Iridium"
+    ],
+    "Attachment Type": [
+      "Grip"
+    ],
+    "Length": [
+      "3",
+      "3.2",
+      "80"
+    ],
+    "Width": [
+      "133",
+      "4",
+      "5.2"
+    ],
+    "Grit": [
+      "120",
+      "320"
+    ],
+    "Amperage": [
+      "9"
+    ],
+    "Quantity": [
+      "10",
+      "50"
+    ],
+    "Grade": [
+      "F",
+      "M",
+      "S"
+    ],
+    "Series": [
+      "GR PRO"
+    ]
+  },
+  "Abrasives > Sandpaper & Sponges > Sandpaper Sheets": {
+    "Brand": [
+      "Festool"
+    ],
+    "Length": [
+      "3"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Grade": [
+      "F",
+      "M",
+      "S"
+    ],
+    "Series": [
+      "GR PRO"
+    ],
+    "Quantity": [
+      "10"
+    ],
+    "Shape": [
+      "Delta"
+    ]
+  },
+  "Abrasives > Sandpaper & Sponges > Sandpaper Assortments": {
+    "Brand": [
+      "Festool"
+    ],
+    "Length": [
+      "3"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Series": [
+      "GR",
+      "GR PRO"
+    ],
+    "Type": [
+      "Abrasive Set",
+      "Set"
+    ],
+    "Diameter": [
+      "150"
+    ],
+    "Packaging": [
+      "Systainer"
+    ]
+  },
+  "Tools > Saw Blades > Circular Saw Blades": {
+    "Brand": [
+      "Diablo",
+      "Makita",
+      "Milwaukee"
+    ],
+    "Diameter": [
+      "10",
+      "12",
+      "5-7/8",
+      "6-1/2",
+      "7-1/4",
+      "8-1/4"
+    ],
+    "Tooth Count": [
+      "12",
+      "16",
+      "20",
+      "24",
+      "32",
+      "4",
+      "48",
+      "52",
+      "60",
+      "8"
+    ],
+    "Application": [
+      "Cement Track Saw",
+      "Circular Saw",
+      "Fine Finish",
+      "Framing",
+      "Framing Saw",
+      "Laminate & Wood Flooring",
+      "Laminate Track Saw",
+      "Plywood Track Saw"
+    ],
+    "Blade Type": [
+      "Circular Saw Blade"
+    ],
+    "Size": [
+      "10",
+      "12",
+      "4"
+    ],
+    "Material": [
+      "Wood"
+    ]
+  },
+  "Tools > Saw Blades > Dado Blade Sets": {
+    "Size": [
+      "312.08"
+    ],
+    "Brand": [
+      "CMT"
+    ],
+    "Product Type": [
+      "Dado Blade Set"
+    ],
+    "Series": [
+      "Locked Dado Pro"
+    ]
+  },
+  "Abrasives > Cutting & Grinding Wheels > Diamond Blades": {
+    "Brand": [
+      "Dewalt",
+      "Milwaukee"
+    ],
+    "Diameter": [
+      "10",
+      "14",
+      "4",
+      "4-1/2",
+      "5",
+      "7"
+    ],
+    "Rim Type": [
+      "Segmented"
+    ],
+    "Blade Type": [
+      "Diamond",
+      "Diamond Rim"
+    ],
+    "Material": [
+      "Glass"
+    ],
+    "Application": [
+      "Glass Tile",
+      "Tile"
+    ]
+  },
+  "Tools > Power Tool Accessories > Hole Saws": {
+    "Quantity": [
+      "13"
+    ],
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Piece Count": [
+      "13"
+    ],
+    "Series": [
+      "Quik-Lock Hole Dozer"
+    ],
+    "Product Type": [
+      "Hole Saw Kit"
+    ]
+  },
+  "Tools > Saw Blades > Jigsaw Blades": {
+    "Brand": [
+      "Diablo"
+    ],
+    "Length": [
+      "3-3/5"
+    ],
+    "Tooth Pitch": [
+      "10"
+    ],
+    "Blade Type": [
+      "Jig Saw"
+    ]
+  },
+  "Tools > Power Tool Accessories > Planer Blades": {
+    "Size": [
+      "790.820"
+    ],
+    "Quantity": [
+      "2",
+      "3"
+    ],
+    "Brand": [
+      "CMT"
+    ],
+    "Piece Count": [
+      "2",
+      "3"
+    ],
+    "Product Type": [
+      "Planer Blade",
+      "Planer Knives"
+    ],
+    "Material": [
+      "HS"
+    ]
+  },
+  "Tools > Saw Blades > Reciprocating Saw Blades": {
+    "Quantity": [
+      "15"
+    ],
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Piece Count": [
+      "15"
+    ],
+    "Series": [
+      "Packout"
+    ],
+    "Product Type": [
+      "Sawzall Blade Kit"
+    ]
+  },
+  "Tools > Power Tools > Bandsaws": {
+    "Power": [
+      "1.75"
+    ],
+    "Voltage": [
+      "115"
+    ],
+    "Blade Size": [
+      "14",
+      "18"
+    ],
+    "Phase": [
+      "1"
+    ],
+    "Color": [
+      "Black"
+    ],
+    "Color Temperature": [
+      "714400"
+    ]
+  },
+  "Tools > Power Tools > Circular Saws": {
+    "Platform": [
+      "20V",
+      "Ionic",
+      "M18"
+    ],
+    "Blade Size": [
+      "4-1/2",
+      "7-1/4"
+    ],
+    "Kit Type": [
+      "Bare Tool",
+      "Kit"
+    ],
+    "Voltage": [
+      "20"
+    ],
+    "Application": [
+      "Metal Cutting"
+    ],
+    "Amperage": [
+      "100",
+      "450",
+      "725"
+    ],
+    "Series": [
+      "Ionic"
+    ],
+    "Blade Diameter": [
+      "6-1/2"
+    ],
+    "Tool Type": [
+      "Plunge-Cut Track Saw"
+    ],
+    "Kit": [
+      "Yes"
+    ]
+  },
+  "Tools > Power Tools > Jigsaws": {
+    "Platform": [
+      "20V",
+      "M12"
+    ],
+    "Voltage": [
+      "20"
+    ],
+    "Amperage": [
+      "100"
+    ],
+    "Series": [
+      "Ionic"
+    ],
+    "Handle Style": [
+      "Barrel Grip"
+    ]
+  },
+  "Tools > Power Tools > Miter Saws": {
+    "Voltage": [
+      "20",
+      "40"
+    ],
+    "Platform": [
+      "20V",
+      "40V"
+    ],
+    "Blade Size": [
+      "10",
+      "12",
+      "8-1/2"
+    ],
+    "Bevel Type": [
+      "Double Bevel"
+    ],
+    "Type": [
+      "Fixed",
+      "Sliding"
+    ],
+    "Kit Type": [
+      "Bare Tool",
+      "Kit"
+    ]
+  },
+  "Tools > Power Tool Accessories > Miter Saw Accessories": {
+    "Accessory Type": [
+      "Stand Support/Stop"
+    ]
+  },
+  "Tools > Power Tools > Reciprocating Saws": {
+    "Voltage": [
+      "18",
+      "20"
+    ],
+    "Platform": [
+      "18V",
+      "20V"
+    ],
+    "Motor Type": [
+      "Brushless"
+    ],
+    "Kit Type": [
+      "Bare Tool"
+    ]
+  },
+  "Tools > Power Tools > Table Saws": {
+    "Rip Capacity": [
+      "30"
+    ]
+  },
+  "Tools > Power Tool Accessories > Table Saw Accessories": {
+    "Accessory Type": [
+      "Zero-Clearance Insert"
+    ]
+  },
+  "Tools > Power Tool Accessories > Table Saw Fences": {
+    "Capacity": [
+      "24"
+    ],
+    "Series": [
+      "XT XTENDER"
+    ],
+    "Accessory Type": [
+      "Fence"
+    ],
+    "Fence Length": [
+      "35",
+      "36",
+      "46"
+    ],
+    "Model Series": [
+      "T-Glide",
+      "T-Glide Advance",
+      "T-Glide Advanced",
+      "XT XTENDER",
+      "XTP XTENDER PRO"
+    ],
+    "Grade": [
+      "Industrial",
+      "Professional"
+    ]
+  },
+  "Tools > Power Tool Accessories > Table Saw Parts": {
+    "Amperage": [
+      "36"
+    ],
+    "Assembly Length": [
+      "36"
+    ],
+    "Grade": [
+      "Industrial"
+    ],
+    "Component Type": [
+      "Table Assembly"
+    ]
+  },
+  "Tools > Power Tool Accessories > Battery Chargers & Starter Kits": {
+    "Brand": [
+      "Dewalt",
+      "Kreg",
+      "Makita"
+    ],
+    "Battery System": [
+      "Flexvolt"
+    ],
+    "Product Type": [
+      "Battery/Charger Starter Kit",
+      "Starter Kit"
+    ],
+    "Voltage": [
+      "20"
+    ],
+    "Amperage": [
+      "20"
+    ]
+  },
+  "Tools > Power Tool Accessories > Batteries": {
+    "Voltage": [
+      "18",
+      "20"
+    ],
+    "Brand": [
+      "Dewalt",
+      "Kreg",
+      "Milwaukee",
+      "Senco"
+    ],
+    "Battery Capacity": [
+      "2",
+      "2.0",
+      "4",
+      "8"
+    ],
+    "Battery Series": [
+      "CP2.0",
+      "Max XR Powerpack"
+    ],
+    "Quantity": [
+      "2"
+    ],
+    "Battery Chemistry": [
+      "Lithium"
+    ],
+    "Amperage": [
+      "2",
+      "4"
+    ],
+    "Platform": [
+      "M12"
+    ],
+    "Product Type": [
+      "Battery"
+    ]
+  },
+  "Tools > Power Tool Accessories > Power Supplies & Chargers": {
+    "Brand": [
+      "Milwaukee"
+    ],
+    "Device Type": [
+      "Charger and Power Supply",
+      "Power Supply - Charger"
+    ],
+    "Battery Platform": [
+      "M18"
+    ]
+  },
+  "Janitorial > Vacuum Cleaners & Accessories > Vacuum Bags": {
+    "Quantity": [
+      "5"
+    ],
+    "Brand": [
+      "Dewalt"
+    ],
+    "Material": [
+      "Paper"
+    ],
+    "Pack Quantity": [
+      "5"
+    ]
+  },
+  "Tools > Dust Collection > Dust Extractors": {
+    "Brand": [
+      "Festool"
+    ],
+    "Model": [
+      "CT 15 HEPA",
+      "CT 26",
+      "CT 36",
+      "CT 48",
+      "CT MIDI I HEPA"
+    ],
+    "Filter Type": [
+      "HEPA"
+    ]
+  },
+  "Tools > Power Tools > Cordless Tool Kits": {
+    "Brand": [
+      "Dewalt"
+    ],
+    "Kit Type": [
+      "Impact/Drill"
+    ],
+    "Voltage": [
+      "20"
+    ],
+    "Quantity": [
+      "2"
+    ],
+    "Battery Voltage": [
+      "20"
+    ],
+    "Piece Count": [
+      "2"
+    ]
+  },
+  "Tools > Power Tools > Rotary Tools": {
+    "Brand": [
+      "Dremel"
+    ],
+    "Model": [
+      "3100-1/15",
+      "4000-2/32"
+    ],
+    "Quantity": [
+      "15"
+    ],
+    "Kit Piece Count": [
+      "15"
+    ]
+  },
+  "Tools > Tool Storage > Small Parts Organizers": {
+    "Depth": [
+      "Deep"
+    ],
+    "Size": [
+      "Compact",
+      "Medium"
+    ],
+    "Type": [
+      "Organizer"
+    ],
+    "Profile": [
+      "Low Profile"
+    ]
+  },
+  "Tools > Woodworking Machinery > Shapers": {
+    "Power": [
+      "3"
+    ],
+    "Voltage": [
+      "230"
+    ],
+    "Brand": [
+      "Oliver"
+    ],
+    "Horsepower": [
+      "3"
+    ],
+    "Phase": [
+      "1"
+    ],
+    "Spindle Size": [
+      "1-1/4"
+    ]
+  },
+  "Tools > Woodworking Machinery > Stock Feeders": {
+    "Brand": [
+      "Steff"
+    ],
+    "Roll Count": [
+      "4"
+    ],
+    "Voltage": [
+      "230"
+    ],
+    "Type": [
+      "Stock Feeder"
+    ]
+  },
+  "Tools > Woodworking Accessories > Rip Fences": {
+    "Fence Length": [
+      "42"
+    ],
+    "Model": [
+      "XTENDER PRO"
+    ]
+  },
+  "Tools > Woodworking Accessories > Saw Plates": {
+    "Product Type": [
+      "Saw Plate Only"
+    ],
+    "Model": [
+      "Align-A-Saw"
+    ]
+  },
+  "Tools > Woodworking Accessories > Miter Saw Accessories": {
+    "Product Type": [
+      "Miter Sled"
+    ],
+    "Brand": [
+      "Stealthstop"
+    ]
+  },
+  "Tools > Woodworking Machinery > Jointers": {
+    "Cutting Capacity Width": [
+      "6"
+    ],
+    "Cutterhead Type": [
+      "HH"
+    ],
+    "Design Type": [
+      "Parallelogram"
+    ]
+  },
+  "Tools > Woodworking Machinery > Planers": {
+    "Planer Type": [
+      "Benchtop",
+      "Portable"
+    ],
+    "Cutting Capacity Width": [
+      "12",
+      "13",
+      "15",
+      "20"
+    ],
+    "Power": [
+      "2",
+      "2.5",
+      "3",
+      "5"
+    ],
+    "Voltage": [
+      "115",
+      "220",
+      "230"
+    ],
+    "Phase": [
+      "1"
     ]
   }
 }

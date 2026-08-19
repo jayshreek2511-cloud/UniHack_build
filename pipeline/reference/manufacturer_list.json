@@ -1,6 +1,31 @@
 {
   "_NOTE": "This file lists DISTRIBUTORS/RESELLERS parsed from Part_Manuf. These are NOT the actual product manufacturers. Real manufacturer and brand are derived from product descriptions in Stage 04.",
   "clusters": {
+    "3M Company": {
+      "variants": [
+        "3M Co.",
+        "3M Company"
+      ],
+      "codes": []
+    },
+    "ABC Supply Co": {
+      "variants": [
+        "ABC Supply Co"
+      ],
+      "codes": []
+    },
+    "Ansell Limited": {
+      "variants": [
+        "Ansell Limited"
+      ],
+      "codes": []
+    },
+    "Ansell Ltd": {
+      "variants": [
+        "Ansell Ltd"
+      ],
+      "codes": []
+    },
     "Appliance Dealers Cooperative": {
       "variants": [
         "Appliance Dealers Cooperative"
@@ -9,39 +34,143 @@
         "APPDE"
       ]
     },
+    "DEWALT Industrial": {
+      "variants": [
+        "DEWALT Industrial"
+      ],
+      "codes": []
+    },
+    "DeWalt Ind. Tool": {
+      "variants": [
+        "DeWalt Ind. Tool"
+      ],
+      "codes": []
+    },
+    "EGO Power Plus": {
+      "variants": [
+        "EGO Power Plus"
+      ],
+      "codes": []
+    },
+    "EGO Power+": {
+      "variants": [
+        "EGO Power+"
+      ],
+      "codes": []
+    },
     "Fastenal Company": {
       "variants": [
+        "Fastenal Co",
         "Fastenal Company"
       ],
       "codes": []
     },
-    "Freud Inc": {
+    "Georgia Pacific Corp": {
       "variants": [
-        "Freud Inc"
-      ],
-      "codes": [
-        "2435"
-      ]
-    },
-    "Grainger Industrial Supply": {
-      "variants": [
-        "Grainger Industrial Supply"
+        "Georgia Pacific Corp",
+        "Georgia-Pacific"
       ],
       "codes": []
     },
-    "Jam Industrial Supply LLC": {
+    "Grip Rite Inc": {
       "variants": [
-        "Jam Industrial Supply LLC",
-        "MSC Industrial Supply"
+        "Grip Rite Inc",
+        "Grip-Rite"
       ],
-      "codes": [
-        "JAMIN"
-      ]
+      "codes": []
+    },
+    "Honeywell International": {
+      "variants": [
+        "Honeywell International"
+      ],
+      "codes": []
+    },
+    "Honeywell Intl": {
+      "variants": [
+        "Honeywell Intl"
+      ],
+      "codes": []
+    },
+    "Interstate Battery Sys": {
+      "variants": [
+        "Interstate Batteries",
+        "Interstate Battery Sys"
+      ],
+      "codes": []
+    },
+    "Klein Tools Inc": {
+      "variants": [
+        "Klein Tools",
+        "Klein Tools Inc"
+      ],
+      "codes": []
+    },
+    "Leviton Manufacturing": {
+      "variants": [
+        "Leviton",
+        "Leviton Manufacturing",
+        "Leviton Mfg"
+      ],
+      "codes": []
+    },
+    "Makita U.S.A. Inc": {
+      "variants": [
+        "Makita U.S.A. Inc"
+      ],
+      "codes": []
+    },
+    "Makita USA": {
+      "variants": [
+        "Makita USA"
+      ],
+      "codes": []
+    },
+    "Norton Abr.": {
+      "variants": [
+        "Norton Abr."
+      ],
+      "codes": []
+    },
+    "Norton Abrasives": {
+      "variants": [
+        "Norton Abrasives"
+      ],
+      "codes": []
+    },
+    "Philips Lighting": {
+      "variants": [
+        "Philips Lighting"
+      ],
+      "codes": []
+    },
+    "Rubbermaid Commercial": {
+      "variants": [
+        "Rubbermaid Comm",
+        "Rubbermaid Commercial"
+      ],
+      "codes": []
+    },
+    "Signify NA": {
+      "variants": [
+        "Signify NA"
+      ],
+      "codes": []
+    },
+    "Signify North America": {
+      "variants": [
+        "Signify North America"
+      ],
+      "codes": []
+    },
+    "Southwire Company": {
+      "variants": [
+        "Southwire Co.",
+        "Southwire Company"
+      ],
+      "codes": []
     }
   },
   "code_lookup": {
-    "APPDE": "Appliance Dealers Cooperative",
-    "2435": "Freud Inc",
-    "JAMIN": "Jam Industrial Supply LLC"
+    "APPDE": "Appliance Dealers Cooperative"
   }
 }

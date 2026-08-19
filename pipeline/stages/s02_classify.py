@@ -1,14 +1,19 @@
 """
-Stage 02 — Coarse Category Classification & Uncategorized Safety Net Audit
+Stage 02 — LLM-Primary Category Classification with Rule-Based Fallback
 
 Input:  List[ProductRecord] from Stage 01.
-Output: Mutated ProductRecord list with `coarse_category` and `is_dishwasher` populated,
-        plus ClassificationReport with uncategorized safety net audit.
+Output: Mutated ProductRecord list with `coarse_category`, `is_dishwasher`, and
+        `classification_method` populated, plus ClassificationReport with uncategorized
+        safety net audit.
 
-Strategy:
-  1. Pattern-match on Part_Desc using comprehensive category regexes.
-  2. Expands dishwasher category terms to include brand equivalents (e.g. DishDrawer, AutoDos, QuadWash, Linear Wash, PrintShield, undercounter).
-  3. Safety Net: Every item remaining "Uncategorized" is explicitly logged and captured for human audit.
+Architecture (category-agnostic):
+   1. LLM is the PRIMARY classifier. EVERY row is sent in batches to Gemini which
+      returns a full Dept > Class > Fine hierarchy by reasoning over the description text.
+      These rows are tagged "llm-classified".
+   2. The existing regex keyword classifier is retained ONLY as a fast pre-filter /
+      fallback. Rows where the LLM call failed, was rate-limited, or returned nothing
+      fall back to the rule-based result and are tagged "rule-based-fallback".
+   3. Safety Net: Every item remaining "Uncategorized" after both passes is logged.
 """
 
 from __future__ import annotations
@@ -17,12 +22,18 @@ import logging
 import re
 from collections import Counter
 from dataclasses import dataclass, field
-from typing import Dict, List, Tuple
+from typing import Any, Dict, List, Tuple
 
+from pipeline.llm_client import classify_batch_with_llm
 from pipeline.models import ProductRecord
 
 logger = logging.getLogger(__name__)
 
+DISHWASHER_PATH = "Appliances > Large Appliances > Dishwashers"
+
+# Tag values used to record which classifier assigned the category.
+METHOD_LLM = "llm-classified"
+METHOD_RULE_FALLBACK = "rule-based-fallback"
 
 _CATEGORY_RULES: List[Tuple[str, re.Pattern]] = []
 
@@ -33,7 +44,7 @@ def _add_rule(category: str, pattern: str):
 
 # ── Appliances — Dishwashers (EXPANDED TO CATCH BRAND EQUIVALENTS) ──────────
 _add_rule(
-    "Appliances > Large Appliances > Dishwashers",
+    DISHWASHER_PATH,
     r"\b(dishwasher|dish\s*washer|dish\s*wash)\b"
     r"|\b(dishdrawer|dish\s*drawer|dish\s*drawers)\b"
     r"|\b(autodos|auto\s*dos)\b"
@@ -152,12 +163,16 @@ class ClassificationReport:
     dishwasher_count: int = 0
     dishwasher_indices: List[int] = field(default_factory=list)
     uncategorized_records: List[Dict[str, Any]] = field(default_factory=list)
+    llm_classified_count: int = 0
+    rule_based_count: int = 0
 
     def print_summary(self):
         print("\n" + "=" * 60)
         print("CATEGORY CLASSIFICATION REPORT")
         print("=" * 60)
         print(f"Total records classified: {self.total_records}")
+        print(f"LLM-classified:           {self.llm_classified_count}")
+        print(f"Rule-based fallback:      {self.rule_based_count}")
         print(f"\n{'Category':<50} {'Count':>6}")
         print("-" * 58)
         for cat, count in sorted(
@@ -171,26 +186,73 @@ class ClassificationReport:
         print("=" * 60 + "\n")
 
 
-def classify(records: List[ProductRecord]) -> ClassificationReport:
-    """Classify every record by pattern-matching on Part_Desc.
-
-    Mutates each record's `coarse_category` and `is_dishwasher` fields.
-    Returns a ClassificationReport with aggregate stats and uncategorized safety net log.
-    """
-    report = ClassificationReport(total_records=len(records))
+def _rule_based_classify(records: List[ProductRecord]) -> Counter:
+    """Run the fast keyword pre-filter on every record (tentative categories)."""
     counts: Counter = Counter()
-
     for rec in records:
         desc = rec.part_desc or ""
         matched = False
         for category, pattern in _CATEGORY_RULES:
             if pattern.search(desc):
                 rec.coarse_category = category
+                rec.classification_method = METHOD_RULE_FALLBACK
                 matched = True
                 break
 
         if not matched:
             rec.coarse_category = "Uncategorized"
+            rec.classification_method = METHOD_RULE_FALLBACK
+
+        counts[rec.coarse_category] += 1
+    return counts
+
+
+def classify(
+    records: List[ProductRecord],
+    llm_batch_size: Optional[int] = None,
+    llm_max_workers: Optional[int] = None,
+) -> ClassificationReport:
+    """Classify every record. LLM is primary; rules act as the fallback.
+
+    Mutates each record's `coarse_category`, `is_dishwasher`, and `classification_method`.
+    Returns a ClassificationReport with aggregate stats and uncategorized safety net log.
+    """
+    report = ClassificationReport(total_records=len(records))
+
+    # ── Phase 1: Fast rule-based pre-filter (also the no-LLM fallback) ─────
+    counts = _rule_based_classify(records)
+
+    # ── Phase 2: LLM batch classification of EVERY row (LLM-primary) ───────
+    kwargs: Dict[str, Any] = {}
+    if llm_batch_size is not None:
+        kwargs["batch_size"] = llm_batch_size
+    if llm_max_workers is not None:
+        kwargs["max_workers"] = llm_max_workers
+    llm_results = classify_batch_with_llm(records, **kwargs)
+    llm_classified = 0
+    if llm_results:
+        for rec in records:
+            res = llm_results.get(rec.row_index)
+            if res:
+                full_path, dept, fine = res
+                rec.coarse_category = full_path
+                rec.classification_method = METHOD_LLM
+                llm_classified += 1
+
+    # ── Tag dishwashers from whichever classifier assigned the category ────
+    for rec in records:
+        if rec.coarse_category == DISHWASHER_PATH:
+            rec.is_dishwasher = True
+            if rec.row_index not in report.dishwasher_indices:
+                report.dishwasher_indices.append(rec.row_index)
+
+    # ── Recompute counts + safety-net audit for anything still Uncategorized
+    counts = Counter()
+    uncategorized_after_llm = 0
+    for rec in records:
+        counts[rec.coarse_category] += 1
+        if rec.coarse_category == "Uncategorized":
+            uncategorized_after_llm += 1
             uncat_item = {
                 "row_index": rec.row_index,
                 "mfg_part_num": rec.mfg_part_num,
@@ -199,25 +261,21 @@ def classify(records: List[ProductRecord]) -> ClassificationReport:
             }
             report.uncategorized_records.append(uncat_item)
             logger.warning(
-                "SAFETY NET AUDIT — UNCATEGORIZED ROW %d: SKU='%s' | Desc='%s' | Part_Manuf='%s'",
-                rec.row_index, rec.mfg_part_num, rec.part_desc, rec.part_manuf
+                "SAFETY NET AUDIT — UNCATEGORIZED ROW %d (method=%s): SKU='%s' | Desc='%s' | Part_Manuf='%s'",
+                rec.row_index, rec.classification_method, rec.mfg_part_num, rec.part_desc, rec.part_manuf
             )
 
-        counts[rec.coarse_category] += 1
-
-        # Tag dishwashers specifically
-        if rec.coarse_category == "Appliances > Large Appliances > Dishwashers":
-            rec.is_dishwasher = True
-            report.dishwasher_indices.append(rec.row_index)
-
     report.category_counts = dict(counts)
+    report.llm_classified_count = llm_classified
+    report.rule_based_count = report.total_records - llm_classified
     report.dishwasher_count = len(report.dishwasher_indices)
 
     logger.info(
-        "Classification complete: %d categories, %d dishwasher rows, %d uncategorized rows logged.",
+        "Classification complete: %d categories, %d dishwasher rows, %d uncategorized rows logged, %d LLM-classified.",
         len(counts),
         report.dishwasher_count,
-        len(report.uncategorized_records)
+        len(report.uncategorized_records),
+        llm_classified,
     )
 
     return report

@@ -1,40 +1,293 @@
 {
+  "_note": "General UOM normalization table. 'canonical' is the value written to ATTRIBUTE_UOM. 'synonyms' are matched case-insensitively (and after trailing-period/whitespace cleanup) by pipeline/uom_normalize.py.",
   "units": {
     "in": {
       "canonical": "in",
       "display": "in",
       "category": "Length / Dimension",
-      "synonyms": ["in.", "inch", "inches", "\""]
+      "synonyms": ["in.", "inch", "inches", "\"", "in ", "ins", "inch."]
+    },
+    "ft": {
+      "canonical": "ft",
+      "display": "ft",
+      "category": "Length / Dimension",
+      "synonyms": ["ft.", "foot", "feet", "'"]
+    },
+    "yd": {
+      "canonical": "yd",
+      "display": "yd",
+      "category": "Length / Dimension",
+      "synonyms": ["yd.", "yard", "yards"]
+    },
+    "mm": {
+      "canonical": "mm",
+      "display": "mm",
+      "category": "Length / Dimension",
+      "synonyms": ["millimeter", "millimeters", "millimetre", "millimetres"]
+    },
+    "cm": {
+      "canonical": "cm",
+      "display": "cm",
+      "category": "Length / Dimension",
+      "synonyms": ["centimeter", "centimeters", "centimetre", "centimetres"]
+    },
+    "m": {
+      "canonical": "m",
+      "display": "m",
+      "category": "Length / Dimension",
+      "synonyms": ["meter", "meters", "metre", "metres", "mt"]
+    },
+    "mil": {
+      "canonical": "mil",
+      "display": "mil",
+      "category": "Length / Dimension",
+      "synonyms": ["mils", "thou", "thousandths of an inch"]
+    },
+    "#": {
+      "canonical": "#",
+      "display": "#",
+      "category": "Screw / Fastener Gauge",
+      "synonyms": ["no.", "no", "number", "gauge", "ga.", "ga", "screw size"]
+    },
+    "tpi": {
+      "canonical": "tpi",
+      "display": "tpi",
+      "category": "Thread Pitch",
+      "synonyms": ["threads per inch", "threads/in"]
+    },
+    "lb": {
+      "canonical": "lb",
+      "display": "lb",
+      "category": "Weight / Mass",
+      "synonyms": ["lbs", "pound", "pounds", "lbm"]
+    },
+    "oz": {
+      "canonical": "oz",
+      "display": "oz",
+      "category": "Weight / Mass",
+      "synonyms": ["ozs", "ounce", "ounces"]
+    },
+    "kg": {
+      "canonical": "kg",
+      "display": "kg",
+      "category": "Weight / Mass",
+      "synonyms": ["kgs", "kilogram", "kilograms", "kilo"]
+    },
+    "g": {
+      "canonical": "g",
+      "display": "g",
+      "category": "Weight / Mass",
+      "synonyms": ["gram", "grams", "gm", "gms"]
+    },
+    "gal": {
+      "canonical": "gal",
+      "display": "gal",
+      "category": "Volume / Capacity",
+      "synonyms": ["gallon", "gallons", "gl"]
+    },
+    "qt": {
+      "canonical": "qt",
+      "display": "qt",
+      "category": "Volume / Capacity",
+      "synonyms": ["quart", "quarts"]
+    },
+    "pt": {
+      "canonical": "pt",
+      "display": "pt",
+      "category": "Volume / Capacity",
+      "synonyms": ["pint", "pints"]
+    },
+    "fl oz": {
+      "canonical": "fl oz",
+      "display": "fl oz",
+      "category": "Volume / Capacity",
+      "synonyms": ["floz", "fl. oz.", "fluid ounce", "fluid ounces"]
+    },
+    "L": {
+      "canonical": "L",
+      "display": "L",
+      "category": "Volume / Capacity",
+      "synonyms": ["l", "liter", "liters", "litre", "litres"]
+    },
+    "mL": {
+      "canonical": "mL",
+      "display": "mL",
+      "category": "Volume / Capacity",
+      "synonyms": ["ml", "milliliter", "milliliters", "millilitre", "millilitres", "cc"]
+    },
+    "cu in": {
+      "canonical": "cu in",
+      "display": "cu in",
+      "category": "Volume / Capacity",
+      "synonyms": ["cuin", "cubic inch", "cubic inches", "in3"]
+    },
+    "cu ft": {
+      "canonical": "cu ft",
+      "display": "cu ft",
+      "category": "Volume / Capacity",
+      "synonyms": ["cuft", "cubic foot", "cubic feet", "ft3"]
+    },
+    "psi": {
+      "canonical": "psi",
+      "display": "psi",
+      "category": "Pressure",
+      "synonyms": ["psig", "pound per square inch", "pounds per square inch"]
+    },
+    "bar": {
+      "canonical": "bar",
+      "display": "bar",
+      "category": "Pressure",
+      "synonyms": ["bars"]
+    },
+    "kPa": {
+      "canonical": "kPa",
+      "display": "kPa",
+      "category": "Pressure",
+      "synonyms": ["kpa", "kilopascal", "kilopascals"]
+    },
+    "Pa": {
+      "canonical": "Pa",
+      "display": "Pa",
+      "category": "Pressure",
+      "synonyms": ["pa", "pascal", "pascals"]
+    },
+    "MPa": {
+      "canonical": "MPa",
+      "display": "MPa",
+      "category": "Pressure",
+      "synonyms": ["mpa", "megapascal", "megapascals"]
+    },
+    "degF": {
+      "canonical": "degF",
+      "display": "degF",
+      "category": "Temperature",
+      "synonyms": ["°f", "f", "degree f", "degrees f", "fahrenheit"]
+    },
+    "degC": {
+      "canonical": "degC",
+      "display": "degC",
+      "category": "Temperature",
+      "synonyms": ["°c", "c", "degree c", "degrees c", "celsius"]
     },
     "V": {
       "canonical": "V",
       "display": "V",
       "category": "Electrical Potential",
-      "synonyms": ["v", "volt", "volts", "v.a.c.", "vac"]
+      "synonyms": ["v", "volt", "volts", "v.a.c.", "vac", "vdc", "v dc"]
     },
     "A": {
       "canonical": "A",
       "display": "A",
       "category": "Electric Current",
-      "synonyms": ["a", "amp", "amps", "amperes"]
+      "synonyms": ["a", "amp", "amps", "amperes", "ampere"]
+    },
+    "W": {
+      "canonical": "W",
+      "display": "W",
+      "category": "Electrical Power",
+      "synonyms": ["w", "watt", "watts"]
+    },
+    "kW": {
+      "canonical": "kW",
+      "display": "kW",
+      "category": "Electrical Power",
+      "synonyms": ["kw", "kilowatt", "kilowatts"]
+    },
+    "hp": {
+      "canonical": "hp",
+      "display": "hp",
+      "category": "Power",
+      "synonyms": ["horsepower", "h.p."]
+    },
+    "Hz": {
+      "canonical": "Hz",
+      "display": "Hz",
+      "category": "Frequency",
+      "synonyms": ["hz", "hertz"]
+    },
+    "kVA": {
+      "canonical": "kVA",
+      "display": "kVA",
+      "category": "Electrical Power",
+      "synonyms": ["kva", "kilovolt-amp", "kilovolt-ampere"]
+    },
+    "gpm": {
+      "canonical": "gpm",
+      "display": "gpm",
+      "category": "Flow Rate",
+      "synonyms": ["gal/min", "gallons per minute"]
+    },
+    "cfm": {
+      "canonical": "cfm",
+      "display": "cfm",
+      "category": "Flow Rate",
+      "synonyms": ["cubic feet per minute"]
+    },
+    "L/min": {
+      "canonical": "L/min",
+      "display": "L/min",
+      "category": "Flow Rate",
+      "synonyms": ["l/min", "lpm", "liters per minute"]
+    },
+    "lm": {
+      "canonical": "lm",
+      "display": "lm",
+      "category": "Luminous Flux",
+      "synonyms": ["lumens", "lumen"]
+    },
+    "K": {
+      "canonical": "K",
+      "display": "K",
+      "category": "Color Temperature",
+      "synonyms": ["kelvin", "kelvins", "°k", "k"]
+    },
+    "BTU": {
+      "canonical": "BTU",
+      "display": "BTU",
+      "category": "Energy / Heat",
+      "synonyms": ["btu", "btus", "btu/hr"]
+    },
+    "kWh": {
+      "canonical": "kWh",
+      "display": "kWh",
+      "category": "Energy Consumption",
+      "synonyms": ["kwh", "kw-hr", "kwhr"]
+    },
+    "rpm": {
+      "canonical": "rpm",
+      "display": "rpm",
+      "category": "Rotational Speed",
+      "synonyms": ["r.p.m.", "revolutions per minute"]
+    },
+    "mph": {
+      "canonical": "mph",
+      "display": "mph",
+      "category": "Speed",
+      "synonyms": ["miles per hour"]
     },
     "dBA": {
       "canonical": "dBA",
       "display": "dBA",
       "category": "Sound Level",
-      "synonyms": ["dba", "db(a)", "decibels"]
-    },
-    "kW-hr": {
-      "canonical": "kW-hr",
-      "display": "kW-hr",
-      "category": "Energy Consumption",
-      "synonyms": ["kwh", "kw-hr", "kwhr", "kwh/yr", "kw-hr annual energy"]
+      "synonyms": ["dba", "db(a)", "decibels", "db"]
     },
     "hr": {
       "canonical": "hr",
       "display": "hr",
       "category": "Time Duration",
       "synonyms": ["hrs", "hour", "hours", "h"]
+    },
+    "min": {
+      "canonical": "min",
+      "display": "min",
+      "category": "Time Duration",
+      "synonyms": ["mins", "minute", "minutes"]
+    },
+    "ct": {
+      "canonical": "ct",
+      "display": "ct",
+      "category": "Quantity / Count",
+      "synonyms": ["ea", "each", "pc", "pcs", "piece", "pieces", "count", "pack", "pk", "pkg", "box", "bx", "case", "cs", "set", "unit", "units"]
     }
   }
 }

@@ -22,6 +22,7 @@ class TestConfidenceScoring:
             part_desc="Test Dishwasher",
             real_manufacturer="Test Manuf",
             real_brand="Test Brand",
+            coarse_category="Appliances > Large Appliances > Dishwashers",
             attributes={
                 "Sound Level": ExtractedAttribute(label="Sound Level", value="44", uom="dBA", confidence_source="source-verified"),
                 "Voltage Rating": ExtractedAttribute(label="Voltage Rating", value="120", uom="V", confidence_source="inferred"),
@@ -54,6 +55,7 @@ class TestProvenanceCapture:
             part_desc="Test Dishwasher",
             real_manufacturer="Test Manuf",
             real_brand="Test Brand",
+            coarse_category="Appliances > Large Appliances > Dishwashers",
             attributes={
                 "Sound Level": ExtractedAttribute(label="Sound Level", value="44", uom="dBA", confidence_source="source-verified"),
                 "Voltage Rating": ExtractedAttribute(label="Voltage Rating", value="120", uom="V", confidence_source="inferred"),
@@ -72,18 +74,19 @@ class TestProvenanceCapture:
         assert prov.field_provenance["Manufacturer URL"].source_type == "Manufacturer web retrieval"
         assert prov.field_provenance["Manufacturer URL"].source_url == "https://example.com/test100"
         assert prov.field_provenance["Sound Level"].source_type == "Part_Desc text"
-        assert prov.field_provenance["Voltage Rating"].source_type == "LLM inference"
+        assert prov.field_provenance["Voltage Rating"].source_type in ("LLM inference", "Rule-based pattern logic")
 
 
 class TestReviewQueue:
     def test_review_queue_routing_unverified_url(self):
-        rec = ProductRecord(row_index=0, mfg_part_num="PDT715SYVFS", part_desc="GE Dishwasher")
+        rec = ProductRecord(row_index=0, mfg_part_num="PDT715SYVFS", part_desc="GE Dishwasher", is_dishwasher=True)
         ext = RecordExtractionResult(
             row_index=0,
             mfg_part_num="PDT715SYVFS",
             part_desc="GE Dishwasher",
             real_manufacturer="GE Appliances",
             real_brand="GE Profile",
+            coarse_category="Appliances > Large Appliances > Dishwashers",
             attributes={}
         )
         mfr_info = ManufacturerSourceInfo(

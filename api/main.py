@@ -139,7 +139,8 @@ async def get_stats():
             df = pd.read_csv(classified_csv)
             if not uploaded_input.exists():
                 total_ingested_count = len(df)
-            cat_counts = df["Coarse_Category"].value_counts().to_dict()
+            col = "Coarse_Category" if "Coarse_Category" in df.columns else "coarse_category"
+            cat_counts = df[col].value_counts().to_dict()
         except Exception:
             pass
 
@@ -293,16 +294,16 @@ def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
         logger.info("RECEIVED PIPELINE EXECUTION REQUEST: File='%s', Rows=%d, Path='%s'", input_filename, row_count, input_file_path)
         logger.info("=" * 80)
 
-        # 1. Execute run_phase4.py script with explicit input file argument
-        cmd_phase4 = [sys.executable, str(PROJECT_ROOT / "run_phase4.py"), str(input_file_path)]
-        logger.info("Executing pipeline command: %s", " ".join(cmd_phase4))
-        res = subprocess.run(cmd_phase4, cwd=str(PROJECT_ROOT), capture_output=True, text=True)
+        # 1. Execute run_full_pipeline.py script with explicit input file argument
+        cmd_pipeline = [sys.executable, str(PROJECT_ROOT / "run_full_pipeline.py"), str(input_file_path)]
+        logger.info("Executing pipeline command: %s", " ".join(cmd_pipeline))
+        res = subprocess.run(cmd_pipeline, cwd=str(PROJECT_ROOT), capture_output=True, text=True)
         if res.returncode != 0:
             logger.error("Pipeline run error: %s", res.stderr)
             err_lines = [line.strip() for line in res.stderr.splitlines() if "Error:" in line or "Exception:" in line or "Traceback" in line]
             clean_err = err_lines[-1] if err_lines else "Check server logs for details."
             raise HTTPException(status_code=500, detail=f"Pipeline execution failed: {clean_err}")
-        logger.info("Phase 1-4 pipeline execution complete for %s (%d input rows).", input_filename, row_count)
+        logger.info("Full pipeline execution complete for %s (%d input rows).", input_filename, row_count)
 
         # 2. Execute s10_delivery_export.py stage
         cmd_export = [sys.executable, str(PROJECT_ROOT / "pipeline" / "stages" / "s10_delivery_export.py")]

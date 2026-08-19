@@ -1,0 +1,769 @@
+[
+  {
+    "row_index": 0,
+    "mfg_part_num": "PF-1001",
+    "part_desc": "1/2\" FIP x 3/8\" OD Compression Angle Stop",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Connection Type": {
+        "label": "Connection Type",
+        "value": "1/2\" FIP",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 1,
+    "mfg_part_num": "PF-1002",
+    "part_desc": "3/4\" Hose Bibb - Frost Free",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 2,
+    "mfg_part_num": "PF-1003",
+    "part_desc": "1\" Brass Ball Valve - Full Port",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Plumbing",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Metal Alloy",
+        "uom": null,
+        "confidence_source": "rule-based"
+      }
+    }
+  },
+  {
+    "row_index": 3,
+    "mfg_part_num": "PF-1004",
+    "part_desc": "1/2\" CPVC Socket - Schedule 80",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 4,
+    "mfg_part_num": "PF-1005",
+    "part_desc": "3/8\" x 1/2\" Reducing Coupling - Brass",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Plumbing",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "8",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Metal Alloy",
+        "uom": null,
+        "confidence_source": "rule-based"
+      }
+    }
+  },
+  {
+    "row_index": 5,
+    "mfg_part_num": "PF-1006",
+    "part_desc": "1-1/4\" ABS DWV Trap Adapter",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Plastic",
+        "uom": null,
+        "confidence_source": "rule-based"
+      }
+    }
+  },
+  {
+    "row_index": 6,
+    "mfg_part_num": "PF-1007",
+    "part_desc": "1/2\" Copper Tube x Female Adapter - Lead Free",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Metal Alloy",
+        "uom": null,
+        "confidence_source": "rule-based"
+      }
+    }
+  },
+  {
+    "row_index": 7,
+    "mfg_part_num": "PF-1008",
+    "part_desc": "3/4\" PEX-A Expansion Sleeve - Brass",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Metal Alloy",
+        "uom": null,
+        "confidence_source": "rule-based"
+      }
+    }
+  },
+  {
+    "row_index": 8,
+    "mfg_part_num": "PF-1009",
+    "part_desc": "1/4\" NPT x 1/4\" OD Tube Fitting - 316SS",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Plumbing",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Connection Type": {
+        "label": "Connection Type",
+        "value": "1/4\" NPT",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 9,
+    "mfg_part_num": "PF-1010",
+    "part_desc": "1/2\" Chrome Escutcheon - Round",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Color": {
+        "label": "Color",
+        "value": "Chrome",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 10,
+    "mfg_part_num": "FS-2001",
+    "part_desc": "1/4\"-20 x 1-1/2\" Hex Bolt - Grade 5 - Zinc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 11,
+    "mfg_part_num": "FS-2002",
+    "part_desc": "#10-24 x 1/2\" Phillips Pan Head Machine Screw - 18-8 SS",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "rule-based"
+      }
+    }
+  },
+  {
+    "row_index": 12,
+    "mfg_part_num": "FS-2003",
+    "part_desc": "3/8\"-16 x 3\" Hex Nut - Grade A - Zinc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 13,
+    "mfg_part_num": "FS-2004",
+    "part_desc": "1/2\" Flat Washer - SAE - Hardened",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Appliances > Large Appliances > Other",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 14,
+    "mfg_part_num": "FS-2005",
+    "part_desc": "5/16\" Rivet - Aluminum - Mandrel Break",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Aluminum",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 15,
+    "mfg_part_num": "FS-2006",
+    "part_desc": "1/4\" x 3/4\" Sleeve Anchor - Zinc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "4",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 16,
+    "mfg_part_num": "FS-2007",
+    "part_desc": "M6 x 1.0 x 20mm Socket Head Cap Screw - 12.9",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "6",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 17,
+    "mfg_part_num": "FS-2008",
+    "part_desc": "#6 x 3/4\" Self-Tapping Sheet Metal Screw - Phillips - Zinc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 18,
+    "mfg_part_num": "FS-2009",
+    "part_desc": "3/8\" x 2\" Concrete Wedge Anchor - 304SS",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "8",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 19,
+    "mfg_part_num": "FS-2010",
+    "part_desc": "1/2\" Lock Washer - Split - Spring Steel",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Appliances > Large Appliances > Other",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 20,
+    "mfg_part_num": "FS-2011",
+    "part_desc": "8mm x 30mm Dowel Pin - Hardened",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "8",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 21,
+    "mfg_part_num": "FS-2012",
+    "part_desc": "1/4\"-20 Wing Nut - Zinc Plated",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 22,
+    "mfg_part_num": "FS-2013",
+    "part_desc": "5/32\" x 1/2\" Cotter Pin - Steel - Zinc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "32",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 23,
+    "mfg_part_num": "FS-2014",
+    "part_desc": "M10 x 1.5 x 30mm Hex Bolt - Grade 8.8 - Zinc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "10",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 24,
+    "mfg_part_num": "FS-2015",
+    "part_desc": "#8-32 x 3/8\" Socket Set Screw - Cup Point - Alloy Steel",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 25,
+    "mfg_part_num": "FS-2016",
+    "part_desc": "3/4\" x 6\" Anchor Bolt - Galvanized",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "4",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 26,
+    "mfg_part_num": "FS-2017",
+    "part_desc": "1/2\" x 1-1/2\" Carriage Bolt - Grade 5 - Zinc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "2",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 27,
+    "mfg_part_num": "FS-2018",
+    "part_desc": "M4 x 0.7 x 8mm Machine Screw - Pan Head - Phillips - 304SS",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "4",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 28,
+    "mfg_part_num": "FS-2019",
+    "part_desc": "3/8\" Retaining Ring - External - Steel",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 29,
+    "mfg_part_num": "FS-2020",
+    "part_desc": "1/4\" x 1-1/2\" Lag Screw - Hex Head - Hot Dip Galvanized",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "4",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 30,
+    "mfg_part_num": "EL-3001",
+    "part_desc": "12/2 NM-B Romex - 250ft - Yellow",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Length": {
+        "label": "Length",
+        "value": "250",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Beam Distance": {
+        "label": "Beam Distance",
+        "value": "250",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Yellow",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 31,
+    "mfg_part_num": "EL-3002",
+    "part_desc": "1/2\" Single Gang PVC Box - New Work - 18cu in",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 32,
+    "mfg_part_num": "EL-3003",
+    "part_desc": "20A Single Pole Toggle Breaker - Plug-On Neutral - BR",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Amperage": {
+        "label": "Amperage",
+        "value": "20",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 33,
+    "mfg_part_num": "EL-3004",
+    "part_desc": "3/4\" Flexible Nonmetallic Conduit - 100ft - Grey",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Length": {
+        "label": "Length",
+        "value": "100",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Beam Distance": {
+        "label": "Beam Distance",
+        "value": "100",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Gray",
+        "uom": null,
+        "confidence_source": "rule-based"
+      }
+    }
+  },
+  {
+    "row_index": 34,
+    "mfg_part_num": "EL-3005",
+    "part_desc": "1-Gang Screwless Wallplate - White - Thermoplastic",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Color": {
+        "label": "Color",
+        "value": "White",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 35,
+    "mfg_part_num": "EL-3006",
+    "part_desc": "15A GFCI Duplex Receptacle - Slim - Ivory - Tamper Resistant",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Amperage": {
+        "label": "Amperage",
+        "value": "15",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 36,
+    "mfg_part_num": "EL-3007",
+    "part_desc": "10/3 NM-B Romex - 125ft - Yellow",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Length": {
+        "label": "Length",
+        "value": "125",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Beam Distance": {
+        "label": "Beam Distance",
+        "value": "125",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Yellow",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 37,
+    "mfg_part_num": "EL-3008",
+    "part_desc": "3/4\" EMT Connector - Set Screw - Zinc Die Cast",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 38,
+    "mfg_part_num": "EL-3009",
+    "part_desc": "4\" Square Junction Box - Deep - 1-1/2\" Deep - Welded",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 39,
+    "mfg_part_num": "EL-3010",
+    "part_desc": "20A 2-Pole Breaker - THQL - Plug-On",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Amperage": {
+        "label": "Amperage",
+        "value": "20",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 40,
+    "mfg_part_num": "PL-4001",
+    "part_desc": "1/2\" Shower Valve Trim Kit - Chrome - Single Handle",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Plumbing",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Color": {
+        "label": "Color",
+        "value": "Chrome",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 41,
+    "mfg_part_num": "PL-4002",
+    "part_desc": "3/4\" P-Trap - 20 Gauge - Chrome - Sink",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Plumbing",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Thickness": {
+        "label": "Thickness",
+        "value": "20",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Chrome",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 42,
+    "mfg_part_num": "PL-4003",
+    "part_desc": "1-1/4\" Bathroom Sink Drain - Pop-Up - Brass - Chrome",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Plumbing",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Metal Alloy",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Chrome",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 43,
+    "mfg_part_num": "PL-4004",
+    "part_desc": "1/2\" x 3/8\" Compression x 1/2\" IPS Dual Outlet Valve - 1/4 Turn",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Plumbing",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "2",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Connection Type": {
+        "label": "Connection Type",
+        "value": "3/8\" Compression",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 44,
+    "mfg_part_num": "PL-4005",
+    "part_desc": "3/4\" Hose Clamp - Stainless Steel - Worm Drive",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  }
+]

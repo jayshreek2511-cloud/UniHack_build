@@ -41,6 +41,7 @@ class ProductRecord:
     # ── classification (Stage 02) ─────────────────────────────
     coarse_category: str = "Uncategorized"
     is_dishwasher: bool = False
+    classification_method: str = "rule-based"  # "rule-based" | "llm-classified"
 
     # ── future stages will add more fields here ───────────────
 

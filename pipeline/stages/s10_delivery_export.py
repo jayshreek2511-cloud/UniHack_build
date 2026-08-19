@@ -1,5 +1,5 @@
 """
-Stage 10 — Unilog Delivery Format Exporter
+Stage 10 — Unilog Delivery Format Exporter (Category-Agnostic)
 
 Maps internal enriched product records (Phases 1-4) to the exact 252-column schema required by Unilog's delivery format.
 Produces:
@@ -7,18 +7,20 @@ Produces:
   - data/output/delivery_export.xlsx
 
 Strictly respects column order, header casing, attribute slots (1..50), and formatting conventions.
+Uses the record's actual coarse_category instead of hardcoded dishwasher taxonomy.
 """
 
 from __future__ import annotations
 
 import logging
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Any, Dict, List, Optional
+
 import pandas as pd
 
 logger = logging.getLogger(__name__)
 
-# Standard ordered attribute slots matching Unilog dishwasher taxonomy
+# Standard ordered attribute slots — used as a fallback for dishwasher schema
 STANDARD_ATTRIBUTE_SLOTS = [
     "Series",
     "Model",
@@ -40,6 +42,29 @@ STANDARD_ATTRIBUTE_SLOTS = [
 TEMPLATE_CSV_PATH = Path("data/input/Unihack__Expected_Output_-_Delivery_Format.csv")
 
 
+def _category_to_classpath(coarse_category: str) -> str:
+    """Convert coarse_category (Dept > Class > Fine) to Classpath format."""
+    return coarse_category.replace(" > ", " & ")
+
+
+def _category_dept(coarse_category: str) -> str:
+    """Extract Dept from coarse_category."""
+    parts = coarse_category.split(" > ")
+    return parts[0] if parts else ""
+
+
+def _category_class(coarse_category: str) -> str:
+    """Extract Class from coarse_category."""
+    parts = coarse_category.split(" > ")
+    return parts[1] if len(parts) > 1 else ""
+
+
+def _category_fine(coarse_category: str) -> str:
+    """Extract Fine from coarse_category."""
+    parts = coarse_category.split(" > ")
+    return parts[2] if len(parts) > 2 else (parts[1] if len(parts) > 1 else "")
+
+
 def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: List[str]) -> Dict[str, Any]:
     """Map a single internal enriched record dict to a row dictionary matching template_columns."""
     row: Dict[str, Any] = {col: None for col in template_columns}
@@ -53,9 +78,9 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
     sku = identity.get("mfg_part_num", "")
     real_mfr = mfr_info.get("real_manufacturer") or extraction.get("real_manufacturer") or ""
     real_brand = mfr_info.get("real_brand") or extraction.get("real_brand") or ""
+    coarse_category = extraction.get("coarse_category") or identity.get("coarse_category", "Uncategorized")
 
     # SAFETY NET: Guard against distributor names appearing as manufacturer/brand.
-    # Part_Manuf is always the distributor/reseller — never the real manufacturer.
     part_manuf_raw = (identity.get("part_manuf") or "").strip()
     if part_manuf_raw and real_mfr and part_manuf_raw.lower() in real_mfr.lower():
         logger.warning(
@@ -70,7 +95,7 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
         )
         real_brand = ""
 
-    # Add trademark symbol for ground truth / known major brands if not already present
+    # Add trademark symbol for known major brands if not already present
     formatted_brand = real_brand
     if real_brand.upper() in ["FRIGIDAIRE", "WHIRLPOOL"] and "®" not in real_brand:
         formatted_brand = f"{real_brand}®"
@@ -82,11 +107,10 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
         if idx <= len(ref_urls):
             row[f"Ref URL {idx}"] = ref_urls[idx - 1]
 
-    # Map PART_NUMBER if in identity or row index fallback
     row["PART_NUMBER"] = identity.get("part_number") or identity.get("row_index") or 0
-    row["Dept"] = "Appliances"
-    row["Class"] = "Large Appliances"
-    row["Fine"] = "Dishwashers"
+    row["Dept"] = _category_dept(coarse_category)
+    row["Class"] = _category_class(coarse_category)
+    row["Fine"] = _category_fine(coarse_category)
     row["SKU - MY_PART_NUMBER"] = identity.get("sku_my_part_number") or (1515800 + identity.get("row_index", 0))
     row["Mfg_Part_Num"] = sku
     row["Part_Desc"] = identity.get("part_desc")
@@ -99,7 +123,7 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
     row["MANUFACTURER_NAME"] = real_mfr
     row["BRAND_NAME"] = formatted_brand
     row["MANUFACTURER_PART_NUMBER"] = sku
-    row["Classpath"] = "Appliances & Consumer Electronics>Kitchen Appliances>Built-In Dishwashers"
+    row["Classpath"] = _category_to_classpath(coarse_category)
 
     # 5 Generated Descriptions
     row["MOBILE_DESC"] = descriptions.get("mobile_desc")
@@ -111,8 +135,8 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
     # Marketing & Features
     row["MARKETING_DESCRIPTION"] = record_dict.get("marketing_description")
     row["With"] = record_dict.get("with_features")
-    row["Standard/Approvals"] = "ASSE 1006|CEE Tier 2 Qualified|cUL Listed|ENERGY STAR Certified|NSF Certified|UL Listed"
-    row["Product Name"] = "Dishwasher"
+    row["Standard/Approvals"] = record_dict.get("standard_approvals") or ""
+    row["Product Name"] = _category_fine(coarse_category) or "Product"
 
     # Features 1..20
     item_features = record_dict.get("item_features") or []
@@ -121,8 +145,10 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
         if col_name in row and idx <= len(item_features):
             row[col_name] = item_features[idx - 1]
 
-    # Attribute Triplets 1..50
-    for idx, attr_name in enumerate(STANDARD_ATTRIBUTE_SLOTS, start=1):
+    # Attribute Triplets 1..50 — use dynamically extracted attributes
+    # Get attribute keys in a stable order
+    attr_keys = list(attributes.keys()) if attributes else []
+    for idx, attr_name in enumerate(attr_keys[:50], start=1):
         lbl_col = f"ATTRIBUTE_LABEL {idx}"
         val_col = f"ATTRIBUTE_VALUE {idx}"
         uom_col = f"ATTRIBUTE_UOM {idx}"
@@ -130,16 +156,31 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
         row[lbl_col] = attr_name
 
         attr_obj = attributes.get(attr_name, {})
-        val = attr_obj.get("value")
-        uom = attr_obj.get("uom")
+        if isinstance(attr_obj, dict):
+            val = attr_obj.get("value")
+            uom = attr_obj.get("uom")
+        else:
+            val = getattr(attr_obj, "value", None)
+            uom = getattr(attr_obj, "uom", None)
 
         if val is not None:
             row[val_col] = val
         if uom is not None and uom_col in row:
             row[uom_col] = uom
 
+    # Clear remaining attribute slots if fewer than 50
+    for idx in range(len(attr_keys) + 1, 51):
+        lbl_col = f"ATTRIBUTE_LABEL {idx}"
+        val_col = f"ATTRIBUTE_VALUE {idx}"
+        uom_col = f"ATTRIBUTE_UOM {idx}"
+        if lbl_col in row:
+            row[lbl_col] = None
+        if val_col in row:
+            row[val_col] = None
+        if uom_col in row:
+            row[uom_col] = None
+
     # Media & Documentation — STRICT: Only populate if real verified asset exists
-    # Do NOT generate constructed placeholder strings (e.g. Brand_SKU.jpg) when no real file exists
     row["Product Image"] = None
     row["Specification Sheet"] = None
     row["Actual Image (Yes/No)"] = "No"
