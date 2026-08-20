@@ -44,10 +44,13 @@ MODEL_FALLBACK_CHAIN = [
 # ── Global pacing ────────────────────────────────────────────────────────────
 # The project API key is burst-limited: parallel requests trigger HTTP 429 quickly,
 # but paced sequential requests succeed reliably. We enforce a minimum interval
-# between the START of every request across all threads. Override with GEMINI_MIN_INTERVAL.
+# between the START of every request across all threads. The project key begins
+# returning 429s above roughly 10 requests/minute, so the conservative default
+# is seven seconds (under nine request starts/minute). Override only when the
+# provisioned quota is known to be higher.
 _throttle_lock = threading.Lock()
 _last_request_at = 0.0
-GEMINI_MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "3.5"))
+GEMINI_MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "7.0"))
 
 
 def _throttle():
@@ -94,15 +97,20 @@ def _call_gemini_rest(
 
     last_exc: Optional[Exception] = None
 
-    _throttle()
-
     for mdl in chain:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{mdl}:generateContent?key={api_key}"
+        # Pass the credential in a header instead of the query string so
+        # request logging cannot persist the API key in pipeline log files.
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{mdl}:generateContent"
         for attempt in range(retries):
             try:
+                # Pace *every* HTTP attempt, including retries and model
+                # fallbacks.  Calling this only once before the loops lets a
+                # 429 retry burst through the global request-start limit.
+                _throttle()
                 resp = httpx.post(
                     url,
                     json={"contents": [{"parts": [{"text": prompt}]}]},
+                    headers={"x-goog-api-key": api_key},
                     timeout=timeout,
                 )
                 if resp.status_code == 200:
@@ -196,18 +204,12 @@ Extract the following technical attributes in strictly valid JSON format:
 Respond ONLY with valid raw JSON, no markdown codeblocks."""
 
     try:
-        try:
-            from google import genai
-            client = genai.Client(api_key=api_key)
-            response = client.models.generate_content(
-                model=DEFAULT_MODEL,
-                contents=prompt,
-            )
-            text = response.text
-        except Exception:
-            text = _call_gemini_rest(prompt, api_key)
-            if not text:
-                return None
+        # Use the shared REST client rather than the SDK so dishwasher
+        # extraction receives the same global pacing and 429 retry/backoff as
+        # classification and category-agnostic attribute extraction.
+        text = _call_gemini_rest(prompt, api_key)
+        if not text:
+            return None
 
         text = text.strip()
         if text.startswith("```"):

@@ -1,10 +1,10 @@
 [
   {
-    "row_index": 39,
-    "mfg_part_num": "KDFM404KPS",
-    "part_desc": "KDFM404KPS Dishwasher SS",
-    "real_manufacturer": null,
-    "real_brand": null,
+    "row_index": 0,
+    "mfg_part_num": "MDB8959SKZ",
+    "part_desc": "MDB8959SKZ Maytag Top Control Dishwasher 47 dBA 120V 15A Stainless Steel",
+    "real_manufacturer": "Whirlpool Corporation",
+    "real_brand": "Maytag",
     "coarse_category": "Appliances > Large Appliances > Dishwashers",
     "classification_method": "rule-based-fallback",
     "attributes": {
@@ -76,9 +76,9 @@
       },
       "Sound Level": {
         "label": "Sound Level",
-        "value": null,
-        "uom": null,
-        "confidence_source": "not-found"
+        "value": "47",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
       },
       "Material": {
         "label": "Material",
@@ -101,108 +101,1473 @@
     }
   },
   {
-    "row_index": 0,
-    "mfg_part_num": "AB-3301",
-    "part_desc": "3M CUBITRON II 60GRIT 4.5IN CUT-OFF WHL",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
+    "row_index": 1,
+    "mfg_part_num": "DWHD650WFP",
+    "part_desc": "DWHD650WFP Thermador Sapphire Series Dishwasher 40 dBA 120V 15A Panel Ready",
+    "real_manufacturer": "BSH Home Appliances",
+    "real_brand": "Thermador",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
     "classification_method": "rule-based-fallback",
     "attributes": {
-      "Grit": {
-        "label": "Grit",
-        "value": "60",
+      "Series": {
+        "label": "Series",
+        "value": null,
         "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "40",
+        "uom": "dBA",
         "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Color": {
+        "label": "Color",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
       }
     }
   },
   {
-    "row_index": 1,
-    "mfg_part_num": "AB-3302",
-    "part_desc": "60 GRT CUTOFF DISC 4-1/2IN",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
     "row_index": 2,
-    "mfg_part_num": "AB-4401",
-    "part_desc": "7IN GRINDING WHL A24 TYPE 27",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Abrasives",
+    "mfg_part_num": "BDF450",
+    "part_desc": "BDF450 Beko Front Control Dishwasher 45 dBA 120V 12A Stainless Steel",
+    "real_manufacturer": "Arçelik",
+    "real_brand": "Beko",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
     "classification_method": "rule-based-fallback",
-    "attributes": {}
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "12",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "45",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
   },
   {
     "row_index": 3,
-    "mfg_part_num": "AB-4402",
-    "part_desc": "GRIND WHEEL 7 IN TYPE27 A24",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
+    "mfg_part_num": "DD24SDFT9N",
+    "part_desc": "DD24SDFT9N Fisher Paykel Double DishDrawer 44 dBA 120V 15A Stainless Steel",
+    "real_manufacturer": "Fisher & Paykel Appliances",
+    "real_brand": "Fisher & Paykel",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
     "classification_method": "rule-based-fallback",
-    "attributes": {}
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "44",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
   },
   {
     "row_index": 4,
-    "mfg_part_num": "AB-5501",
-    "part_desc": "80GRIT SANDING BELT 3X21IN",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Abrasives",
+    "mfg_part_num": "WDT750SAKZ",
+    "part_desc": "WDT750SAKZ Whirlpool Top Control Dishwasher 47 dBA 120V 15A Fingerprint Resistant",
+    "real_manufacturer": "Whirlpool Corporation",
+    "real_brand": "Whirlpool",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
     "classification_method": "rule-based-fallback",
     "attributes": {
-      "Grit": {
-        "label": "Grit",
-        "value": "80",
+      "Series": {
+        "label": "Series",
+        "value": "Eco Series",
         "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "47",
+        "uom": "dBA",
         "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Color": {
+        "label": "Color",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
       }
     }
   },
   {
     "row_index": 5,
-    "mfg_part_num": "LB-1101",
-    "part_desc": "LED A19 9W 2700K DIMMABLE 4PK",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Lighting",
+    "mfg_part_num": "KDTM404KPS",
+    "part_desc": "KDTM404KPS KitchenAid 44 dBA Dishwasher PrintShield Stainless Steel",
+    "real_manufacturer": "Whirlpool Corporation",
+    "real_brand": "KitchenAid",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
     "classification_method": "rule-based-fallback",
     "attributes": {
-      "Wattage": {
-        "label": "Wattage",
-        "value": "9",
+      "Series": {
+        "label": "Series",
+        "value": "PrintShield Series",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "44",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Color Temperature": {
-        "label": "Color Temperature",
-        "value": "2700",
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Quantity": {
-        "label": "Quantity",
-        "value": "4",
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
         "uom": null,
-        "confidence_source": "source-verified"
-      },
-      "Base Type": {
-        "label": "Base Type",
-        "value": "A19",
-        "uom": null,
-        "confidence_source": "source-verified"
+        "confidence_source": "not-found"
       }
     }
   },
   {
     "row_index": 6,
-    "mfg_part_num": "LB-1102",
-    "part_desc": "A19 LED BULB 9 WATT 2700K DIM",
+    "mfg_part_num": "GDF650SSVSS",
+    "part_desc": "GDF650SSVSS GE Front Control Dishwasher 51 dBA 120V 15A Stainless Steel",
+    "real_manufacturer": "GE Appliances",
+    "real_brand": "GE",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "51",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 7,
+    "mfg_part_num": "FFID2426TS",
+    "part_desc": "FFID2426TS Frigidaire Built-In Dishwasher 54 dBA 120V 15A Stainless Steel",
+    "real_manufacturer": "Rheem Manufacturing",
+    "real_brand": "FRIGIDAIRE",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": "Professional Series",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "54",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 8,
+    "mfg_part_num": "DW80CG5450SR",
+    "part_desc": "DW80CG5450SR Samsung StormWash Dishwasher 42 dBA 120V 15A Stainless Steel",
+    "real_manufacturer": "Samsung Electronics",
+    "real_brand": "Samsung",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "42",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 9,
+    "mfg_part_num": "LDTS5551D",
+    "part_desc": "LDTS5551D LG Top Control Dishwasher QuadWash 46 dBA 120V 15A Stainless Steel",
+    "real_manufacturer": "LG Electronics",
+    "real_brand": "LG",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": "Quadwash",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "46",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 10,
+    "mfg_part_num": "SHEM63W55N",
+    "part_desc": "SHEM63W55N Bosch 300 Series Dishwasher 46 dBA 120V 12A White",
+    "real_manufacturer": "BSH Home Appliances",
+    "real_brand": "Bosch",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": "300 Series",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "12",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "46",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Color": {
+        "label": "Color",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 11,
+    "mfg_part_num": "KDPE234GPS",
+    "part_desc": "KDPE234GPS KitchenAid 39 dBA Dishwasher FreeFlex Stainless Steel",
+    "real_manufacturer": "Whirlpool Corporation",
+    "real_brand": "KitchenAid",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": "PrintShield Series",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "39",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 12,
+    "mfg_part_num": "G7106SCVi",
+    "part_desc": "G7106SCVi Miele Fully Integrated Dishwasher 42 dBA 120V 15A Panel Ready",
+    "real_manufacturer": "Miele Inc.",
+    "real_brand": "Miele",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "42",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Color": {
+        "label": "Color",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 13,
+    "mfg_part_num": "WDF520PADM",
+    "part_desc": "WDF520PADM Whirlpool Front Control Dishwasher 55 dBA 120V 12A White",
+    "real_manufacturer": "Whirlpool Corporation",
+    "real_brand": "Whirlpool",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": "Eco Series",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "12",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "55",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Color": {
+        "label": "Color",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 14,
+    "mfg_part_num": "PDT785SBNTS",
+    "part_desc": "PDT785SBNTS GE Profile Dishwasher 47 dBA 120V 15A Black Stainless Steel",
+    "real_manufacturer": "GE Appliances",
+    "real_brand": "GE Profile",
+    "coarse_category": "Appliances > Large Appliances > Dishwashers",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Series": {
+        "label": "Series",
+        "value": "Profile Series",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Model": {
+        "label": "Model",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Number of Wash Cycles": {
+        "label": "Number of Wash Cycles",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Voltage Rating": {
+        "label": "Voltage Rating",
+        "value": "120",
+        "uom": "V",
+        "confidence_source": "rule-based"
+      },
+      "Amperage Rating": {
+        "label": "Amperage Rating",
+        "value": "15",
+        "uom": "A",
+        "confidence_source": "rule-based"
+      },
+      "Mounting Type": {
+        "label": "Mounting Type",
+        "value": "Built-in",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Plug Type": {
+        "label": "Plug Type",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Size": {
+        "label": "Size",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Depth With Door Open": {
+        "label": "Depth With Door Open",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Minimum Height": {
+        "label": "Minimum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Maximum Height": {
+        "label": "Maximum Height",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      },
+      "Sound Level": {
+        "label": "Sound Level",
+        "value": "47",
+        "uom": "dBA",
+        "confidence_source": "source-verified"
+      },
+      "Material": {
+        "label": "Material",
+        "value": "Black Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Black Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Additional Information": {
+        "label": "Additional Information",
+        "value": null,
+        "uom": null,
+        "confidence_source": "not-found"
+      }
+    }
+  },
+  {
+    "row_index": 15,
+    "mfg_part_num": "3MABR-7100033445",
+    "part_desc": "3M 775L Stikit Film P100 - Cubitron II 50 Disc/Box",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 16,
+    "mfg_part_num": "3MABR-7100077889",
+    "part_desc": "3M Trizact Cloth Belt P220 - 3x24 In 10pc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Quantity": {
+        "label": "Quantity",
+        "value": "10",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 17,
+    "mfg_part_num": "LEDPAR30-8811",
+    "part_desc": "LED PAR30 Short Neck Flood Light Bulb 11W 4000K",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Lighting",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Wattage": {
+        "label": "Wattage",
+        "value": "11",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color Temperature": {
+        "label": "Color Temperature",
+        "value": "4000",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 18,
+    "mfg_part_num": "LEDA19-7722",
+    "part_desc": "LED A19 General Purpose Bulb 9W 2700K Dimmable",
     "real_manufacturer": null,
     "real_brand": null,
     "coarse_category": "Lighting",
@@ -229,17 +1594,114 @@
     }
   },
   {
-    "row_index": 7,
-    "mfg_part_num": "LB-1103",
-    "part_desc": "A-19 LED 800LM SOFT WHITE",
+    "row_index": 19,
+    "mfg_part_num": "HTOOL-88231",
+    "part_desc": "Adjustable Wrench 10 Inch Chrome Vanadium Steel",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Lighting",
+    "coarse_category": "Hand Tools",
     "classification_method": "rule-based-fallback",
     "attributes": {
-      "Lumens": {
-        "label": "Lumens",
-        "value": "800",
+      "Material": {
+        "label": "Material",
+        "value": "Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Chrome",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 20,
+    "mfg_part_num": "HTOOL-88232",
+    "part_desc": "Claw Hammer 16oz Fiberglass Handle",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Hand Tools",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "16",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 21,
+    "mfg_part_num": "PTOOL-77401",
+    "part_desc": "Cordless Impact Driver 18V Kit with Battery and Charger",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Power Tools",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Voltage": {
+        "label": "Voltage",
+        "value": "18",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 22,
+    "mfg_part_num": "PTOOL-77402",
+    "part_desc": "Angle Grinder 4.5 Inch Corded 7.5 Amp",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Abrasives",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Amperage": {
+        "label": "Amperage",
+        "value": "7.5",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 23,
+    "mfg_part_num": "ELEC-55501",
+    "part_desc": "Wire Nuts Assorted Sizes 100pc Box",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Quantity": {
+        "label": "Quantity",
+        "value": "100",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 24,
+    "mfg_part_num": "ELEC-55502",
+    "part_desc": "GFCI Outlet 15A 125V Tamper Resistant White",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Electrical",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Voltage": {
+        "label": "Voltage",
+        "value": "125",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Amperage": {
+        "label": "Amperage",
+        "value": "15",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -252,9 +1714,157 @@
     }
   },
   {
-    "row_index": 8,
-    "mfg_part_num": "LB-2201",
-    "part_desc": "4FT LED FLAT PANEL 40W 4000K",
+    "row_index": 25,
+    "mfg_part_num": "SAFE-33301",
+    "part_desc": "Safety Glasses Clear Anti-Fog Lens ANSI Z87.1",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 26,
+    "mfg_part_num": "SAFE-33302",
+    "part_desc": "Nitrile Disposable Gloves Powder Free Large 100ct",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 27,
+    "mfg_part_num": "HVAC-22201",
+    "part_desc": "Programmable Thermostat 7-Day Digital Display",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "HVAC",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 28,
+    "mfg_part_num": "HVAC-22202",
+    "part_desc": "Furnace Filter 16x25x1 MERV 11 Pleated",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "HVAC",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "16",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 29,
+    "mfg_part_num": "PLUMB-11101",
+    "part_desc": "PVC Ball Valve 1 Inch Threaded",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Plumbing",
+    "classification_method": "rule-based-fallback",
+    "attributes": {}
+  },
+  {
+    "row_index": 30,
+    "mfg_part_num": "PLUMB-11102",
+    "part_desc": "Braided Stainless Steel Supply Line 20 Inch",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Uncategorized",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Material": {
+        "label": "Material",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Stainless Steel",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 31,
+    "mfg_part_num": "FAST-99901",
+    "part_desc": "Hex Head Cap Screw 1/4-20 x 1 Inch Zinc 100pc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Quantity": {
+        "label": "Quantity",
+        "value": "100",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 32,
+    "mfg_part_num": "FAST-99902",
+    "part_desc": "Self Tapping Sheet Metal Screw #8 x 1/2 In 200pc",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Fasteners",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Quantity": {
+        "label": "Quantity",
+        "value": "200",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 33,
+    "mfg_part_num": "ADH-66601",
+    "part_desc": "Construction Adhesive Liquid Nails 10oz Tube",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Adhesives & Sealants",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "10",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 34,
+    "mfg_part_num": "ADH-66602",
+    "part_desc": "Silicone Sealant Clear 10.1oz Cartridge",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Adhesives & Sealants",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Size": {
+        "label": "Size",
+        "value": "10.1",
+        "uom": null,
+        "confidence_source": "source-verified"
+      }
+    }
+  },
+  {
+    "row_index": 35,
+    "mfg_part_num": "LGHT-44401",
+    "part_desc": "4ft LED Shop Light Fixture 4000K 40W",
     "real_manufacturer": null,
     "real_brand": null,
     "coarse_category": "Lighting",
@@ -287,303 +1897,88 @@
     }
   },
   {
-    "row_index": 9,
-    "mfg_part_num": "LB-2202",
-    "part_desc": "LED FLAT PANEL 2X4 40W",
+    "row_index": 36,
+    "mfg_part_num": "LGHT-44402",
+    "part_desc": "Motion Sensor Outdoor Wall Light Bronze Finish",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Lighting",
+    "coarse_category": "Uncategorized",
     "classification_method": "rule-based-fallback",
     "attributes": {
-      "Wattage": {
-        "label": "Wattage",
-        "value": "40",
+      "Material": {
+        "label": "Material",
+        "value": "Metal Alloy",
+        "uom": null,
+        "confidence_source": "rule-based"
+      },
+      "Color": {
+        "label": "Color",
+        "value": "Oil Rubbed Bronze",
+        "uom": null,
+        "confidence_source": "rule-based"
+      }
+    }
+  },
+  {
+    "row_index": 37,
+    "mfg_part_num": "ABR-33305",
+    "part_desc": "Sanding Sponge Medium Grit 3pc Pack",
+    "real_manufacturer": null,
+    "real_brand": null,
+    "coarse_category": "Abrasives",
+    "classification_method": "rule-based-fallback",
+    "attributes": {
+      "Quantity": {
+        "label": "Quantity",
+        "value": "3",
         "uom": null,
         "confidence_source": "source-verified"
       }
     }
   },
   {
-    "row_index": 10,
-    "mfg_part_num": "FA-6601",
-    "part_desc": "1/4-20 X 1IN HEX CAP SCR ZN GR5",
+    "row_index": 38,
+    "mfg_part_num": "ABR-33306",
+    "part_desc": "Wire Wheel Brush 4 Inch for Bench Grinder",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Uncategorized",
+    "coarse_category": "Abrasives",
     "classification_method": "rule-based-fallback",
     "attributes": {}
   },
   {
-    "row_index": 11,
-    "mfg_part_num": "FA-6602",
-    "part_desc": "1/4-20X1 HHCS ZINC GRADE 5",
+    "row_index": 39,
+    "mfg_part_num": "HTOOL-88233",
+    "part_desc": "Tape Measure 25ft Steel Blade Magnetic Tip",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 12,
-    "mfg_part_num": "FA-7701",
-    "part_desc": "16D COMMON NAIL 3-1/2IN 5LB BOX",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Fasteners",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Size": {
-        "label": "Size",
-        "value": "5",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 13,
-    "mfg_part_num": "FA-7702",
-    "part_desc": "3-1/2IN 16D NAIL BRIGHT",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Fasteners",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 14,
-    "mfg_part_num": "EL-8801",
-    "part_desc": "12/2 NM-B ROMEX 250FT",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Electrical",
+    "coarse_category": "Hand Tools",
     "classification_method": "rule-based-fallback",
     "attributes": {
       "Length": {
         "label": "Length",
-        "value": "250",
+        "value": "25",
         "uom": null,
         "confidence_source": "source-verified"
       },
       "Beam Distance": {
         "label": "Beam Distance",
-        "value": "250",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 15,
-    "mfg_part_num": "EL-8802",
-    "part_desc": "12-2 W/G ROMEX WIRE 250'",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Electrical",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Length": {
-        "label": "Length",
-        "value": "250",
+        "value": "25",
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Wattage": {
-        "label": "Wattage",
-        "value": "2",
+      "Material": {
+        "label": "Material",
+        "value": "Steel",
         "uom": null,
         "confidence_source": "source-verified"
       }
     }
   },
   {
-    "row_index": 16,
-    "mfg_part_num": "EL-9901",
-    "part_desc": "GFCI OUTLET 20A 125V TR WHT",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Electrical",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Voltage": {
-        "label": "Voltage",
-        "value": "125",
-        "uom": null,
-        "confidence_source": "source-verified"
-      },
-      "Amperage": {
-        "label": "Amperage",
-        "value": "20",
-        "uom": null,
-        "confidence_source": "source-verified"
-      },
-      "Color": {
-        "label": "Color",
-        "value": "White",
-        "uom": null,
-        "confidence_source": "rule-based"
-      }
-    }
-  },
-  {
-    "row_index": 17,
-    "mfg_part_num": "EL-9902",
-    "part_desc": "20AMP GFCI RECEPT TAMPER RESIST",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Amperage": {
-        "label": "Amperage",
-        "value": "20",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 18,
-    "mfg_part_num": "EL-9903",
-    "part_desc": "DECORA ROCKER SWITCH 15A WHT",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Electrical",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Amperage": {
-        "label": "Amperage",
-        "value": "15",
-        "uom": null,
-        "confidence_source": "source-verified"
-      },
-      "Color": {
-        "label": "Color",
-        "value": "White",
-        "uom": null,
-        "confidence_source": "rule-based"
-      }
-    }
-  },
-  {
-    "row_index": 19,
-    "mfg_part_num": "HV-1001",
-    "part_desc": "16X25X1 MERV11 PLEATED FILTER",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Size": {
-        "label": "Size",
-        "value": "16",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 20,
-    "mfg_part_num": "HV-1002",
-    "part_desc": "PLEATED AIR FILTR 16X25X1 M11",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Size": {
-        "label": "Size",
-        "value": "16",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 21,
-    "mfg_part_num": "SF-2001",
-    "part_desc": "SAFETY GLASSES CLR ANTI-FOG ANSI",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 22,
-    "mfg_part_num": "SF-2002",
-    "part_desc": "ANSI Z87.1 CLEAR SAFETY GLASSES",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 23,
-    "mfg_part_num": "SF-3001",
-    "part_desc": "NITRILE GLOVES PF LG 100CT",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 24,
-    "mfg_part_num": "SF-3002",
-    "part_desc": "DISP NITRILE GLOVE LARGE 100PK",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Safety & PPE",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Quantity": {
-        "label": "Quantity",
-        "value": "100",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 25,
-    "mfg_part_num": "PT-4001",
-    "part_desc": "20V MAX CORDLESS DRILL DRIVER KIT",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Power Tools",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Voltage": {
-        "label": "Voltage",
-        "value": "20",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 26,
-    "mfg_part_num": "PT-4002",
-    "part_desc": "DRILL DRIVER 20V KIT W/ BATTERY",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Power Tools",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Voltage": {
-        "label": "Voltage",
-        "value": "20",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 27,
-    "mfg_part_num": "PT-5001",
-    "part_desc": "7-1/4IN CIRC SAW 15A CORDED",
+    "row_index": 40,
+    "mfg_part_num": "PTOOL-77403",
+    "part_desc": "Reciprocating Saw Corded 12 Amp with Blade",
     "real_manufacturer": null,
     "real_brand": null,
     "coarse_category": "Hand Tools",
@@ -591,165 +1986,10 @@
     "attributes": {
       "Amperage": {
         "label": "Amperage",
-        "value": "15",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 28,
-    "mfg_part_num": "PT-5002",
-    "part_desc": "CIRCULAR SAW 7.25IN 15AMP",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Hand Tools",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Amperage": {
-        "label": "Amperage",
-        "value": "15",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 29,
-    "mfg_part_num": "HT-6001",
-    "part_desc": "10IN ADJ WRENCH CHROME VANADIUM",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Hand Tools",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Color": {
-        "label": "Color",
-        "value": "Chrome",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 30,
-    "mfg_part_num": "HT-6002",
-    "part_desc": "ADJUSTABLE WRENCH 10IN CR-V",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Hand Tools",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 31,
-    "mfg_part_num": "LG-7001",
-    "part_desc": "40V CORDLESS STRING TRIMMER",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Power Tools",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Voltage": {
-        "label": "Voltage",
-        "value": "40",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 32,
-    "mfg_part_num": "LG-7002",
-    "part_desc": "STRING TRIMMER 40 VOLT CORDLESS",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Power Tools",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Voltage": {
-        "label": "Voltage",
-        "value": "40",
-        "uom": null,
-        "confidence_source": "source-verified"
-      }
-    }
-  },
-  {
-    "row_index": 33,
-    "mfg_part_num": "AU-8001",
-    "part_desc": "12V AGM BATTERY GRP 35 650CCA",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {
-      "Voltage": {
-        "label": "Voltage",
         "value": "12",
         "uom": null,
         "confidence_source": "source-verified"
       }
     }
-  },
-  {
-    "row_index": 34,
-    "mfg_part_num": "AU-8002",
-    "part_desc": "GRP35 AGM BATT 650 CCA",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 35,
-    "mfg_part_num": "BM-9001",
-    "part_desc": "1/2IN OSB SUBFLR 4X8 SHEET",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 36,
-    "mfg_part_num": "BM-9002",
-    "part_desc": "OSB SHEATHING 1/2 IN 4X8",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 37,
-    "mfg_part_num": "JN-1201",
-    "part_desc": "MICROFIBER MOP PAD 18IN",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Janitorial & Cleaning",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 38,
-    "mfg_part_num": "JN-1202",
-    "part_desc": "18IN MICROFIBER FLAT MOP",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Janitorial & Cleaning",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
-  },
-  {
-    "row_index": 40,
-    "mfg_part_num": "UNK-9999",
-    "part_desc": "nan",
-    "real_manufacturer": null,
-    "real_brand": null,
-    "coarse_category": "Uncategorized",
-    "classification_method": "rule-based-fallback",
-    "attributes": {}
   }
 ]

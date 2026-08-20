@@ -7,56 +7,249 @@
   },
   "review_queue": [
     {
-      "mfg_part_num": "AB-3301",
+      "mfg_part_num": "MDB8959SKZ",
       "row_index": 0,
-      "overall_score": 0.5,
+      "overall_score": 0.694,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
+        "Overall confidence score (0.69) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
+        "Missing critical fields: Manufacturer URL, Series"
       ],
       "flagged_fields": [
-        "Manufacturer URL"
+        "Manufacturer URL",
+        "Series"
       ],
       "mfr_url": null,
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "AB-3302",
+      "mfg_part_num": "DWHD650WFP",
       "row_index": 1,
-      "overall_score": 0.333,
+      "overall_score": 0.54,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.54) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
+        "Missing critical fields: Manufacturer URL, Series, Material"
       ],
       "flagged_fields": [
-        "Manufacturer URL"
+        "Manufacturer URL",
+        "Series",
+        "Material"
       ],
       "mfr_url": null,
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "AB-4401",
+      "mfg_part_num": "BDF450",
       "row_index": 2,
-      "overall_score": 0.333,
+      "overall_score": 0.694,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.69) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
+        "Missing critical fields: Manufacturer URL, Series"
       ],
       "flagged_fields": [
-        "Manufacturer URL"
+        "Manufacturer URL",
+        "Series"
       ],
       "mfr_url": null,
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "AB-4402",
+      "mfg_part_num": "DD24SDFT9N",
       "row_index": 3,
+      "overall_score": 0.694,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.69) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: N/A)",
+        "Missing critical fields: Manufacturer URL, Series"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL",
+        "Series"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "WDT750SAKZ",
+      "row_index": 4,
+      "overall_score": 0.653,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.65) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL, Material"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL",
+        "Material"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "KDTM404KPS",
+      "row_index": 5,
+      "overall_score": 0.8,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "GDF650SSVSS",
+      "row_index": 6,
+      "overall_score": 0.694,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.69) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL, Series"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL",
+        "Series"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "FFID2426TS",
+      "row_index": 7,
+      "overall_score": 0.8,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Unverified Manufacturer URL (HTTP status: N/A)",
+        "Missing critical fields: Manufacturer URL"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "DW80CG5450SR",
+      "row_index": 8,
+      "overall_score": 0.819,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Missing critical fields: Series"
+      ],
+      "flagged_fields": [
+        "Series"
+      ],
+      "mfr_url": "https://www.samsung.com/us/support/model/DW80CG5450SR/AA/",
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "LDTS5551D",
+      "row_index": 9,
+      "overall_score": 0.8,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "SHEM63W55N",
+      "row_index": 10,
+      "overall_score": 0.787,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Missing critical fields: Material"
+      ],
+      "flagged_fields": [
+        "Material"
+      ],
+      "mfr_url": "https://www.bosch-home.com/us/en/product/SHEM63W55N",
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "KDPE234GPS",
+      "row_index": 11,
+      "overall_score": 0.8,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "G7106SCVi",
+      "row_index": 12,
+      "overall_score": 0.54,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.54) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL, Series, Material"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL",
+        "Series",
+        "Material"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "WDF520PADM",
+      "row_index": 13,
+      "overall_score": 0.653,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.65) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL, Material"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL",
+        "Material"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "PDT785SBNTS",
+      "row_index": 14,
+      "overall_score": 0.8,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Unverified Manufacturer URL (HTTP status: 403)",
+        "Missing critical fields: Manufacturer URL"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "3MABR-7100033445",
+      "row_index": 15,
       "overall_score": 0.333,
       "status": "needs_review",
       "flag_reasons": [
@@ -71,8 +264,8 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "AB-5501",
-      "row_index": 4,
+      "mfg_part_num": "3MABR-7100077889",
+      "row_index": 16,
       "overall_score": 0.5,
       "status": "needs_review",
       "flag_reasons": [
@@ -87,12 +280,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "LB-1101",
-      "row_index": 5,
-      "overall_score": 0.714,
+      "mfg_part_num": "LEDPAR30-8811",
+      "row_index": 17,
+      "overall_score": 0.6,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.71) below threshold (0.75)",
+        "Overall confidence score (0.60) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -103,8 +296,8 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "LB-1102",
-      "row_index": 6,
+      "mfg_part_num": "LEDA19-7722",
+      "row_index": 18,
       "overall_score": 0.667,
       "status": "needs_review",
       "flag_reasons": [
@@ -119,204 +312,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "LB-1103",
-      "row_index": 7,
-      "overall_score": 0.6,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.60) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "LB-2201",
-      "row_index": 8,
-      "overall_score": 0.714,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.71) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "LB-2202",
-      "row_index": 9,
-      "overall_score": 0.5,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "FA-6601",
-      "row_index": 10,
-      "overall_score": 0.333,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "FA-6602",
-      "row_index": 11,
-      "overall_score": 0.333,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "FA-7701",
-      "row_index": 12,
-      "overall_score": 0.5,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "FA-7702",
-      "row_index": 13,
-      "overall_score": 0.333,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "EL-8801",
-      "row_index": 14,
-      "overall_score": 0.6,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.60) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "EL-8802",
-      "row_index": 15,
-      "overall_score": 0.6,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.60) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "EL-9901",
-      "row_index": 16,
-      "overall_score": 0.642,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.64) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "EL-9902",
-      "row_index": 17,
-      "overall_score": 0.5,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "EL-9903",
-      "row_index": 18,
-      "overall_score": 0.57,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.57) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "HV-1001",
+      "mfg_part_num": "HTOOL-88231",
       "row_index": 19,
-      "overall_score": 0.5,
+      "overall_score": 0.667,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
+        "Overall confidence score (0.67) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -327,7 +328,7 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "HV-1002",
+      "mfg_part_num": "HTOOL-88232",
       "row_index": 20,
       "overall_score": 0.5,
       "status": "needs_review",
@@ -343,12 +344,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "SF-2001",
+      "mfg_part_num": "PTOOL-77401",
       "row_index": 21,
-      "overall_score": 0.333,
+      "overall_score": 0.5,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.50) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -359,12 +360,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "SF-2002",
+      "mfg_part_num": "PTOOL-77402",
       "row_index": 22,
-      "overall_score": 0.333,
+      "overall_score": 0.5,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.50) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -375,8 +376,40 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "SF-3001",
+      "mfg_part_num": "ELEC-55501",
       "row_index": 23,
+      "overall_score": 0.5,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.50) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: N/A)",
+        "Missing critical fields: Manufacturer URL"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "ELEC-55502",
+      "row_index": 24,
+      "overall_score": 0.667,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.67) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: N/A)",
+        "Missing critical fields: Manufacturer URL"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "SAFE-33301",
+      "row_index": 25,
       "overall_score": 0.333,
       "status": "needs_review",
       "flag_reasons": [
@@ -391,44 +424,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "SF-3002",
-      "row_index": 24,
-      "overall_score": 0.5,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "PT-4001",
-      "row_index": 25,
-      "overall_score": 0.5,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "PT-4002",
+      "mfg_part_num": "SAFE-33302",
       "row_index": 26,
-      "overall_score": 0.5,
+      "overall_score": 0.333,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
+        "Overall confidence score (0.33) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -439,12 +440,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "PT-5001",
+      "mfg_part_num": "HVAC-22201",
       "row_index": 27,
-      "overall_score": 0.5,
+      "overall_score": 0.333,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
+        "Overall confidence score (0.33) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -455,7 +456,7 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "PT-5002",
+      "mfg_part_num": "HVAC-22202",
       "row_index": 28,
       "overall_score": 0.5,
       "status": "needs_review",
@@ -471,24 +472,8 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "HT-6001",
+      "mfg_part_num": "PLUMB-11101",
       "row_index": 29,
-      "overall_score": 0.5,
-      "status": "needs_review",
-      "flag_reasons": [
-        "Overall confidence score (0.50) below threshold (0.75)",
-        "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL"
-      ],
-      "flagged_fields": [
-        "Manufacturer URL"
-      ],
-      "mfr_url": null,
-      "consistency_passed": true
-    },
-    {
-      "mfg_part_num": "HT-6002",
-      "row_index": 30,
       "overall_score": 0.333,
       "status": "needs_review",
       "flag_reasons": [
@@ -503,7 +488,23 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "LG-7001",
+      "mfg_part_num": "PLUMB-11102",
+      "row_index": 30,
+      "overall_score": 0.667,
+      "status": "needs_review",
+      "flag_reasons": [
+        "Overall confidence score (0.67) below threshold (0.75)",
+        "Unverified Manufacturer URL (HTTP status: N/A)",
+        "Missing critical fields: Manufacturer URL"
+      ],
+      "flagged_fields": [
+        "Manufacturer URL"
+      ],
+      "mfr_url": null,
+      "consistency_passed": true
+    },
+    {
+      "mfg_part_num": "FAST-99901",
       "row_index": 31,
       "overall_score": 0.5,
       "status": "needs_review",
@@ -519,7 +520,7 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "LG-7002",
+      "mfg_part_num": "FAST-99902",
       "row_index": 32,
       "overall_score": 0.5,
       "status": "needs_review",
@@ -535,7 +536,7 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "AU-8001",
+      "mfg_part_num": "ADH-66601",
       "row_index": 33,
       "overall_score": 0.5,
       "status": "needs_review",
@@ -551,12 +552,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "AU-8002",
+      "mfg_part_num": "ADH-66602",
       "row_index": 34,
-      "overall_score": 0.333,
+      "overall_score": 0.5,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.50) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -567,12 +568,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "BM-9001",
+      "mfg_part_num": "LGHT-44401",
       "row_index": 35,
-      "overall_score": 0.333,
+      "overall_score": 0.714,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.71) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -583,12 +584,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "BM-9002",
+      "mfg_part_num": "LGHT-44402",
       "row_index": 36,
-      "overall_score": 0.333,
+      "overall_score": 0.592,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.59) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -599,12 +600,12 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "JN-1201",
+      "mfg_part_num": "ABR-33305",
       "row_index": 37,
-      "overall_score": 0.333,
+      "overall_score": 0.5,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.50) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
@@ -615,7 +616,7 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "JN-1202",
+      "mfg_part_num": "ABR-33306",
       "row_index": 38,
       "overall_score": 0.333,
       "status": "needs_review",
@@ -631,30 +632,28 @@
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "KDFM404KPS",
+      "mfg_part_num": "HTOOL-88233",
       "row_index": 39,
-      "overall_score": 0.569,
+      "overall_score": 0.714,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.57) below threshold (0.75)",
+        "Overall confidence score (0.71) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
-        "Missing critical fields: Manufacturer URL, Series, Sound Level"
+        "Missing critical fields: Manufacturer URL"
       ],
       "flagged_fields": [
-        "Manufacturer URL",
-        "Series",
-        "Sound Level"
+        "Manufacturer URL"
       ],
       "mfr_url": null,
       "consistency_passed": true
     },
     {
-      "mfg_part_num": "UNK-9999",
+      "mfg_part_num": "PTOOL-77403",
       "row_index": 40,
-      "overall_score": 0.333,
+      "overall_score": 0.5,
       "status": "needs_review",
       "flag_reasons": [
-        "Overall confidence score (0.33) below threshold (0.75)",
+        "Overall confidence score (0.50) below threshold (0.75)",
         "Unverified Manufacturer URL (HTTP status: N/A)",
         "Missing critical fields: Manufacturer URL"
       ],
