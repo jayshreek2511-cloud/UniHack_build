@@ -20,6 +20,7 @@ from typing import Dict, List, Optional
 from pipeline.models import ProductRecord
 from pipeline.stages.s04_attribute_extract import RecordExtractionResult
 from pipeline.stages.s05_manufacturer_enrich import ManufacturerSourceInfo
+from pipeline.llm_client import generate_descriptions_batch as llm_generate_descriptions_batch
 
 logger = logging.getLogger(__name__)
 
@@ -34,10 +35,13 @@ class GeneratedDescriptions:
     retail_desc: str
     consistency_passed: bool = True
     consistency_errors: List[str] = None  # type: ignore
+    field_sources: Dict[str, str] = None  # type: ignore
 
     def __post_init__(self):
         if self.consistency_errors is None:
             self.consistency_errors = []
+        if self.field_sources is None:
+            self.field_sources = {}
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -272,10 +276,66 @@ def generate_descriptions(
     mfr_info: ManufacturerSourceInfo
 ) -> GeneratedDescriptions:
     """Generate 5 description formats strictly from structured input data."""
-    if record.is_dishwasher:
-        return _generate_dishwasher_descriptions(record, extracted, mfr_info)
-    else:
-        return _generate_generic_descriptions(record, extracted, mfr_info)
+    # Single-record compatibility entry point. The pipeline uses the batched
+    # entry point below; this still performs one shared call for callers/tests.
+    fallback = (_generate_dishwasher_descriptions(record, extracted, mfr_info)
+                if record.is_dishwasher else _generate_generic_descriptions(record, extracted, mfr_info))
+    item = _description_item(record, extracted, mfr_info)
+    llm = llm_generate_descriptions_batch([item], batch_size=1, max_workers=1).get(record.row_index, {})
+    return _merge_llm_fields(fallback, llm, extracted)
+
+
+def _description_item(record: ProductRecord, extracted: RecordExtractionResult,
+                      mfr_info: ManufacturerSourceInfo) -> Dict[str, object]:
+    return {
+        "row_id": record.row_index, "sku": record.mfg_part_num.strip(),
+        "category": record.coarse_category, "description": record.part_desc.strip(),
+        "brand": mfr_info.real_brand or extracted.real_brand,
+        "manufacturer": mfr_info.real_manufacturer or extracted.real_manufacturer,
+        "attributes": {k: {"value": v.value, "uom": v.uom} for k, v in extracted.attributes.items() if v.value},
+    }
+
+
+def _merge_llm_fields(fallback: GeneratedDescriptions, llm_fields: Dict[str, str],
+                      extracted: RecordExtractionResult) -> GeneratedDescriptions:
+    """Validate each LLM field; invalid/missing fields retain only that field's template."""
+    fields = ("invoice_desc", "mobile_desc", "short_desc", "long_desc1", "retail_desc")
+    sources = {f: "rule-based-fallback" for f in fields}
+    for field in fields:
+        value = (llm_fields.get(field) or "").strip()
+        valid = bool(value)
+        if field == "invoice_desc":
+            valid = valid and len(value) <= 40 and value == value.upper()
+        elif field == "mobile_desc":
+            valid = valid and 60 <= len(value) <= 80
+        if valid:
+            setattr(fallback, field, value)
+            sources[field] = "llm"
+    fallback.field_sources = sources
+    voltage = _get_val(extracted, "Voltage") or _get_val(extracted, "Voltage Rating")
+    amperage = _get_val(extracted, "Amperage") or _get_val(extracted, "Amperage Rating")
+    sound = _get_val(extracted, "Sound Level")
+    fallback.consistency_errors = verify_description_consistency(fallback, voltage, amperage, sound)
+    fallback.consistency_passed = len(fallback.consistency_errors) == 0
+    return fallback
+
+
+def generate_descriptions_batch(records: List[tuple], batch_size: int = 20,
+                                max_workers: int = 4) -> Dict[str, GeneratedDescriptions]:
+    """Generate descriptions for many records using one Gemini call per batch."""
+    fallbacks = {}
+    items = []
+    for record, extracted, mfr_info in records:
+        fallback = (_generate_dishwasher_descriptions(record, extracted, mfr_info)
+                    if record.is_dishwasher else _generate_generic_descriptions(record, extracted, mfr_info))
+        fallbacks[record.mfg_part_num] = (fallback, extracted)
+        items.append(_description_item(record, extracted, mfr_info))
+    llm_results = llm_generate_descriptions_batch(items, batch_size=batch_size, max_workers=max_workers)
+    out = {}
+    for record, extracted, mfr_info in records:
+        fallback, ext = fallbacks[record.mfg_part_num]
+        out[record.mfg_part_num] = _merge_llm_fields(fallback, llm_results.get(record.row_index, {}), ext)
+    return out
 
 
 def verify_description_consistency(

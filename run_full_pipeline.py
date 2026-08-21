@@ -24,7 +24,7 @@ from pipeline.stages.s02_classify import classify
 from pipeline.stages.s03_manufacturer_normalize import normalize_manufacturers
 from pipeline.stages.s04_attribute_extract import extract_attributes
 from pipeline.stages.s05_manufacturer_enrich import enrich_manufacturer_sources
-from pipeline.stages.s06_describe import generate_descriptions
+from pipeline.stages.s06_describe import generate_descriptions_batch
 from pipeline.stages.s07_confidence_score import compute_all_confidence_scores
 from pipeline.stages.s08_provenance import build_all_provenance
 from pipeline.stages.s09_review_queue import process_review_queue
@@ -75,7 +75,7 @@ def main():
 
     # 3. Stage 02: Classify (LLM-primary, rule-based fallback)
     logger.info(">> Stage 02: Classifying records")
-    report = classify(records, llm_batch_size=60, llm_max_workers=3)
+    report = classify(records, llm_batch_size=120, llm_max_workers=4)
     report.print_summary()
 
     # Save classified full dataset for cross-checking
@@ -94,7 +94,7 @@ def main():
 
     # 4. Stage 04: Attribute Extraction for ALL records (batched dynamic schemas)
     logger.info(">> Stage 04: Extracting attributes for all %d records...", len(all_records))
-    extraction_results = extract_attributes(all_records, reference_dir=ref_dir, llm_batch_size=20, llm_max_workers=3)
+    extraction_results = extract_attributes(all_records, reference_dir=ref_dir, llm_batch_size=40, llm_max_workers=4)
     print(f"[OK] Extracted attributes for {len(extraction_results)} records")
 
     # Save full-category extraction database (not just dishwashers)
@@ -109,14 +109,14 @@ def main():
 
     # 6. Stage 06: Description Generation (all records; dishwashers keep their specific templates)
     logger.info(">> Stage 06: Generating descriptions for %d records...", len(all_records))
-    generated_descs = {}
-    for rec in all_records:
-        sku = rec.mfg_part_num
-        ext = next((r for r in extraction_results if r.mfg_part_num == sku), None)
-        mfr_info = mfr_sources.get(sku)
-        if ext and mfr_info:
-            descs = generate_descriptions(rec, ext, mfr_info)
-            generated_descs[sku] = descs
+    generated_descs = generate_descriptions_batch(
+        [(rec, ext, mfr_sources[rec.mfg_part_num])
+         for rec in all_records
+         for ext in extraction_results
+         if ext.mfg_part_num == rec.mfg_part_num and rec.mfg_part_num in mfr_sources],
+        batch_size=40,
+        max_workers=4,
+    )
 
     # 7. Stage 07: Confidence Scoring (all records)
     logger.info(">> Stage 07: Computing confidence scores...")
@@ -229,7 +229,7 @@ def main():
         print(f"Messy test rows ingested: {len(messy_records)}")
 
         # Classify (LLM-primary)
-        messy_report = classify(messy_records, llm_batch_size=60, llm_max_workers=3)
+        messy_report = classify(messy_records, llm_batch_size=120, llm_max_workers=4)
         messy_categorized = sum(1 for r in messy_records if r.coarse_category != "Uncategorized")
         messy_llm = sum(1 for r in messy_records if r.classification_method == "llm-classified")
         print(f"Messy rows categorized: {messy_categorized}/{len(messy_records)}")
@@ -240,7 +240,7 @@ def main():
             print(f"  {cat:<50} {count:>5}")
 
         # Extract attributes (batched dynamic schemas)
-        messy_extractions = extract_attributes(messy_records, llm_batch_size=20, llm_max_workers=3)
+        messy_extractions = extract_attributes(messy_records, llm_batch_size=40, llm_max_workers=4)
         messy_with_attrs = sum(1 for e in messy_extractions if e.attributes)
         messy_total_attrs = sum(len(e.attributes) for e in messy_extractions)
         print(f"\nMessy rows with extracted attributes: {messy_with_attrs}/{len(messy_extractions)}")

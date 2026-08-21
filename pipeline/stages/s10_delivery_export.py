@@ -82,12 +82,10 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
 
     # SAFETY NET: Guard against distributor names appearing as manufacturer/brand.
     part_manuf_raw = (identity.get("part_manuf") or "").strip()
-    if part_manuf_raw and real_mfr and part_manuf_raw.lower() in real_mfr.lower():
-        logger.warning(
-            "SKU %s: MANUFACTURER_NAME '%s' matches Part_Manuf distributor '%s' — overriding to empty.",
-            sku, real_mfr, part_manuf_raw
-        )
-        real_mfr = ""
+    # Resolver output is authoritative for known brands.  Keep an exact
+    # corporate-name match (e.g. Whirlpool Corporation) instead of turning a
+    # valid manufacturer into blank merely because the distributor column uses
+    # the same name.
     if part_manuf_raw and real_brand and part_manuf_raw.lower() in real_brand.lower():
         logger.warning(
             "SKU %s: BRAND_NAME '%s' matches Part_Manuf distributor '%s' — overriding to empty.",

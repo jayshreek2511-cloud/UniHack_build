@@ -5,7 +5,7 @@
     "part_desc": "1/2\" FIP x 3/8\" OD Compression Angle Stop",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Plumbing > Fittings & Valves > Angle Stops",
+    "coarse_category": "Plumbing > Valves > Angle Stops",
     "classification_method": "llm-classified",
     "attributes": {
       "Connection Type": {
@@ -14,26 +14,26 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Inlet Connection Size": {
-        "label": "Inlet Connection Size",
-        "value": "1/2",
+      "Inlet Connection": {
+        "label": "Inlet Connection",
+        "value": "1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
-      "Inlet Connection Type": {
-        "label": "Inlet Connection Type",
+      "Inlet Type": {
+        "label": "Inlet Type",
         "value": "FIP",
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Outlet Connection Size": {
-        "label": "Outlet Connection Size",
-        "value": "3/8",
+      "Outlet Connection": {
+        "label": "Outlet Connection",
+        "value": "3/8\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
-      "Outlet Connection Type": {
-        "label": "Outlet Connection Type",
+      "Outlet Type": {
+        "label": "Outlet Type",
         "value": "OD Compression",
         "uom": null,
         "confidence_source": "source-verified"
@@ -57,7 +57,7 @@
     "attributes": {
       "Size": {
         "label": "Size",
-        "value": "3/4",
+        "value": "3/4\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -81,7 +81,7 @@
     "part_desc": "1\" Brass Ball Valve - Full Port",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Plumbing > Fittings & Valves > Ball Valves",
+    "coarse_category": "Plumbing > Valves > Ball Valves",
     "classification_method": "llm-classified",
     "attributes": {
       "Material": {
@@ -92,7 +92,7 @@
       },
       "Size": {
         "label": "Size",
-        "value": "1",
+        "value": "1\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -121,7 +121,7 @@
     "attributes": {
       "Size": {
         "label": "Size",
-        "value": "1/2",
+        "value": "1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -166,15 +166,15 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Size 1": {
-        "label": "Size 1",
-        "value": "3/8",
+      "Inlet Size": {
+        "label": "Inlet Size",
+        "value": "3/8\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
-      "Size 2": {
-        "label": "Size 2",
-        "value": "1/2",
+      "Outlet Size": {
+        "label": "Outlet Size",
+        "value": "1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -203,12 +203,12 @@
       },
       "Size": {
         "label": "Size",
-        "value": "1-1/4",
+        "value": "1-1/4\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
-      "DWV System": {
-        "label": "DWV System",
+      "Application": {
+        "label": "Application",
         "value": "DWV",
         "uom": null,
         "confidence_source": "source-verified"
@@ -232,33 +232,27 @@
     "attributes": {
       "Material": {
         "label": "Material",
-        "value": "Metal Alloy",
+        "value": "Copper",
         "uom": null,
-        "confidence_source": "rule-based"
+        "confidence_source": "source-verified"
       },
       "Size": {
         "label": "Size",
-        "value": "1/2",
+        "value": "1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
-      "Connection Type 1": {
-        "label": "Connection Type 1",
-        "value": "Copper Tube",
+      "Fitting Type": {
+        "label": "Fitting Type",
+        "value": "Tube x Female Adapter",
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Connection Type 2": {
-        "label": "Connection Type 2",
-        "value": "Female Adapter",
+      "Feature": {
+        "label": "Feature",
+        "value": "Lead Free",
         "uom": null,
         "confidence_source": "source-verified"
-      },
-      "Lead Free": {
-        "label": "Lead Free",
-        "value": "Yes",
-        "uom": null,
-        "confidence_source": "llm-inferred"
       }
     }
   },
@@ -279,7 +273,7 @@
       },
       "Size": {
         "label": "Size",
-        "value": "3/4",
+        "value": "3/4\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -289,8 +283,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Component Type": {
-        "label": "Component Type",
+      "Fitting Type": {
+        "label": "Fitting Type",
         "value": "Expansion Sleeve",
         "uom": null,
         "confidence_source": "source-verified"
@@ -303,7 +297,7 @@
     "part_desc": "1/4\" NPT x 1/4\" OD Tube Fitting - 316SS",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Plumbing > Fittings & Valves > Tube Fittings",
+    "coarse_category": "Plumbing > Pipe & Fittings > Tube Fittings",
     "classification_method": "llm-classified",
     "attributes": {
       "Connection Type": {
@@ -314,7 +308,7 @@
       },
       "Thread Size": {
         "label": "Thread Size",
-        "value": "1/4",
+        "value": "1/4\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -326,7 +320,7 @@
       },
       "Tube Size": {
         "label": "Tube Size",
-        "value": "1/4",
+        "value": "1/4\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -350,7 +344,7 @@
     "part_desc": "1/2\" Chrome Escutcheon - Round",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Plumbing > Plumbing Parts & Repair > Escutcheons",
+    "coarse_category": "Plumbing > Plumbing Accessories > Escutcheons",
     "classification_method": "llm-classified",
     "attributes": {
       "Color": {
@@ -361,7 +355,7 @@
       },
       "Size": {
         "label": "Size",
-        "value": "1/2",
+        "value": "1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -371,8 +365,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Product Type": {
-        "label": "Product Type",
+      "Accessory Type": {
+        "label": "Accessory Type",
         "value": "Escutcheon",
         "uom": null,
         "confidence_source": "source-verified"
@@ -394,15 +388,21 @@
     "coarse_category": "Fasteners > Bolts > Hex Bolts",
     "classification_method": "llm-classified",
     "attributes": {
-      "Thread Size": {
-        "label": "Thread Size",
-        "value": "1/4\"-20",
+      "Diameter": {
+        "label": "Diameter",
+        "value": "1/4\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Thread Count": {
+        "label": "Thread Count",
+        "value": "20",
         "uom": null,
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
-        "value": "1-1/2",
+        "value": "1-1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -441,15 +441,21 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Thread Size": {
-        "label": "Thread Size",
-        "value": "#10-24",
+      "Size": {
+        "label": "Size",
+        "value": "#10",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Thread Count": {
+        "label": "Thread Count",
+        "value": "24",
         "uom": null,
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
-        "value": "1/2",
+        "value": "1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -482,15 +488,21 @@
     "coarse_category": "Fasteners > Nuts > Hex Nuts",
     "classification_method": "llm-classified",
     "attributes": {
-      "Thread Size": {
-        "label": "Thread Size",
-        "value": "3/8\"-16",
+      "Diameter": {
+        "label": "Diameter",
+        "value": "3/8\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Thread Count": {
+        "label": "Thread Count",
+        "value": "16",
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Thickness / Length": {
-        "label": "Thickness / Length",
-        "value": "3",
+      "Length": {
+        "label": "Length",
+        "value": "3\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -525,7 +537,7 @@
     "attributes": {
       "Size": {
         "label": "Size",
-        "value": "1/2",
+        "value": "1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -541,8 +553,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Property": {
-        "label": "Property",
+      "Feature": {
+        "label": "Feature",
         "value": "Hardened",
         "uom": null,
         "confidence_source": "source-verified"
@@ -566,7 +578,7 @@
       },
       "Diameter": {
         "label": "Diameter",
-        "value": "5/16",
+        "value": "5/16\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -601,13 +613,13 @@
       },
       "Diameter": {
         "label": "Diameter",
-        "value": "1/4",
+        "value": "1/4\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
-        "value": "3/4",
+        "value": "3/4\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -629,8 +641,8 @@
     "row_index": 16,
     "mfg_part_num": "FS-2007",
     "part_desc": "M6 x 1.0 x 20mm Socket Head Cap Screw - 12.9",
-    "real_manufacturer": null,
-    "real_brand": null,
+    "real_manufacturer": "M6",
+    "real_brand": "M6",
     "coarse_category": "Fasteners > Screws > Socket Head Cap Screws",
     "classification_method": "llm-classified",
     "attributes": {
@@ -642,7 +654,13 @@
       },
       "Thread Size": {
         "label": "Thread Size",
-        "value": "M6 x 1.0",
+        "value": "M6",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Pitch": {
+        "label": "Pitch",
+        "value": "1.0",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -658,8 +676,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Grade / Class": {
-        "label": "Grade / Class",
+      "Grade": {
+        "label": "Grade",
         "value": "12.9",
         "uom": null,
         "confidence_source": "source-verified"
@@ -675,27 +693,21 @@
     "coarse_category": "Fasteners > Screws > Sheet Metal Screws",
     "classification_method": "llm-classified",
     "attributes": {
-      "Thread Size": {
-        "label": "Thread Size",
+      "Size": {
+        "label": "Size",
         "value": "#6",
         "uom": null,
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
-        "value": "3/4",
+        "value": "3/4\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
       "Fastener Type": {
         "label": "Fastener Type",
-        "value": "Sheet Metal Screw",
-        "uom": null,
-        "confidence_source": "source-verified"
-      },
-      "Thread Type": {
-        "label": "Thread Type",
-        "value": "Self-Tapping",
+        "value": "Self-Tapping Sheet Metal Screw",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -730,25 +742,19 @@
       },
       "Diameter": {
         "label": "Diameter",
-        "value": "3/8",
+        "value": "3/8\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
-        "value": "2",
+        "value": "2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
       "Fastener Type": {
         "label": "Fastener Type",
-        "value": "Wedge Anchor",
-        "uom": null,
-        "confidence_source": "source-verified"
-      },
-      "Application": {
-        "label": "Application",
-        "value": "Concrete",
+        "value": "Concrete Wedge Anchor",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -777,7 +783,7 @@
       },
       "Size": {
         "label": "Size",
-        "value": "1/2",
+        "value": "1/2\"",
         "uom": "in",
         "confidence_source": "source-verified"
       },
@@ -822,8 +828,14 @@
         "uom": "mm",
         "confidence_source": "source-verified"
       },
-      "Material Property": {
-        "label": "Material Property",
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Dowel Pin",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Feature": {
+        "label": "Feature",
         "value": "Hardened",
         "uom": null,
         "confidence_source": "source-verified"
@@ -839,9 +851,21 @@
     "coarse_category": "Fasteners > Nuts > Wing Nuts",
     "classification_method": "llm-classified",
     "attributes": {
-      "Thread Size": {
-        "label": "Thread Size",
-        "value": "1/4\"-20",
+      "Diameter": {
+        "label": "Diameter",
+        "value": "1/4\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Thread Count": {
+        "label": "Thread Count",
+        "value": "20",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Wing Nut",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -877,12 +901,18 @@
       "Diameter": {
         "label": "Diameter",
         "value": "5/32\"",
-        "uom": null,
+        "uom": "in",
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
         "value": "1/2\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Cotter Pin",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -898,8 +928,8 @@
     "row_index": 23,
     "mfg_part_num": "FS-2014",
     "part_desc": "M10 x 1.5 x 30mm Hex Bolt - Grade 8.8 - Zinc",
-    "real_manufacturer": null,
-    "real_brand": null,
+    "real_manufacturer": "M10",
+    "real_brand": "M10",
     "coarse_category": "Fasteners > Bolts > Hex Bolts",
     "classification_method": "llm-classified",
     "attributes": {
@@ -911,7 +941,13 @@
       },
       "Thread Size": {
         "label": "Thread Size",
-        "value": "M10 x 1.5",
+        "value": "M10",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Pitch": {
+        "label": "Pitch",
+        "value": "1.5",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -921,9 +957,15 @@
         "uom": "mm",
         "confidence_source": "source-verified"
       },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Hex Bolt",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
       "Grade": {
         "label": "Grade",
-        "value": "8.8",
+        "value": "Grade 8.8",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -950,15 +992,27 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Thread Size": {
-        "label": "Thread Size",
-        "value": "#8-32",
+      "Size": {
+        "label": "Size",
+        "value": "#8",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Thread Count": {
+        "label": "Thread Count",
+        "value": "32",
         "uom": null,
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
         "value": "3/8\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Socket Set Screw",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -988,12 +1042,18 @@
       "Diameter": {
         "label": "Diameter",
         "value": "3/4\"",
-        "uom": null,
+        "uom": "in",
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
         "value": "6\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Anchor Bolt",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1023,18 +1083,24 @@
       "Diameter": {
         "label": "Diameter",
         "value": "1/2\"",
-        "uom": null,
+        "uom": "in",
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
         "value": "1-1/2\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Carriage Bolt",
         "uom": null,
         "confidence_source": "source-verified"
       },
       "Grade": {
         "label": "Grade",
-        "value": "5",
+        "value": "Grade 5",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1050,8 +1116,8 @@
     "row_index": 27,
     "mfg_part_num": "FS-2018",
     "part_desc": "M4 x 0.7 x 8mm Machine Screw - Pan Head - Phillips - 304SS",
-    "real_manufacturer": null,
-    "real_brand": null,
+    "real_manufacturer": "M4",
+    "real_brand": "M4",
     "coarse_category": "Fasteners > Screws > Machine Screws",
     "classification_method": "llm-classified",
     "attributes": {
@@ -1063,7 +1129,13 @@
       },
       "Thread Size": {
         "label": "Thread Size",
-        "value": "M4 x 0.7",
+        "value": "M4",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Pitch": {
+        "label": "Pitch",
+        "value": "0.7",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1071,6 +1143,12 @@
         "label": "Length",
         "value": "8",
         "uom": "mm",
+        "confidence_source": "source-verified"
+      },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Machine Screw",
+        "uom": null,
         "confidence_source": "source-verified"
       },
       "Head Type": {
@@ -1111,6 +1189,12 @@
       "Size": {
         "label": "Size",
         "value": "3/8\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Retaining Ring",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1140,12 +1224,18 @@
       "Diameter": {
         "label": "Diameter",
         "value": "1/4\"",
-        "uom": null,
+        "uom": "in",
         "confidence_source": "source-verified"
       },
       "Length": {
         "label": "Length",
         "value": "1-1/2\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Fastener Type": {
+        "label": "Fastener Type",
+        "value": "Lag Screw",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1169,7 +1259,7 @@
     "part_desc": "12/2 NM-B Romex - 250ft - Yellow",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Electrical > Wire & Cable > NM-B Cable",
+    "coarse_category": "Electrical > Wire & Cable > Non-Metallic Sheathed Cable",
     "classification_method": "llm-classified",
     "attributes": {
       "Length": {
@@ -1190,8 +1280,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Wire Gauge": {
-        "label": "Wire Gauge",
+      "Wire Size": {
+        "label": "Wire Size",
         "value": "12/2",
         "uom": null,
         "confidence_source": "source-verified"
@@ -1210,18 +1300,18 @@
     "part_desc": "1/2\" Single Gang PVC Box - New Work - 18cu in",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Electrical > Boxes & Covers > Electrical Boxes",
+    "coarse_category": "Electrical > Boxes & Covers > PVC Boxes",
     "classification_method": "llm-classified",
     "attributes": {
       "Size": {
         "label": "Size",
         "value": "1/2\"",
-        "uom": null,
+        "uom": "in",
         "confidence_source": "source-verified"
       },
       "Gang Count": {
         "label": "Gang Count",
-        "value": "Single Gang",
+        "value": "1",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1231,8 +1321,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Construction Type": {
-        "label": "Construction Type",
+      "Box Type": {
+        "label": "Box Type",
         "value": "New Work",
         "uom": null,
         "confidence_source": "source-verified"
@@ -1251,7 +1341,7 @@
     "part_desc": "20A Single Pole Toggle Breaker - Plug-On Neutral - BR",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Electrical > Circuit Breakers > Plug-In Circuit Breakers",
+    "coarse_category": "Electrical > Circuit Breakers > Standard Circuit Breakers",
     "classification_method": "llm-classified",
     "attributes": {
       "Amperage": {
@@ -1266,14 +1356,14 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Actuator Type": {
-        "label": "Actuator Type",
-        "value": "Toggle",
+      "Device Type": {
+        "label": "Device Type",
+        "value": "Toggle Breaker",
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Termination Type": {
-        "label": "Termination Type",
+      "Connection Feature": {
+        "label": "Connection Feature",
         "value": "Plug-On Neutral",
         "uom": null,
         "confidence_source": "source-verified"
@@ -1292,7 +1382,7 @@
     "part_desc": "3/4\" Flexible Nonmetallic Conduit - 100ft - Grey",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Electrical > Conduit & Fittings > Flexible Conduit",
+    "coarse_category": "Electrical > Conduit & Fittings > Flexible Nonmetallic Conduit",
     "classification_method": "llm-classified",
     "attributes": {
       "Length": {
@@ -1316,18 +1406,12 @@
       "Size": {
         "label": "Size",
         "value": "3/4\"",
-        "uom": null,
+        "uom": "in",
         "confidence_source": "source-verified"
       },
-      "Material": {
-        "label": "Material",
-        "value": "Nonmetallic",
-        "uom": null,
-        "confidence_source": "source-verified"
-      },
-      "Type": {
-        "label": "Type",
-        "value": "Flexible",
+      "Conduit Type": {
+        "label": "Conduit Type",
+        "value": "Flexible Nonmetallic",
         "uom": null,
         "confidence_source": "source-verified"
       }
@@ -1350,13 +1434,19 @@
       },
       "Gang Count": {
         "label": "Gang Count",
-        "value": "1-Gang",
+        "value": "1",
         "uom": null,
         "confidence_source": "source-verified"
       },
       "Style": {
         "label": "Style",
         "value": "Screwless",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Device Type": {
+        "label": "Device Type",
+        "value": "Wallplate",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1389,8 +1479,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Design Profile": {
-        "label": "Design Profile",
+      "Profile": {
+        "label": "Profile",
         "value": "Slim",
         "uom": null,
         "confidence_source": "source-verified"
@@ -1401,8 +1491,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Features": {
-        "label": "Features",
+      "Feature": {
+        "label": "Feature",
         "value": "Tamper Resistant",
         "uom": null,
         "confidence_source": "source-verified"
@@ -1415,7 +1505,7 @@
     "part_desc": "10/3 NM-B Romex - 125ft - Yellow",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Electrical > Wire & Cable > NM-B Cable",
+    "coarse_category": "Electrical > Wire & Cable > Non-Metallic Sheathed Cable",
     "classification_method": "llm-classified",
     "attributes": {
       "Length": {
@@ -1436,8 +1526,8 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Wire Gauge": {
-        "label": "Wire Gauge",
+      "Wire Size": {
+        "label": "Wire Size",
         "value": "10/3",
         "uom": null,
         "confidence_source": "source-verified"
@@ -1456,23 +1546,23 @@
     "part_desc": "3/4\" EMT Connector - Set Screw - Zinc Die Cast",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Electrical > Conduit & Fittings > EMT Connectors",
+    "coarse_category": "Electrical > Conduit & Fittings > EMT Fittings",
     "classification_method": "llm-classified",
     "attributes": {
       "Size": {
         "label": "Size",
         "value": "3/4\"",
-        "uom": null,
+        "uom": "in",
         "confidence_source": "source-verified"
       },
-      "Connector Type": {
-        "label": "Connector Type",
+      "Fitting Type": {
+        "label": "Fitting Type",
         "value": "EMT Connector",
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Fastening Type": {
-        "label": "Fastening Type",
+      "Attachment Type": {
+        "label": "Attachment Type",
         "value": "Set Screw",
         "uom": null,
         "confidence_source": "source-verified"
@@ -1491,25 +1581,31 @@
     "part_desc": "4\" Square Junction Box - Deep - 1-1/2\" Deep - Welded",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Electrical > Boxes & Covers > Junction Boxes",
+    "coarse_category": "Electrical > Boxes & Covers > Steel Junction Boxes",
     "classification_method": "llm-classified",
     "attributes": {
-      "Shape": {
-        "label": "Shape",
-        "value": "Square",
-        "uom": null,
-        "confidence_source": "source-verified"
-      },
       "Size": {
         "label": "Size",
         "value": "4\"",
+        "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Box Type": {
+        "label": "Box Type",
+        "value": "Square Junction Box",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Depth Type": {
+        "label": "Depth Type",
+        "value": "Deep",
         "uom": null,
         "confidence_source": "source-verified"
       },
       "Depth": {
         "label": "Depth",
         "value": "1-1/2\"",
-        "uom": null,
+        "uom": "in",
         "confidence_source": "source-verified"
       },
       "Construction": {
@@ -1526,7 +1622,7 @@
     "part_desc": "20A 2-Pole Breaker - THQL - Plug-On",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Electrical > Circuit Breakers > Plug-In Circuit Breakers",
+    "coarse_category": "Electrical > Circuit Breakers > Standard Circuit Breakers",
     "classification_method": "llm-classified",
     "attributes": {
       "Amperage": {
@@ -1538,6 +1634,12 @@
       "Pole Count": {
         "label": "Pole Count",
         "value": "2-Pole",
+        "uom": null,
+        "confidence_source": "source-verified"
+      },
+      "Device Type": {
+        "label": "Device Type",
+        "value": "Breaker",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1561,7 +1663,7 @@
     "part_desc": "1/2\" Shower Valve Trim Kit - Chrome - Single Handle",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Plumbing > Plumbing Fixtures > Shower Trim Kits",
+    "coarse_category": "Plumbing > Faucets & Showerheads > Shower Trim Kits",
     "classification_method": "llm-classified",
     "attributes": {
       "Color": {
@@ -1570,10 +1672,16 @@
         "uom": null,
         "confidence_source": "source-verified"
       },
-      "Connection Size": {
-        "label": "Connection Size",
+      "Size": {
+        "label": "Size",
         "value": "1/2",
         "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Product Type": {
+        "label": "Product Type",
+        "value": "Shower Valve Trim Kit",
+        "uom": null,
         "confidence_source": "source-verified"
       },
       "Finish": {
@@ -1584,7 +1692,7 @@
       },
       "Handle Count": {
         "label": "Handle Count",
-        "value": "Single",
+        "value": "Single Handle",
         "uom": null,
         "confidence_source": "source-verified"
       }
@@ -1615,6 +1723,12 @@
         "label": "Size",
         "value": "3/4",
         "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Product Type": {
+        "label": "Product Type",
+        "value": "P-Trap",
+        "uom": null,
         "confidence_source": "source-verified"
       },
       "Gauge": {
@@ -1690,7 +1804,7 @@
     "part_desc": "1/2\" x 3/8\" Compression x 1/2\" IPS Dual Outlet Valve - 1/4 Turn",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Plumbing > Fittings & Valves > Dual Outlet Valves",
+    "coarse_category": "Plumbing > Valves > Dual Outlet Valves",
     "classification_method": "llm-classified",
     "attributes": {
       "Size": {
@@ -1701,31 +1815,31 @@
       },
       "Connection Type": {
         "label": "Connection Type",
-        "value": "Compression x IPS",
+        "value": "Compression",
         "uom": null,
-        "confidence_source": "llm-inferred"
+        "confidence_source": "source-verified"
       },
       "Inlet Size": {
         "label": "Inlet Size",
-        "value": "1/2",
+        "value": "1/2 x 3/8",
         "uom": "in",
-        "confidence_source": "source-verified"
+        "confidence_source": "llm-inferred"
       },
       "Outlet Size": {
         "label": "Outlet Size",
-        "value": "3/8",
+        "value": "1/2",
         "uom": "in",
         "confidence_source": "source-verified"
       },
-      "Secondary Outlet Size": {
-        "label": "Secondary Outlet Size",
-        "value": "1/2",
-        "uom": "in",
+      "Outlet Connection": {
+        "label": "Outlet Connection",
+        "value": "IPS",
+        "uom": null,
         "confidence_source": "source-verified"
       },
       "Valve Type": {
         "label": "Valve Type",
-        "value": "Dual Outlet",
+        "value": "Dual Outlet Valve",
         "uom": null,
         "confidence_source": "source-verified"
       },
@@ -1743,7 +1857,7 @@
     "part_desc": "3/4\" Hose Clamp - Stainless Steel - Worm Drive",
     "real_manufacturer": null,
     "real_brand": null,
-    "coarse_category": "Plumbing > Fittings & Valves > Hose Clamps",
+    "coarse_category": "Hardware > Clamps > Hose Clamps",
     "classification_method": "llm-classified",
     "attributes": {
       "Material": {
@@ -1762,6 +1876,12 @@
         "label": "Size",
         "value": "3/4",
         "uom": "in",
+        "confidence_source": "source-verified"
+      },
+      "Product Type": {
+        "label": "Product Type",
+        "value": "Hose Clamp",
+        "uom": null,
         "confidence_source": "source-verified"
       },
       "Drive Type": {

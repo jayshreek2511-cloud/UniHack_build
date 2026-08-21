@@ -36,6 +36,31 @@ BRAND_CORP_MAP = [
     (r"\bBLOMBERG\b", "Blomberg", "Arçelik"),
 ]
 
+# Generic (non-appliance) brands commonly present in distributor descriptions.
+# Keep this table deliberately explicit: Part_Manuf is a distributor field and
+# must never be used as a source for either identity value.
+GENERIC_BRAND_CORP_MAP = [
+    (r"\bEGO\b", "EGO", "Chervon North America"),
+    (r"\bMILWAUKEE\b|\bMILW\b", "Milwaukee", "Techtronic Industries"),
+    (r"\bDEWALT\b|\bDEWALT\b", "DEWALT", "Stanley Black & Decker"),
+    (r"\bMAKITA\b", "Makita", "Makita Corporation"),
+    (r"\bRYOBI\b", "RYOBI", "Techtronic Industries"),
+    (r"\bKOBALT\b", "Kobalt", "Chervon North America"),
+    (r"\bCRAFTSMAN\b", "CRAFTSMAN", "Stanley Black & Decker"),
+    (r"\bSTANLEY\b", "STANLEY", "Stanley Black & Decker"),
+    (r"\bBLACK\s*\+?\s*DECKER\b", "BLACK+DECKER", "Stanley Black & Decker"),
+    (r"\b3M\b", "3M", "3M Company"),
+    (r"\bDIABLO\b", "Diablo", "Freud America"),
+    (r"\bMIRKA\b|\bHIOLIT\b|\bABRANET\b", "Mirka", "Mirka Ltd."),
+    (r"\bKLEIN\b", "Klein Tools", "Klein Tools"),
+    (r"\bHUSKY\b", "Husky", "The Home Depot"),
+    (r"\bIRWIN\b", "Irwin", "Stanley Black & Decker"),
+    (r"\bRIDGID\b", "RIDGID", "Emerson Electric"),
+    (r"\bGREENLEE\b", "Greenlee", "Emerson Electric"),
+    (r"\bLENNOX\b", "Lennox", "Lennox International"),
+    (r"\bHONEYWELL\b", "Honeywell", "Honeywell International"),
+]
+
 
 def resolve_brand_and_manufacturer(
     part_desc: str,
@@ -60,5 +85,33 @@ def resolve_brand_and_manufacturer(
     for pattern, brand_name, corp_entity in BRAND_CORP_MAP:
         if re.search(pattern, combined_text):
             return brand_name, corp_entity
+
+    # Generic categories use the same resolver contract; previously they fell
+    # through here unconditionally because only dishwasher brands were listed.
+    for pattern, brand_name, corp_entity in GENERIC_BRAND_CORP_MAP:
+        if re.search(pattern, combined_text):
+            return brand_name, corp_entity
+
+    # When a non-placeholder brand column is supplied, preserve it as a
+    # source-verified identity.  For an unknown private-label brand there is no
+    # safer corporate mapping, so use the canonical brand as the manufacturer
+    # rather than emitting an internally inconsistent brand/None pair.
+    for supplied in (brand_e1, brand_unilog, brand_dib):
+        if supplied and str(supplied).strip():
+            canonical = re.sub(r"\s+", " ", str(supplied).strip())
+            return canonical, canonical
+
+    # Many distributor feeds put the brand immediately after the SKU (for
+    # example, ``EGO-2364 EGO 40V ...``) while leaving all brand columns blank.
+    # Recover that literal signal without treating ordinary description words
+    # (sizes, articles, or product types) as brands.
+    if part_num and part_desc:
+        remainder = re.sub(r"^\s*" + re.escape(str(part_num).strip()) + r"\b", "", part_desc, flags=re.IGNORECASE).strip()
+        token = re.match(r"([A-Za-z][A-Za-z0-9+&-]{1,30})", remainder or "")
+        stop = {"THE", "A", "AN", "AND", "FOR", "WITH", "WITHOUT", "IN", "ON", "OF", "X", "UNBRANDED"}
+        if token and token.group(1).upper() not in stop:
+            canonical = token.group(1).strip("-+&")
+            if len(canonical) >= 2:
+                return canonical, canonical
 
     return None, None

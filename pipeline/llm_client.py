@@ -516,3 +516,62 @@ def extract_dynamic_attributes_batch(
 
     logger.info("LLM attribute extraction complete: %d/%d products had attributes extracted.", len(results), len(items))
     return results
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Shared five-format description generation
+# ──────────────────────────────────────────────────────────────────────────────
+
+_DESCRIPTION_BATCH_PROMPT = """You are a product-catalog copywriter. For each structured product below,
+write five descriptions using ONLY the supplied facts. Keep every numeric value
+identical across all five outputs. Return one JSON object per product, in order,
+with exactly these keys: invoice_desc, mobile_desc, short_desc, long_desc1, retail_desc.
+
+Hard format rules:
+- invoice_desc: ALL CAPS, maximum 40 characters.
+- mobile_desc: 60-80 characters.
+- short_desc: concise ecommerce title, one sentence or phrase.
+- long_desc1: a factual comma-separated specification paragraph.
+- retail_desc: concise storefront summary.
+- Never invent specifications, brands, or model numbers. Do not include markdown.
+
+Products:
+{products}
+"""
+
+
+def generate_descriptions_batch(items: List[Dict[str, Any]], batch_size: int = 20,
+                                max_workers: int = 4) -> Dict[int, Dict[str, str]]:
+    """Generate all five description formats in one call per batch."""
+    api_key = get_api_key()
+    if not api_key or not items:
+        return {}
+    batches = [items[i:i + batch_size] for i in range(0, len(items), batch_size)]
+
+    def _run(batch: List[Dict[str, Any]]) -> Dict[int, Dict[str, str]]:
+        lines = []
+        for i, item in enumerate(batch, 1):
+            lines.append(f"{i}. row_id={item['row_id']} | SKU={item['sku']} | category={item['category']} | "
+                         f"description={item['description']} | brand={item.get('brand') or 'Unknown'} | "
+                         f"manufacturer={item.get('manufacturer') or 'Unknown'} | attributes={json.dumps(item.get('attributes') or {}, ensure_ascii=False)}")
+        text = _call_gemini_rest(_DESCRIPTION_BATCH_PROMPT.format(products="\n".join(lines)), api_key, timeout=45.0)
+        parsed = _parse_json_array(text) if text else []
+        out: Dict[int, Dict[str, str]] = {}
+        for idx, obj in enumerate(parsed):
+            if idx >= len(batch) or not isinstance(obj, dict):
+                continue
+            vals = {k: str(obj[k]).strip() for k in ("invoice_desc", "mobile_desc", "short_desc", "long_desc1", "retail_desc")
+                    if obj.get(k) is not None and str(obj[k]).strip()}
+            if vals:
+                out[int(batch[idx]["row_id"])] = vals
+        return out
+
+    results: Dict[int, Dict[str, str]] = {}
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(_run, b) for b in batches]
+        for future in as_completed(futures):
+            try:
+                results.update(future.result(timeout=180))
+            except Exception as exc:
+                logger.warning("Description generation batch failed: %s", exc)
+    return results

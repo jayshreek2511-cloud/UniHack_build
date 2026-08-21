@@ -41,12 +41,6 @@
       ],
       "codes": []
     },
-    "Bosch": {
-      "variants": [
-        "Bosch"
-      ],
-      "codes": []
-    },
     "DEWALT": {
       "variants": [
         "DEWALT"
@@ -88,20 +82,6 @@
         "Eaton",
         "Eaton Corp",
         "Eaton Corporation"
-      ],
-      "codes": []
-    },
-    "Fastenal Company": {
-      "variants": [
-        "Fastenal",
-        "Fastenal Co",
-        "Fastenal Company"
-      ],
-      "codes": []
-    },
-    "Frigidaire": {
-      "variants": [
-        "Frigidaire"
       ],
       "codes": []
     },
@@ -168,6 +148,24 @@
       ],
       "codes": []
     },
+    "Irwin": {
+      "variants": [
+        "Irwin"
+      ],
+      "codes": []
+    },
+    "Irwin Industrial": {
+      "variants": [
+        "Irwin Industrial"
+      ],
+      "codes": []
+    },
+    "Irwin Tools": {
+      "variants": [
+        "Irwin Tools"
+      ],
+      "codes": []
+    },
     "Klein": {
       "variants": [
         "Klein"
@@ -178,12 +176,6 @@
       "variants": [
         "Klein Tools",
         "Klein Tools Inc"
-      ],
-      "codes": []
-    },
-    "LG Electronics": {
-      "variants": [
-        "LG Electronics"
       ],
       "codes": []
     },
@@ -240,34 +232,10 @@
       ],
       "codes": []
     },
-    "Norton": {
-      "variants": [
-        "Norton"
-      ],
-      "codes": []
-    },
-    "Norton Abr.": {
-      "variants": [
-        "Norton Abr."
-      ],
-      "codes": []
-    },
-    "Norton Abrasives": {
-      "variants": [
-        "Norton Abrasives"
-      ],
-      "codes": []
-    },
     "Panasonic Corp": {
       "variants": [
         "Panasonic",
         "Panasonic Corp"
-      ],
-      "codes": []
-    },
-    "Philips Lighting": {
-      "variants": [
-        "Philips Lighting"
       ],
       "codes": []
     },
@@ -287,18 +255,6 @@
     "Samsung Electronics": {
       "variants": [
         "Samsung Electronics"
-      ],
-      "codes": []
-    },
-    "Signify NA": {
-      "variants": [
-        "Signify NA"
-      ],
-      "codes": []
-    },
-    "Signify North America": {
-      "variants": [
-        "Signify North America"
       ],
       "codes": []
     },
@@ -323,9 +279,28 @@
       ],
       "codes": []
     },
+    "Stanley B&D": {
+      "variants": [
+        "Stanley",
+        "Stanley B&D"
+      ],
+      "codes": []
+    },
+    "Stanley Black & Decker": {
+      "variants": [
+        "Stanley Black & Decker"
+      ],
+      "codes": []
+    },
     "Unknown": {
       "variants": [
         "Unknown"
+      ],
+      "codes": []
+    },
+    "Unknown Distributor": {
+      "variants": [
+        "Unknown Distributor"
       ],
       "codes": []
     },
