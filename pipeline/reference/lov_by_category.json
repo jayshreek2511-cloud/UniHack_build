@@ -4,126 +4,225 @@
       "120"
     ],
     "Amperage Rating": [
-      "12",
       "15"
     ],
     "Mounting Type": [
       "Built-in"
     ],
     "Sound Level": [
+      "38",
       "39",
       "40",
+      "41",
       "42",
+      "43",
       "44",
       "45",
       "46",
       "47",
+      "48",
+      "49",
+      "50",
       "51",
+      "52",
       "54",
       "55"
     ],
     "Material": [
-      "Black Stainless Steel",
       "Stainless Steel"
     ],
     "Color": [
-      "Black Stainless Steel",
-      "Stainless Steel"
+      "Black Stainless",
+      "Stainless Steel",
+      "WHITE",
+      "White"
     ],
-    "Series": [
-      "300 Series",
-      "Eco Series",
-      "PrintShield Series",
-      "Professional Series",
-      "Profile Series",
-      "Quadwash"
+    "Additional Information": [
+      "39 dBA quiet operation, built-in design",
+      "47 dBA sound level, black stainless steel finish",
+      "48 dBA noise level, Black Stainless finish",
+      "Built-in dishwasher with 44 dBA sound level in white finish",
+      "Built-in dishwasher with 45 dBA sound level in white finish.",
+      "Built-in dishwasher with 47 dBA sound level in stainless steel finish",
+      "Built-in dishwasher with 47 dBA sound rating in black stainless finish",
+      "Built-in dishwasher with 49 dBA sound level in black stainless finish",
+      "Built-in dishwasher with 55 dBA sound level and stainless steel finish",
+      "Built-in dishwasher with 55 dBA sound level and stainless steel finish.",
+      "Front control dishwasher with 38 dBA quiet operation in Black Stainless finish",
+      "Front control dishwasher with 43 dBA quiet operation in black stainless finish.",
+      "Front control dishwasher with 44 dBA sound level and stainless steel finish.",
+      "Front control dishwasher with 51 dBA sound level in black stainless finish",
+      "Front control dishwasher with 52 dBA sound level",
+      "Front control dishwasher with 55 dBA sound level",
+      "Front control dishwasher with 55 dBA sound level and stainless steel finish",
+      "Front control dishwasher, 42 dBA sound level",
+      "Front control dishwasher, 48 dBA sound level",
+      "Top control dishwasher",
+      "Top control dishwasher with 44 dBA sound level in white finish",
+      "Top control dishwasher with 44 dBA sound rating in white finish",
+      "Top control dishwasher with 46 dBA sound level",
+      "Top control dishwasher with 48 dBA quiet operation and stainless steel finish",
+      "Top control dishwasher with 48 dBA sound level",
+      "Top control dishwasher with 50 dBA sound level in white",
+      "Top control dishwasher with 54 dBA sound level in black stainless finish.",
+      "Top control dishwasher with 55 dBA sound level in white finish",
+      "Top control dishwasher, 40 dBA quiet operation, black stainless finish",
+      "Top control dishwasher, 41 dBA sound level, stainless steel finish",
+      "Top control dishwasher, 45 dBA sound level",
+      "Top control dishwasher, 47 dBA sound level",
+      "Top control dishwasher, ultra-quiet 40 dBA operation",
+      "Ultra-quiet operation at 38 dBA",
+      "Ultra-quiet operation at 40 dBA, Black Stainless finish"
     ]
   },
   "Abrasives": {
-    "Amperage": [
-      "7.5"
-    ],
-    "Quantity": [
-      "3"
+    "Grit": [
+      "100",
+      "36",
+      "40",
+      "60",
+      "80"
     ]
   },
   "Uncategorized": {
-    "Quantity": [
-      "10"
+    "Thickness": [
+      "1/2",
+      "5/8"
     ],
     "Material": [
-      "Metal Alloy",
-      "Stainless Steel"
+      "OSB"
     ],
-    "Color": [
-      "Oil Rubbed Bronze",
-      "Stainless Steel"
+    "Application": [
+      "SUBFLR",
+      "Subfloor"
+    ],
+    "Dimensions": [
+      "4X8"
+    ],
+    "Product Type": [
+      "Sheet"
+    ],
+    "Material Type": [
+      "OSB"
     ]
   },
   "Adhesives & Sealants": {
     "Size": [
-      "10",
-      "10.1"
+      "10.1",
+      "3",
+      "9"
     ]
   },
   "Appliances > Large Appliances > Other": {
-    "Color": [
-      "Black",
-      "White"
-    ],
-    "Material": [
-      "Stainless Steel"
-    ],
-    "Length": [
-      "30"
-    ],
-    "Beam Distance": [
-      "30"
+    "Wattage": [
+      "1006",
+      "1012",
+      "1027",
+      "1033",
+      "1060",
+      "1061",
+      "1072",
+      "1076",
+      "1091",
+      "1092",
+      "1101",
+      "1120",
+      "1158",
+      "1172",
+      "1190",
+      "1191",
+      "1203",
+      "1206",
+      "1214",
+      "1239",
+      "1273",
+      "1283",
+      "1287",
+      "1291",
+      "1295",
+      "1304",
+      "1312",
+      "1313",
+      "1318",
+      "1331",
+      "1385",
+      "1386",
+      "1393",
+      "1395",
+      "1400",
+      "1404",
+      "1412",
+      "1419",
+      "1427",
+      "1429",
+      "1459",
+      "1494"
     ]
   },
   "Lighting": {
     "Wattage": [
-      "11",
+      "12",
+      "15",
+      "30",
       "40",
+      "50",
       "9"
     ],
     "Color Temperature": [
       "2700",
-      "4000"
+      "3000",
+      "3500",
+      "4000",
+      "5000"
+    ],
+    "Quantity": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
     ],
     "Base Type": [
       "A19"
-    ],
-    "Length": [
-      "4"
-    ],
-    "Beam Distance": [
-      "4"
     ]
   },
   "Electrical": {
-    "Quantity": [
-      "100"
-    ],
-    "Voltage": [
-      "125"
-    ],
     "Amperage": [
-      "15"
+      "15",
+      "20"
     ],
     "Color": [
       "White"
+    ],
+    "Length": [
+      "100",
+      "250",
+      "500"
+    ],
+    "Beam Distance": [
+      "100",
+      "250",
+      "500"
+    ],
+    "Voltage": [
+      "125"
     ]
   },
   "Fasteners": {
-    "Quantity": [
-      "100",
-      "200"
+    "Size": [
+      "1",
+      "25",
+      "5"
     ]
   },
   "Power Tools": {
     "Voltage": [
-      "18"
+      "12",
+      "18",
+      "20",
+      "40",
+      "56"
     ]
   },
   "Safety & PPE": {
@@ -132,23 +231,11 @@
     ]
   },
   "Hand Tools": {
-    "Material": [
-      "Steel"
+    "Amperage": [
+      "15"
     ],
     "Color": [
       "Chrome"
-    ],
-    "Size": [
-      "16"
-    ],
-    "Length": [
-      "25"
-    ],
-    "Beam Distance": [
-      "25"
-    ],
-    "Amperage": [
-      "12"
     ]
   },
   "Plumbing": {
@@ -162,23 +249,30 @@
     ]
   },
   "Abrasives > Coated Abrasives > Sanding Belts": {
-    "Size": [
-      "2"
+    "Grit": [
+      "100",
+      "36",
+      "80"
     ],
-    "Quantity": [
-      "6"
+    "Diameter": [
+      "7"
     ],
-    "Brand": [
-      "Diablo"
+    "Width/Diameter": [
+      "4.5"
     ],
     "Width": [
-      "1/2"
+      "4",
+      "4.5",
+      "7"
     ],
-    "Length": [
-      "18"
+    "Product Type": [
+      "Sanding Belt"
     ],
-    "Pack Quantity": [
-      "6"
+    "Abrasive Type": [
+      "Sanding Belt"
+    ],
+    "Belt Width": [
+      "4.5"
     ]
   },
   "Abrasives > Coated Abrasives > Sanding Discs": {
@@ -225,118 +319,22 @@
     ]
   },
   "Abrasives > Bonded Abrasives > Cut-Off Wheels": {
-    "Brand": [
-      "Diablo",
-      "Milwaukee"
-    ],
     "Diameter": [
-      "10",
-      "12",
-      "14",
-      "4",
-      "4-1/2",
-      "5",
-      "6",
-      "6-1/2",
-      "7",
-      "9"
+      "4"
     ],
     "Application": [
-      "Masonry",
-      "Metal",
-      "Metal Cut and Grind",
-      "Metal Cut n Grind"
-    ],
-    "Material": [
-      "Ceramic",
-      "Steel"
-    ],
-    "Series": [
-      "DKO",
-      "Speed Demon",
-      "Steel Demon"
-    ],
-    "Size": [
-      "040",
-      "045",
-      "10",
-      "12",
-      "14",
-      "2",
-      "4",
-      "6",
-      "7",
-      "9"
-    ],
-    "Arbor Size": [
-      "1",
-      "20",
-      "5/8",
-      "5/8-11",
-      "7/8"
-    ],
-    "Thickness": [
-      ".040",
-      ".045",
-      "1/16",
-      "1/8",
-      "3/32",
-      "7/64"
-    ],
-    "Style": [
-      "DKO"
-    ],
-    "Product Type": [
-      "Cut Off Disc",
-      "Cut and Grind Disc"
-    ],
-    "Type": [
-      "Dual",
-      "General Purpose"
-    ],
-    "Quantity": [
-      "10"
-    ],
-    "Performance Line": [
-      "Ceramic+",
-      "Perform+",
-      "Performance+"
-    ],
-    "Pack Quantity": [
-      "10"
-    ],
-    "Product Line": [
-      "Performance Plus"
+      "Metal"
     ]
   },
   "Abrasives > Bonded Abrasives > Grinding Wheels": {
-    "Size": [
-      "2",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "Brand": [
-      "Milwaukee"
-    ],
     "Diameter": [
-      "4",
-      "4-1/2",
-      "5",
-      "6",
-      "7"
+      "9"
     ],
-    "Thickness": [
-      "1/4"
+    "Abrasive Type": [
+      "A24"
     ],
-    "Arbor Size": [
-      "5/8",
-      "7/8"
-    ],
-    "Application": [
-      "Masonry Grinding",
-      "Metal Grinding"
+    "Type": [
+      "Type 27"
     ]
   },
   "Abrasives > Coated Abrasives > Sanding Sponges": {
@@ -1908,134 +1906,52 @@
   },
   "Lighting > Light Bulbs > LED Bulbs": {
     "Wattage": [
-      "100",
       "12",
-      "120",
-      "150",
-      "32",
-      "40",
-      "45",
-      "50",
-      "60",
-      "65",
-      "75",
-      "8",
-      "90"
+      "15",
+      "9"
     ],
     "Color Temperature": [
-      "2000",
-      "2000K",
-      "20k",
       "2700",
-      "2700K",
-      "27K",
-      "27k",
       "3000",
-      "3000K",
-      "5000",
-      "5000K",
-      "50K",
-      "50k",
-      "5CCT",
-      "Multi CCT"
+      "4000",
+      "5000"
     ],
-    "Lighting Technology": [
-      "LED"
-    ],
-    "Length / Size": [
-      "12"
-    ],
-    "Bulb Shape": [
-      "A19",
-      "A21",
-      "A23",
-      "BR30",
-      "BR40",
-      "Cand",
-      "MR16",
-      "Par16",
-      "Par30L",
-      "Par38",
-      "R20",
-      "ST19",
-      "T9"
-    ],
-    "Wattage Equivalent": [
-      "100",
-      "100/150/200",
-      "100/200/300",
-      "120",
-      "150",
-      "40",
-      "45",
-      "50",
-      "60",
-      "60/100/150",
-      "65",
-      "75",
-      "90"
+    "Quantity": [
+      "3",
+      "4",
+      "5",
+      "6"
     ],
     "Base Type": [
-      "A19",
-      "A21",
-      "Adj Base",
-      "MR16",
-      "Med",
-      "Medium",
-      "ST19"
+      "A19"
+    ],
+    "Bulb Shape": [
+      "A19"
     ],
     "Technology": [
       "LED"
     ],
-    "Features": [
-      "Ch",
-      "Motion"
-    ],
-    "Quantity": [
-      "2",
-      "3",
-      "4"
+    "Dimmable": [
+      "Yes"
     ],
     "Pack Quantity": [
-      "2",
       "3",
-      "4"
-    ],
-    "Brand": [
-      "Wiz"
-    ],
-    "Finish": [
-      "Clr"
+      "4",
+      "5",
+      "6"
     ],
     "Pack Size": [
-      "2",
-      "3",
-      "4"
+      "4",
+      "6"
     ],
     "Bulb Type": [
-      "Cob Bulb"
-    ],
-    "Bulb Technology": [
       "LED"
     ],
-    "Special Feature": [
-      "Back Up",
-      "Motion Bulb"
-    ],
-    "Wattage Equivalence": [
-      "100",
-      "40",
-      "60",
-      "65"
-    ],
     "Shape": [
-      "A19",
-      "B11",
-      "BR30",
-      "BR40",
-      "Cand",
-      "F15",
-      "Par30L"
+      "A19"
+    ],
+    "Features": [
+      "Dimmable"
     ]
   },
   "Lighting > Light Bulbs > Halogen Bulbs": {
@@ -2438,33 +2354,37 @@
     ]
   },
   "Electrical > Wire & Cable > Building Wire": {
-    "Material": [
-      "Aluminum"
+    "Length": [
+      "250"
     ],
-    "Wire Size": [
-      "16",
-      "2/2/4",
-      "4/0",
-      "6/6/6"
+    "Beam Distance": [
+      "250"
     ],
-    "Conductor Material": [
-      "Aluminum"
+    "Gauge / Conductors": [
+      "14/2"
+    ],
+    "Wire Type": [
+      "NM-B Romex"
+    ],
+    "Wire Gauge": [
+      "10/3"
     ],
     "Cable Type": [
-      "Entrance Cable",
-      "UD Triplex"
+      "NM-B",
+      "NM-B Romex"
     ],
-    "Length": [
-      "500"
+    "Brand / Series": [
+      "Romex"
     ],
-    "Number of Conductors": [
-      "2"
+    "Wire Size": [
+      "10/3",
+      "12/2"
     ],
-    "Wire Configuration": [
-      "Stranded"
+    "Product Type": [
+      "Romex"
     ],
-    "Rating": [
-      "CL3"
+    "Brand / Type": [
+      "Romex"
     ]
   },
   "Electrical > Wire & Cable > Underground Feeder Wire": {
@@ -2494,23 +2414,20 @@
     ]
   },
   "Electrical > Wiring Devices > Outlets": {
+    "Voltage": [
+      "125"
+    ],
     "Amperage": [
       "15"
     ],
     "Color": [
-      "Brown",
-      "LA",
       "White"
     ],
     "Device Type": [
-      "Mini Outlet",
-      "Outlet"
+      "GFCI Outlet"
     ],
-    "Color Temperature": [
-      "100"
-    ],
-    "Wattage": [
-      "1500"
+    "Tamper Resistant": [
+      "Yes"
     ]
   },
   "Electrical > Wiring Devices > Wall Taps": {
@@ -2579,21 +2496,32 @@
     ]
   },
   "Electrical > Wiring Devices > Switches": {
+    "Amperage": [
+      "15",
+      "20"
+    ],
     "Color": [
-      "Ivory",
       "White"
     ],
-    "Feature": [
-      "Pilot Light"
+    "Style": [
+      "Decora",
+      "Decora Rocker"
     ],
-    "Amperage": [
-      "15"
+    "Device Type": [
+      "Decora Rocker Switch",
+      "Switch"
     ],
     "Switch Type": [
-      "Toggle"
+      "Decora",
+      "Decora Rocker",
+      "Decora Rocker Switch"
     ],
-    "Wiring Type": [
-      "3-Way"
+    "Switch Style": [
+      "Decora",
+      "Decora Rocker"
+    ],
+    "Product Type": [
+      "Switch"
     ]
   },
   "Electrical > Boxes & Covers > Wallplates": {
@@ -2834,36 +2762,42 @@
     ]
   },
   "Appliances > Large Appliances > Refrigerators": {
-    "Material": [
-      "Stainless Steel"
-    ],
-    "Brand": [
-      "Cafe",
-      "Element",
-      "GE",
-      "LG"
-    ],
-    "Finish": [
-      "Stainless Steel"
-    ],
-    "Color": [
-      "Black",
-      "Slate",
-      "White"
-    ],
-    "Condition": [
-      "Display",
-      "Display Only"
-    ],
-    "Width": [
-      "36"
+    "Configuration": [
+      "French Door",
+      "Side by Side",
+      "Top Freezer"
     ],
     "Capacity": [
       "18",
-      "19"
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28"
     ],
-    "Wattage": [
-      "2100"
+    "Appliance Type": [
+      "Refrigerator"
+    ],
+    "Door Style": [
+      "French Door"
+    ],
+    "Type": [
+      "French Door",
+      "Top Freezer"
+    ],
+    "Design": [
+      "French Door"
+    ],
+    "Style": [
+      "French Door"
+    ],
+    "Refrigerator Type": [
+      "Side by Side"
     ]
   },
   "Appliances > Large Appliances > Freezers": {
@@ -2882,8 +2816,20 @@
     ]
   },
   "Tools > Power Tools > Drills": {
-    "Application": [
-      "Hole Drilling"
+    "Voltage": [
+      "18"
+    ],
+    "Power Source": [
+      "Cordless"
+    ],
+    "Kit": [
+      "Yes"
+    ],
+    "Product Type": [
+      "Drill Driver"
+    ],
+    "Tool Type": [
+      "Drill Driver Kit"
     ]
   },
   "Fasteners > Nails > Collated Nails": {
@@ -2904,20 +2850,35 @@
     ]
   },
   "Fasteners > Nails > Finish Nails": {
-    "Thickness": [
-      "15"
-    ],
-    "Length": [
-      "2-1/2"
+    "Size": [
+      "10D",
+      "16D",
+      "20D",
+      "25"
     ],
     "Nail Type": [
-      "Finish"
+      "Finish",
+      "Finish Nail"
     ],
-    "Gauge": [
-      "15"
+    "Length": [
+      "2",
+      "2.5",
+      "3",
+      "3.5"
     ],
-    "Package Quantity": [
-      "4000"
+    "Package Weight": [
+      "1",
+      "25",
+      "5"
+    ],
+    "Nail Size": [
+      "10D"
+    ],
+    "Package Type": [
+      "Box"
+    ],
+    "Product Type": [
+      "Finish Nail"
     ]
   },
   "Fasteners > Staples > Pneumatic Staples": {
@@ -3144,31 +3105,40 @@
     ]
   },
   "Safety > Eye Protection > Safety Glasses": {
-    "Color": [
-      "Black"
-    ],
-    "Brand": [
-      "Edge",
-      "Edge Safety"
-    ],
-    "Model": [
-      "Dawson",
-      "Kabru",
-      "Khor",
-      "Lassen",
-      "Makalu",
-      "Pumori",
-      "Tacana"
-    ],
-    "Frame Color": [
-      "Black"
-    ],
-    "Lens Type": [
-      "Photochromic",
-      "Polarized"
-    ],
     "Lens Color": [
-      "Red"
+      "CLEAR",
+      "Clear"
+    ],
+    "Anti-Fog": [
+      "Yes"
+    ],
+    "Safety Standard": [
+      "ANSI Z87.1"
+    ],
+    "Standard": [
+      "ANSI Z87.1"
+    ],
+    "Product Type": [
+      "Safety Glasses"
+    ],
+    "Features": [
+      "Anti-Fog"
+    ],
+    "Lens Tint": [
+      "Clear"
+    ],
+    "Feature": [
+      "Anti-Fog"
+    ],
+    "Coating": [
+      "ANTI-FOG",
+      "Anti-Fog"
+    ],
+    "Type": [
+      "Safety Glasses"
+    ],
+    "Color": [
+      "Clear"
     ]
   },
   "Safety > Fire Safety > Fire Extinguishers": {
@@ -3643,40 +3613,32 @@
   },
   "Lawn & Garden > Outdoor Power Equipment > String Trimmers": {
     "Voltage": [
-      "18"
+      "40",
+      "56"
     ],
-    "Brand": [
-      "Makita"
+    "Power Source": [
+      "Cordless"
     ],
-    "Cutting Capacity": [
-      "13"
+    "Tool Type": [
+      "String Trimmer"
     ],
     "Product Type": [
-      "String Trimmer",
-      "String Trimmer Kit",
-      "Trimmer Tool - Only"
+      "String Trimmer"
     ]
   },
   "Lawn & Garden > Outdoor Power Equipment > Leaf Blowers": {
-    "Brand": [
-      "Dewalt",
-      "Milwaukee"
-    ],
-    "Battery Platform": [
-      "M18"
-    ],
-    "Motor Type": [
-      "Brushless"
-    ],
-    "Product Type": [
-      "Blower (Bare)",
-      "Precision Blower"
-    ],
     "Voltage": [
-      "20"
+      "40",
+      "56"
     ],
-    "Product Line": [
-      "XR"
+    "Power Type": [
+      "Cordless"
+    ],
+    "Power Source": [
+      "Cordless"
+    ],
+    "Tool Type": [
+      "Leaf Blower"
     ]
   },
   "Tools > Jobsite Equipment > Jobsite Speakers": {
@@ -3714,19 +3676,21 @@
     ]
   },
   "Lawn & Garden > Outdoor Power Equipment > Hedge Trimmers": {
-    "Brand": [
-      "Milwaukee"
+    "Voltage": [
+      "40",
+      "56"
     ],
-    "Battery Platform": [
-      "M18"
-    ],
-    "Blade Length": [
-      "24",
-      "30"
+    "Power Source": [
+      "Cordless"
     ],
     "Product Type": [
-      "Hedge Trimmer",
-      "Hedge Trimmer Kit"
+      "Hedge Trimmer"
+    ],
+    "Tool Type": [
+      "Hedge Trimmer"
+    ],
+    "Power Type": [
+      "Cordless"
     ]
   },
   "Tools > Power Tools > Hammer Drills": {
@@ -3756,47 +3720,59 @@
     ]
   },
   "Tools > Power Tools > Drill Drivers": {
-    "Brand": [
-      "Dewalt",
-      "Kreg",
-      "Milwaukee"
-    ],
-    "Product Type": [
-      "Multi-Head Drill Driver"
-    ],
-    "Kit Type": [
-      "Bare Tool"
-    ],
     "Voltage": [
       "12",
+      "18",
       "20"
     ],
+    "Power Source": [
+      "Cordless"
+    ],
     "Tool Type": [
-      "Drill",
-      "Drill Driver"
+      "CORDLESS DRILL DRIVER",
+      "Drill Driver",
+      "Drill Driver Kit"
     ],
-    "Motor Type": [
-      "Brushless"
+    "Kit": [
+      "Yes"
     ],
-    "Design": [
-      "Compact"
+    "Kit Type": [
+      "Kit"
     ],
-    "Amperage": [
-      "050"
+    "Cordless": [
+      "Yes"
     ],
-    "Platform": [
-      "Ionic"
+    "Type": [
+      "Cordless Drill Driver Kit"
+    ],
+    "Includes": [
+      "KIT"
     ]
   },
   "Tools > Power Tools > Impact Drivers": {
     "Voltage": [
+      "12",
+      "18",
       "20"
     ],
-    "Brand": [
-      "Dewalt"
+    "Power Source": [
+      "Cordless"
     ],
     "Tool Type": [
-      "Impact Driver Drill"
+      "Impact Driver",
+      "Impact Driver Kit"
+    ],
+    "Kit": [
+      "Yes"
+    ],
+    "Product Type": [
+      "Impact Driver Kit"
+    ],
+    "Battery Platform": [
+      "MAX"
+    ],
+    "Cordless": [
+      "Yes"
     ]
   },
   "Tools > Power Tools > Drill Presses": {
@@ -4016,48 +3992,37 @@
     ]
   },
   "Tools > Power Tools > Impact Wrenches": {
-    "Brand": [
-      "Dewalt",
-      "Makita",
-      "Milwaukee"
+    "Voltage System": [
+      "M18"
     ],
-    "Platform": [
-      "M12"
-    ],
-    "Drive Size": [
-      "1/2",
-      "1/4",
-      "3/4",
-      "3/8"
-    ],
-    "Retention Type": [
-      "Friction Ring"
+    "Kit": [
+      "Yes"
     ],
     "Product Type": [
-      "Impact Wrench"
+      "Impact Wrench",
+      "Impact Wrench Kit"
     ],
-    "Series": [
-      "Stubby"
-    ],
-    "Voltage": [
-      "12",
-      "18",
-      "20"
+    "Platform": [
+      "M12",
+      "M18"
     ],
     "Tool Type": [
-      "Impact Wrench"
+      "Impact Wrench",
+      "Impact Wrench Kit"
     ],
-    "Power Source": [
-      "Bare"
+    "Battery Platform": [
+      "M12",
+      "M18"
     ],
-    "Tool Style": [
-      "Stubby"
+    "Kit Type": [
+      "Kit"
     ],
-    "Anvil Type": [
-      "Pin Detent"
+    "Voltage Platform": [
+      "M12",
+      "M18"
     ],
-    "Head Type": [
-      "Angle"
+    "Voltage": [
+      "12"
     ]
   },
   "Tools > Power Tools > Ratchet Wrenches": {
@@ -4122,23 +4087,21 @@
     ]
   },
   "Tools > Power Tools > Angle Grinders": {
-    "Voltage": [
-      "20",
-      "60"
-    ],
-    "Brand": [
-      "Dewalt"
-    ],
-    "Wheel Diameter": [
-      "4-1/2 to 5",
-      "4.5",
-      "7-9"
+    "Platform": [
+      "M12",
+      "M18"
     ],
     "Tool Type": [
       "Angle Grinder"
     ],
-    "Power Source": [
-      "Bare"
+    "Kit Type": [
+      "Kit"
+    ],
+    "Battery Platform": [
+      "M18"
+    ],
+    "Kit": [
+      "Yes"
     ]
   },
   "Tools > Power Tools > Die Grinders": {
@@ -4470,40 +4433,30 @@
     ]
   },
   "Tools > Power Tools > Circular Saws": {
-    "Brand": [
-      "Dewalt",
-      "Kreg",
-      "Milwaukee"
+    "Amperage": [
+      "15"
     ],
-    "Battery Platform": [
-      "20V Ionic",
-      "M18"
+    "Blade Size": [
+      "10",
+      "6.5",
+      "7.25"
+    ],
+    "Power Source": [
+      "Corded"
     ],
     "Blade Diameter": [
-      "4-1/2",
-      "6-1/2",
-      "7-1/4"
-    ],
-    "Kit Status": [
-      "Bare",
-      "Kit"
-    ],
-    "Voltage": [
-      "20"
-    ],
-    "Application": [
-      "Metal Cutting"
-    ],
-    "Amperage": [
-      "100",
-      "450",
-      "725"
+      "10",
+      "6.5",
+      "7.25"
     ],
     "Tool Type": [
-      "Plunge-Cut Track Saw Kit"
+      "Circular Saw"
     ],
-    "Platform": [
-      "Ionic"
+    "Saw Type": [
+      "Circular Saw"
+    ],
+    "Product Type": [
+      "Circular Saw"
     ]
   },
   "Tools > Power Tools > Jigsaws": {
@@ -4558,19 +4511,36 @@
   },
   "Tools > Power Tools > Reciprocating Saws": {
     "Voltage": [
-      "18",
-      "20"
+      "18"
     ],
-    "Brand": [
-      "Dewalt",
-      "Makita"
+    "Battery Platform": [
+      "M18"
     ],
-    "Motor Type": [
-      "Brushless"
+    "Kit Type": [
+      "Kit"
     ],
-    "Kit Status": [
-      "Bare",
-      "Bare Tool"
+    "Voltage System": [
+      "M12"
+    ],
+    "Kit": [
+      "Yes"
+    ],
+    "Product Type": [
+      "Reciprocating Saw"
+    ],
+    "Platform": [
+      "M12",
+      "M18"
+    ],
+    "Tool Type": [
+      "Reciprocating Saw",
+      "Reciprocating Saw Kit"
+    ],
+    "Voltage Platform": [
+      "M12"
+    ],
+    "Type": [
+      "Reciprocating Saw Kit"
     ]
   },
   "Tools > Power Tools > Table Saws": {
@@ -6582,32 +6552,30 @@
     ]
   },
   "Appliances > Cooking Appliances > Microwaves": {
-    "Material": [
-      "Stainless Steel"
+    "Wattage": [
+      "1033",
+      "1076",
+      "1091",
+      "1120",
+      "1191",
+      "1203",
+      "1206",
+      "1318",
+      "1400",
+      "1412"
     ],
-    "Brand": [
-      "Café",
-      "GE",
-      "LG"
-    ],
-    "Color/Finish": [
-      "Stainless Steel"
-    ],
-    "Product Type": [
+    "Appliance Type": [
       "Microwave",
-      "Microwave Drawer"
+      "Over the Range Microwave"
     ],
-    "Condition": [
-      "Display Only"
+    "Mounting Type": [
+      "Countertop",
+      "Over The Range",
+      "Over the Range"
     ],
-    "Color": [
-      "Black"
-    ],
-    "Installation Type": [
-      "OTR"
-    ],
-    "Finish": [
-      "Stainless Steel"
+    "Type": [
+      "Countertop",
+      "Over The Range"
     ]
   },
   "Appliances > Cooking Appliances > Cooktops": {
@@ -6831,20 +6799,10 @@
   },
   "Outdoor > Lawn Care > String Trimmers": {
     "Voltage": [
-      "18"
+      "40"
     ],
-    "Brand": [
-      "Makita"
-    ],
-    "Cutting Capacity": [
-      "13"
-    ],
-    "Product Type": [
-      "String Trimmer",
-      "String Trimmer Kit"
-    ],
-    "Kit Type": [
-      "Tool Only"
+    "Power Source": [
+      "Cordless"
     ]
   },
   "Tools > Power Tools > Blowers": {
@@ -7564,6 +7522,2850 @@
     ],
     "Type": [
       "Oscillating Edge, Belt and Spindle"
+    ]
+  },
+  "Adhesives > Epoxies & Resins > Epoxy": {
+    "Size": [
+      "3"
+    ],
+    "Volume": [
+      "3"
+    ],
+    "Container Type": [
+      "Tube"
+    ]
+  },
+  "Safety > Personal Protective Equipment > Disposable Gloves": {
+    "Material": [
+      "Nitrile"
+    ],
+    "Powder-Free": [
+      "PF",
+      "Yes"
+    ],
+    "Size": [
+      "Large",
+      "MD",
+      "Medium",
+      "Small",
+      "XL"
+    ],
+    "Pack Count": [
+      "50"
+    ],
+    "Powder": [
+      "Powder-Free"
+    ],
+    "Quantity": [
+      "100"
+    ],
+    "Powder Status": [
+      "Powder-Free"
+    ],
+    "Features": [
+      "Powder-Free"
+    ],
+    "Pack Quantity": [
+      "100",
+      "50"
+    ],
+    "Feature": [
+      "Powder-Free"
+    ],
+    "Package Quantity": [
+      "100",
+      "50"
+    ],
+    "Box Quantity": [
+      "100"
+    ],
+    "Powder Free": [
+      "Yes"
+    ],
+    "Count": [
+      "100",
+      "50"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Copper Fittings": {
+    "Size": [
+      "1",
+      "1/2",
+      "3/4"
+    ],
+    "Material": [
+      "Copper"
+    ],
+    "Angle": [
+      "90"
+    ],
+    "Fitting Type": [
+      "90 Elbow",
+      "Elbow",
+      "TEE",
+      "Tee"
+    ],
+    "Connection Type": [
+      "C x C x C",
+      "CXCXC"
+    ],
+    "Product Type": [
+      "Tee"
+    ],
+    "Shape": [
+      "Elbow",
+      "Tee"
+    ],
+    "Type": [
+      "TEE"
+    ],
+    "End Type": [
+      "CXCXC"
+    ]
+  },
+  "Automotive > Batteries & Accessories > Automotive Batteries": {
+    "Voltage": [
+      "12"
+    ],
+    "Chemistry": [
+      "AGM"
+    ],
+    "Group Size": [
+      "24",
+      "35",
+      "65"
+    ],
+    "Cold Cranking Amps": [
+      "570",
+      "593",
+      "633",
+      "635",
+      "685",
+      "751"
+    ],
+    "Battery Type": [
+      "AGM"
+    ],
+    "Battery Chemistry": [
+      "AGM"
+    ]
+  },
+  "Tools > Hand Tools > Wrenches": {
+    "Color": [
+      "Chrome"
+    ],
+    "Size": [
+      "10",
+      "12",
+      "8"
+    ],
+    "Tool Type": [
+      "Adjustable Wrench"
+    ],
+    "Material": [
+      "Chrome Vanadium"
+    ],
+    "Product Type": [
+      "Adjustable Wrench"
+    ],
+    "Length": [
+      "12",
+      "8"
+    ],
+    "Type": [
+      "Adjustable",
+      "Adjustable Wrench"
+    ]
+  },
+  "Tools > Power Tools > Grinders": {
+    "Voltage": [
+      "12",
+      "18"
+    ],
+    "Battery Platform": [
+      "M12",
+      "M18"
+    ],
+    "Tool Type": [
+      "Angle Grinder",
+      "Angle Grinder Kit"
+    ],
+    "Kit Type": [
+      "Kit"
+    ],
+    "Kit": [
+      "Yes"
+    ],
+    "Platform": [
+      "M12"
+    ],
+    "Product Type": [
+      "Angle Grinder Kit"
+    ]
+  },
+  "Lighting > Commercial Lighting > LED Flat Panels": {
+    "Wattage": [
+      "30",
+      "40",
+      "50"
+    ],
+    "Color Temperature": [
+      "3500",
+      "4000",
+      "5000"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Fixture Type": [
+      "Flat Panel",
+      "LED Flat Panel"
+    ],
+    "Dimensions": [
+      "2X2",
+      "2X4",
+      "2x4"
+    ],
+    "Lighting Type": [
+      "LED"
+    ],
+    "Size": [
+      "2X2",
+      "2x2"
+    ]
+  },
+  "Electrical > Wire & Cable > Network Cable": {
+    "Length": [
+      "500"
+    ],
+    "Beam Distance": [
+      "500"
+    ],
+    "Cable Type": [
+      "CAT6"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Ball Valves": {
+    "Size": [
+      "1",
+      "1/2",
+      "3/4"
+    ],
+    "Valve Type": [
+      "BALL VLV",
+      "Ball",
+      "Ball Valve"
+    ],
+    "Material": [
+      "Brass",
+      "Bronze"
+    ],
+    "Connection Type": [
+      "FIP",
+      "Threaded"
+    ],
+    "Port Type": [
+      "Full Port"
+    ],
+    "Product Type": [
+      "Ball Valve"
+    ],
+    "Body Material": [
+      "Bronze"
+    ],
+    "Port": [
+      "Full Port"
+    ],
+    "Type": [
+      "Ball Valve"
+    ],
+    "Port Style": [
+      "FULL PORT"
+    ]
+  },
+  "Janitorial > Floor Care > Mops": {
+    "Size": [
+      "18",
+      "24"
+    ],
+    "Material": [
+      "MICROFIBER",
+      "Microfiber"
+    ],
+    "Product Type": [
+      "Flat Mop"
+    ],
+    "Mop Type": [
+      "Flat Mop"
+    ],
+    "Head Type": [
+      "Flat Mop"
+    ],
+    "Type": [
+      "Flat Mop"
+    ],
+    "Head Material": [
+      "Microfiber"
+    ],
+    "Width": [
+      "24"
+    ],
+    "Mop Material": [
+      "Microfiber"
+    ]
+  },
+  "Fasteners > Structural Hardware > Joist Hangers": {
+    "Hardware Type": [
+      "Joist Hanger"
+    ],
+    "Finish": [
+      "ZMAX"
+    ],
+    "Product Type": [
+      "Joist Hanger"
+    ],
+    "Finish/Coating": [
+      "Galvanized"
+    ]
+  },
+  "Safety > Personal Protective Equipment > Safety Glasses": {
+    "Lens Tint": [
+      "Clear"
+    ],
+    "Anti-Fog": [
+      "Yes"
+    ],
+    "Standard": [
+      "ANSI Z87.1"
+    ],
+    "Lens Coating": [
+      "Anti-Fog"
+    ],
+    "Lens Color": [
+      "Clear"
+    ],
+    "Safety Standard": [
+      "ANSI Z87.1"
+    ]
+  },
+  "Abrasives > Coated Abrasives > Flap Discs": {
+    "Grit": [
+      "40"
+    ],
+    "Diameter": [
+      "4",
+      "7",
+      "9"
+    ],
+    "Disc Type": [
+      "Flap",
+      "Flap Disc"
+    ],
+    "Type": [
+      "Flap Disc"
+    ]
+  },
+  "Hardware > Building Materials > Panels & Sheathing": {
+    "Thickness": [
+      "5/8"
+    ],
+    "Material": [
+      "OSB"
+    ],
+    "Length": [
+      "8"
+    ],
+    "Width": [
+      "4"
+    ]
+  },
+  "Adhesives > Epoxies > Epoxy Tubes": {
+    "Size": [
+      "3"
+    ],
+    "Container Type": [
+      "Tube"
+    ]
+  },
+  "Safety > Hand Protection > Disposable Gloves": {
+    "Material": [
+      "Nitrile"
+    ],
+    "Features": [
+      "PF",
+      "Powder-Free"
+    ],
+    "Size": [
+      "Extra Large",
+      "Large",
+      "MD",
+      "Medium",
+      "SM",
+      "Small",
+      "XL"
+    ],
+    "Quantity": [
+      "100",
+      "50"
+    ],
+    "Feature": [
+      "PF",
+      "Powder-Free"
+    ],
+    "Powder-Free": [
+      "Yes"
+    ],
+    "Powdered": [
+      "PF"
+    ],
+    "Pack Quantity": [
+      "100",
+      "50"
+    ],
+    "Glove Type": [
+      "Disposable"
+    ],
+    "Powder Status": [
+      "Powder-Free"
+    ],
+    "Powder Free": [
+      "Yes"
+    ],
+    "Package Quantity": [
+      "100"
+    ],
+    "Box Quantity": [
+      "100"
+    ]
+  },
+  "Automotive > Batteries > AGM Batteries": {
+    "Voltage": [
+      "12"
+    ],
+    "Battery Type": [
+      "AGM"
+    ],
+    "Group Size": [
+      "24",
+      "35",
+      "65"
+    ],
+    "Cold Cranking Amps": [
+      "504",
+      "509",
+      "528",
+      "567",
+      "576",
+      "588",
+      "604",
+      "690",
+      "707",
+      "712",
+      "722",
+      "727",
+      "786",
+      "800"
+    ],
+    "Chemistry": [
+      "AGM"
+    ],
+    "Technology": [
+      "AGM"
+    ]
+  },
+  "Lighting > Bulbs > LED Bulbs": {
+    "Wattage": [
+      "12",
+      "15",
+      "9"
+    ],
+    "Color Temperature": [
+      "3000",
+      "4000",
+      "5000",
+      "5000K"
+    ],
+    "Quantity": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "Base Type": [
+      "A19"
+    ],
+    "Bulb Shape": [
+      "A19"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Features": [
+      "Dimmable"
+    ],
+    "Pack Quantity": [
+      "1",
+      "2",
+      "6"
+    ],
+    "Dimmable": [
+      "Yes"
+    ],
+    "Package Quantity": [
+      "3"
+    ],
+    "Bulb Type": [
+      "LED"
+    ]
+  },
+  "Electrical > Wire & Cable > Data Cable": {
+    "Length": [
+      "100",
+      "500"
+    ],
+    "Beam Distance": [
+      "100",
+      "500"
+    ],
+    "Cable Type": [
+      "CAT5",
+      "CAT6 Patch Cable",
+      "CAT6.5"
+    ]
+  },
+  "Fasteners > Structural Fasteners > Joist Hangers": {
+    "Finish": [
+      "Galvanized",
+      "ZMAX"
+    ],
+    "Product Type": [
+      "Joist Hanger"
+    ],
+    "Finish/Coating": [
+      "ZMAX"
+    ],
+    "Material Finish": [
+      "Galvanized"
+    ],
+    "Finish / Coating": [
+      "ZMAX"
+    ],
+    "Type": [
+      "Joist Hanger"
+    ]
+  },
+  "Hardware > Building Materials > Panels": {
+    "Thickness": [
+      "5/8"
+    ],
+    "Material": [
+      "OSB"
+    ],
+    "Dimensions": [
+      "4X8"
+    ]
+  },
+  "Fasteners > Nails > Common Nails": {
+    "Size/Penny": [
+      "10D"
+    ],
+    "Length": [
+      "2",
+      "3",
+      "3.5"
+    ],
+    "Package Weight": [
+      "1",
+      "25",
+      "5"
+    ],
+    "Size": [
+      "16D",
+      "20D",
+      "25",
+      "5",
+      "8D"
+    ],
+    "Nail Type": [
+      "Common",
+      "Common Nail"
+    ],
+    "Nail Size": [
+      "10D",
+      "20D"
+    ],
+    "Box Weight": [
+      "25"
+    ],
+    "Type": [
+      "Common Nail"
+    ],
+    "Weight": [
+      "25"
+    ],
+    "Size Designation": [
+      "8D"
+    ]
+  },
+  "Janitorial > Floor Care > Mop Pads": {
+    "Size": [
+      "18",
+      "24"
+    ],
+    "Material": [
+      "MICROFIBER",
+      "Microfiber"
+    ],
+    "Item Type": [
+      "Mop Pad"
+    ],
+    "Product Type": [
+      "Mop Pad"
+    ],
+    "Type": [
+      "Mop Pad"
+    ]
+  },
+  "Abrasives > Cut-Off Wheels > Metal Cut-Off Wheels": {
+    "Diameter": [
+      "4",
+      "7",
+      "9"
+    ],
+    "Application": [
+      "Metal"
+    ],
+    "Wheel Type": [
+      "Cut-Off Wheel"
+    ],
+    "Grit": [
+      "36"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Brass Fittings": {
+    "Size": [
+      "1",
+      "1/2",
+      "3/4",
+      "3/8"
+    ],
+    "Fitting Type": [
+      "TEE",
+      "Tee",
+      "UNION",
+      "Union"
+    ],
+    "Material": [
+      "BRS",
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "125",
+      "150"
+    ],
+    "Pressure Class": [
+      "150"
+    ]
+  },
+  "Electrical > Wire & Cable > Romex & NM-B Cable": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Wire Size": [
+      "10/3",
+      "12/2"
+    ],
+    "Cable Type": [
+      "NM-B ROMEX",
+      "NM-B Romex"
+    ],
+    "Gauge / Conductors": [
+      "14/2"
+    ]
+  },
+  "Abrasives > Sanding Discs > Flap Discs": {
+    "Grit": [
+      "40"
+    ],
+    "Diameter": [
+      "7",
+      "9"
+    ],
+    "Disc Type": [
+      "Flap Disc"
+    ]
+  },
+  "Electrical > Wire & Cable > Data Cables": {
+    "Length": [
+      "100",
+      "250"
+    ],
+    "Beam Distance": [
+      "100",
+      "250"
+    ],
+    "Cable Type": [
+      "CAT5",
+      "CAT6"
+    ],
+    "Category": [
+      "CAT6"
+    ]
+  },
+  "Fasteners > Bolts > Hex Cap Screws": {
+    "Thread Size": [
+      "#10-24",
+      "3/8-16",
+      "5/16-18"
+    ],
+    "Length": [
+      "1.5",
+      "2",
+      "3"
+    ],
+    "Fastener Type": [
+      "Hex Cap Screw"
+    ],
+    "Material Finish": [
+      "Zinc"
+    ],
+    "Grade": [
+      "GR5",
+      "Grade 5"
+    ],
+    "Head Type": [
+      "Hex Cap"
+    ],
+    "Finish": [
+      "ZN",
+      "Zinc"
+    ],
+    "Type": [
+      "Hex Cap Screw"
+    ]
+  },
+  "Hardware > Fasteners > Assorted Hardware": {
+    "Hardware Type": [
+      "Assorted"
+    ]
+  },
+  "Electrical > Outlets & Switches > GFCI Receptacles": {
+    "Voltage": [
+      "125"
+    ],
+    "Amperage": [
+      "15",
+      "20"
+    ],
+    "Device Type": [
+      "GFCI Receptacle"
+    ],
+    "Tamper-Resistant": [
+      "Yes"
+    ],
+    "Color": [
+      "Ivory",
+      "White"
+    ],
+    "Type": [
+      "GFCI"
+    ],
+    "Tamper Resistant": [
+      "Yes"
+    ]
+  },
+  "Appliances > Small Appliances > Microwaves": {
+    "Wattage": [
+      "1012",
+      "1027",
+      "1060",
+      "1061",
+      "1190",
+      "1214",
+      "1239",
+      "1291",
+      "1312",
+      "1313",
+      "1386",
+      "1395",
+      "1419",
+      "1494"
+    ],
+    "Mounting Type": [
+      "Countertop",
+      "Over The Range"
+    ],
+    "Appliance Type": [
+      "Microwave"
+    ]
+  },
+  "Automotive > Batteries > Automotive Batteries": {
+    "Voltage": [
+      "12"
+    ],
+    "Technology": [
+      "AGM"
+    ],
+    "Group Size": [
+      "24",
+      "35",
+      "65"
+    ],
+    "Cold Cranking Amps": [
+      "513",
+      "527",
+      "563",
+      "607",
+      "624",
+      "653",
+      "662",
+      "676",
+      "689",
+      "690",
+      "710",
+      "715",
+      "732",
+      "757",
+      "762",
+      "764",
+      "775"
+    ],
+    "Battery Technology": [
+      "AGM"
+    ],
+    "Chemistry": [
+      "AGM"
+    ],
+    "Battery Type": [
+      "AGM"
+    ],
+    "Battery Chemistry": [
+      "AGM"
+    ]
+  },
+  "Adhesives > Construction Adhesives > Cartridge Adhesives": {
+    "Size": [
+      "3",
+      "9"
+    ],
+    "Application": [
+      "Construction",
+      "Construction Adhesive"
+    ],
+    "Volume": [
+      "9"
+    ],
+    "Container Type": [
+      "Cartridge",
+      "Tube"
+    ],
+    "Type": [
+      "Construction Adhesive"
+    ],
+    "Container Size": [
+      "3",
+      "9"
+    ]
+  },
+  "Electrical > Outlets & Switches > Switches": {
+    "Amperage": [
+      "20"
+    ],
+    "Color": [
+      "White"
+    ],
+    "Style": [
+      "Decora Rocker"
+    ]
+  },
+  "HVAC > Air Filtration > Pleated Air Filters": {
+    "Size": [
+      "16",
+      "20",
+      "25"
+    ],
+    "Length": [
+      "25",
+      "30"
+    ],
+    "Width": [
+      "20"
+    ],
+    "Thickness": [
+      "1"
+    ],
+    "MERV Rating": [
+      "11",
+      "13"
+    ],
+    "Filter Type": [
+      "Pleated"
+    ],
+    "Dimensions": [
+      "16X20X1"
+    ],
+    "Type": [
+      "Pleated"
+    ]
+  },
+  "Hardware > Building Materials > OSB Panels": {
+    "Thickness": [
+      "1/2",
+      "3/4",
+      "5/8"
+    ],
+    "Material": [
+      "OSB"
+    ],
+    "Application": [
+      "Sheathing",
+      "Subfloor"
+    ],
+    "Dimensions": [
+      "4X8",
+      "4x8"
+    ],
+    "Panel Type": [
+      "OSB Sheathing",
+      "OSB Subfloor",
+      "Sheathing"
+    ],
+    "Material Type": [
+      "OSB"
+    ],
+    "Type": [
+      "Sheathing",
+      "Subfloor"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Length": [
+      "8"
+    ],
+    "Product Type": [
+      "Sheathing"
+    ],
+    "Sheet Dimensions": [
+      "4X8"
+    ]
+  },
+  "Abrasives > Grinding Wheels > Type 27 Depressed Center Wheels": {
+    "Diameter": [
+      "7"
+    ],
+    "Abrasive Grain / Grade": [
+      "A24"
+    ],
+    "Wheel Type": [
+      "Type 27 Depressed Center"
+    ],
+    "Abrasive Material": [
+      "Aluminum Oxide"
+    ],
+    "Grit": [
+      "24"
+    ]
+  },
+  "Adhesives > Construction Adhesives > Cartridges": {
+    "Size": [
+      "9"
+    ],
+    "Container Size": [
+      "9"
+    ],
+    "Container Type": [
+      "Tube"
+    ],
+    "Product Type": [
+      "Construction Adhesive"
+    ]
+  },
+  "Electrical > Wiring Devices > GFCI Receptacles": {
+    "Voltage": [
+      "125"
+    ],
+    "Amperage": [
+      "15",
+      "20"
+    ],
+    "Color": [
+      "Ivory",
+      "White"
+    ],
+    "Device Type": [
+      "GFCI Receptacle"
+    ],
+    "Feature": [
+      "TR"
+    ],
+    "Tamper Resistant": [
+      "Yes"
+    ],
+    "Features": [
+      "TR",
+      "Tamper Resistant"
+    ],
+    "Tamper-Resistant": [
+      "Yes"
+    ]
+  },
+  "HVAC > Thermostats > Digital Thermostats": {
+    "Device Type": [
+      "Thermostat"
+    ],
+    "Type": [
+      "Digital",
+      "Digital Thermostat",
+      "Programmable"
+    ],
+    "Programming": [
+      "7-Day",
+      "7-Day Programmable",
+      "Programmable 7-Day"
+    ],
+    "Technology": [
+      "Digital"
+    ],
+    "Thermostat Type": [
+      "Programmable"
+    ],
+    "Programming Schedule": [
+      "5-2 Day",
+      "7-Day"
+    ],
+    "Display Type": [
+      "Digital"
+    ],
+    "Programmability": [
+      "Programmable"
+    ],
+    "Programmable": [
+      "Yes"
+    ],
+    "Schedule": [
+      "5-2 Day",
+      "7-Day"
+    ],
+    "Programming Type": [
+      "Programmable"
+    ]
+  },
+  "Adhesives > Epoxies > Cartridges": {
+    "Size": [
+      "3"
+    ],
+    "Adhesive Type": [
+      "Epoxy"
+    ],
+    "Container Size": [
+      "3"
+    ],
+    "Container Type": [
+      "Cartridge"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Pipe Fittings": {
+    "Fitting Type": [
+      "Coupling",
+      "Ell 90",
+      "Tee",
+      "Union"
+    ],
+    "Size": [
+      "1",
+      "1/2",
+      "3/4"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "125",
+      "150"
+    ]
+  },
+  "Outdoor > Outdoor Power Equipment > Leaf Blowers": {
+    "Voltage": [
+      "56"
+    ],
+    "Power Source": [
+      "Cordless"
+    ],
+    "Tool Type": [
+      "Leaf Blower"
+    ]
+  },
+  "Hardware > Structural Hardware > Post Bases": {
+    "Hardware Type": [
+      "Post Base"
+    ],
+    "Finish": [
+      "Galvanized",
+      "ZMAX"
+    ],
+    "Material": [
+      "Galvanized"
+    ],
+    "Component Type": [
+      "Post Base"
+    ],
+    "Product Type": [
+      "Post Base"
+    ],
+    "Material Finish": [
+      "ZMAX"
+    ],
+    "Type": [
+      "Post Base"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Pipe Unions": {
+    "Fitting Type": [
+      "Union"
+    ],
+    "Size": [
+      "3/4"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "150"
+    ]
+  },
+  "Fasteners > Screws > Cap Screws": {
+    "Thread Size": [
+      "#10-24"
+    ],
+    "Length": [
+      "1"
+    ],
+    "Fastener Type": [
+      "Hex Cap Screw"
+    ],
+    "Finish": [
+      "Zinc"
+    ],
+    "Grade": [
+      "5"
+    ]
+  },
+  "Hardware > Structural Hardware > Joist Hangers": {
+    "Hardware Type": [
+      "Joist Hanger"
+    ],
+    "Finish": [
+      "Galvanized",
+      "ZMAX"
+    ],
+    "Material": [
+      "Galvanized"
+    ],
+    "Material Finish": [
+      "Galvanized"
+    ]
+  },
+  "Adhesives > Sealants > Silicone Sealants": {
+    "Size": [
+      "10.1",
+      "3",
+      "9"
+    ],
+    "Material": [
+      "Silicone"
+    ],
+    "Container Size": [
+      "10.1",
+      "3",
+      "9"
+    ],
+    "Container Type": [
+      "Cartridge",
+      "Tube"
+    ],
+    "Product Type": [
+      "Sealant"
+    ],
+    "Volume": [
+      "10.1"
+    ],
+    "Material Type": [
+      "Silicone"
+    ],
+    "Sealant Type": [
+      "Silicone"
+    ]
+  },
+  "Hardware > Structural Hardware > Angle Brackets": {
+    "Bracket Type": [
+      "Angle Bracket"
+    ],
+    "Finish/Coating": [
+      "ZMAX"
+    ],
+    "Type": [
+      "Angle Bracket"
+    ],
+    "Finish": [
+      "Galvanized",
+      "ZMAX"
+    ]
+  },
+  "Electrical > Wire & Cable > Non-Metallic Sheathed Cable": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Wire Gauge/Conductors": [
+      "12/2",
+      "14/2"
+    ],
+    "Cable Type": [
+      "NM-B",
+      "NM-B ROMEX",
+      "NM-B Romex"
+    ],
+    "Wire Gauge": [
+      "10/3",
+      "12/2",
+      "14/2"
+    ],
+    "Wire Size": [
+      "10/3",
+      "14/2"
+    ],
+    "Series": [
+      "Romex"
+    ],
+    "Type": [
+      "NM-B"
+    ],
+    "Brand/Series": [
+      "Romex"
+    ]
+  },
+  "Abrasives > Cut-Off & Grinding Wheels > Cut-Off Wheels": {
+    "Grit": [
+      "100",
+      "60",
+      "80"
+    ],
+    "Diameter": [
+      "4",
+      "4.5"
+    ],
+    "Type": [
+      "Cut-Off Disc"
+    ],
+    "Wheel Diameter": [
+      "4.5"
+    ]
+  },
+  "Abrasives > Cut-Off & Grinding Wheels > Grinding Wheels": {
+    "Diameter": [
+      "7",
+      "9"
+    ],
+    "Abrasive Material": [
+      "A24"
+    ],
+    "Wheel Type": [
+      "Grinding Wheel",
+      "TYPE27",
+      "Type 27"
+    ],
+    "Grit": [
+      "36"
+    ],
+    "Wheel Diameter": [
+      "7"
+    ],
+    "Abrasive Grain": [
+      "A24"
+    ]
+  },
+  "Outdoor > Lawn Equipment > Leaf Blowers": {
+    "Voltage": [
+      "40"
+    ],
+    "Power Source": [
+      "Cordless"
+    ],
+    "Equipment Type": [
+      "Leaf Blower"
+    ]
+  },
+  "Plumbing > Pipe & Tubing > Copper Fittings": {
+    "Size": [
+      "1",
+      "1/2",
+      "3/4"
+    ],
+    "Material": [
+      "Copper"
+    ],
+    "Angle": [
+      "90"
+    ],
+    "Fitting Type": [
+      "Elbow"
+    ]
+  },
+  "HVAC > Controls > Thermostats": {
+    "Programmable": [
+      "Yes"
+    ],
+    "Programming Schedule": [
+      "5-2 Day",
+      "7-Day"
+    ],
+    "Display Type": [
+      "Digital"
+    ],
+    "Programmability": [
+      "Programmable"
+    ],
+    "Scheduling": [
+      "7-Day"
+    ],
+    "Type": [
+      "Programmable"
+    ],
+    "Schedule": [
+      "5-2 Day",
+      "7-Day"
+    ]
+  },
+  "Hardware > Building Materials > Sheathing": {
+    "Thickness": [
+      "1/2"
+    ],
+    "Material": [
+      "OSB"
+    ],
+    "Type": [
+      "Sheathing"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Length": [
+      "8"
+    ]
+  },
+  "Adhesives > Glues & Epoxies > Epoxy": {
+    "Size": [
+      "9"
+    ],
+    "Material Type": [
+      "Epoxy"
+    ],
+    "Container Type": [
+      "Tube"
+    ]
+  },
+  "Electrical > Wire & Cable > Networking Cable": {
+    "Length": [
+      "250",
+      "500"
+    ],
+    "Beam Distance": [
+      "250",
+      "500"
+    ],
+    "Cable Type": [
+      "CAT6.5"
+    ]
+  },
+  "Fasteners > Screws > Hex Cap Screws": {
+    "Thread Size": [
+      "#10-24",
+      "1/4-20",
+      "3/8-16"
+    ],
+    "Length": [
+      "1",
+      "1.5",
+      "3"
+    ],
+    "Fastener Type": [
+      "Hex Cap Screw"
+    ],
+    "Finish": [
+      "ZN",
+      "Zinc"
+    ],
+    "Grade": [
+      "GR5",
+      "Grade 5"
+    ]
+  },
+  "Appliances > Kitchen Appliances > Microwaves": {
+    "Wattage": [
+      "1006",
+      "1072",
+      "1092",
+      "1101",
+      "1158",
+      "1273",
+      "1283",
+      "1287",
+      "1295",
+      "1304",
+      "1313",
+      "1404",
+      "1459"
+    ],
+    "Mounting Type": [
+      "COUNTERTOP",
+      "Countertop",
+      "Over the Range"
+    ],
+    "Appliance Type": [
+      "Microwave"
+    ],
+    "Installation Type": [
+      "Countertop",
+      "Over the Range"
+    ],
+    "Product Type": [
+      "Microwave"
+    ]
+  },
+  "Adhesives > Epoxy & Resin > Epoxy Cartridges": {
+    "Size": [
+      "3"
+    ],
+    "Material": [
+      "Epoxy"
+    ],
+    "Container Type": [
+      "Cartridge"
+    ]
+  },
+  "Abrasives > Grinding Wheels > Bench Grinder Wheels": {
+    "Grit": [
+      "60"
+    ],
+    "Wheel Diameter": [
+      "7"
+    ]
+  },
+  "HVAC > Thermostats > Programmable Thermostats": {
+    "Programmability": [
+      "5-2 Day",
+      "7-Day"
+    ],
+    "Display Type": [
+      "Digital"
+    ],
+    "Thermostat Type": [
+      "Programmable"
+    ],
+    "Programming Schedule": [
+      "5-2 Day"
+    ],
+    "Programmable": [
+      "Yes"
+    ],
+    "Product Type": [
+      "Programmable Thermostat"
+    ],
+    "Device Type": [
+      "Programmable Thermostat"
+    ]
+  },
+  "Electrical > Wire & Cable > Romex Cable": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Wire Gauge": [
+      "10/3"
+    ],
+    "Cable Type": [
+      "NM-B ROMEX",
+      "NM-B Romex"
+    ],
+    "Wire Size": [
+      "12/2"
+    ]
+  },
+  "Electrical > Wire & Cable > Patch Cables": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Cable Category": [
+      "CAT6"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Unions": {
+    "Size": [
+      "1",
+      "3/4"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "125",
+      "150"
+    ],
+    "Fitting Type": [
+      "Union"
+    ]
+  },
+  "Abrasives > Discs > Flap Discs": {
+    "Grit": [
+      "40"
+    ],
+    "Diameter": [
+      "4"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Elbows": {
+    "Size": [
+      "3/8"
+    ],
+    "Fitting Type": [
+      "Elbow"
+    ],
+    "Angle": [
+      "90"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "150"
+    ]
+  },
+  "Abrasives > Belts > Sanding Belts": {
+    "Grit": [
+      "36"
+    ],
+    "Width": [
+      "4.5"
+    ]
+  },
+  "Adhesives > Epoxy > Epoxy Tubes": {
+    "Size": [
+      "3"
+    ],
+    "Adhesive Type": [
+      "Epoxy"
+    ],
+    "Container Type": [
+      "Tube"
+    ]
+  },
+  "Lighting > Ceiling Light > Flat Panel Lights": {
+    "Wattage": [
+      "40"
+    ],
+    "Color Temperature": [
+      "5000"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Fixture Type": [
+      "Flat Panel"
+    ],
+    "Dimensions": [
+      "2X2"
+    ]
+  },
+  "Hardware > Building Materials > OSB Sheathing": {
+    "Thickness": [
+      "1/2"
+    ],
+    "Material": [
+      "OSB Sheathing"
+    ],
+    "Sheet Dimensions": [
+      "4X8"
+    ],
+    "Product Type": [
+      "Sheet"
+    ]
+  },
+  "Lighting > Bulb > LED Bulbs": {
+    "Wattage": [
+      "12",
+      "15",
+      "9"
+    ],
+    "Color Temperature": [
+      "2700",
+      "3000",
+      "4000",
+      "5000"
+    ],
+    "Quantity": [
+      "1",
+      "3",
+      "4",
+      "6"
+    ],
+    "Base Type": [
+      "A19"
+    ],
+    "Bulb Shape": [
+      "A19"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Pack Quantity": [
+      "1",
+      "3",
+      "4",
+      "6"
+    ],
+    "Dimmable": [
+      "Yes"
+    ],
+    "Bulb Type": [
+      "LED"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Copper Elbows": {
+    "Size": [
+      "1/2"
+    ],
+    "Material": [
+      "Copper"
+    ],
+    "Angle": [
+      "90"
+    ],
+    "Fitting Type": [
+      "Elbow"
+    ]
+  },
+  "Electrical > Networking > Patch Cables": {
+    "Length": [
+      "100",
+      "500"
+    ],
+    "Beam Distance": [
+      "100",
+      "500"
+    ],
+    "Category": [
+      "CAT6"
+    ],
+    "Cable Type": [
+      "CAT5",
+      "Patch Cable"
+    ]
+  },
+  "Adhesives > Epoxy > Epoxy Cartridges": {
+    "Size": [
+      "3"
+    ],
+    "Adhesive Type": [
+      "Epoxy"
+    ],
+    "Container Size": [
+      "3"
+    ],
+    "Container Type": [
+      "Cartridge"
+    ]
+  },
+  "Electrical > Wire & Cable > NM-B Wire": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Wire Gauge": [
+      "12/2"
+    ],
+    "Cable Type": [
+      "NM-B"
+    ],
+    "Wire Size": [
+      "10/3"
+    ]
+  },
+  "Tools > Power Tools > Drill Driver Kits": {
+    "Voltage": [
+      "12"
+    ],
+    "Voltage Rating Type": [
+      "MAX"
+    ],
+    "Power Tool Type": [
+      "Cordless Drill Driver Kit"
+    ]
+  },
+  "Tools > Power Tools > Impact Driver Kits": {
+    "Voltage": [
+      "20"
+    ],
+    "Power Tool Type": [
+      "Cordless Impact Driver Kit"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Copper Tees": {
+    "Material": [
+      "Copper",
+      "Metal Alloy"
+    ],
+    "Size": [
+      "1",
+      "3/4"
+    ],
+    "Fitting Type": [
+      "Copper Tee",
+      "Tee"
+    ],
+    "Connection Type": [
+      "CXCXC"
+    ]
+  },
+  "HVAC > Air Filters > Pleated Filters": {
+    "Size": [
+      "20",
+      "25"
+    ],
+    "Dimensions": [
+      "20X20X1"
+    ],
+    "MERV Rating": [
+      "11",
+      "8"
+    ],
+    "Filter Type": [
+      "Pleated Filter"
+    ],
+    "Length": [
+      "25"
+    ],
+    "Width": [
+      "20"
+    ],
+    "Thickness": [
+      "1"
+    ]
+  },
+  "Adhesives > Construction Adhesives > Adhesive Tubes": {
+    "Size": [
+      "3"
+    ],
+    "Adhesive Type": [
+      "Construction Adhesive"
+    ],
+    "Container Size": [
+      "3"
+    ],
+    "Container Type": [
+      "Tube"
+    ]
+  },
+  "Abrasives > Cut-Off Wheels > Cut-Off Wheels": {
+    "Grit": [
+      "100",
+      "40",
+      "80"
+    ],
+    "Product Type": [
+      "Cut-Off Wheel"
+    ],
+    "Diameter": [
+      "4",
+      "4.5"
+    ]
+  },
+  "Hardware > Building Materials > OSB Subflooring": {
+    "Thickness": [
+      "5/8"
+    ],
+    "Material": [
+      "OSB"
+    ],
+    "Application": [
+      "Subflooring"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Length": [
+      "8"
+    ]
+  },
+  "Janitorial > Floor Care > Flat Mops": {
+    "Size": [
+      "18",
+      "24"
+    ],
+    "Material": [
+      "Microfiber"
+    ],
+    "Type": [
+      "Flat Mop"
+    ]
+  },
+  "Abrasives > Grinding & Finishing > Flap Discs": {
+    "Grit": [
+      "40"
+    ],
+    "Diameter": [
+      "4",
+      "9"
+    ]
+  },
+  "Appliances > Kitchen > Microwaves": {
+    "Wattage": [
+      "1385",
+      "1393",
+      "1427"
+    ],
+    "Type": [
+      "Countertop"
+    ],
+    "Mounting Type": [
+      "Countertop"
+    ],
+    "Placement": [
+      "Over the Range"
+    ],
+    "Appliance Type": [
+      "Microwave"
+    ]
+  },
+  "Electrical > Networking & Cords > Patch Cables": {
+    "Length": [
+      "100",
+      "500"
+    ],
+    "Beam Distance": [
+      "100",
+      "500"
+    ],
+    "Cable Type": [
+      "CAT5",
+      "CAT5 Patch Cable",
+      "CAT6.5"
+    ],
+    "Category": [
+      "CAT6"
+    ]
+  },
+  "Automotive > Batteries & Power > Automotive Batteries": {
+    "Voltage": [
+      "12"
+    ],
+    "Battery Type": [
+      "AGM"
+    ],
+    "Group Size": [
+      "24"
+    ],
+    "Cold Cranking Amps": [
+      "501",
+      "519"
+    ],
+    "Chemistry": [
+      "AGM"
+    ]
+  },
+  "Electrical > Wiring Devices > Receptacles": {
+    "Voltage": [
+      "125"
+    ],
+    "Amperage": [
+      "20"
+    ],
+    "Color": [
+      "Ivory",
+      "White"
+    ],
+    "Type": [
+      "GFCI"
+    ],
+    "Tamper Resistant": [
+      "Yes"
+    ],
+    "Device Type": [
+      "GFCI Outlet"
+    ],
+    "Features": [
+      "Tamper Resistant"
+    ]
+  },
+  "Fasteners > Structural Fasteners > Brackets": {
+    "Type": [
+      "Angle Bracket"
+    ],
+    "Finish": [
+      "Galvanized"
+    ],
+    "Bracket Type": [
+      "Angle Bracket"
+    ]
+  },
+  "Lighting > LED Bulbs > A19 Bulbs": {
+    "Wattage": [
+      "15",
+      "9"
+    ],
+    "Color Temperature": [
+      "2700",
+      "2700K"
+    ],
+    "Quantity": [
+      "3",
+      "5"
+    ],
+    "Base Type": [
+      "A19"
+    ],
+    "Bulb Shape": [
+      "A19"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Dimmable": [
+      "Yes"
+    ],
+    "Pack Size": [
+      "5"
+    ],
+    "Lighting Technology": [
+      "LED"
+    ]
+  },
+  "Abrasives > Cutting Wheels > Cut-Off Discs": {
+    "Grit": [
+      "60"
+    ],
+    "Diameter": [
+      "4.5"
+    ]
+  },
+  "Lighting > Commercial Lighting > Flat Panels": {
+    "Wattage": [
+      "30",
+      "50"
+    ],
+    "Color Temperature": [
+      "3500K",
+      "4000",
+      "5000"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Fixture Type": [
+      "Flat Panel"
+    ],
+    "Width": [
+      "2"
+    ],
+    "Length": [
+      "4"
+    ],
+    "Lighting Technology": [
+      "LED"
+    ],
+    "Size": [
+      "2X2"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Couplings": {
+    "Size": [
+      "1",
+      "3/8"
+    ],
+    "Fitting Type": [
+      "Coupling"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "125",
+      "150"
+    ]
+  },
+  "HVAC > Air Filtration > Pleated Filters": {
+    "Size": [
+      "25"
+    ],
+    "Dimensions": [
+      "25X20X1"
+    ],
+    "MERV Rating": [
+      "8"
+    ],
+    "Filter Type": [
+      "Pleated"
+    ]
+  },
+  "Electrical > Networking & Cords > Network Cables": {
+    "Length": [
+      "100"
+    ],
+    "Beam Distance": [
+      "100"
+    ],
+    "Cable Type": [
+      "CAT6.5"
+    ]
+  },
+  "Electrical > Networking & Data > Patch Cables": {
+    "Length": [
+      "100",
+      "250",
+      "500"
+    ],
+    "Beam Distance": [
+      "100",
+      "250",
+      "500"
+    ],
+    "Cable Type": [
+      "CAT5",
+      "CAT6",
+      "CAT6.5",
+      "Patch Cable"
+    ],
+    "Category": [
+      "CAT5",
+      "CAT6.5"
+    ],
+    "Cable Category": [
+      "CAT6"
+    ],
+    "Type": [
+      "Patch Cable"
+    ]
+  },
+  "Tools > Power Tools > Saws": {
+    "Platform": [
+      "M12"
+    ],
+    "Tool Type": [
+      "Circular Saw",
+      "Reciprocating Saw"
+    ],
+    "Kit": [
+      "Yes"
+    ],
+    "Amperage": [
+      "15"
+    ],
+    "Blade Size": [
+      "7.25"
+    ],
+    "Power Source": [
+      "Corded"
+    ]
+  },
+  "Hardware > Structural Hardware > Brackets": {
+    "Type": [
+      "Angle Bracket"
+    ],
+    "Finish": [
+      "ZMAX"
+    ],
+    "Bracket Type": [
+      "Angle Bracket"
+    ],
+    "Material Finish": [
+      "Galvanized"
+    ]
+  },
+  "Adhesives > Epoxy > Cartridge Epoxy": {
+    "Size": [
+      "10.1",
+      "3"
+    ],
+    "Container Size": [
+      "10.1"
+    ],
+    "Type": [
+      "Cartridge Epoxy"
+    ]
+  },
+  "HVAC > Air Filtration > Air Filters": {
+    "Size": [
+      "20",
+      "25"
+    ],
+    "Nominal Size": [
+      "20x30x1"
+    ],
+    "MERV Rating": [
+      "11",
+      "8"
+    ],
+    "Filter Type": [
+      "Pleated"
+    ],
+    "Dimensions": [
+      "25X25X1"
+    ],
+    "Width": [
+      "20"
+    ],
+    "Length": [
+      "20",
+      "30"
+    ],
+    "Thickness": [
+      "1"
+    ],
+    "Design": [
+      "Pleated"
+    ]
+  },
+  "Building Materials > Plywood & Panels > OSB Panels": {
+    "Thickness": [
+      "3/4",
+      "5/8"
+    ],
+    "Panel Type": [
+      "OSB Sheathing",
+      "OSB Subfloor"
+    ],
+    "Dimensions": [
+      "4x8"
+    ]
+  },
+  "Abrasives > Cut-Off Wheels > Cut-Off Discs": {
+    "Grit": [
+      "120",
+      "60"
+    ],
+    "Diameter": [
+      "4",
+      "7"
+    ],
+    "Accessory Type": [
+      "Cut-Off Disc"
+    ]
+  },
+  "Abrasives > Grinding Wheels > Type 27 Wheels": {
+    "Diameter": [
+      "7"
+    ],
+    "Grit": [
+      "24"
+    ],
+    "Abrasive Grade": [
+      "A"
+    ],
+    "Wheel Type": [
+      "Grinding Wheel",
+      "Type 27"
+    ],
+    "Wheel Diameter": [
+      "9"
+    ],
+    "Grit/Grade": [
+      "A24"
+    ],
+    "Shape": [
+      "Type 27"
+    ]
+  },
+  "Abrasives > Grinding Wheels > Depressed Center Wheels": {
+    "Grit": [
+      "24",
+      "80"
+    ],
+    "Diameter": [
+      "9"
+    ],
+    "Abrasive Material": [
+      "A"
+    ],
+    "Wheel Type": [
+      "Type 27"
+    ],
+    "Product Type": [
+      "Grinding Wheel"
+    ],
+    "Abrasive Grain": [
+      "A24"
+    ]
+  },
+  "Appliances > Large Appliances > Microwaves": {
+    "Wattage": [
+      "1172",
+      "1331",
+      "1429"
+    ],
+    "Mounting Type": [
+      "Over the Range"
+    ],
+    "Appliance Type": [
+      "Microwave"
+    ]
+  },
+  "HVAC > Filtration > Air Filters": {
+    "Size": [
+      "25"
+    ],
+    "Dimensions": [
+      "25X20X1",
+      "25X25X1"
+    ],
+    "MERV Rating": [
+      "8"
+    ],
+    "Filter Type": [
+      "Pleated"
+    ]
+  },
+  "Electrical > Wire & Cable > Network Cables": {
+    "Length": [
+      "100",
+      "250",
+      "500"
+    ],
+    "Beam Distance": [
+      "100",
+      "250",
+      "500"
+    ],
+    "Cable Type": [
+      "CAT5",
+      "CAT6",
+      "CAT6.5"
+    ],
+    "Category": [
+      "CAT6.5"
+    ],
+    "Cable Style": [
+      "Patch"
+    ]
+  },
+  "Fasteners > Structural Fasteners > Post Bases": {
+    "Product Type": [
+      "Post Base"
+    ],
+    "Finish / Coating": [
+      "ZMAX"
+    ],
+    "Finish": [
+      "GALV"
+    ]
+  },
+  "Lighting > LED Bulbs > A-Shape Bulbs": {
+    "Wattage": [
+      "9"
+    ],
+    "Color Temperature": [
+      "4000"
+    ],
+    "Quantity": [
+      "6"
+    ],
+    "Base Type": [
+      "A19"
+    ],
+    "Bulb Shape": [
+      "A19"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Dimmable": [
+      "Yes"
+    ],
+    "Pack Size": [
+      "6"
+    ]
+  },
+  "Janitorial > Cleaning Tools > Mops": {
+    "Size": [
+      "24"
+    ],
+    "Mop Type": [
+      "Flat Mop",
+      "Microfiber Flat Mop"
+    ],
+    "Width": [
+      "24"
+    ],
+    "Head Material": [
+      "Microfiber"
+    ]
+  },
+  "Hardware > Building Materials > Plywood & Panels": {
+    "Thickness": [
+      "3/4",
+      "5/8"
+    ],
+    "Material Type": [
+      "OSB"
+    ],
+    "Application": [
+      "Sheathing",
+      "Subfloor"
+    ],
+    "Width": [
+      "4"
+    ],
+    "Length": [
+      "8"
+    ]
+  },
+  "HVAC > Air Filters > Pleated Air Filters": {
+    "Size": [
+      "16",
+      "20"
+    ],
+    "Width": [
+      "16",
+      "20"
+    ],
+    "Length": [
+      "20",
+      "25",
+      "30"
+    ],
+    "Thickness": [
+      "1"
+    ],
+    "MERV Rating": [
+      "11",
+      "8"
+    ],
+    "Filter Type": [
+      "Pleated"
+    ]
+  },
+  "Hardware > General Hardware > Assorted Hardware": {
+    "Material": [
+      "Mixed"
+    ],
+    "Assorted Hardware": [
+      "Miscellaneous"
+    ]
+  },
+  "Electrical > Wire & Cable > Romex Wire": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Wire Gauge": [
+      "10/3",
+      "12/2",
+      "14/2"
+    ],
+    "Cable Type": [
+      "NM-B",
+      "NM-B Romex"
+    ],
+    "Gauge": [
+      "12/2"
+    ],
+    "Wire Type": [
+      "NM-B Romex"
+    ]
+  },
+  "Adhesives > Epoxy > Tube Epoxy": {
+    "Size": [
+      "3"
+    ],
+    "Adhesive Type": [
+      "Epoxy"
+    ],
+    "Container Type": [
+      "Tube"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Tees": {
+    "Size": [
+      "1"
+    ],
+    "Fitting Type": [
+      "Tee"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "125"
+    ]
+  },
+  "Abrasives > Grinding Wheels > Bench Grinding Wheels": {
+    "Grit": [
+      "100",
+      "80"
+    ],
+    "Diameter": [
+      "4",
+      "9"
+    ],
+    "Type": [
+      "Grinding Wheel"
+    ],
+    "Product Type": [
+      "Grinding Wheel"
+    ]
+  },
+  "Adhesives > Epoxies > Cartridge Epoxies": {
+    "Size": [
+      "3"
+    ],
+    "Material": [
+      "Epoxy"
+    ],
+    "Container Type": [
+      "Cartridge"
+    ]
+  },
+  "Plumbing > Pipe Fittings > Copper Fittings": {
+    "Material": [
+      "Copper"
+    ],
+    "Size": [
+      "1",
+      "1/2",
+      "3/4"
+    ],
+    "Fitting Type": [
+      "90 Elbow",
+      "Tee"
+    ],
+    "Connection Type": [
+      "C x C x C",
+      "CXCXC"
+    ]
+  },
+  "Plumbing > Fittings & Valves > Pipe Couplings": {
+    "Size": [
+      "1",
+      "3/4"
+    ],
+    "Fitting Type": [
+      "Coupling"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "125",
+      "150"
+    ]
+  },
+  "Plumbing > Pipe Fittings > Brass Fittings": {
+    "Size": [
+      "1",
+      "3/4",
+      "3/8"
+    ],
+    "Fitting Type": [
+      "Coupling",
+      "Tee",
+      "Union"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "125",
+      "150"
+    ]
+  },
+  "Hardware > Builders Hardware > Brackets": {
+    "Bracket Type": [
+      "Angle",
+      "Angle Bracket"
+    ],
+    "Finish": [
+      "Galvanized"
+    ],
+    "Material Finish": [
+      "Galvanized"
+    ]
+  },
+  "Plumbing > Valves > Ball Valves": {
+    "Size": [
+      "1",
+      "1/2"
+    ],
+    "Valve Type": [
+      "Ball Valve"
+    ],
+    "Port Type": [
+      "Full Port"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Connection Type": [
+      "FIP"
+    ]
+  },
+  "Hardware > Builders Hardware > Joist Hangers": {
+    "Finish": [
+      "Galvanized",
+      "ZMAX"
+    ]
+  },
+  "Adhesives > Epoxy > Structural Epoxy": {
+    "Size": [
+      "10.1",
+      "9"
+    ],
+    "Container Size": [
+      "9"
+    ],
+    "Container Type": [
+      "Tube"
+    ],
+    "Adhesive Type": [
+      "Structural Epoxy"
+    ]
+  },
+  "Hardware > Builders Hardware > Post Bases": {
+    "Finish": [
+      "ZMAX"
+    ]
+  },
+  "Plumbing > Valves > Bronze Valves": {
+    "Size": [
+      "1"
+    ],
+    "Valve Type": [
+      "Ball Valve"
+    ],
+    "Material": [
+      "Bronze"
+    ],
+    "Connection Type": [
+      "Threaded"
+    ]
+  },
+  "Fasteners > Screws & Bolts > Hex Cap Screws": {
+    "Thread Size": [
+      "#10-24"
+    ],
+    "Length": [
+      "1"
+    ],
+    "Material": [
+      "Zinc"
+    ],
+    "Grade": [
+      "5"
+    ]
+  },
+  "Lighting > Ceiling Lights > LED Flat Panels": {
+    "Wattage": [
+      "30"
+    ],
+    "Color Temperature": [
+      "3500"
+    ],
+    "Technology": [
+      "LED"
+    ],
+    "Fixture Type": [
+      "Flat Panel"
+    ],
+    "Dimensions": [
+      "2x4"
+    ]
+  },
+  "Abrasives > Cut-Off Wheels > Cutting Discs": {
+    "Grit": [
+      "120"
+    ],
+    "Product Type": [
+      "Cut-Off Disc"
+    ],
+    "Diameter": [
+      "4.5",
+      "9"
+    ]
+  },
+  "Abrasives > Sanding Belts > Power Sanding Belts": {
+    "Grit": [
+      "40"
+    ],
+    "Product Type": [
+      "Sanding Belt"
+    ],
+    "Width": [
+      "4"
+    ]
+  },
+  "Abrasives > Cut-Off Wheels > Metal Cutting Wheels": {
+    "Diameter": [
+      "7"
+    ],
+    "Product Type": [
+      "Cutting Wheel"
+    ],
+    "Application": [
+      "Metal"
+    ]
+  },
+  "Fasteners > Structural Hardware > Angle Brackets": {
+    "Product Type": [
+      "Angle Bracket"
+    ],
+    "Finish": [
+      "Galvanized"
+    ],
+    "Material Finish": [
+      "Galvanized"
+    ]
+  },
+  "Electrical > Wire & Cable > NM-B Cable": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Wire Gauge": [
+      "12/2"
+    ],
+    "Cable Type": [
+      "NM-B"
+    ]
+  },
+  "Fasteners > Structural Hardware > Post Bases": {
+    "Product Type": [
+      "Post Base"
+    ],
+    "Finish/Coating": [
+      "ZMAX"
+    ]
+  },
+  "Hardware > Building Materials > Subfloor Panels": {
+    "Thickness": [
+      "1/2",
+      "5/8"
+    ],
+    "Material": [
+      "OSB"
+    ],
+    "Application": [
+      "Subfloor"
+    ],
+    "Dimensions": [
+      "4X8"
+    ],
+    "Product Type": [
+      "Sheet"
+    ],
+    "Sheet Size": [
+      "4X8"
+    ]
+  },
+  "Electrical > Networking & Data > Ethernet Cable": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Cable Type": [
+      "CAT6 Cable",
+      "CAT6.5"
+    ]
+  },
+  "Plumbing > Pipe Fittings > Copper Elbows": {
+    "Size": [
+      "1"
+    ],
+    "Material": [
+      "Copper"
+    ],
+    "Angle": [
+      "90"
+    ]
+  },
+  "Plumbing > Pipe Fittings > Copper Tees": {
+    "Material": [
+      "Copper"
+    ],
+    "Size": [
+      "1",
+      "1/2"
+    ],
+    "Type": [
+      "TEE"
+    ],
+    "Connection Type": [
+      "CXCXC"
+    ]
+  },
+  "Electrical > Networking & Data > Ethernet Patch Cables": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Cable Type": [
+      "CAT5 Patch Cable"
+    ]
+  },
+  "Outdoor > Lawn Care Equipment > String Trimmers": {
+    "Voltage": [
+      "40"
+    ],
+    "Power Source": [
+      "Cordless"
+    ],
+    "Tool Type": [
+      "String Trimmer"
+    ]
+  },
+  "Plumbing > Pipe Fittings > Unions": {
+    "Size": [
+      "3/4"
+    ],
+    "Fitting Type": [
+      "Union"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "125"
+    ]
+  },
+  "Plumbing > Pipe Fittings > Tees": {
+    "Size": [
+      "1"
+    ],
+    "Fitting Type": [
+      "Tee"
+    ],
+    "Material": [
+      "Brass"
+    ],
+    "Pressure Rating": [
+      "150"
+    ]
+  },
+  "Electrical > Wire & Cable > Romex & Building Wire": {
+    "Length": [
+      "250"
+    ],
+    "Beam Distance": [
+      "250"
+    ],
+    "Wire Size": [
+      "10/3",
+      "12/2",
+      "14/2"
+    ],
+    "Cable Type": [
+      "NM-B"
+    ],
+    "Wire Gauge": [
+      "12/2"
+    ],
+    "Type": [
+      "NM-B",
+      "NM-B Romex"
+    ]
+  },
+  "Abrasives > Cut-Off & Grinding Wheels > Metal Cutting Wheels": {
+    "Diameter": [
+      "4",
+      "7",
+      "9"
+    ],
+    "Application": [
+      "Metal",
+      "Metal Cutting"
+    ],
+    "Wheel Type": [
+      "Cutting Wheel"
+    ]
+  },
+  "Abrasives > Sanding & Grinding Discs > Flap Discs": {
+    "Grit": [
+      "40"
+    ],
+    "Diameter": [
+      "4",
+      "7"
+    ]
+  },
+  "Hardware > Building Materials > Sheathing & Plywood": {
+    "Thickness": [
+      "3/4",
+      "5/8"
+    ],
+    "Material": [
+      "OSB"
+    ],
+    "Dimensions": [
+      "4X8"
+    ],
+    "Type": [
+      "Sheathing"
+    ]
+  },
+  "Automotive > Battery & Electrical > Automotive Batteries": {
+    "Voltage": [
+      "12"
+    ],
+    "Battery Type": [
+      "AGM"
+    ],
+    "Group Size": [
+      "35"
+    ],
+    "Cold Cranking Amps": [
+      "589"
+    ]
+  },
+  "Abrasives > Cut-Off Wheels > Abrasive Cut-Off Discs": {
+    "Grit": [
+      "80"
+    ],
+    "Accessory Type": [
+      "Cut-Off Disc"
+    ],
+    "Diameter": [
+      "4.5"
+    ]
+  },
+  "Adhesives > Structural Adhesives > Epoxy": {
+    "Size": [
+      "10.1"
+    ],
+    "Adhesive Type": [
+      "Epoxy"
+    ],
+    "Container Size": [
+      "10.1"
+    ],
+    "Container Type": [
+      "Cartridge"
     ]
   }
 }

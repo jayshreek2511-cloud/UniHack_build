@@ -7,6 +7,7 @@ Provides endpoints for stats, records catalog, record detail, review queue, and 
 
 import json
 import logging
+import os
 from pathlib import Path
 from typing import Dict, List, Optional
 import pandas as pd
@@ -15,7 +16,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-logger = logging.getLogger("api")
+# Use Uvicorn's configured logger so operational messages appear in the same
+# terminal/dashboard log as the FastAPI startup lines.
+logger = logging.getLogger("uvicorn.error")
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = PROJECT_ROOT / "data" / "output"
@@ -26,6 +29,16 @@ app = FastAPI(
     version="1.0.0",
     description="AI-Powered Product Intelligence for Industrial Commerce (FastAPI Backend)",
 )
+
+
+def _has_gemini_api_key() -> bool:
+    """Return whether the launch environment contains a usable Gemini key."""
+    return bool(os.environ.get("GEMINI_API_KEY", "").strip())
+
+
+@app.on_event("startup")
+def log_gemini_key_startup_status() -> None:
+    logger.info("FastAPI startup: GEMINI_API_KEY present and non-empty: %s", _has_gemini_api_key())
 
 # Enable CORS for frontend dev server
 app.add_middleware(
@@ -292,6 +305,7 @@ def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
 
         logger.info("=" * 80)
         logger.info("RECEIVED PIPELINE EXECUTION REQUEST: File='%s', Rows=%d, Path='%s'", input_filename, row_count, input_file_path)
+        logger.info("Pipeline start: GEMINI_API_KEY present and non-empty (child will inherit): %s", _has_gemini_api_key())
         logger.info("=" * 80)
 
         # 1. Execute run_full_pipeline.py script with explicit input file argument
@@ -358,4 +372,3 @@ async def download_delivery_csv():
         filename="delivery_export.csv",
         media_type="text/csv"
     )
-

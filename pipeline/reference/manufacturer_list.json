@@ -1,27 +1,128 @@
 {
   "_NOTE": "This file lists DISTRIBUTORS/RESELLERS parsed from Part_Manuf. These are NOT the actual product manufacturers. Real manufacturer and brand are derived from product descriptions in Stage 04.",
   "clusters": {
-    "Appliance Dealers Cooperative": {
+    "3M Company": {
       "variants": [
-        "Appliance Dealers Cooperative"
+        "3M",
+        "3M Co.",
+        "3M Company"
       ],
-      "codes": [
-        "APPDE"
-      ]
+      "codes": []
+    },
+    "ABC Supply Co": {
+      "variants": [
+        "ABC Supply Co"
+      ],
+      "codes": []
+    },
+    "Ansell Limited": {
+      "variants": [
+        "Ansell Limited"
+      ],
+      "codes": []
+    },
+    "Ansell Ltd": {
+      "variants": [
+        "Ansell",
+        "Ansell Ltd"
+      ],
+      "codes": []
+    },
+    "Belden Inc": {
+      "variants": [
+        "Belden",
+        "Belden Inc"
+      ],
+      "codes": []
+    },
+    "Belden Incorporated": {
+      "variants": [
+        "Belden Incorporated"
+      ],
+      "codes": []
+    },
+    "Bosch": {
+      "variants": [
+        "Bosch"
+      ],
+      "codes": []
+    },
+    "DEWALT": {
+      "variants": [
+        "DEWALT"
+      ],
+      "codes": []
+    },
+    "DEWALT Industrial": {
+      "variants": [
+        "DEWALT Industrial"
+      ],
+      "codes": []
+    },
+    "DeWalt Ind. Tool": {
+      "variants": [
+        "DeWalt Ind. Tool"
+      ],
+      "codes": []
+    },
+    "EGO": {
+      "variants": [
+        "EGO"
+      ],
+      "codes": []
+    },
+    "EGO Power Plus": {
+      "variants": [
+        "EGO Power Plus"
+      ],
+      "codes": []
+    },
+    "EGO Power+": {
+      "variants": [
+        "EGO Power+"
+      ],
+      "codes": []
+    },
+    "Eaton Corporation": {
+      "variants": [
+        "Eaton",
+        "Eaton Corp",
+        "Eaton Corporation"
+      ],
+      "codes": []
     },
     "Fastenal Company": {
       "variants": [
+        "Fastenal",
+        "Fastenal Co",
         "Fastenal Company"
       ],
       "codes": []
     },
-    "Freud Inc": {
+    "Frigidaire": {
       "variants": [
-        "Freud Inc"
+        "Frigidaire"
       ],
-      "codes": [
-        "2435"
-      ]
+      "codes": []
+    },
+    "GE Appliances": {
+      "variants": [
+        "GE Appliances"
+      ],
+      "codes": []
+    },
+    "GP": {
+      "variants": [
+        "GP"
+      ],
+      "codes": []
+    },
+    "Georgia Pacific Corp": {
+      "variants": [
+        "Georgia Pacific Corp",
+        "Georgia-Pacific"
+      ],
+      "codes": []
     },
     "Grainger Industrial Supply": {
       "variants": [
@@ -29,19 +130,235 @@
       ],
       "codes": []
     },
-    "Jam Industrial Supply LLC": {
+    "Henkel Corporation": {
       "variants": [
-        "Jam Industrial Supply LLC",
-        "MSC Industrial Supply"
+        "Henkel Corp",
+        "Henkel Corporation"
       ],
-      "codes": [
-        "JAMIN"
-      ]
+      "codes": []
+    },
+    "Honeywell Inc": {
+      "variants": [
+        "Honeywell Inc"
+      ],
+      "codes": []
+    },
+    "Honeywell International": {
+      "variants": [
+        "Honeywell International"
+      ],
+      "codes": []
+    },
+    "Honeywell Intl": {
+      "variants": [
+        "Honeywell Intl"
+      ],
+      "codes": []
+    },
+    "Interstate": {
+      "variants": [
+        "Interstate"
+      ],
+      "codes": []
+    },
+    "Interstate Battery Sys": {
+      "variants": [
+        "Interstate Batteries",
+        "Interstate Battery Sys"
+      ],
+      "codes": []
+    },
+    "Klein": {
+      "variants": [
+        "Klein"
+      ],
+      "codes": []
+    },
+    "Klein Tools Inc": {
+      "variants": [
+        "Klein Tools",
+        "Klein Tools Inc"
+      ],
+      "codes": []
+    },
+    "LG Electronics": {
+      "variants": [
+        "LG Electronics"
+      ],
+      "codes": []
+    },
+    "Leviton Manufacturing": {
+      "variants": [
+        "Leviton",
+        "Leviton Manufacturing",
+        "Leviton Mfg"
+      ],
+      "codes": []
+    },
+    "Loctite": {
+      "variants": [
+        "Loctite"
+      ],
+      "codes": []
+    },
+    "Makita U.S.A. Inc": {
+      "variants": [
+        "Makita U.S.A. Inc"
+      ],
+      "codes": []
+    },
+    "Makita USA": {
+      "variants": [
+        "Makita",
+        "Makita USA"
+      ],
+      "codes": []
+    },
+    "Milwaukee": {
+      "variants": [
+        "Milwaukee"
+      ],
+      "codes": []
+    },
+    "Milwaukee Electric Tool": {
+      "variants": [
+        "Milwaukee Electric Tool"
+      ],
+      "codes": []
+    },
+    "Milwaukee Tool": {
+      "variants": [
+        "Milwaukee Tool"
+      ],
+      "codes": []
+    },
+    "NIBCO INC.": {
+      "variants": [
+        "NIBCO INC.",
+        "Nibco",
+        "Nibco Inc"
+      ],
+      "codes": []
+    },
+    "Norton": {
+      "variants": [
+        "Norton"
+      ],
+      "codes": []
+    },
+    "Norton Abr.": {
+      "variants": [
+        "Norton Abr."
+      ],
+      "codes": []
+    },
+    "Norton Abrasives": {
+      "variants": [
+        "Norton Abrasives"
+      ],
+      "codes": []
+    },
+    "Panasonic Corp": {
+      "variants": [
+        "Panasonic",
+        "Panasonic Corp"
+      ],
+      "codes": []
+    },
+    "Philips Lighting": {
+      "variants": [
+        "Philips Lighting"
+      ],
+      "codes": []
+    },
+    "Rubbermaid": {
+      "variants": [
+        "Rubbermaid"
+      ],
+      "codes": []
+    },
+    "Rubbermaid Commercial": {
+      "variants": [
+        "Rubbermaid Comm",
+        "Rubbermaid Commercial"
+      ],
+      "codes": []
+    },
+    "Samsung Electronics": {
+      "variants": [
+        "Samsung Electronics"
+      ],
+      "codes": []
+    },
+    "Signify NA": {
+      "variants": [
+        "Signify NA"
+      ],
+      "codes": []
+    },
+    "Signify North America": {
+      "variants": [
+        "Signify North America"
+      ],
+      "codes": []
+    },
+    "Simpson": {
+      "variants": [
+        "Simpson"
+      ],
+      "codes": []
+    },
+    "Simpson Strong Tie Co": {
+      "variants": [
+        "Simpson Strong Tie Co",
+        "Simpson Strong-Tie"
+      ],
+      "codes": []
+    },
+    "Southwire Company": {
+      "variants": [
+        "Southwire",
+        "Southwire Co.",
+        "Southwire Company"
+      ],
+      "codes": []
+    },
+    "Unknown": {
+      "variants": [
+        "Unknown"
+      ],
+      "codes": []
+    },
+    "WATTS WATER TECH": {
+      "variants": [
+        "WATTS WATER TECH"
+      ],
+      "codes": []
+    },
+    "Watts": {
+      "variants": [
+        "Watts"
+      ],
+      "codes": []
+    },
+    "Watts Regulator Co": {
+      "variants": [
+        "Watts Regulator Co"
+      ],
+      "codes": []
+    },
+    "Watts Water Technologies": {
+      "variants": [
+        "Watts Water Technologies"
+      ],
+      "codes": []
+    },
+    "Whirlpool Corporation": {
+      "variants": [
+        "Whirlpool Corporation"
+      ],
+      "codes": []
     }
   },
-  "code_lookup": {
-    "APPDE": "Appliance Dealers Cooperative",
-    "2435": "Freud Inc",
-    "JAMIN": "Jam Industrial Supply LLC"
-  }
+  "code_lookup": {}
 }
