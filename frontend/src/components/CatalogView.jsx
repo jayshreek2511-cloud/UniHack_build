@@ -18,7 +18,7 @@ export default function CatalogView({ records, onSelectRecord }) {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
           <h2 className="text-xl font-bold text-white">Enriched Products Catalog</h2>
-          <p className="text-sm text-slate-400 mt-1">Live enriched dishwasher records from Phase 1-4 pipeline execution</p>
+          <p className="text-sm text-slate-400 mt-1">Live enriched records from the full category pipeline</p>
         </div>
 
         <div className="relative w-full sm:w-72">
@@ -62,7 +62,7 @@ export default function CatalogView({ records, onSelectRecord }) {
                       <div className="font-semibold text-white">{r.manufacturer_info.real_brand || r.identity.part_manuf}</div>
                       <div className="text-xs text-slate-400">{r.manufacturer_info.real_manufacturer}</div>
                     </td>
-                    <td className="text-xs text-slate-300">Appliances &gt; Dishwashers</td>
+                    <td className="text-xs text-slate-300">{r.extraction?.coarse_category || r.identity.coarse_category || 'Uncategorized'}</td>
                     <td>
                       {mfrUrl ? (
                         <a
@@ -113,6 +113,9 @@ export default function CatalogView({ records, onSelectRecord }) {
                   </tr>
                 );
               })}
+              {filteredRecords.length === 0 && (
+                <tr><td colSpan="7" className="empty-state">No records yet — upload a CSV and run the pipeline to get started.</td></tr>
+              )}
             </tbody>
           </table>
         </div>

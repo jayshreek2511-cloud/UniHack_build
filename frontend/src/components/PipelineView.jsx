@@ -50,11 +50,11 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
 
   const stages = [
     { id: 'ingest', title: '01. Ingestion', desc: 'Raw CSV Ingest & Column Auto-detect', count: stats.total_ingested + ' Rows', icon: Database, color: 'from-blue-500 to-indigo-600' },
-    { id: 'classify', title: '02. Classification', desc: 'Coarse Category Isolation (Dishwashers)', count: stats.dishwasher_classified + ' Rows', icon: Filter, color: 'from-cyan-500 to-blue-600' },
-    { id: 'extract', title: '03-04. Extraction', desc: 'Distributor Normalization & Attribute Extraction', count: stats.dishwasher_classified + ' Records', icon: Sliders, color: 'from-teal-500 to-emerald-600' },
+    { id: 'classify', title: '02. Classification', desc: 'Full Category Classification', count: stats.total_ingested + ' Rows', icon: Filter, color: 'from-cyan-500 to-blue-600' },
+    { id: 'extract', title: '03-04. Extraction', desc: 'Manufacturer Normalization & Attribute Extraction', count: stats.total_ingested + ' Records', icon: Sliders, color: 'from-teal-500 to-emerald-600' },
     { id: 'enrich', title: '05. MFR Retrieval', desc: 'Browser GET HTTP 200 Verification', count: '6 Verified / 2 Flagged', icon: Globe, color: 'from-amber-500 to-orange-600' },
-    { id: 'describe', title: '06. Description Gen', desc: '5-Format Generation & Consistency Check', count: '50 Formats', icon: FileText, color: 'from-purple-500 to-pink-600' },
-    { id: 'score', title: '07-10. Export', desc: 'Unilog 252-Column Delivery Export', count: '10 Rows Output', icon: ShieldCheck, color: 'from-emerald-500 to-teal-600' },
+    { id: 'describe', title: '06. Description Gen', desc: '5-Format Generation & Consistency Check', count: `${stats.total_ingested * 5} Formats`, icon: FileText, color: 'from-purple-500 to-pink-600' },
+    { id: 'score', title: '07-10. Export', desc: 'Unilog 252-Column Delivery Export', count: `${stats.total_ingested} Rows Output`, icon: ShieldCheck, color: 'from-emerald-500 to-teal-600' },
   ];
 
   return (

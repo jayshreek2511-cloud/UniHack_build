@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Database, Grid, ShieldAlert, FileSearch, RefreshCw } from 'lucide-react';
+import { BarChart3, Database, Grid, ShieldAlert, FileSearch, RefreshCw, Settings } from 'lucide-react';
 import PipelineView from './components/PipelineView';
 import CatalogView from './components/CatalogView';
 import ReviewQueueView from './components/ReviewQueueView';
 import RecordDetailView from './components/RecordDetailView';
+import SettingsView from './components/SettingsView';
+import OverviewView from './components/OverviewView';
 
 const API_BASE = 'http://localhost:8000';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('pipeline'); // 'pipeline' | 'catalog' | 'review' | 'detail'
+  const [activeTab, setActiveTab] = useState('overview'); // 'overview' | 'pipeline' | 'catalog' | 'review' | 'detail' | 'settings'
   const [stats, setStats] = useState(null);
   const [records, setRecords] = useState([]);
   const [reviewQueue, setReviewQueue] = useState(null);
@@ -44,7 +46,7 @@ export default function App() {
       const res = await fetch(`${API_BASE}/api/records/${sku}/approve`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ notes: 'Approved via Phase 5 Dashboard' }),
+        body: JSON.stringify({ notes: 'Approved via Product Intelligence dashboard' }),
       });
       const data = await res.json();
       if (res.ok) {
@@ -75,20 +77,26 @@ export default function App() {
       {/* Sidebar Navigation */}
       <aside className="sidebar">
         <div className="brand-header">
-          <div className="brand-icon">PI</div>
+          <div className="brand-icon">UI</div>
           <div>
-            <div className="brand-title">Product Intelligence</div>
-            <span className="text-[10px] font-mono text-cyan-400 block uppercase">Industrial Commerce</span>
+            <div className="brand-title">Unilog Intelligence</div>
+            <span className="text-[10px] font-mono text-cyan-400 block uppercase">Product operations</span>
           </div>
         </div>
 
         <ul className="nav-list">
+          <li><button onClick={() => setActiveTab('overview')} className={`nav-button ${activeTab === 'overview' ? 'active' : ''}`}><BarChart3 className="w-4 h-4" /> Overview</button></li>
           <li>
             <button
               onClick={() => setActiveTab('pipeline')}
               className={`nav-button ${activeTab === 'pipeline' ? 'active' : ''}`}
             >
               <Database className="w-4 h-4" /> Pipeline Flow
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setActiveTab('settings')} className={`nav-button ${activeTab === 'settings' ? 'active' : ''}`}>
+              <Settings className="w-4 h-4" /> Settings
             </button>
           </li>
           <li>
@@ -124,21 +132,16 @@ export default function App() {
           )}
         </ul>
 
-        {/* Sidebar Footer */}
-        <div className="mt-auto pt-4 border-t border-slate-800 text-xs text-slate-500 space-y-1">
-          <div>Backend: <span className="text-emerald-400 font-mono">FastAPI :8000</span></div>
-          <div>Frontend: <span className="text-cyan-400 font-mono">React Vite</span></div>
-          <div>Status: <span className="text-slate-300 font-medium">Live Execution Data</span></div>
-        </div>
+        <div className="mt-auto account-footer"><span className="account-avatar">U</span><span><strong>Catalog administrator</strong><small>Product operations</small></span></div>
       </aside>
 
       {/* Main Content Area */}
       <main className="main-content">
         <header className="top-bar">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold font-mono text-slate-400 uppercase">Hackathon Phase 5 Dashboard</span>
+            <span className="text-xs font-bold font-mono text-slate-400 uppercase">Product Intelligence</span>
             <span className="text-slate-600">/</span>
-            <span className="text-xs font-semibold text-cyan-400 capitalize">{activeTab} View</span>
+            <span className="text-xs font-semibold text-cyan-400 capitalize">{activeTab === 'overview' ? 'Overview' : activeTab}</span>
           </div>
 
           <div className="flex items-center gap-3">
@@ -156,6 +159,7 @@ export default function App() {
             </div>
           )}
 
+          {activeTab === 'overview' && <OverviewView stats={stats} records={records} onNavigate={setActiveTab} />}
           {activeTab === 'pipeline' && <PipelineView stats={stats} onNavigate={setActiveTab} onRefresh={fetchData} />}
           {activeTab === 'catalog' && <CatalogView records={records} onSelectRecord={handleSelectRecord} />}
           {activeTab === 'review' && (
@@ -171,6 +175,7 @@ export default function App() {
               onBack={() => setActiveTab('catalog')}
             />
           )}
+          {activeTab === 'settings' && <SettingsView />}
         </div>
       </main>
     </div>
