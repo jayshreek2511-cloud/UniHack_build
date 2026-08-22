@@ -7,11 +7,13 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
   const [running, setRunning] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
   const [statusMsg, setStatusMsg] = useState(null);
+  const [statusTone, setStatusTone] = useState('running');
 
   if (!stats) return <div className="p-8 text-center text-slate-400">Loading pipeline statistics...</div>;
 
   const handleRunPipeline = async () => {
     setRunning(true);
+    setStatusTone('running');
     setStatusMsg('Running full 10-stage pipeline (Ingest -> Classify -> Extract -> Enrich -> Score -> Export)...');
 
     try {
@@ -28,6 +30,7 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
       const data = await res.json();
       if (res.ok) {
         if (data.job_id) {
+          setStatusTone('running');
           setStatusMsg(`Pipeline detached (PID ${data.pid}) and running in the background...`);
           let state = 'running';
           while (state === 'running') {
@@ -35,9 +38,16 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
             const statusRes = await fetch(`${API_BASE}/api/pipeline/status/${data.job_id}`);
             const status = await statusRes.json();
             state = status.status;
-            if (state === 'running') setStatusMsg(`Pipeline still running in background (PID ${status.pid})...`);
-            else if (state === 'complete') setStatusMsg('Pipeline complete! Delivery export files (CSV & XLSX) generated successfully.');
-            else setStatusMsg(`Pipeline run failed (exit code ${status.return_code ?? 'unknown'}). Check the server-side job log.`);
+            if (state === 'running') {
+              setStatusTone('running');
+              setStatusMsg(`Pipeline still running in background (PID ${status.pid})...`);
+            } else if (state === 'complete') {
+              setStatusTone('complete');
+              setStatusMsg('Pipeline complete! Delivery export files (CSV & XLSX) generated successfully.');
+            } else {
+              setStatusTone('failed');
+              setStatusMsg(`Pipeline run failed (exit code ${status.return_code ?? 'unknown'}). Check the server-side job log.`);
+            }
           }
           if (state === 'complete' && onRefresh) await onRefresh();
         } else {
@@ -45,10 +55,12 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
           if (onRefresh) await onRefresh();
         }
       } else {
+        setStatusTone('failed');
         setStatusMsg(`Pipeline run failed: ${data.detail || 'Unknown error'}`);
       }
     } catch (err) {
       console.error(err);
+      setStatusTone('failed');
       setStatusMsg(`Execution error: ${err.message}`);
     } finally {
       setRunning(false);
@@ -127,7 +139,7 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
         </div>
 
         {statusMsg && (
-          <div className={`p-3 rounded-lg text-xs font-semibold ${statusMsg.includes('failed') || statusMsg.includes('error') ? 'bg-rose-950/80 border border-rose-700 text-rose-200' : 'bg-cyan-950/80 border border-cyan-700 text-cyan-200'}`}>
+          <div className={`pipeline-status pipeline-status-${statusTone}`}>
             {statusMsg}
           </div>
         )}
