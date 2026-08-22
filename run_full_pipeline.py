@@ -169,7 +169,11 @@ def main():
 
     # 11. Stage 10: Delivery Export (all records)
     logger.info(">> Stage 10: Exporting delivery format...")
-    export_delivery_pipeline(enriched_db)
+    review_items_by_sku = {
+        item.mfg_part_num: item
+        for item in (batch_result.review_items + batch_result.complete_items)
+    }
+    export_delivery_pipeline(enriched_db, review_items=review_items_by_sku)
 
     # ── REPORTS ──────────────────────────────────────────────────────────────
 

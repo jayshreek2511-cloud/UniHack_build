@@ -22,7 +22,7 @@ export default function OverviewView({ stats, records, onNavigate }) {
     <div className="overview-kpis">
       <Kpi icon={Database} label="Total input rows" value={total.toLocaleString()} note="Loaded from the current CSV" />
       <Kpi icon={ListChecks} label="Categorized rows" value={categorized.toLocaleString()} note={`${total ? ((categorized / total) * 100).toFixed(1) : '0.0'}% of input`} />
-      <Kpi icon={PackageCheck} label="Manufacturer resolved" value={resolved.toLocaleString()} note={`${resolvedPct}% of input`} tone="success" />
+      <Kpi icon={PackageCheck} label="Manufacturer resolved" value={resolved.toLocaleString()} note={`${resolvedPct}% of input · field-level count, not overall record completeness`} tone="success" />
       <Kpi icon={AlertTriangle} label="Review queue" value={(stats.review_count || 0).toLocaleString()} note="Requires human attention" tone="warning" />
     </div>
     <div className="overview-grid">

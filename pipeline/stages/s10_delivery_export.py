@@ -17,6 +17,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import pandas as pd
+from openpyxl import load_workbook
+from openpyxl.styles import PatternFill
+from openpyxl.utils import get_column_letter
 
 logger = logging.getLogger(__name__)
 
@@ -65,7 +68,7 @@ def _category_fine(coarse_category: str) -> str:
     return parts[2] if len(parts) > 2 else (parts[1] if len(parts) > 1 else "")
 
 
-def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: List[str]) -> Dict[str, Any]:
+def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: List[str], review_item: Any = None) -> Dict[str, Any]:
     """Map a single internal enriched record dict to a row dictionary matching template_columns."""
     row: Dict[str, Any] = {col: None for col in template_columns}
 
@@ -129,6 +132,16 @@ def map_record_to_delivery_row(record_dict: Dict[str, Any], template_columns: Li
     row["SHORT_DESC"] = descriptions.get("short_desc")
     row["LONG_DESC1"] = descriptions.get("long_desc1")
     row["RETAIL_DESC"] = descriptions.get("retail_desc")
+    if "REMARKS" in row:
+        if review_item is None:
+            row["REMARKS"] = ""
+        elif getattr(review_item, "status", None) == "complete" or (isinstance(review_item, dict) and review_item.get("status") == "complete"):
+            row["REMARKS"] = "Complete"
+        else:
+            reasons = getattr(review_item, "flag_reasons", None)
+            if reasons is None and isinstance(review_item, dict):
+                reasons = review_item.get("flag_reasons") or []
+            row["REMARKS"] = "; ".join(str(reason) for reason in (reasons or [])) or "Needs manual review"
 
     # Marketing & Features
     row["MARKETING_DESCRIPTION"] = record_dict.get("marketing_description")
@@ -190,7 +203,8 @@ def export_delivery_pipeline(
     records: List[Dict[str, Any]],
     output_csv_path: str = "data/output/delivery_export.csv",
     output_xlsx_path: str = "data/output/delivery_export.xlsx",
-    template_path: Path = TEMPLATE_CSV_PATH
+    template_path: Path = TEMPLATE_CSV_PATH,
+    review_items: Optional[Dict[str, Any]] = None,
 ) -> pd.DataFrame:
     """Read template schema, map all records, and export CSV and XLSX files."""
     if not template_path.exists():
@@ -200,8 +214,14 @@ def export_delivery_pipeline(
     # Load template to obtain exact column header list and ordering
     template_df = pd.read_csv(template_path)
     columns = list(template_df.columns)
+    if "REMARKS" not in columns:
+        columns.append("REMARKS")
 
-    mapped_rows = [map_record_to_delivery_row(rec, columns) for rec in records]
+    review_items = review_items or {}
+    mapped_rows = [
+        map_record_to_delivery_row(rec, columns, review_items.get(rec.get("identity", {}).get("mfg_part_num")))
+        for rec in records
+    ]
     df_out = pd.DataFrame(mapped_rows, columns=columns)
 
     # Ensure output directory exists
@@ -214,6 +234,28 @@ def export_delivery_pipeline(
 
     # Export XLSX
     df_out.to_excel(output_xlsx_path, index=False, engine="openpyxl")
+    # Add explainability styling after pandas writes the workbook. Every row
+    # with review remarks gets a quiet pink fill across the full row.
+    workbook = load_workbook(output_xlsx_path)
+    worksheet = workbook.active
+    remarks_col = list(df_out.columns).index("REMARKS") + 1
+    flagged_fill = PatternFill(fill_type="solid", fgColor="FDEAEA")
+    worksheet.freeze_panes = "A2"
+    worksheet.auto_filter.ref = worksheet.dimensions
+    for column_cells in worksheet.columns:
+        column_index = column_cells[0].column
+        column_name = str(column_cells[0].value or "")
+        if column_name == "REMARKS":
+            width = 80
+        else:
+            max_length = max((len(str(cell.value or "")) for cell in column_cells[:100]), default=0)
+            width = min(max(max_length + 2, 12), 32)
+        worksheet.column_dimensions[get_column_letter(column_index)].width = width
+    for row_index in range(2, worksheet.max_row + 1):
+        if str(worksheet.cell(row=row_index, column=remarks_col).value or "").strip().lower() not in {"", "complete"}:
+            for cell in worksheet[row_index]:
+                cell.fill = flagged_fill
+    workbook.save(output_xlsx_path)
     logger.info("Exported delivery format Excel: %s", output_xlsx_path)
 
     return df_out
@@ -222,5 +264,18 @@ def export_delivery_pipeline(
 if __name__ == "__main__":
     import json
     logging.basicConfig(level=logging.INFO)
-    enriched = json.load(open("data/output/dishwasher_enriched_full.json"))
-    export_delivery_pipeline(enriched)
+    project_root = Path(__file__).resolve().parents[2]
+    enriched = json.load(open(project_root / "data/output/dishwasher_enriched_full.json", encoding="utf-8"))
+    review_path = project_root / "data/output/review_queue.json"
+    review_items = {}
+    if review_path.exists():
+        review_data = json.load(open(review_path, encoding="utf-8"))
+        for item in review_data.get("review_queue", []) + review_data.get("complete", []):
+            review_items[item.get("mfg_part_num")] = item
+    export_delivery_pipeline(
+        enriched,
+        output_csv_path=str(project_root / "data/output/delivery_export.csv"),
+        output_xlsx_path=str(project_root / "data/output/delivery_export.xlsx"),
+        template_path=project_root / "data/input/Unihack__Expected_Output_-_Delivery_Format.csv",
+        review_items=review_items,
+    )
