@@ -63,8 +63,8 @@ def _generate_dishwasher_descriptions(
 ) -> GeneratedDescriptions:
     """Generate descriptions for dishwasher products using legacy templates."""
     part_num = record.mfg_part_num.strip()
-    mfr_name = mfr_info.real_manufacturer or extracted.real_manufacturer or "Unknown Manufacturer"
-    brand_name = mfr_info.real_brand or extracted.real_brand or "Unknown Brand"
+    mfr_name = mfr_info.real_manufacturer or extracted.real_manufacturer
+    brand_name = mfr_info.real_brand or extracted.real_brand
 
     series = _get_val(extracted, "Series")
     cycles = _get_val(extracted, "Number of Wash Cycles")
@@ -107,9 +107,9 @@ def _generate_dishwasher_descriptions(
     series_part = f", {series}" if series else ""
     mount_part = f", {mounting} Mounting" if mounting else ""
     if mfr_name and "Rheem" in mfr_name:
-        mobile_desc = f"{mfr_name} {brand_name}, Dishwasher{series_part}, {part_num}{mount_part}"
+        mobile_desc = f"{mfr_name}{(' ' + brand_name) if brand_name else ''}, Dishwasher{series_part}, {part_num}{mount_part}"
     else:
-        mobile_desc = f"{brand_name}, Dishwasher{series_part}, {part_num}{mount_part}"
+        mobile_desc = f"{brand_name + ', ' if brand_name else ''}Dishwasher{series_part}, {part_num}{mount_part}"
 
     # 3. SHORT_DESC
     brand_tm = f"{brand_name}®" if brand_name and not brand_name.endswith("®") else brand_name
@@ -119,10 +119,10 @@ def _generate_dishwasher_descriptions(
     mat_str = f", {material}" if material else ""
     col_str = f", {color}" if color and color != material else ""
 
-    short_desc = f"{brand_tm}{series_str} {part_num} Dishwasher{mount_str}{cycle_str}{mat_str}{col_str}"
+    short_desc = f"{(brand_tm + ' ' if brand_tm else '')}{series_str.lstrip()} {part_num} Dishwasher{mount_str}{cycle_str}{mat_str}{col_str}".strip()
 
     # 4. LONG_DESC1 (Spec paragraph, comma separated)
-    long_parts = [f"{brand_tm} Dishwasher"]
+    long_parts = [f"{(brand_tm + ' ') if brand_tm else ''}Dishwasher"]
     if series:
         long_parts.append(series)
     if cycles:
@@ -195,8 +195,8 @@ def _generate_generic_descriptions(
 ) -> GeneratedDescriptions:
     """Generate descriptions for non-dishwasher products using generic templates."""
     part_num = record.mfg_part_num.strip()
-    mfr_name = mfr_info.real_manufacturer or extracted.real_manufacturer or "Unknown Manufacturer"
-    brand_name = mfr_info.real_brand or extracted.real_brand or "Unknown Brand"
+    mfr_name = mfr_info.real_manufacturer or extracted.real_manufacturer
+    brand_name = mfr_info.real_brand or extracted.real_brand
     category = record.coarse_category
 
     # Collect all extracted attributes
@@ -220,20 +220,20 @@ def _generate_generic_descriptions(
         invoice_desc = invoice_desc[:40].strip()
 
     # 2. MOBILE_DESC (60-80 chars)
-    brand_part = f"{brand_name}" if brand_name != "Unknown Brand" else ""
-    mobile_desc = f"{brand_part}, {category.split('>')[-1].strip()}, {part_num}"
+    brand_part = f"{brand_name}" if brand_name else ""
+    mobile_desc = f"{brand_part + ', ' if brand_part else ''}{category.split('>')[-1].strip()}, {part_num}"
     if attr_values:
         mobile_desc += f", {attr_values.get('Size', '')}".strip(", ")
 
     # 3. SHORT_DESC
-    short_parts = [f"{brand_name} {part_num} {category.split('>')[-1].strip()}"]
+    short_parts = [f"{brand_name + ' ' if brand_name else ''}{part_num} {category.split('>')[-1].strip()}"]
     for label in ["Material", "Color", "Size", "Grit", "Wattage", "Voltage"]:
         if label in attr_values:
             short_parts.append(attr_values[label])
     short_desc = ", ".join(short_parts)
 
     # 4. LONG_DESC1 (Spec paragraph)
-    long_parts = [f"{brand_name} {category.split('>')[-1].strip()}"]
+    long_parts = [f"{brand_name + ' ' if brand_name else ''}{category.split('>')[-1].strip()}"]
     if part_num:
         long_parts.append(part_num)
     for label, value in attr_values.items():

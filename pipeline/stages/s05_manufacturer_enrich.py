@@ -32,8 +32,8 @@ logger = logging.getLogger(__name__)
 @dataclass
 class ManufacturerSourceInfo:
     mfg_part_num: str
-    real_manufacturer: str
-    real_brand: str
+    real_manufacturer: Optional[str]
+    real_brand: Optional[str]
     mfr_url: Optional[str]
     ref_urls: List[str] = field(default_factory=list)
     verification_status: str = "source-verified"  # "source-verified" | "not-found"
@@ -171,8 +171,10 @@ def enrich_manufacturer_sources(records: List[ProductRecord]) -> Dict[str, Manuf
             logger.warning("SKU %s -> Brand/Manufacturer UNRESOLVED.", sku)
             info = ManufacturerSourceInfo(
                 mfg_part_num=sku,
-                real_manufacturer="UNRESOLVED — needs manual review",
-                real_brand="UNRESOLVED — needs manual review",
+                # Review state belongs in verification_status/needs_manual_review;
+                # never leak a workflow label into customer-facing identity text.
+                real_manufacturer=None,
+                real_brand=None,
                 mfr_url=None,
                 ref_urls=[],
                 verification_status="not-found",

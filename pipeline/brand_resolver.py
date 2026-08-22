@@ -15,8 +15,8 @@ BRAND_CORP_MAP = [
     (r"\bGE\s+PROFILE\b|\bPDT\b|\bPDD\b", "GE Profile", "GE Appliances"),
     (r"\bGE\s+APPLIANCES?\b|\bGDT\b", "GE Appliances", "GE Appliances"),
     (r"\bGE\b", "GE", "GE Appliances"),
-    (r"\bMONOGRAM\b", "Monogram", "GE Appliances"),
-    (r"\bCAFÉ\b|\bCAFE\b", "Café", "GE Appliances"),
+    (r"\bMONOGRAM\b(?=\s+(?:DISHWASHER|RANGE|OVEN|REFRIGERATOR|FREEZER|COOKTOP|APPLIANCE))", "Monogram", "GE Appliances"),
+    (r"\bCAFÉ\b(?=\s+(?:DISHWASHER|RANGE|OVEN|REFRIGERATOR|FREEZER|COOKTOP|APPLIANCE))|\bCAFE\b(?=\s+(?:DISHWASHER|RANGE|OVEN|REFRIGERATOR|FREEZER|COOKTOP|APPLIANCE))", "Café", "GE Appliances"),
     (r"\bMIELE\b|\bG7316\b", "Miele", "Miele Inc."),
     (r"\bLG ELECTRONICS\b|\bLG\b(?=\s+(?:[^\s]+\s+){0,6}(?:DISHWASHER|LAUNDRY|MICROWAVE|REFRIGERATOR|FRIDGE|RANGE|WASHER|DRYER|WINE|FREEZER|OVEN|STOVE|COOKTOP|MONITOR|APPLIANCE|TV|QUADWASH)\b)|\bLDPH\b|\bLDFN\b", "LG", "LG Electronics"),
     (r"\bFRIGIDAIRE\b|\bPDSH\b|\bPDS\b", "FRIGIDAIRE", "Rheem Manufacturing"),
@@ -24,12 +24,12 @@ BRAND_CORP_MAP = [
     (r"\bWHIRLPOOL\b|\bWDTS\b|\bWDT\b", "Whirlpool", "Whirlpool Corporation"),
     (r"\bMAYTAG\b", "Maytag", "Whirlpool Corporation"),
     (r"\bJENNAIR\b|\bJENN-AIR\b", "JennAir", "Whirlpool Corporation"),
-    (r"\bAMANA\b", "Amana", "Whirlpool Corporation"),
+    (r"\bAMANA\b(?=\s+(?:DISHWASHER|RANGE|OVEN|REFRIGERATOR|FREEZER|MICROWAVE|APPLIANCE))", "Amana", "Whirlpool Corporation"),
     (r"\bFISHER\s*(?:&|AND)?\s*PAYKEL\b|\bDD24\b|\bDISHDRAWER\b", "Fisher & Paykel", "Fisher & Paykel Appliances"),
     (r"\bTHERMADOR\b", "Thermador", "BSH Home Appliances"),
     (r"\bGAGGENAU\b", "Gaggenau", "BSH Home Appliances"),
-    (r"\bVIKING\b", "Viking", "Middleby Corporation"),
-    (r"\bDACOR\b", "Dacor", "Samsung Electronics"),
+    (r"\bVIKING\b(?=\s+(?:DISHWASHER|RANGE|OVEN|REFRIGERATOR|FREEZER|MICROWAVE|APPLIANCE))", "Viking", "Middleby Corporation"),
+    (r"\bDACOR\b(?=\s+(?:DISHWASHER|RANGE|OVEN|REFRIGERATOR|FREEZER|MICROWAVE|APPLIANCE))", "Dacor", "Samsung Electronics"),
     (r"\bTHOR\s+KITCHEN\b", "Thor Kitchen", "Thor Group"),
     (r"\bZLINE\b", "ZLINE", "ZLINE Kitchen and Bath"),
     (r"\bBEKO\b", "Beko", "Arçelik"),
@@ -92,15 +92,6 @@ def resolve_brand_and_manufacturer(
         if re.search(pattern, combined_text):
             return brand_name, corp_entity
 
-    # When a non-placeholder brand column is supplied, preserve it as a
-    # source-verified identity.  For an unknown private-label brand there is no
-    # safer corporate mapping, so use the canonical brand as the manufacturer
-    # rather than emitting an internally inconsistent brand/None pair.
-    for supplied in (brand_e1, brand_unilog, brand_dib):
-        if supplied and str(supplied).strip():
-            canonical = re.sub(r"\s+", " ", str(supplied).strip())
-            return canonical, canonical
-
     # Many distributor feeds put the brand immediately after the SKU (for
     # example, ``EGO-2364 EGO 40V ...``) while leaving all brand columns blank.
     # Recover that literal signal without treating ordinary description words
@@ -108,10 +99,13 @@ def resolve_brand_and_manufacturer(
     if part_num and part_desc:
         remainder = re.sub(r"^\s*" + re.escape(str(part_num).strip()) + r"\b", "", part_desc, flags=re.IGNORECASE).strip()
         token = re.match(r"([A-Za-z][A-Za-z0-9+&-]{1,30})", remainder or "")
-        stop = {"THE", "A", "AN", "AND", "FOR", "WITH", "WITHOUT", "IN", "ON", "OF", "X", "UNBRANDED"}
-        if token and token.group(1).upper() not in stop:
-            canonical = token.group(1).strip("-+&")
-            if len(canonical) >= 2:
-                return canonical, canonical
+        candidate = token.group(1).upper() if token else ""
+        # Only accept a SKU-adjacent word when it is already in one of the
+        # explicit resolver maps. Ordinary words such as TOP, FRENCH, or 40V
+        # must remain unresolved rather than being guessed as brands.
+        known = next(((b, c) for pattern, b, c in BRAND_CORP_MAP + GENERIC_BRAND_CORP_MAP
+                      if re.fullmatch(r"[A-Z0-9+& -]+", b.upper()) and candidate == b.upper()), None)
+        if known:
+            return known
 
     return None, None
