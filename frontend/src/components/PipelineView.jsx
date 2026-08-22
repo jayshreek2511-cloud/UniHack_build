@@ -22,7 +22,7 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
         formData.append('file', selectedFile);
       }
 
-      const res = await fetch(`${API_BASE}/api/pipeline/run`, {
+      const res = await fetch(`${API_BASE}/api/pipeline/run?fresh=true`, {
         method: 'POST',
         body: formData,
       });

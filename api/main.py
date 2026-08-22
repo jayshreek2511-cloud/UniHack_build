@@ -318,7 +318,7 @@ from fastapi.responses import FileResponse
 
 
 @app.post("/api/pipeline/run")
-def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
+def run_pipeline_execution(file: Optional[UploadFile] = File(None), fresh: bool = False):
     """Start a detached end-to-end pipeline job and return immediately."""
     try:
         if file is not None:
@@ -357,6 +357,9 @@ def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
         # Launch as an independent OS process. The HTTP request, browser tab, and
         # terminal focus are not part of the child process lifetime.
         cmd_pipeline = [sys.executable, str(PROJECT_ROOT / "run_full_pipeline.py"), str(input_file_path)]
+        if fresh:
+            cmd_pipeline.append("--fresh")
+            logger.info("Fresh run requested; the existing checkpoint will be discarded.")
         logger.info("Executing pipeline command: %s", " ".join(cmd_pipeline))
         job_id = uuid.uuid4().hex
         stdout_path = OUTPUT_DIR / f"pipeline_job_{job_id}.stdout.log"
