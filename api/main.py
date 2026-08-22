@@ -8,6 +8,11 @@ Provides endpoints for stats, records catalog, record detail, review queue, and 
 import json
 import logging
 import os
+import threading
+import uuid
+import subprocess
+import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
 import pandas as pd
@@ -23,6 +28,9 @@ logger = logging.getLogger("uvicorn.error")
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = PROJECT_ROOT / "data" / "output"
 APPROVALS_FILE = OUTPUT_DIR / "approvals.json"
+PIPELINE_JOBS_FILE = OUTPUT_DIR / "pipeline_jobs.json"
+_pipeline_jobs: Dict[str, dict] = {}
+_pipeline_jobs_lock = threading.Lock()
 
 app = FastAPI(
     title="Product Intelligence Pipeline API",
@@ -34,6 +42,40 @@ app = FastAPI(
 def _has_gemini_api_key() -> bool:
     """Return whether the launch environment contains a usable Gemini key."""
     return bool(os.environ.get("GEMINI_API_KEY", "").strip())
+
+
+def _save_pipeline_jobs() -> None:
+    """Persist lightweight job state so status survives a dashboard refresh."""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    with _pipeline_jobs_lock:
+        snapshot = dict(_pipeline_jobs)
+    PIPELINE_JOBS_FILE.write_text(json.dumps(snapshot, indent=2), encoding="utf-8")
+
+
+def _watch_pipeline_job(job_id: str, process: subprocess.Popen, input_filename: str, row_count: int,
+                        stdout_handle, stderr_handle) -> None:
+    """Record completion independently of the HTTP request lifecycle."""
+    try:
+        return_code = process.wait()
+        status = "complete" if return_code == 0 else "failed"
+        with _pipeline_jobs_lock:
+            job = _pipeline_jobs.setdefault(job_id, {})
+            job.update({
+                "status": status,
+                "return_code": return_code,
+                "finished_at": datetime.now(timezone.utc).isoformat(),
+                "input_file": input_filename,
+                "input_rows": row_count,
+            })
+        logger.info("Detached pipeline job %s finished: status=%s return_code=%s", job_id, status, return_code)
+    except Exception:
+        logger.exception("Unable to record detached pipeline job %s completion", job_id)
+        with _pipeline_jobs_lock:
+            _pipeline_jobs.setdefault(job_id, {}).update({"status": "failed", "return_code": -1})
+    finally:
+        stdout_handle.close()
+        stderr_handle.close()
+        _save_pipeline_jobs()
 
 
 @app.on_event("startup")
@@ -273,13 +315,11 @@ async def approve_record(sku: str, req: Optional[ApprovalRequest] = None):
 
 from fastapi import UploadFile, File
 from fastapi.responses import FileResponse
-import subprocess
-import sys
 
 
 @app.post("/api/pipeline/run")
 def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
-    """Run full end-to-end pipeline (ingest -> classify -> extract -> enrich -> score -> export) and generate delivery export files."""
+    """Start a detached end-to-end pipeline job and return immediately."""
     try:
         if file is not None:
             upload_path = PROJECT_ROOT / "data" / "input" / "uploaded_input.csv"
@@ -297,6 +337,7 @@ def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
                 input_file_path = PROJECT_ROOT / "data" / "input" / "Unihack__Sample_Dataset_-_Input__1_.csv"
                 input_filename = "Unihack__Sample_Dataset_-_Input__1_.csv"
 
+        row_count = 0
         try:
             df_in = pd.read_csv(input_file_path)
             row_count = len(df_in)
@@ -308,37 +349,80 @@ def run_pipeline_execution(file: Optional[UploadFile] = File(None)):
         logger.info("Pipeline start: GEMINI_API_KEY present and non-empty (child will inherit): %s", _has_gemini_api_key())
         logger.info("=" * 80)
 
-        # 1. Execute run_full_pipeline.py script with explicit input file argument
+        if row_count >= 500:
+            reminder = "For runs over 5 minutes, keep the laptop plugged in and Energy Saver disabled to avoid throttling."
+            logger.warning(reminder)
+            print(reminder, flush=True)
+
+        # Launch as an independent OS process. The HTTP request, browser tab, and
+        # terminal focus are not part of the child process lifetime.
         cmd_pipeline = [sys.executable, str(PROJECT_ROOT / "run_full_pipeline.py"), str(input_file_path)]
         logger.info("Executing pipeline command: %s", " ".join(cmd_pipeline))
-        res = subprocess.run(cmd_pipeline, cwd=str(PROJECT_ROOT), capture_output=True, text=True)
-        if res.returncode != 0:
-            logger.error("Pipeline run error: %s", res.stderr)
-            err_lines = [line.strip() for line in res.stderr.splitlines() if "Error:" in line or "Exception:" in line or "Traceback" in line]
-            clean_err = err_lines[-1] if err_lines else "Check server logs for details."
-            raise HTTPException(status_code=500, detail=f"Pipeline execution failed: {clean_err}")
-        logger.info("Full pipeline execution complete for %s (%d input rows).", input_filename, row_count)
-
-        # 2. Execute s10_delivery_export.py stage
-        cmd_export = [sys.executable, str(PROJECT_ROOT / "pipeline" / "stages" / "s10_delivery_export.py")]
-        logger.info("Executing delivery export command: %s", " ".join(cmd_export))
-        res_exp = subprocess.run(cmd_export, cwd=str(PROJECT_ROOT), capture_output=True, text=True)
-        if res_exp.returncode != 0:
-            logger.error("Export error: %s", res_exp.stderr)
-            raise HTTPException(status_code=500, detail=f"Delivery export failed: {res_exp.stderr[:300]}")
-        logger.info("Stage 10 export complete. Delivery files generated.")
-
+        job_id = uuid.uuid4().hex
+        stdout_path = OUTPUT_DIR / f"pipeline_job_{job_id}.stdout.log"
+        stderr_path = OUTPUT_DIR / f"pipeline_job_{job_id}.stderr.log"
+        stdout_handle = open(stdout_path, "w", encoding="utf-8", buffering=1)
+        stderr_handle = open(stderr_path, "w", encoding="utf-8", buffering=1)
+        creation_flags = 0
+        if os.name == "nt":
+            creation_flags = subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP | subprocess.CREATE_NO_WINDOW
+        process = subprocess.Popen(
+            cmd_pipeline,
+            cwd=str(PROJECT_ROOT),
+            stdin=subprocess.DEVNULL,
+            stdout=stdout_handle,
+            stderr=stderr_handle,
+            creationflags=creation_flags,
+            close_fds=(os.name != "nt"),
+        )
+        with _pipeline_jobs_lock:
+            _pipeline_jobs[job_id] = {
+                "job_id": job_id,
+                "status": "running",
+                "pid": process.pid,
+                "started_at": datetime.now(timezone.utc).isoformat(),
+                "input_file": input_filename,
+                "input_rows": row_count,
+                "stdout_log": str(stdout_path.relative_to(PROJECT_ROOT)),
+                "stderr_log": str(stderr_path.relative_to(PROJECT_ROOT)),
+            }
+        _save_pipeline_jobs()
+        threading.Thread(
+            target=_watch_pipeline_job,
+            args=(job_id, process, input_filename, row_count, stdout_handle, stderr_handle),
+            daemon=True,
+            name=f"pipeline-watch-{job_id[:8]}",
+        ).start()
+        logger.info("Detached pipeline job started: job_id=%s pid=%s", job_id, process.pid)
         return {
-            "status": "success",
-            "message": f"Pipeline executed successfully for '{input_filename}' ({row_count} rows processed)!",
+            "status": "accepted",
+            "job_id": job_id,
+            "message": f"Pipeline started for '{input_filename}' ({row_count} rows).",
             "input_file": input_filename,
             "input_rows": row_count,
+            "pid": process.pid,
+            "status_url": f"/api/pipeline/status/{job_id}",
             "csv_download_url": "/api/pipeline/download/csv",
             "excel_download_url": "/api/pipeline/download/excel"
         }
     except Exception as e:
         logger.exception("Error during pipeline execution")
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/pipeline/status/{job_id}")
+def pipeline_job_status(job_id: str):
+    """Return detached pipeline state and log locations for polling clients."""
+    with _pipeline_jobs_lock:
+        job = _pipeline_jobs.get(job_id)
+    if job is None and PIPELINE_JOBS_FILE.exists():
+        try:
+            job = json.loads(PIPELINE_JOBS_FILE.read_text(encoding="utf-8")).get(job_id)
+        except Exception:
+            job = None
+    if job is None:
+        raise HTTPException(status_code=404, detail="Pipeline job not found.")
+    return job
 
 
 @app.get("/api/pipeline/download/excel")

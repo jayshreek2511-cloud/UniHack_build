@@ -53,6 +53,14 @@ def main():
     print("=" * 80)
     print(f"Input: {input_csv}")
     print(f"Output: {output_dir}")
+    try:
+        input_rows = len(pd.read_csv(input_csv))
+    except Exception:
+        input_rows = 0
+    if input_rows >= 500:
+        reminder = "For runs over 5 minutes, keep the laptop plugged in and Energy Saver disabled to avoid throttling."
+        print(f"[REMINDER] {reminder}", flush=True)
+        logger.warning(reminder)
     print("=" * 80)
 
     # 1. Ingest

@@ -27,8 +27,23 @@ export default function PipelineView({ stats, onNavigate, onRefresh }) {
 
       const data = await res.json();
       if (res.ok) {
-        setStatusMsg('Pipeline complete! Delivery export files (CSV & XLSX) generated successfully.');
-        if (onRefresh) await onRefresh();
+        if (data.job_id) {
+          setStatusMsg(`Pipeline detached (PID ${data.pid}) and running in the background...`);
+          let state = 'running';
+          while (state === 'running') {
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            const statusRes = await fetch(`${API_BASE}/api/pipeline/status/${data.job_id}`);
+            const status = await statusRes.json();
+            state = status.status;
+            if (state === 'running') setStatusMsg(`Pipeline still running in background (PID ${status.pid})...`);
+            else if (state === 'complete') setStatusMsg('Pipeline complete! Delivery export files (CSV & XLSX) generated successfully.');
+            else setStatusMsg(`Pipeline run failed (exit code ${status.return_code ?? 'unknown'}). Check the server-side job log.`);
+          }
+          if (state === 'complete' && onRefresh) await onRefresh();
+        } else {
+          setStatusMsg('Pipeline complete! Delivery export files (CSV & XLSX) generated successfully.');
+          if (onRefresh) await onRefresh();
+        }
       } else {
         setStatusMsg(`Pipeline run failed: ${data.detail || 'Unknown error'}`);
       }
