@@ -211,6 +211,7 @@ def classify(
     records: List[ProductRecord],
     llm_batch_size: Optional[int] = None,
     llm_max_workers: Optional[int] = None,
+    checkpoint_path: Optional[str] = None,
 ) -> ClassificationReport:
     """Classify every record. LLM is primary; rules act as the fallback.
 
@@ -228,6 +229,8 @@ def classify(
         kwargs["batch_size"] = llm_batch_size
     if llm_max_workers is not None:
         kwargs["max_workers"] = llm_max_workers
+    if checkpoint_path is not None:
+        kwargs["checkpoint_path"] = checkpoint_path
     llm_results = classify_batch_with_llm(records, **kwargs)
     llm_classified = 0
     if llm_results:

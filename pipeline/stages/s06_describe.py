@@ -321,7 +321,8 @@ def _merge_llm_fields(fallback: GeneratedDescriptions, llm_fields: Dict[str, str
 
 
 def generate_descriptions_batch(records: List[tuple], batch_size: int = 20,
-                                max_workers: int = 4) -> Dict[str, GeneratedDescriptions]:
+                                max_workers: int = 4,
+                                checkpoint_path: Optional[str] = None) -> Dict[str, GeneratedDescriptions]:
     """Generate descriptions for many records using one Gemini call per batch."""
     fallbacks = {}
     items = []
@@ -330,7 +331,9 @@ def generate_descriptions_batch(records: List[tuple], batch_size: int = 20,
                     if record.is_dishwasher else _generate_generic_descriptions(record, extracted, mfr_info))
         fallbacks[record.mfg_part_num] = (fallback, extracted)
         items.append(_description_item(record, extracted, mfr_info))
-    llm_results = llm_generate_descriptions_batch(items, batch_size=batch_size, max_workers=max_workers)
+    llm_results = llm_generate_descriptions_batch(
+        items, batch_size=batch_size, max_workers=max_workers, checkpoint_path=checkpoint_path
+    )
     out = {}
     for record, extracted, mfr_info in records:
         fallback, ext = fallbacks[record.mfg_part_num]

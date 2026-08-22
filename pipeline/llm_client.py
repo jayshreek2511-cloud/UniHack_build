@@ -53,6 +53,32 @@ _last_request_at = 0.0
 GEMINI_MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "7.0"))
 
 
+def _checkpoint_load(path: Optional[str], stage: str) -> Dict[str, Any]:
+    if not path:
+        return {}
+    try:
+        with open(path, encoding="utf-8") as handle:
+            return json.load(handle).get(stage, {})
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        return {}
+
+
+def _checkpoint_save(path: Optional[str], stage: str, values: Dict[Any, Any]) -> None:
+    if not path:
+        return
+    payload: Dict[str, Any] = {}
+    try:
+        with open(path, encoding="utf-8") as handle:
+            payload = json.load(handle)
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        pass
+    payload[stage] = {str(key): value for key, value in values.items()}
+    tmp_path = f"{path}.tmp"
+    with open(tmp_path, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+
 def _throttle():
     """Sleep as needed so consecutive requests start >= GEMINI_MIN_INTERVAL apart."""
     global _last_request_at
@@ -276,6 +302,7 @@ def classify_batch_with_llm(
     records: List[ProductRecord],
     batch_size: int = 25,
     max_workers: int = 4,
+    checkpoint_path: Optional[str] = None,
 ) -> Dict[int, Tuple[str, str, str]]:
     """Batch-classify ALL records using Gemini LLM.
 
@@ -307,7 +334,10 @@ def classify_batch_with_llm(
     if not batches:
         return {}
 
-    results: Dict[int, Tuple[str, str, str]] = {}
+    results: Dict[int, Tuple[str, str, str]] = {
+        int(key): tuple(value) for key, value in _checkpoint_load(checkpoint_path, "classification").items()
+    }
+    batches = [batch for batch in batches if not all(row_idx in results for row_idx, _ in batch)]
 
     def _process_batch(batch: List[Tuple[int, str]]) -> List[Tuple[int, str, str, str]]:
         lines = "\n".join(
@@ -340,6 +370,7 @@ def classify_batch_with_llm(
                 batch_results = future.result(timeout=120)
                 for row_idx, full_path, dept, fine in batch_results:
                     results[row_idx] = (full_path, dept, fine)
+                _checkpoint_save(checkpoint_path, "classification", results)
             except Exception as e:
                 logger.warning("LLM classification batch failed: %s", e)
 
@@ -443,6 +474,7 @@ def extract_dynamic_attributes_batch(
     items: List[Tuple[int, str, str, str]],
     batch_size: int = 8,
     max_workers: int = 6,
+    checkpoint_path: Optional[str] = None,
 ) -> Dict[int, Dict[str, Dict[str, Optional[str]]]]:
     """Batch dynamic attribute extraction across many products.
 
@@ -472,7 +504,10 @@ def extract_dynamic_attributes_batch(
     if not batches:
         return {}
 
-    results: Dict[int, Dict[str, Dict[str, Optional[str]]]] = {}
+    results: Dict[int, Dict[str, Dict[str, Optional[str]]]] = {
+        int(key): value for key, value in _checkpoint_load(checkpoint_path, "extraction").items()
+    }
+    batches = [batch for batch in batches if not all(row_idx in results for row_idx, *_ in batch)]
 
     def _process_batch(batch: List[Tuple[int, str, str, str]]) -> Dict[int, Dict[str, Dict[str, Optional[str]]]]:
         lines = "\n".join(
@@ -511,6 +546,7 @@ def extract_dynamic_attributes_batch(
             try:
                 batch_results = future.result(timeout=180)
                 results.update(batch_results)
+                _checkpoint_save(checkpoint_path, "extraction", results)
             except Exception as e:
                 logger.warning("LLM attribute extraction batch failed: %s", e)
 
@@ -541,11 +577,14 @@ Products:
 
 
 def generate_descriptions_batch(items: List[Dict[str, Any]], batch_size: int = 20,
-                                max_workers: int = 4) -> Dict[int, Dict[str, str]]:
+                                max_workers: int = 4,
+                                checkpoint_path: Optional[str] = None) -> Dict[int, Dict[str, str]]:
     """Generate all five description formats in one call per batch."""
     api_key = get_api_key()
     if not api_key or not items:
         return {}
+    cached = {int(key): value for key, value in _checkpoint_load(checkpoint_path, "descriptions").items()}
+    items = [item for item in items if int(item["row_id"]) not in cached]
     batches = [items[i:i + batch_size] for i in range(0, len(items), batch_size)]
 
     def _run(batch: List[Dict[str, Any]]) -> Dict[int, Dict[str, str]]:
@@ -566,12 +605,13 @@ def generate_descriptions_batch(items: List[Dict[str, Any]], batch_size: int = 2
                 out[int(batch[idx]["row_id"])] = vals
         return out
 
-    results: Dict[int, Dict[str, str]] = {}
+    results: Dict[int, Dict[str, str]] = cached
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = [executor.submit(_run, b) for b in batches]
         for future in as_completed(futures):
             try:
                 results.update(future.result(timeout=180))
+                _checkpoint_save(checkpoint_path, "descriptions", results)
             except Exception as exc:
                 logger.warning("Description generation batch failed: %s", exc)
     return results

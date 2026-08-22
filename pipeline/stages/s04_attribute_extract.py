@@ -434,6 +434,7 @@ def extract_attributes(
     reference_dir: Optional[Path] = None,
     llm_batch_size: Optional[int] = None,
     llm_max_workers: Optional[int] = None,
+    checkpoint_path: Optional[str] = None,
 ) -> List[RecordExtractionResult]:
     """Extract structured attributes for any-category records.
 
@@ -465,6 +466,8 @@ def extract_attributes(
                 kwargs["batch_size"] = llm_batch_size
             if llm_max_workers is not None:
                 kwargs["max_workers"] = llm_max_workers
+            if checkpoint_path is not None:
+                kwargs["checkpoint_path"] = checkpoint_path
             llm_batch = extract_dynamic_attributes_batch(items, **kwargs)
 
         for rec in generic_recs:

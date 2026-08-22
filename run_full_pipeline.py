@@ -12,6 +12,8 @@ Generates comprehensive reports including:
 import json
 import logging
 import sys
+import ctypes
+import atexit
 from pathlib import Path
 
 import pandas as pd
@@ -36,17 +38,47 @@ logging.basicConfig(
 )
 logger = logging.getLogger("full_pipeline")
 
+_EXECUTION_STATE = None
+
+
+def _prevent_windows_sleep() -> None:
+    """Keep Windows awake while a long pipeline is actively processing."""
+    global _EXECUTION_STATE
+    if sys.platform != "win32":
+        return
+    ES_CONTINUOUS = 0x80000000
+    ES_SYSTEM_REQUIRED = 0x00000001
+    ES_DISPLAY_REQUIRED = 0x00000002
+    _EXECUTION_STATE = ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED
+    result = ctypes.windll.kernel32.SetThreadExecutionState(_EXECUTION_STATE)
+    if result == 0:
+        logger.warning("Windows sleep prevention request failed.")
+    else:
+        logger.info("Windows sleep prevention active for this pipeline run.")
+
+
+def _release_windows_sleep() -> None:
+    if sys.platform == "win32" and _EXECUTION_STATE is not None:
+        ctypes.windll.kernel32.SetThreadExecutionState(0x80000000)
+        logger.info("Windows sleep prevention released.")
+
 
 def main():
     input_csv = PROJECT_ROOT / "data" / "input" / "Unihack__Sample_Dataset_-_Input__1_.csv"
-    if len(sys.argv) > 1:
-        input_csv = Path(sys.argv[1]).resolve()
+    fresh = "--fresh" in sys.argv[1:]
+    positional = [arg for arg in sys.argv[1:] if arg != "--fresh"]
+    if positional:
+        input_csv = Path(positional[0]).resolve()
     messy_csv = PROJECT_ROOT / "data" / "input" / "messy_distributor_test_data.csv"
     output_dir = PROJECT_ROOT / "data" / "output"
     ref_dir = PROJECT_ROOT / "pipeline" / "reference"
 
     output_dir.mkdir(parents=True, exist_ok=True)
     ref_dir.mkdir(parents=True, exist_ok=True)
+    checkpoint_path = output_dir / f"checkpoint_{input_csv.stem}.json"
+    if fresh and checkpoint_path.exists():
+        checkpoint_path.unlink()
+        logger.info("--fresh specified; discarded checkpoint %s", checkpoint_path)
 
     print("=" * 80)
     print("FULL PIPELINE EXECUTION — ALL CATEGORIES")
@@ -83,7 +115,7 @@ def main():
 
     # 3. Stage 02: Classify (LLM-primary, rule-based fallback)
     logger.info(">> Stage 02: Classifying records")
-    report = classify(records, llm_batch_size=120, llm_max_workers=4)
+    report = classify(records, llm_batch_size=120, llm_max_workers=4, checkpoint_path=str(checkpoint_path))
     report.print_summary()
 
     # Save classified full dataset for cross-checking
@@ -102,7 +134,10 @@ def main():
 
     # 4. Stage 04: Attribute Extraction for ALL records (batched dynamic schemas)
     logger.info(">> Stage 04: Extracting attributes for all %d records...", len(all_records))
-    extraction_results = extract_attributes(all_records, reference_dir=ref_dir, llm_batch_size=40, llm_max_workers=4)
+    extraction_results = extract_attributes(
+        all_records, reference_dir=ref_dir, llm_batch_size=40, llm_max_workers=4,
+        checkpoint_path=str(checkpoint_path)
+    )
     print(f"[OK] Extracted attributes for {len(extraction_results)} records")
 
     # Save full-category extraction database (not just dishwashers)
@@ -124,6 +159,7 @@ def main():
          if ext.mfg_part_num == rec.mfg_part_num and rec.mfg_part_num in mfr_sources],
         batch_size=40,
         max_workers=4,
+        checkpoint_path=str(checkpoint_path),
     )
 
     # 7. Stage 07: Confidence Scoring (all records)
@@ -276,4 +312,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    _prevent_windows_sleep()
+    atexit.register(_release_windows_sleep)
+    try:
+        main()
+    finally:
+        _release_windows_sleep()
